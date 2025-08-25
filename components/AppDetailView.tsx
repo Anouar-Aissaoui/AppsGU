@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
-import type { AppInfo, FAQ } from '../types';
+import type { AppInfo } from '../types';
+import { slugify } from '../utils/slugify';
 
 // SEO Component for managing head tags and structured data
 const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
@@ -124,6 +125,8 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, isPanel }) => {
                       src={app.img} 
                       alt={`${app.title} icon`}
                       className="w-32 h-32 md:w-40 md:h-40 object-cover rounded-3xl shadow-lg flex-shrink-0"
+                      loading="lazy"
+                      decoding="async"
                   />
                   <div className="flex-grow">
                       <div className="text-sm font-bold text-[#00ff88] uppercase tracking-wider">{app.author}</div>
@@ -133,7 +136,7 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, isPanel }) => {
                           <span className="hidden sm:inline">|</span>
                           <span>Size: {app.size}</span>
                            <span className="hidden sm:inline">|</span>
-                          <span>Category: {app.category}</span>
+                           <a href={`/category/${slugify(app.category)}`} className="hover:text-[#00ff88] hover:underline">Category: {app.category}</a>
                       </div>
                       <p className="text-base text-gray-300 mb-6">{app.description}</p>
                       <button 

@@ -5,18 +5,22 @@ import AppItem from './AppItem';
 interface AppListProps {
   apps: AppInfo[];
   activeSlug: string | null;
+  isPanel: boolean;
 }
 
-const AppList: React.FC<AppListProps> = ({ apps, activeSlug }) => {
+const AppList: React.FC<AppListProps> = ({ apps, activeSlug, isPanel }) => {
   return (
     <section className="py-8 lg:p-4">
       <div className="container mx-auto px-4 lg:p-0">
         {apps.length > 0 ? (
-          <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4">
+          <ul className={`grid gap-4 ${isPanel ? 'grid-cols-1' : 'grid-cols-1 sm:grid-cols-2 md:grid-cols-3'}`}>
             {apps.map((app) => <AppItem key={app.slug} app={app} isActive={app.slug === activeSlug} />)}
           </ul>
         ) : (
           <div className="text-center py-16">
+            <div className="text-6xl text-zinc-700 mb-4 animate-pulse">
+              <i className="fa-solid fa-magnifying-glass"></i>
+            </div>
             <p className="text-gray-500 text-lg">No apps found matching your search.</p>
           </div>
         )}

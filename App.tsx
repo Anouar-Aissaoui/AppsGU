@@ -3,6 +3,7 @@ import Header from './components/Header';
 import SearchBar from './components/SearchBar';
 import AppList from './components/AppList';
 import AppDetailView from './components/AppDetailView';
+import CategoryPageView from './components/CategoryPageView';
 import { useMediaQuery } from './hooks/useMediaQuery';
 import { APPS_DATA } from './constants';
 import type { AppInfo } from './types';
@@ -40,11 +41,29 @@ const App: React.FC = () => {
     return () => document.removeEventListener('click', onClick);
   }, [isDesktop]);
 
-  const selectedAppSlug = useMemo(() => {
-    const match = pathname.match(/^\/app\/([a-zA-Z0-9-]+)/);
-    return match ? match[1] : null;
+  const { categorySlug, selectedAppSlug } = useMemo(() => {
+    const catMatch = pathname.match(/^\/category\/([a-zA-Z0-9-]+)/);
+    const appMatch = pathname.match(/^\/app\/([a-zA-Z0-9-]+)/);
+    return {
+      categorySlug: catMatch ? catMatch[1] : null,
+      selectedAppSlug: appMatch ? appMatch[1] : null,
+    };
   }, [pathname]);
 
+  useEffect(() => {
+    // Set homepage SEO tags only when on the root path.
+    if (!categorySlug && !selectedAppSlug) {
+      document.title = 'AppsGU | Third‑Party Tweaks & Mods for iOS & Android';
+      const metaDescriptionTag = document.getElementById('meta-description') as HTMLMetaElement;
+      if (metaDescriptionTag) {
+        metaDescriptionTag.content = 'Find third‑party apps, tweaks and emulators for iPhone, iPad and Android. Installation guides, FAQs and safety tips. Updated regularly.';
+      }
+      const canonicalLinkTag = document.getElementById('canonical-link') as HTMLLinkElement;
+      if (canonicalLinkTag) {
+        canonicalLinkTag.href = window.location.origin;
+      }
+    }
+  }, [categorySlug, selectedAppSlug]);
 
   const selectedApp = useMemo(() => {
     return APPS_DATA.find(a => a.slug === selectedAppSlug) || null;
@@ -61,14 +80,18 @@ const App: React.FC = () => {
     );
   }, [searchTerm]);
 
+  if (categorySlug) {
+    return <CategoryPageView categorySlug={categorySlug} />;
+  }
+
   if (isDesktop) {
     return (
-      <div className="min-h-screen text-white flex h-screen overflow-hidden">
+      <div className="min-h-screen text-white flex h-screen overflow-hidden animate-fade-in">
         <aside className="w-full max-w-sm flex-shrink-0 flex flex-col border-r border-zinc-800 bg-[#141414]">
           <Header />
           <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
           <div className="flex-grow overflow-y-auto">
-            <AppList apps={filteredApps} activeSlug={selectedAppSlug} />
+            <AppList apps={filteredApps} activeSlug={selectedAppSlug} isPanel={true}/>
           </div>
         </aside>
         <main className="flex-grow h-full overflow-y-auto">
@@ -93,11 +116,11 @@ const App: React.FC = () => {
   }
 
   return (
-    <div className="min-h-screen text-white">
+    <div className="min-h-screen text-white animate-fade-in">
       <Header />
       <main>
         <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
-        <AppList apps={filteredApps} activeSlug={null} />
+        <AppList apps={filteredApps} activeSlug={null} isPanel={false} />
       </main>
     </div>
   );

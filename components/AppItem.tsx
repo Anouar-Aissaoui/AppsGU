@@ -24,6 +24,8 @@ const AppItem: React.FC<AppItemProps> = ({ app, isActive }) => {
               src={app.img} 
               alt={app.title} 
               className="w-16 h-16 object-cover rounded-2xl shadow-lg transition-transform duration-300 group-hover:scale-105" 
+              loading="lazy"
+              decoding="async"
             />
           </div>
           <div className="flex-grow min-w-0">
