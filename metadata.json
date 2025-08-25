@@ -1,0 +1,5 @@
+{
+  "name": "AppsGU Clone",
+  "description": "A clone of the AppsGU website, which serves as a store for modded iOS & Android applications. This clone showcases a searchable list of applications with their descriptions and icons.",
+  "requestFramePermissions": []
+}
