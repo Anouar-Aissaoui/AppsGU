@@ -10,7 +10,7 @@ const AppItem: React.FC<AppItemProps> = ({ app, isActive }) => {
   return (
     <li>
       <a 
-        href={`#/app/${app.slug}`} 
+        href={`/app/${app.slug}`} 
         className={`block bg-[#1a1a1a] rounded-xl border p-4 transition-all duration-300 ease-in-out cursor-pointer group
           ${isActive 
             ? 'border-[#00ff88] bg-zinc-800/50'

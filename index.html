@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AppsGU Clone - Best Mods for iOS & Android</title>
     <meta id="meta-description" name="description" content="A clone of the AppsGU website, which serves as a store for modded iOS & Android applications. This clone showcases a searchable list of applications with their descriptions and icons." />
+    <link id="canonical-link" rel="canonical" href="" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,6 +28,12 @@
     "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/"
   }
 }
+</script>
+<script>
+  if (location.hash.startsWith('#/app/')) {
+    const newPath = location.hash.slice(1);
+    history.replaceState(null, '', newPath);
+  }
 </script>
 </head>
   <body>

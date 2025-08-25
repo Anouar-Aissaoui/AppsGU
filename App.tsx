@@ -8,27 +8,43 @@ import { APPS_DATA } from './constants';
 import type { AppInfo } from './types';
 
 const App: React.FC = () => {
-  const [route, setRoute] = useState(window.location.hash);
+  const [pathname, setPathname] = useState(window.location.pathname);
   const [searchTerm, setSearchTerm] = useState<string>('');
   const isDesktop = useMediaQuery('(min-width: 1024px)');
 
   useEffect(() => {
-    const handleHashChange = () => {
-        setRoute(window.location.hash);
-        if (!isDesktop) {
-            window.scrollTo(0, 0);
-        }
+    const onPopState = () => {
+      setPathname(window.location.pathname);
     };
-    window.addEventListener('hashchange', handleHashChange);
-    return () => window.removeEventListener('hashchange', handleHashChange);
+    window.addEventListener('popstate', onPopState);
+    return () => window.removeEventListener('popstate', onPopState);
+  }, []);
+
+  useEffect(() => {
+    const onClick = (event: MouseEvent) => {
+      const target = event.target as HTMLElement;
+      const anchor = target.closest('a');
+      if (anchor && anchor.origin === window.location.origin && !event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey && anchor.target !== '_blank') {
+        event.preventDefault();
+        const newPath = anchor.pathname + anchor.search + anchor.hash;
+        if (newPath !== window.location.pathname) {
+          window.history.pushState({}, '', newPath);
+          setPathname(newPath);
+           if (!isDesktop || !newPath.startsWith('/app/')) {
+                window.scrollTo(0, 0);
+           }
+        }
+      }
+    };
+    document.addEventListener('click', onClick);
+    return () => document.removeEventListener('click', onClick);
   }, [isDesktop]);
 
   const selectedAppSlug = useMemo(() => {
-    if (route.startsWith('#/app/')) {
-        return route.substring(6);
-    }
-    return null;
-  }, [route]);
+    const match = pathname.match(/^\/app\/([a-zA-Z0-9-]+)/);
+    return match ? match[1] : null;
+  }, [pathname]);
+
 
   const selectedApp = useMemo(() => {
     return APPS_DATA.find(a => a.slug === selectedAppSlug) || null;
