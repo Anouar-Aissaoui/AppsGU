@@ -14,6 +14,4 @@ export interface AppInfo {
   longDescription: string;
   category: string;
   faqs: FAQ[];
-  lastUpdated: string;
-  officialUrl: string;
 }

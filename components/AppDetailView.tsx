@@ -9,11 +9,11 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
         const canonicalUrl = `${baseUrl}/app/${app.slug}`;
 
         // Basic Meta Tags
-        document.title = `${app.title} Review, Features & Safety Info`;
+        document.title = `${app.title} for iOS & Android – Download (Latest Version)`;
         
         const metaDescriptionTag = document.getElementById('meta-description') as HTMLMetaElement;
         if (metaDescriptionTag) {
-            metaDescriptionTag.content = `An in-depth review of ${app.title}. Learn about its features, potential risks, and safety considerations before you install. Updated ${app.lastUpdated}.`;
+            metaDescriptionTag.content = `${app.title} lets you ${app.description.toLowerCase()}. Step-by-step install, features, FAQs. Updated ${new Date().getFullYear()}.`;
         }
 
         const canonicalLinkTag = document.getElementById('canonical-link') as HTMLLinkElement;
@@ -43,7 +43,7 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
             "softwareVersion": app.version,
             "publisher": { "@type": "Organization", "name": "AppsGU Clone" },
             "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-            "downloadUrl": app.officialUrl,
+            "downloadUrl": canonicalUrl,
             "screenshot": app.img
         });
 
@@ -135,38 +135,29 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, isPanel }) => {
                           <span>Version: {app.version}</span>
                           <span className="hidden sm:inline">|</span>
                           <span>Size: {app.size}</span>
-                          <span className="hidden sm:inline">|</span>
-                          <span>Updated: {app.lastUpdated}</span>
-                          <span className="hidden sm:inline">|</span>
+                           <span className="hidden sm:inline">|</span>
                            <a href={`/category/${slugify(app.category)}`} className="hover:text-[#00ff88] hover:underline">Category: {app.category}</a>
                       </div>
                       <p className="text-base text-gray-300 mb-6">{app.description}</p>
-                      <a
-                          href={app.officialUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-block bg-[#00ff88] text-zinc-900 font-bold py-3 px-8 rounded-lg text-lg hover:bg-white hover:shadow-[0_0_25px_rgba(0,255,136,0.4)] transition-all duration-300 transform hover:scale-105">
-                          View on Official Site
-                      </a>
+                      <button 
+                          onClick={() => {
+                              if (typeof (window as any).call_locker === 'function') {
+                                  (window as any).call_locker();
+                              } else {
+                                  console.error('call_locker function not found. Monetization script might be blocked or failed to load.');
+                              }
+                          }}
+                          className="bg-[#00ff88] text-zinc-900 font-bold py-3 px-8 rounded-lg text-lg hover:bg-white hover:shadow-[0_0_25px_rgba(0,255,136,0.4)] transition-all duration-300 transform hover:scale-105">
+                          DOWNLOAD NOW
+                      </button>
                   </div>
               </div>
               <hr className="border-zinc-700 my-8" />
               <div>
-                  <h2 className="text-2xl font-bold text-white mb-4">About This Guide</h2>
+                  <h2 className="text-2xl font-bold text-white mb-4">About This Mod</h2>
                   <div className="text-gray-400 whitespace-pre-line leading-relaxed prose prose-invert prose-p:text-gray-400 prose-ul:text-gray-400">
                       {app.longDescription}
                   </div>
-              </div>
-
-              <hr className="border-zinc-700 my-8" />
-              <div className="bg-yellow-900/20 border border-yellow-600/30 rounded-lg p-4">
-                  <h3 className="font-bold text-yellow-300 text-lg mb-2 flex items-center gap-2">
-                      <i className="fa-solid fa-triangle-exclamation"></i>
-                      Important Disclaimer
-                  </h3>
-                  <p className="text-yellow-400/80 text-sm leading-relaxed">
-                      This content is for educational and research purposes only. Using modified applications can violate the developer's Terms of Service and may result in penalties, including a permanent ban of your account. Such applications can also pose security risks to your device and personal data. We do not endorse or distribute modified software. Please proceed with caution and at your own risk.
-                  </p>
               </div>
 
              {app.faqs && app.faqs.length > 0 && (
