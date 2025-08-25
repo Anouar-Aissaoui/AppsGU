@@ -22,10 +22,10 @@ const CategoryPageView: React.FC<CategoryPageViewProps> = ({ categorySlug }) => 
         const baseUrl = window.location.origin;
         const canonicalUrl = `${baseUrl}/category/${categorySlug}`;
 
-        document.title = `${categoryName} Mods - AppsGU Clone`;
+        document.title = `${categoryName} App Guides & Reviews - AppsGU Clone`;
         const metaDescriptionTag = document.getElementById('meta-description') as HTMLMetaElement;
         if (metaDescriptionTag) {
-            metaDescriptionTag.content = `Browse and download the best mods for ${categoryName} on iOS & Android. Discover new tweaks and emulators in the ${categoryName} category.`;
+            metaDescriptionTag.content = `Explore guides and reviews for ${categoryName} apps. Learn about features, use cases, and safety for tweaks and emulators in the ${categoryName} category.`;
         }
         const canonicalLinkTag = document.getElementById('canonical-link') as HTMLLinkElement;
         if (canonicalLinkTag) {

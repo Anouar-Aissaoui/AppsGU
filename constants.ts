@@ -4,216 +4,254 @@ export const APPS_DATA: AppInfo[] = [
     { 
         slug: "altstore",
         img: "https://i.imgur.com/rq3p0eE.png", 
-        author: "AppsGU", 
-        title: "Altstore", 
-        description: "Sideload Any Apps To Your iPhone, iOS Device",
+        author: "Riley Testut", 
+        title: "AltStore Guide", 
+        description: "An educational guide to AltStore for sideloading apps on iOS without a jailbreak.",
         version: "1.7.1",
         size: "25 MB",
         category: "Utilities",
-        longDescription: `AltStore is an alternative app store for non-jailbroken iOS devices. It allows you to sideload any .ipa file you have on your computer onto your device using your Apple ID.
+        lastUpdated: "2024-07-29",
+        officialUrl: "https://altstore.io/",
+        longDescription: `AltStore provides a method for installing unofficial apps (.ipa files) onto iOS devices. Unlike other methods, it doesn't require a jailbreak. Instead, it uses your own Apple ID to sign applications, which are then treated by iOS as if you developed them yourself.
 
-Key Features:
-- No jailbreak required.
-- Sideload apps with just your Apple ID.
-- Apps refresh automatically in the background to prevent them from expiring.
-- Fully open source and community-driven.`,
+How it Works:
+- **AltServer:** A companion app for macOS and Windows that runs in the background on your computer.
+- **App Signing:** AltServer handles the installation and refreshing of apps, re-signing them every seven days to prevent expiration.
+- **Wi-Fi Refresh:** As long as your device is on the same Wi-Fi network as AltServer, your apps can refresh automatically.`,
         faqs: [
-            { question: "Is AltStore safe to use?", answer: "Yes, AltStore is widely considered safe. It uses your official Apple ID to sign apps, which is the standard method for app installation. It does not require a jailbreak, which keeps your device's security intact." },
-            { question: "Do I need a computer to use AltStore?", answer: "Yes, you need a Mac or Windows computer running AltServer. AltServer is the desktop companion app that installs and refreshes apps on your device." }
+            { question: "Is AltStore safe to use?", answer: "AltStore is widely considered safe as it's open-source and uses Apple's official development system for app installation. However, the safety of the apps you sideload depends entirely on their source. Only install .ipa files from developers you trust." },
+            { question: "Does using AltStore void my device warranty?", answer: "No, using AltStore does not void your Apple warranty because it does not involve jailbreaking or modifying the core operating system." },
+            { question: "What are the limitations of a free Apple ID?", answer: "With a standard, free Apple ID, you can sign up to 3 apps at a time, and they must be refreshed every 7 days. A paid Apple Developer account removes most of these limitations." }
         ]
     },
     { 
-        slug: "dreameshort-coins",
+        slug: "dreameshort-coins-mods-review",
         img: "https://i.imgur.com/qKcgXd2.png", 
-        author: "Plugin Installer", 
-        title: "DreameShort Coins", 
-        description: "Unlimited Coins & Bonuses",
+        author: "Feature Analysis", 
+        title: "DreameShort Coins Mods Review", 
+        description: "An analysis of mods claiming to add unlimited coins to the DreameShort app.",
         version: "2.1.0",
         size: "12 MB",
         category: "Entertainment",
-        longDescription: `Get access to unlimited coins and bonuses in the DreameShort app. This plugin allows you to unlock all premium stories and episodes without any cost. Watch your favorite short dramas without interruption.
+        lastUpdated: "2024-07-29",
+        officialUrl: "https://play.google.com/store/apps/details?id=com.dreame.shortdrama",
+        longDescription: `This is an educational review of third-party modifications for the DreameShort app that claim to provide unlimited coins. These mods often promise to unlock premium content without payment.
 
-- Unlock all VIP content.
-- Receive daily coin bonuses.
-- Easy to install and use on both iOS & Android.`,
+Claimed Features:
+- Unlocking all VIP stories and episodes.
+- Providing a large or unlimited amount of in-app currency (coins).
+- Removing advertisements for uninterrupted viewing.
+
+It's important to understand the significant risks associated with such tools. Using them can lead to a permanent ban from the service and may expose your device to malware.`,
         faqs: [
-            { question: "Will this work on the latest version of DreameShort?", answer: "Our plugins are updated regularly to ensure compatibility with the latest app versions. This version is confirmed to work with the current release." },
-            { question: "Is this a one-time unlock?", answer: "Yes, once the plugin is activated, you will have access to unlimited coins and bonuses permanently for your account." }
+            { question: "Are in-app currency mods safe for my account?", answer: "No, they are generally unsafe. Developers can easily detect unusual currency levels on your account, which violates their Terms of Service and often results in an immediate and permanent ban." },
+            { question: "Where do these mods come from?", answer: "These modifications are created by unknown third parties and distributed outside of official app stores. They carry a high risk of containing malware or spyware designed to steal your personal information." }
         ]
     },
     { 
-        slug: "cod-mobile-mod-menu",
+        slug: "cod-mobile-mod-menu-review",
         img: "https://i.imgur.com/HJXUIFC.png", 
-        author: "MOD Installer", 
-        title: "COD Mobile MOD Menu", 
-        description: "Aimbot, SuperJump, Wallhack & MORE",
+        author: "Feature Analysis", 
+        title: "COD Mobile MOD Menu Review", 
+        description: "An analysis of mod menus for Call of Duty: Mobile and their features.",
         version: "3.5.2",
         size: "98 MB",
         category: "Games",
-        longDescription: `Dominate the battlefield in Call of Duty: Mobile with this advanced MOD Menu. Gain a competitive edge with features designed to enhance your gameplay.
+        lastUpdated: "2024-07-29",
+        officialUrl: "https://www.callofduty.com/mobile",
+        longDescription: `This review examines third-party mod menus for Call of Duty: Mobile. These tools are designed to give players unfair advantages in gameplay by altering game functions.
 
-Mod Features Include:
-- Aimbot for precise targeting.
-- Wallhack to see enemies through walls.
-- SuperJump to reach tactical positions.
-- No recoil for perfect accuracy.`,
+Commonly Claimed Features:
+- **Aimbot:** Automatically locks the player's aim onto opponents.
+- **Wallhack (ESP):** Allows players to see opponents through walls and other obstacles.
+- **Increased Mobility:** Features like super jump or speed hacks.
+
+Using such modifications is a direct violation of the game's security and enforcement policy. Activision employs sophisticated anti-cheat systems to detect and penalize offenders.`,
         faqs: [
-             { question: "Can my account get banned for using this mod?", answer: "There is always a risk of being banned when using mods in online games. We include anti-ban features, but use it at your own discretion, especially in ranked matches." },
-             { question: "How do I activate the features in-game?", answer: "The mod menu appears as a floating icon on your screen during gameplay. You can tap it to open the menu and toggle the features you want to use." }
+             { question: "What is the penalty for using mods in COD: Mobile?", answer: "The penalty for using mods or cheats is severe and typically results in a permanent ban of the user's account. Hardware-level (device) bans can also be issued in some cases." },
+             { question: "Do 'anti-ban' features in mods actually work?", answer: "No. Claims of 'anti-ban' features are almost always false marketing. Anti-cheat systems are constantly updated, making any bypass temporary at best. The risk of detection and a ban is extremely high." }
         ]
     },
     { 
-        slug: "irecovery",
+        slug: "irecovery-guide",
         img: "https://i.imgur.com/MSsLgHs.png", 
-        author: "Plugin Installer", 
-        title: "iRecovery", 
-        description: "Recover Permanently Deleted Photos & Videos",
+        author: "Educational Guide", 
+        title: "iRecovery Guide", 
+        description: "A guide on data recovery methods for mobile devices.",
         version: "4.0.1",
         size: "30 MB",
         category: "Utilities",
-        longDescription: `Accidentally deleted important photos or videos? iRecovery is a powerful tool that can help you restore media files you thought were lost forever. It scans your device's storage to find and recover deleted files.
+        lastUpdated: "2024-07-29",
+        officialUrl: "https://support.apple.com/guide/icloud/restore-or-set-up-your-ios-device-mm908356f67b/icloud",
+        longDescription: `This guide provides information on data recovery concepts for mobile devices. When you delete a file, the space it occupies is marked as available, but the data may remain until it's overwritten. Recovery tools scan for this recoverable data.
 
-- Supports recovery of various file types (JPG, PNG, MP4, MOV).
-- Deep scan technology for higher success rate.
-- User-friendly interface.`,
+Recovery Methods:
+- **From Device Storage:** Tools scan the internal memory for traces of deleted files. Success is not guaranteed and decreases over time.
+- **From Cloud Backups:** The most reliable method. Restoring from an iCloud or Google Drive backup can recover photos, contacts, and more.
+
+For the highest chance of success, always maintain regular backups of your important data using the official cloud services provided by Apple and Google.`,
         faqs: [
-            { question: "Can iRecovery recover files after a factory reset?", answer: "Unfortunately, no. A factory reset securely erases all data, making recovery impossible. iRecovery is designed to recover files from regular deletion." },
-            { question: "Does it require my device to be jailbroken or rooted?", answer: "No, iRecovery works on standard, non-jailbroken iOS devices and non-rooted Android devices." }
+            { question: "What is the best way to prevent permanent data loss?", answer: "Regularly backing up your device is the only guaranteed way to prevent data loss. Enable automatic iCloud or Google Drive backups in your device settings." },
+            { question: "Can data be recovered after a factory reset?", answer: "No. A factory reset securely erases and encrypts the device's storage, making the original data permanently unrecoverable by consumer-grade tools." }
         ]
     },
     { 
-        slug: "efootball-2024-mod",
+        slug: "efootball-2024-mod-review",
         img: "https://i.imgur.com/jnmtM3E.png", 
-        author: "MOD Installer", 
-        title: "eFootball 2024", 
-        description: "Unlimited Money, GP VIP Features & Free Shopping",
+        author: "Feature Analysis", 
+        title: "eFootball 2024 Mod Review", 
+        description: "An analysis of mods claiming to add unlimited GP and coins in eFootball 2024.",
         version: "8.1.0",
         size: "150 MB",
         category: "Games",
-        longDescription: `Build your dream team in eFootball 2024 with unlimited resources. This mod gives you access to endless in-game currency and unlocks all VIP features.
+        lastUpdated: "2024-07-29",
+        officialUrl: "https://www.konami.com/efootball/en/",
+        longDescription: `An educational review of third-party mods for eFootball 2024. These mods often claim to provide unlimited in-game resources like GP and eFootball Coins.
 
-- Unlimited Coins and GP.
-- All legendary players unlocked.
-- Free shopping in the game store.
-- VIP features enabled.`,
+Claimed Benefits:
+- Unlimited GP to sign players and renew contracts.
+- Unlocking legendary players and special packs.
+- Free access to premium store items.
+
+Using these mods is against Konami's Terms of Service. In-game currency and player data are stored on secure servers, making client-side modifications easily detectable. Attempting to alter these values can lead to severe account penalties.`,
         faqs: [
-            { question: "Will I be able to play online with this mod?", answer: "Yes, this mod is designed to work on the live servers, so you can play against other players online with your enhanced team." },
-            { question: "Do the unlimited coins and GP sync with my account?", answer: "Yes, the resources are added directly to your account and will be available across any device you log into." }
+            { question: "Is it possible to get unlimited GP in eFootball?", answer: "No, it is not legitimately possible. GP and Coins are server-sided currencies. Any tool claiming to modify them is likely a scam or will result in your account being banned." },
+            { question: "What are the risks of downloading eFootball mods?", answer: "The risks include permanent account suspension, loss of all your progress and players, and the potential for malware infection on your device from unofficial download sources." }
         ]
     },
     { 
-        slug: "fc-mobile-24-25-mod",
+        slug: "fc-mobile-24-25-mod-review",
         img: "https://i.imgur.com/FcTO2xT.png", 
-        author: "Plugin Installer", 
-        title: "FC Mobile 24/25", 
-        description: "Unlimited FC Points & Gems ~ iOS & Android",
+        author: "Feature Analysis", 
+        title: "FC Mobile 24/25 Mod Review", 
+        description: "An analysis of mods for EA FC Mobile claiming to offer free FC Points and Gems.",
         version: "1.2.5",
         size: "125 MB",
         category: "Games",
-        longDescription: `Get ahead in FC Mobile 24/25 with this plugin that provides unlimited FC Points and Gems. Open packs and acquire the best players for your Ultimate Team without spending real money.
+        lastUpdated: "2024-07-29",
+        officialUrl: "https://www.ea.com/games/ea-sports-fc/fc-mobile",
+        longDescription: `This is an analysis of tools and mods for EA Sports FC Mobile that claim to generate unlimited FC Points and Gems. These premium currencies are used to acquire top players and items in the game.
 
-- 999,999 FC Points.
-- 999,999 Gems.
-- Works for both iOS and Android devices.`,
+Stated Features:
+- Adding large quantities of FC Points to an account.
+- Providing unlimited Gems for use in the store.
+
+EA has a zero-tolerance policy against cheating. FC Points and Gems are managed on EA's secure servers. Any unauthorized attempt to alter these values is a violation of the User Agreement and will be flagged by their anti-cheat systems.`,
         faqs: [
-            { question: "Is this safe for my FC Mobile account?", answer: "Yes, the plugin uses a safe injection method that is undetectable by the game servers, ensuring your account's safety." }
+            { question: "Can my FC Mobile account be banned for using mods?", answer: "Yes, absolutely. Using any third-party tool to gain an unfair advantage or alter game data will almost certainly lead to a temporary or permanent ban on your account." }
         ]
     },
     { 
-        slug: "roblox-mod",
+        slug: "roblox-mod-review",
         img: "https://i.imgur.com/ItBBn9z.png", 
-        author: "AppsGU", 
-        title: "Roblox Mod", 
-        description: "Super Jump, God Mode, Fly and much more using this Roblox Mod Menu",
+        author: "Educational Guide", 
+        title: "Roblox Mod & Exploit Guide", 
+        description: "An educational guide on how exploits and mod menus work in Roblox.",
         version: "2.605.0",
         size: "105 MB",
         category: "Games",
-        longDescription: `Enhance your Roblox experience with a feature-rich mod menu. Explore games like never before with abilities that are not available in the standard game.
+        lastUpdated: "2024-07-29",
+        officialUrl: "https://www.roblox.com/",
+        longDescription: `This guide explains how exploits and mod menus function within the Roblox platform. These are external programs that inject scripts into the game client to execute unauthorized functions.
 
-Popular Features:
-- Fly: Soar through the game worlds.
-- God Mode: Become invincible.
-- Super Jump: Leap over buildings.
-- Speed Hack: Move faster than anyone else.`,
+Common Exploit Functions:
+- **Player Modifications:** Fly, noclip (walk through walls), god mode (invincibility).
+- **Game Manipulation:** Modifying in-game physics or player data.
+
+Using exploits is a serious violation of the Roblox Terms of Use. Roblox uses an anti-cheat system called Byfron to detect and prevent exploitation. Accounts caught using these tools face escalating penalties, including permanent bans.`,
         faqs: [
-            { question: "Does this mod menu work in all Roblox games?", answer: "The mod menu works in the vast majority of Roblox experiences. However, some games may have specific anti-cheat measures that could limit certain features." }
+            { question: "Is it safe to download Roblox exploits?", answer: "No. The vast majority of exploit programs available for download are bundled with malware, keyloggers, or ransomware that can compromise your computer and steal your Roblox account and other personal information." }
         ]
     },
     { 
-        slug: "instagram-plus-plus",
+        slug: "instagram-plus-plus-review",
         img: "https://i.imgur.com/M5mKDJ8.png", 
-        author: "AppsGU", 
-        title: "Instagram++", 
-        description: "View private Instagram accounts without following them, get unlimited followers, and much more",
+        author: "Security Analysis", 
+        title: "Instagram++ Review", 
+        description: "A security and feature analysis of tweaked Instagram clients.",
         version: "20.1",
         size: "88 MB",
         category: "Social",
-        longDescription: `Instagram++ is a tweaked version of the official app with many additional features.
+        lastUpdated: "2024-07-29",
+        officialUrl: "https://www.instagram.com/",
+        longDescription: `This is a review of tweaked Instagram clients like Instagram++. These are modified versions of the official app that offer features not available in the standard version.
 
-- View Private Profiles: See photos and posts of private accounts.
-- Anonymous Story Viewing: Watch stories without them knowing.
-- Download Media: Save photos, videos, and stories directly to your device.
-- Follower Tools: Tools to manage and grow your follower base.`,
+Common Features:
+- Downloading photos, videos, and stories.
+- Disabling read receipts in direct messages.
+- Viewing stories anonymously.
+
+While these features may seem appealing, using a modified social media app presents a significant security risk. You are required to enter your login credentials into an untrusted application, which could lead to your account being compromised or your data being stolen.`,
         faqs: [
-            { question: "Do I need to delete the original Instagram app?", answer: "Yes, it is recommended to uninstall the official Instagram app before installing Instagram++ to avoid conflicts." }
+            { question: "Is it safe to log into Instagram++ with my account?", answer: "It is extremely unsafe. You are giving your username and password to an unverified, third-party application. There is no guarantee that your credentials are not being stored, sold, or used for malicious purposes." }
         ]
     },
     { 
-        slug: "discord-nitro-free",
+        slug: "discord-nitro-mods-review",
         img: "https://i.imgur.com/tvz8mmU.jpeg", 
-        author: "AppsGU", 
-        title: "Discord Nitro", 
-        description: "Get Free Discord Nitro",
+        author: "Security Analysis", 
+        title: "Discord Nitro Mods Review", 
+        description: "An analysis of client mods that claim to provide free Discord Nitro.",
         version: "N/A",
         size: "5 MB",
         category: "Social",
-        longDescription: `This tool enables Discord Nitro features for your account for free. Enjoy all the perks of a premium Discord membership.
+        lastUpdated: "2024-07-29",
+        officialUrl: "https://discord.com/nitro",
+        longDescription: `This review covers Discord client modifications that claim to unlock Discord Nitro features for free. These mods work by altering the Discord app on your device to visually enable perks.
 
-Nitro Perks:
-- Use custom emojis everywhere.
-- Enhanced streaming quality (1080p 60fps).
-- Larger file upload limits.
-- Animated avatars and custom profiles.`,
+How They Work:
+- **Client-Side Unlocks:** They trick your local Discord client into displaying custom emojis or animated avatars.
+- **No Real Perks:** These changes are only visible to you. Other users will not see your custom emojis, and you do not get server boosts or larger upload sizes, as those are handled by Discord's servers.
+
+Using client mods is a violation of Discord's Terms of Service and can result in your account being disabled. Furthermore, these mods can contain token loggers that steal your account credentials.`,
         faqs: [
-            { question: "Is this a permanent Nitro subscription?", answer: "This tool patches your client to unlock Nitro features. It remains active as long as you use the patched client." }
+            { question: "Can I get real Discord Nitro for free with a mod?", answer: "No. All core Nitro features are validated by Discord's servers. Any mod claiming to give you free Nitro is misleading and likely dangerous to your account's security." }
         ]
     },
     { 
-        slug: "pokemon-go-spoofer",
+        slug: "pokemon-go-spoofer-review",
         img: "https://i.imgur.com/2X6jMHU.png", 
-        author: "Plugin Installer", 
-        title: "Pokemon Go Spoofer", 
-        description: "Spoofer, Teleport, Auto-Walk, Joystick, Auto Catch and more!",
+        author: "Feature Analysis", 
+        title: "Pokemon Go Spoofer Review", 
+        description: "An educational analysis of location spoofing tools for Pokémon Go.",
         version: "0.275.0",
         size: "115 MB",
         category: "Games",
-        longDescription: `Explore the world of Pokemon Go from the comfort of your home. This spoofer lets you change your location, auto-walk, and use a joystick for movement.
+        lastUpdated: "2024-07-29",
+        officialUrl: "https://pokemongolive.com/",
+        longDescription: `This is a review of location spoofing applications for Pokémon Go. These tools allow players to virtually change their GPS location, enabling them to play the game from anywhere in the world.
 
-- Teleport: Instantly travel to any location in the world.
-- Joystick: Control your movement precisely.
-- Auto-Catch: Automatically catch Pokemon around you.
-- IV Checker: See the stats of Pokemon before catching them.`,
+Common Features:
+- **Teleport:** Instantly change your location to specific coordinates.
+- **Joystick:** A virtual joystick to simulate walking.
+- **Auto-Walk:** Automatically follow a pre-defined route.
+
+Niantic, the developer of Pokémon Go, strictly prohibits cheating, including location spoofing. They have a three-strike discipline policy for offenders, which can result in the permanent termination of the player's account.`,
         faqs: [
-            { question: "Is it safe to teleport long distances?", answer: "To avoid a soft ban, you must respect cooldown times. Do not teleport to a faraway location and immediately interact with the game. Wait for a reasonable amount of time, similar to actual travel time." }
+            { question: "What is the 'three-strike' policy in Pokémon Go?", answer: "It's Niantic's disciplinary system. The first strike is a warning. The second is a temporary suspension (up to 30 days). The third strike results in a permanent account ban." },
+            { question: "Are spoofing apps safe to download?", answer: "Many spoofing apps, especially free ones from untrusted sources, can be bundled with malware. Always exercise extreme caution when installing third-party software." }
         ]
     },
      { 
-        slug: "monopoly-go-plus-plus",
+        slug: "monopoly-go-plus-plus-review",
         img: "https://i.imgur.com/ahghT00.jpeg", 
-        author: "Plugin Installer", 
-        title: "Monopoly Go++", 
-        description: "Unlimited Dice & Cash ~ Works on LIVE Servers",
+        author: "Feature Analysis", 
+        title: "Monopoly Go++ Review", 
+        description: "An analysis of mods for Monopoly Go claiming to offer unlimited dice and cash.",
         version: "1.13.0",
         size: "75 MB",
         category: "Games",
-        longDescription: `Never run out of dice rolls or cash in Monopoly Go! This mod ensures you have the resources to keep playing and building your empire.
+        lastUpdated: "2024-07-29",
+        officialUrl: "https://www.scopely.com/en/games/monopoly-go",
+        longDescription: `An educational review of mods for the game Monopoly Go. These modified versions often claim to give players unlimited resources, such as dice rolls and in-game cash.
 
-- Unlimited Dice Rolls.
-- Unlimited In-Game Cash.
-- Syncs with live game servers.
-- Anti-ban protection.`,
+Claimed Features:
+- Infinite dice rolls, removing the need to wait or pay.
+- Unlimited cash for property upgrades.
+
+Dice rolls and cash balances in Monopoly Go are stored and managed on Scopely's game servers. Any attempt to modify these values from the game client is easily detected and considered a violation of the game's terms of service, which can lead to an account ban.`,
         faqs: [
-            { question: "How are the unlimited dice and cash applied?", answer: "After installing the mod, simply open the game. The resources will be automatically added to your account balance." }
+            { question: "Can mods give you unlimited dice in Monopoly Go?", answer: "No, this is not possible. The number of dice you have is a server-sided value. Client mods cannot legitimately change this. Tools that claim to do so are often fake and may be harmful to your device." }
         ]
     }
 ];
