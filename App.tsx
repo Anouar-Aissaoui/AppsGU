@@ -7,11 +7,28 @@ import CategoryPageView from './components/CategoryPageView';
 import { useMediaQuery } from './hooks/useMediaQuery';
 import { APPS_DATA } from './constants';
 import type { AppInfo } from './types';
+import { updateMetaTags } from './utils/seo';
 
 const App: React.FC = () => {
   const [pathname, setPathname] = useState(window.location.pathname);
   const [searchTerm, setSearchTerm] = useState<string>('');
   const isDesktop = useMediaQuery('(min-width: 1024px)');
+
+  useEffect(() => {
+    const scriptId = 'website-schema';
+    if (document.getElementById(scriptId)) return;
+
+    const script = document.createElement('script');
+    script.id = scriptId;
+    script.type = 'application/ld+json';
+    script.innerHTML = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "AppsGU",
+      "url": window.location.origin,
+    });
+    document.head.appendChild(script);
+  }, []);
 
   useEffect(() => {
     const onPopState = () => {
@@ -53,15 +70,11 @@ const App: React.FC = () => {
   useEffect(() => {
     // Set homepage SEO tags only when on the root path.
     if (!categorySlug && !selectedAppSlug) {
-      document.title = 'AppsGU | Third‑Party Tweaks & Mods for iOS & Android';
-      const metaDescriptionTag = document.getElementById('meta-description') as HTMLMetaElement;
-      if (metaDescriptionTag) {
-        metaDescriptionTag.content = 'Find third‑party apps, tweaks and emulators for iPhone, iPad and Android. Installation guides, FAQs and safety tips. Updated regularly.';
-      }
-      const canonicalLinkTag = document.getElementById('canonical-link') as HTMLLinkElement;
-      if (canonicalLinkTag) {
-        canonicalLinkTag.href = window.location.origin;
-      }
+      updateMetaTags({
+        title: 'AppsGU | Third‑Party Tweaks & Mods for iOS & Android',
+        description: 'Find third‑party apps, tweaks and emulators for iPhone, iPad and Android. Installation guides, FAQs and safety tips. Updated regularly.',
+        canonical: window.location.origin,
+      });
     }
   }, [categorySlug, selectedAppSlug]);
 

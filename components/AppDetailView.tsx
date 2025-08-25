@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import type { AppInfo } from '../types';
 import { slugify } from '../utils/slugify';
+import { updateMetaTags } from '../utils/seo';
 
 // SEO Component for managing head tags and structured data
 const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
@@ -8,29 +9,28 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
         const baseUrl = window.location.origin;
         const canonicalUrl = `${baseUrl}/app/${app.slug}`;
 
-        // Basic Meta Tags
-        document.title = `${app.title} for iOS & Android – Download (Latest Version)`;
-        
-        const metaDescriptionTag = document.getElementById('meta-description') as HTMLMetaElement;
-        if (metaDescriptionTag) {
-            metaDescriptionTag.content = `${app.title} lets you ${app.description.toLowerCase()}. Step-by-step install, features, FAQs. Updated ${new Date().getFullYear()}.`;
-        }
-
-        const canonicalLinkTag = document.getElementById('canonical-link') as HTMLLinkElement;
-        if (canonicalLinkTag) {
-            canonicalLinkTag.href = canonicalUrl;
-        }
+        updateMetaTags({
+            title: `${app.title} for iOS & Android – Download (Latest Version)`,
+            description: `${app.title} lets you ${app.description.toLowerCase()}. Step-by-step install, features, FAQs. Updated ${new Date().getFullYear()}.`,
+            canonical: canonicalUrl,
+            ogType: 'article',
+            ogImage: app.img,
+        });
 
         // JSON-LD Structured Data
-        const existingScripts = document.querySelectorAll('script[type="application/ld+json"]');
-        existingScripts.forEach(script => script.remove());
+        const cleanupJsonLd = () => {
+            document.querySelectorAll('script[data-app-detail-jsonld]').forEach(el => el.remove());
+        };
 
         const addJsonLd = (data: object) => {
             const script = document.createElement('script');
             script.type = 'application/ld+json';
+            script.setAttribute('data-app-detail-jsonld', 'true');
             script.innerHTML = JSON.stringify(data);
             document.head.appendChild(script);
         };
+        
+        cleanupJsonLd(); // Clean up from previous render
 
         // SoftwareApplication Schema
         addJsonLd({
@@ -70,10 +70,7 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
             });
         }
 
-        return () => {
-             const addedScripts = document.querySelectorAll('script[type="application/ld+json"]');
-             addedScripts.forEach(script => script.remove());
-        };
+        return cleanupJsonLd;
     }, [app]);
 
     return null;

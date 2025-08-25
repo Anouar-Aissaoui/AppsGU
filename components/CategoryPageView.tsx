@@ -3,6 +3,7 @@ import { APPS_DATA } from '../constants';
 import { slugify } from '../utils/slugify';
 import AppList from './AppList';
 import Header from './Header';
+import { updateMetaTags } from '../utils/seo';
 
 interface CategoryPageViewProps {
     categorySlug: string;
@@ -21,16 +22,13 @@ const CategoryPageView: React.FC<CategoryPageViewProps> = ({ categorySlug }) => 
     useEffect(() => {
         const baseUrl = window.location.origin;
         const canonicalUrl = `${baseUrl}/category/${categorySlug}`;
+        
+        updateMetaTags({
+            title: `${categoryName} Mods - AppsGU Clone`,
+            description: `Browse and download the best mods for ${categoryName} on iOS & Android. Discover new tweaks and emulators in the ${categoryName} category.`,
+            canonical: canonicalUrl
+        });
 
-        document.title = `${categoryName} Mods - AppsGU Clone`;
-        const metaDescriptionTag = document.getElementById('meta-description') as HTMLMetaElement;
-        if (metaDescriptionTag) {
-            metaDescriptionTag.content = `Browse and download the best mods for ${categoryName} on iOS & Android. Discover new tweaks and emulators in the ${categoryName} category.`;
-        }
-        const canonicalLinkTag = document.getElementById('canonical-link') as HTMLLinkElement;
-        if (canonicalLinkTag) {
-            canonicalLinkTag.href = canonicalUrl;
-        }
     }, [categorySlug, categoryName]);
 
     return (
