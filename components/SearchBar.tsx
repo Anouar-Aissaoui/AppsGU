@@ -7,9 +7,9 @@ interface SearchBarProps {
 
 const SearchBar: React.FC<SearchBarProps> = ({ searchTerm, setSearchTerm }) => {
   return (
-    <section className="py-6">
-      <div className="container mx-auto px-4">
-        <div className="max-w-2xl mx-auto relative">
+    <section className="py-6 lg:px-4 lg:pb-4 lg:pt-0">
+      <div className="container mx-auto px-4 lg:p-0">
+        <div className="max-w-2xl lg:max-w-none mx-auto relative">
           <i className="fas fa-search absolute left-4 top-1/2 -translate-y-1/2 text-[#00ff88]"></i>
           <input
             type="text"
