@@ -1,7 +1,7 @@
 import React from 'react';
 
 interface JsonLdSchemaProps {
-  type: 'website' | 'organization' | 'breadcrumb';
+  type: 'website' | 'organization' | 'breadcrumb' | 'itemList';
   data?: any;
 }
 
@@ -56,6 +56,34 @@ const JsonLdSchema: React.FC<JsonLdSchemaProps> = ({ type, data }) => {
         ],
         "areaServed": "Worldwide",
         "serviceType": "Software Distribution Platform"
+      };
+      break;
+
+    case 'breadcrumb':
+      if (!data || !Array.isArray(data.items)) return null;
+      schema = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": data.items.map((item: { name: string; url: string }, index: number) => ({
+          "@type": "ListItem",
+          position: index + 1,
+          name: item.name,
+          item: item.url
+        }))
+      };
+      break;
+
+    case 'itemList':
+      if (!data || !Array.isArray(data.items)) return null;
+      schema = {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "itemListElement": data.items.map((item: { name: string; url: string }, index: number) => ({
+          "@type": "ListItem",
+          position: index + 1,
+          url: item.url,
+          name: item.name
+        }))
       };
       break;
 
