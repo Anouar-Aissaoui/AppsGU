@@ -55,16 +55,6 @@ const App: React.FC = () => {
     return ['All', ...Array.from(new Set(allCategories)).sort()];
   }, [allApps]);
 
-  useEffect(() => {
-    // Enhanced meta tags for homepage
-    if (!categorySlug && !selectedAppSlug) {
-      updateMetaTags({
-        title: 'AppsGU - Free iOS & Android Mods | Download Modded Apps 2025',
-        description: '🔥 Download 100+ FREE modded apps for iOS & Android! AltStore, Instagram++, COD Mobile mods, Pokemon Go spoofer & more. Safe installation guides. Updated 2025.',
-        canonical: window.location.origin,
-      });
-    }
-  }, []);
 
   useEffect(() => {
     const onPopState = () => {
