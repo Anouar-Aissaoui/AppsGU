@@ -5,6 +5,7 @@ import CategoryFilter from './components/CategoryFilter';
 import AppList from './components/AppList';
 import AppDetailView from './components/AppDetailView';
 import CategoryPageView from './components/CategoryPageView';
+import AppListSkeleton from './components/AppListSkeleton';
 import { useMediaQuery } from './hooks/useMediaQuery';
 import { useDebounce } from './hooks/useDebounce';
 import { APPS_DATA } from './constants';
@@ -34,11 +35,24 @@ const App: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(getCategoryFromUrl());
   const debouncedSearchTerm = useDebounce(searchTerm, 500);
   const isDesktop = useMediaQuery('(min-width: 1024px)');
+  
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [allApps, setAllApps] = useState<AppInfo[]>([]);
+
+  useEffect(() => {
+    // Simulate a network request to fetch app data
+    const timer = setTimeout(() => {
+      setAllApps(APPS_DATA);
+      setIsLoading(false);
+    }, 1200);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   const categories = useMemo(() => {
-    const allCategories = APPS_DATA.map(app => app.category);
+    const allCategories = allApps.map(app => app.category);
     return ['All', ...Array.from(new Set(allCategories)).sort()];
-  }, []);
+  }, [allApps]);
 
   useEffect(() => {
     const scriptId = 'website-schema';
@@ -153,11 +167,13 @@ const App: React.FC = () => {
   }, [categorySlug, selectedAppSlug]);
 
   const selectedApp = useMemo(() => {
-    return APPS_DATA.find(a => a.slug === selectedAppSlug) || null;
-  }, [selectedAppSlug]);
+    if (isLoading) return null;
+    return allApps.find(a => a.slug === selectedAppSlug) || null;
+  }, [selectedAppSlug, allApps, isLoading]);
 
   const filteredApps = useMemo<AppInfo[]>(() => {
-    let apps = APPS_DATA;
+    if (isLoading) return [];
+    let apps = allApps;
     
     if (selectedCategory && selectedCategory !== 'All') {
         apps = apps.filter(app => app.category === selectedCategory);
@@ -171,7 +187,7 @@ const App: React.FC = () => {
       );
     }
     return apps;
-  }, [searchTerm, selectedCategory]);
+  }, [searchTerm, selectedCategory, allApps, isLoading]);
 
   const handleSelectCategory = (category: string) => {
     setSelectedCategory(category === 'All' ? null : category);
@@ -181,7 +197,7 @@ const App: React.FC = () => {
   };
 
   if (categorySlug) {
-    return <CategoryPageView categorySlug={categorySlug} />;
+    return <CategoryPageView categorySlug={categorySlug} allApps={allApps} isLoading={isLoading} />;
   }
 
   if (isDesktop) {
@@ -192,7 +208,11 @@ const App: React.FC = () => {
           <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
           <CategoryFilter categories={categories} selectedCategory={selectedCategory || 'All'} onSelectCategory={handleSelectCategory} />
           <div className="flex-grow overflow-y-auto">
-            <AppList apps={filteredApps} activeSlug={selectedAppSlug} isPanel={true}/>
+            {isLoading ? (
+              <AppListSkeleton isPanel={true} />
+            ) : (
+              <AppList apps={filteredApps} activeSlug={selectedAppSlug} isPanel={true}/>
+            )}
           </div>
         </aside>
         <main className="flex-grow h-full overflow-y-auto">
@@ -201,8 +221,8 @@ const App: React.FC = () => {
           ) : (
             <div className="flex items-center justify-center h-full">
               <div className="text-center text-gray-500">
-                <i className="fas fa-arrow-left fa-2x mb-4"></i>
-                <p className="text-xl">Select an app to view details</p>
+                <i className={`fas ${isLoading ? 'fa-spinner fa-spin' : 'fa-arrow-left'} fa-2x mb-4`}></i>
+                <p className="text-xl">{isLoading ? 'Loading Apps...' : 'Select an app to view details'}</p>
               </div>
             </div>
           )}
@@ -222,7 +242,11 @@ const App: React.FC = () => {
       <main>
         <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
         <CategoryFilter categories={categories} selectedCategory={selectedCategory || 'All'} onSelectCategory={handleSelectCategory} />
-        <AppList apps={filteredApps} activeSlug={null} isPanel={false} />
+        {isLoading ? (
+          <AppListSkeleton isPanel={false} />
+        ) : (
+          <AppList apps={filteredApps} activeSlug={null} isPanel={false} />
+        )}
       </main>
     </div>
   );

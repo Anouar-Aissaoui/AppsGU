@@ -6,7 +6,7 @@ interface SeoData {
     ogImage?: string;
 }
 
-const DEFAULT_OG_IMAGE = 'https://i.imgur.com/rq3p0eE.png'; // Default OG image
+const DEFAULT_OG_IMAGE = 'https://i.imgur.com/rq3p0eE.webp'; // Default OG image
 
 export const updateMetaTags = (data: SeoData) => {
     const { title, description, canonical, ogType = 'website', ogImage = DEFAULT_OG_IMAGE } = data;

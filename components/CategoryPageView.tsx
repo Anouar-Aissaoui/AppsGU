@@ -1,26 +1,31 @@
 import React, { useMemo, useEffect } from 'react';
-import { APPS_DATA } from '../constants';
 import { slugify } from '../utils/slugify';
 import AppList from './AppList';
 import Header from './Header';
 import { updateMetaTags } from '../utils/seo';
+import type { AppInfo } from '../types';
+import AppListSkeleton from './AppListSkeleton';
 
 interface CategoryPageViewProps {
     categorySlug: string;
+    allApps: AppInfo[];
+    isLoading: boolean;
 }
 
-const CategoryPageView: React.FC<CategoryPageViewProps> = ({ categorySlug }) => {
+const CategoryPageView: React.FC<CategoryPageViewProps> = ({ categorySlug, allApps, isLoading }) => {
     const categoryName = useMemo(() => {
-        const app = APPS_DATA.find(app => slugify(app.category) === categorySlug);
+        if (isLoading || allApps.length === 0) return 'Loading...';
+        const app = allApps.find(app => slugify(app.category) === categorySlug);
         return app ? app.category : 'Unknown Category';
-    }, [categorySlug]);
+    }, [categorySlug, allApps, isLoading]);
 
     const filteredApps = useMemo(() => {
-        return APPS_DATA.filter(app => slugify(app.category) === categorySlug);
-    }, [categorySlug]);
+        if (isLoading) return [];
+        return allApps.filter(app => slugify(app.category) === categorySlug);
+    }, [categorySlug, allApps, isLoading]);
 
     useEffect(() => {
-        if (categoryName === 'Unknown Category') return;
+        if (categoryName === 'Unknown Category' || categoryName === 'Loading...') return;
 
         const baseUrl = window.location.origin;
         const canonicalUrl = `${baseUrl}/category/${categorySlug}`;
@@ -45,8 +50,11 @@ const CategoryPageView: React.FC<CategoryPageViewProps> = ({ categorySlug }) => 
                     Browsing Category
                 </h1>
                 <p className="text-2xl text-[#00ff88] font-bold mb-8">{categoryName}</p>
-
-                <AppList apps={filteredApps} activeSlug={null} isPanel={false} />
+                {isLoading ? (
+                    <AppListSkeleton isPanel={false} />
+                ) : (
+                    <AppList apps={filteredApps} activeSlug={null} isPanel={false} />
+                )}
             </main>
         </div>
     );
