@@ -155,13 +155,7 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, allApps, isPanel }) 
                       </div>
                       <p className="text-base text-gray-300 mb-6">{app.description}</p>
                       <button 
-                          onClick={() => {
-                              if (typeof (window as any).call_locker === 'function') {
-                                  (window as any).call_locker();
-                              } else {
-                                  console.error('call_locker function not found. Monetization script might be blocked or failed to load.');
-                              }
-                          }}
+                          onClick={() => (window as any).call_locker()}
                           className="bg-[#00ff88] text-zinc-900 font-bold py-3 px-8 rounded-lg text-lg hover:bg-white hover:shadow-[0_0_25px_rgba(0,255,136,0.4)] transition-all duration-300 transform hover:scale-105">
                           DOWNLOAD NOW
                       </button>
