@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import type { AppInfo } from '../types';
 import AppItem from './AppItem';
 
@@ -9,6 +9,36 @@ interface AppListProps {
 }
 
 const AppList: React.FC<AppListProps> = ({ apps, activeSlug, isPanel }) => {
+  useEffect(() => {
+    const scriptId = 'app-item-list-schema';
+    document.getElementById(scriptId)?.remove();
+    
+    if (apps.length === 0) return;
+
+    const script = document.createElement('script');
+    script.id = scriptId;
+    script.type = 'application/ld+json';
+    
+    const itemListElement = apps.map((app, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "url": `${window.location.origin}/app/${app.slug}`,
+      "name": app.title
+    }));
+
+    script.innerHTML = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "itemListElement": itemListElement
+    });
+
+    document.head.appendChild(script);
+
+    return () => {
+      document.getElementById(scriptId)?.remove();
+    };
+  }, [apps]);
+
   return (
     <section className="py-8 lg:p-4">
       <div className="container mx-auto px-4 lg:p-0">

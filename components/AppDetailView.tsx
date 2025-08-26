@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import type { AppInfo } from '../types';
 import { slugify } from '../utils/slugify';
 import { updateMetaTags } from '../utils/seo';
+import ShareButtons from './ShareButtons';
 
 // SEO Component for managing head tags and structured data
 const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
@@ -147,6 +148,7 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, isPanel }) => {
                           className="bg-[#00ff88] text-zinc-900 font-bold py-3 px-8 rounded-lg text-lg hover:bg-white hover:shadow-[0_0_25px_rgba(0,255,136,0.4)] transition-all duration-300 transform hover:scale-105">
                           DOWNLOAD NOW
                       </button>
+                      <ShareButtons app={app} />
                   </div>
               </div>
               <hr className="border-zinc-700 my-8" />

@@ -1,22 +1,49 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import Header from './components/Header';
 import SearchBar from './components/SearchBar';
+import CategoryFilter from './components/CategoryFilter';
 import AppList from './components/AppList';
 import AppDetailView from './components/AppDetailView';
 import CategoryPageView from './components/CategoryPageView';
 import { useMediaQuery } from './hooks/useMediaQuery';
+import { useDebounce } from './hooks/useDebounce';
 import { APPS_DATA } from './constants';
 import type { AppInfo } from './types';
 import { updateMetaTags } from './utils/seo';
+import { slugify } from './utils/slugify';
+
+const getQueryParam = (param: string) => {
+  if (typeof window === 'undefined') return '';
+  const params = new URLSearchParams(window.location.search);
+  return params.get(param) || '';
+};
+
+const getCategoryFromUrl = () => {
+    if (typeof window === 'undefined') return null;
+    const params = new URLSearchParams(window.location.search);
+    const categorySlug = params.get('category');
+    if (!categorySlug) return null;
+    const foundApp = APPS_DATA.find(app => slugify(app.category) === categorySlug);
+    return foundApp ? foundApp.category : null;
+};
+
 
 const App: React.FC = () => {
   const [pathname, setPathname] = useState(window.location.pathname);
-  const [searchTerm, setSearchTerm] = useState<string>('');
+  const [searchTerm, setSearchTerm] = useState<string>(getQueryParam('q'));
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(getCategoryFromUrl());
+  const debouncedSearchTerm = useDebounce(searchTerm, 500);
   const isDesktop = useMediaQuery('(min-width: 1024px)');
+
+  const categories = useMemo(() => {
+    const allCategories = APPS_DATA.map(app => app.category);
+    return ['All', ...Array.from(new Set(allCategories)).sort()];
+  }, []);
 
   useEffect(() => {
     const scriptId = 'website-schema';
-    if (document.getElementById(scriptId)) return;
+    const existingScript = document.getElementById(scriptId);
+    if(existingScript) existingScript.remove();
 
     const script = document.createElement('script');
     script.id = scriptId;
@@ -26,6 +53,14 @@ const App: React.FC = () => {
       "@type": "WebSite",
       "name": "AppsGU",
       "url": window.location.origin,
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": `${window.location.origin}/?q={search_term_string}`
+        },
+        "query-input": "required name=search_term_string"
+      }
     });
     document.head.appendChild(script);
   }, []);
@@ -33,10 +68,43 @@ const App: React.FC = () => {
   useEffect(() => {
     const onPopState = () => {
       setPathname(window.location.pathname);
+      setSearchTerm(getQueryParam('q'));
+      setSelectedCategory(getCategoryFromUrl());
     };
     window.addEventListener('popstate', onPopState);
     return () => window.removeEventListener('popstate', onPopState);
   }, []);
+
+  useEffect(() => {
+    const currentUrl = new URL(window.location.href);
+    const currentSearch = currentUrl.searchParams.get('q') || '';
+    const currentCategorySlug = currentUrl.searchParams.get('category') || '';
+    
+    const newCategorySlug = selectedCategory ? slugify(selectedCategory) : '';
+    let needsUpdate = false;
+
+    if (debouncedSearchTerm !== currentSearch) {
+        if (debouncedSearchTerm) {
+            currentUrl.searchParams.set('q', debouncedSearchTerm);
+        } else {
+            currentUrl.searchParams.delete('q');
+        }
+        needsUpdate = true;
+    }
+
+    if (newCategorySlug !== currentCategorySlug) {
+        if (newCategorySlug) {
+             currentUrl.searchParams.set('category', newCategorySlug);
+        } else {
+             currentUrl.searchParams.delete('category');
+        }
+        needsUpdate = true;
+    }
+
+    if (needsUpdate) {
+      window.history.replaceState({}, '', currentUrl.toString());
+    }
+  }, [debouncedSearchTerm, selectedCategory]);
 
   useEffect(() => {
     const onClick = (event: MouseEvent) => {
@@ -45,9 +113,9 @@ const App: React.FC = () => {
       if (anchor && anchor.origin === window.location.origin && !event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey && anchor.target !== '_blank') {
         event.preventDefault();
         const newPath = anchor.pathname + anchor.search + anchor.hash;
-        if (newPath !== window.location.pathname) {
+        if (newPath !== (window.location.pathname + window.location.search)) {
           window.history.pushState({}, '', newPath);
-          setPathname(newPath);
+          setPathname(anchor.pathname);
            if (!isDesktop || !newPath.startsWith('/app/')) {
                 window.scrollTo(0, 0);
            }
@@ -68,7 +136,13 @@ const App: React.FC = () => {
   }, [pathname]);
 
   useEffect(() => {
-    // Set homepage SEO tags only when on the root path.
+    if (categorySlug || selectedAppSlug) {
+        if(searchTerm) setSearchTerm('');
+        if(selectedCategory) setSelectedCategory(null);
+    }
+  }, [categorySlug, selectedAppSlug, searchTerm, selectedCategory]);
+
+  useEffect(() => {
     if (!categorySlug && !selectedAppSlug) {
       updateMetaTags({
         title: 'AppsGU | Third‑Party Tweaks & Mods for iOS & Android',
@@ -83,15 +157,28 @@ const App: React.FC = () => {
   }, [selectedAppSlug]);
 
   const filteredApps = useMemo<AppInfo[]>(() => {
-    if (!searchTerm.trim()) {
-      return APPS_DATA;
+    let apps = APPS_DATA;
+    
+    if (selectedCategory && selectedCategory !== 'All') {
+        apps = apps.filter(app => app.category === selectedCategory);
     }
-    const lowercasedFilter = searchTerm.toLowerCase();
-    return APPS_DATA.filter(app =>
-      app.title.toLowerCase().includes(lowercasedFilter) ||
-      app.description.toLowerCase().includes(lowercasedFilter)
-    );
-  }, [searchTerm]);
+
+    const lowercasedFilter = searchTerm.toLowerCase().trim();
+    if (lowercasedFilter) {
+      apps = apps.filter(app =>
+        app.title.toLowerCase().includes(lowercasedFilter) ||
+        app.description.toLowerCase().includes(lowercasedFilter)
+      );
+    }
+    return apps;
+  }, [searchTerm, selectedCategory]);
+
+  const handleSelectCategory = (category: string) => {
+    setSelectedCategory(category === 'All' ? null : category);
+    if (searchTerm) {
+        setSearchTerm('');
+    }
+  };
 
   if (categorySlug) {
     return <CategoryPageView categorySlug={categorySlug} />;
@@ -103,6 +190,7 @@ const App: React.FC = () => {
         <aside className="w-full max-w-sm flex-shrink-0 flex flex-col border-r border-zinc-800 bg-[#141414]">
           <Header />
           <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+          <CategoryFilter categories={categories} selectedCategory={selectedCategory || 'All'} onSelectCategory={handleSelectCategory} />
           <div className="flex-grow overflow-y-auto">
             <AppList apps={filteredApps} activeSlug={selectedAppSlug} isPanel={true}/>
           </div>
@@ -133,6 +221,7 @@ const App: React.FC = () => {
       <Header />
       <main>
         <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+        <CategoryFilter categories={categories} selectedCategory={selectedCategory || 'All'} onSelectCategory={handleSelectCategory} />
         <AppList apps={filteredApps} activeSlug={null} isPanel={false} />
       </main>
     </div>
