@@ -20,12 +20,15 @@ const CategoryPageView: React.FC<CategoryPageViewProps> = ({ categorySlug }) => 
     }, [categorySlug]);
 
     useEffect(() => {
+        if (categoryName === 'Unknown Category') return;
+
         const baseUrl = window.location.origin;
         const canonicalUrl = `${baseUrl}/category/${categorySlug}`;
+        const year = new Date().getFullYear();
         
         updateMetaTags({
-            title: `${categoryName} Mods - AppsGU Clone`,
-            description: `Browse and download the best mods for ${categoryName} on iOS & Android. Discover new tweaks and emulators in the ${categoryName} category.`,
+            title: `Best ${categoryName} Apps & Mods for iOS & Android (${year}) | AppsGU`,
+            description: `Discover and download the top-rated ${categoryName} apps, mods, and tweaks for both iOS & Android. Get the latest free versions, fully updated for ${year}.`,
             canonical: canonicalUrl
         });
 

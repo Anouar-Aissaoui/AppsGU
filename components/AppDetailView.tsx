@@ -10,9 +10,20 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
         const baseUrl = window.location.origin;
         const canonicalUrl = `${baseUrl}/app/${app.slug}`;
 
+        // Helper to generate a more accurate name for SEO, avoiding redundancy
+        const getAppSeoName = (title: string): string => {
+            const lowerTitle = title.toLowerCase();
+            const keywords = ['mod', 'menu', '++', 'spoofer'];
+            if (keywords.some(keyword => lowerTitle.includes(keyword))) {
+                return title; // Already contains a keyword, return as is
+            }
+            return `${title} Mod`; // Append "Mod" if no keyword is found
+        };
+        const appSeoName = getAppSeoName(app.title);
+
         updateMetaTags({
-            title: `${app.title} for iOS & Android – Download (Latest Version)`,
-            description: `${app.title} lets you ${app.description.toLowerCase()}. Step-by-step install, features, FAQs. Updated ${new Date().getFullYear()}.`,
+            title: `Download ${appSeoName} ${app.version} (${app.category}) for iOS & Android`,
+            description: `Get the latest ${appSeoName} (v${app.version}) for free on iOS & Android. A leading ${app.category} app offering: ${app.description}. Download securely from AppsGU.`,
             canonical: canonicalUrl,
             ogType: 'article',
             ogImage: app.img,
