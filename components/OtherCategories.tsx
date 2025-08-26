@@ -9,8 +9,11 @@ interface OtherCategoriesProps {
 
 const OtherCategories: React.FC<OtherCategoriesProps> = ({ currentCategorySlug, allApps }) => {
   const otherCategories = useMemo(() => {
-    const allCategories = [...new Set(allApps.map(app => app.category))];
-    return allCategories.filter(category => slugify(category) !== currentCategorySlug).sort();
+    const uniqueCategorySet: Set<string> = new Set(allApps.map(app => app.category));
+    const allCategories: string[] = Array.from(uniqueCategorySet);
+    return allCategories
+      .filter((category) => slugify(category) !== currentCategorySlug)
+      .sort();
   }, [allApps, currentCategorySlug]);
 
   if (otherCategories.length === 0) {
