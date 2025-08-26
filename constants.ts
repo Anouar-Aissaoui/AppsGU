@@ -3,7 +3,7 @@ import type { AppInfo } from './types';
 export const APPS_DATA: AppInfo[] = [
     { 
         slug: "altstore",
-        img: "https://i.imgur.com/rq3p0eE.webp", 
+        img: "https://i.imgur.com/rq3p0eE.png", 
         author: "AppsGU", 
         title: "Altstore", 
         description: "Sideload Any Apps To Your iPhone, iOS Device",
@@ -24,7 +24,7 @@ Key Features:
     },
     { 
         slug: "dreameshort-coins",
-        img: "https://i.imgur.com/qKcgXd2.webp", 
+        img: "https://i.imgur.com/qKcgXd2.png", 
         author: "Plugin Installer", 
         title: "DreameShort Coins", 
         description: "Unlimited Coins & Bonuses",
@@ -43,7 +43,7 @@ Key Features:
     },
     { 
         slug: "cod-mobile-mod-menu",
-        img: "https://i.imgur.com/HJXUIFC.webp", 
+        img: "https://i.imgur.com/HJXUIFC.png", 
         author: "MOD Installer", 
         title: "COD Mobile MOD Menu", 
         description: "Aimbot, SuperJump, Wallhack & MORE",
@@ -64,7 +64,7 @@ Mod Features Include:
     },
     { 
         slug: "irecovery",
-        img: "https://i.imgur.com/MSsLgHs.webp", 
+        img: "https://i.imgur.com/MSsLgHs.png", 
         author: "Plugin Installer", 
         title: "iRecovery", 
         description: "Recover Permanently Deleted Photos & Videos",
@@ -83,7 +83,7 @@ Mod Features Include:
     },
     { 
         slug: "efootball-2024-mod",
-        img: "https://i.imgur.com/jnmtM3E.webp", 
+        img: "https://i.imgur.com/jnmtM3E.png", 
         author: "MOD Installer", 
         title: "eFootball 2024", 
         description: "Unlimited Money, GP VIP Features & Free Shopping",
@@ -103,7 +103,7 @@ Mod Features Include:
     },
     { 
         slug: "fc-mobile-24-25-mod",
-        img: "https://i.imgur.com/FcTO2xT.webp", 
+        img: "https://i.imgur.com/FcTO2xT.png", 
         author: "Plugin Installer", 
         title: "FC Mobile 24/25", 
         description: "Unlimited FC Points & Gems ~ iOS & Android",
@@ -121,7 +121,7 @@ Mod Features Include:
     },
     { 
         slug: "roblox-mod",
-        img: "https://i.imgur.com/ItBBn9z.webp", 
+        img: "https://i.imgur.com/ItBBn9z.png", 
         author: "AppsGU", 
         title: "Roblox Mod", 
         description: "Super Jump, God Mode, Fly and much more using this Roblox Mod Menu",
@@ -141,7 +141,7 @@ Popular Features:
     },
     { 
         slug: "instagram-plus-plus",
-        img: "https://i.imgur.com/M5mKDJ8.webp", 
+        img: "https://i.imgur.com/M5mKDJ8.png", 
         author: "AppsGU", 
         title: "Instagram++", 
         description: "View private Instagram accounts without following them, get unlimited followers, and much more",
@@ -160,7 +160,7 @@ Popular Features:
     },
     { 
         slug: "discord-nitro-free",
-        img: "https://i.imgur.com/tvz8mmU.webp", 
+        img: "https://i.imgur.com/tvz8mmU.jpeg", 
         author: "AppsGU", 
         title: "Discord Nitro", 
         description: "Get Free Discord Nitro",
@@ -180,7 +180,7 @@ Nitro Perks:
     },
     { 
         slug: "pokemon-go-spoofer",
-        img: "https://i.imgur.com/2X6jMHU.webp", 
+        img: "https://i.imgur.com/2X6jMHU.png", 
         author: "Plugin Installer", 
         title: "Pokemon Go Spoofer", 
         description: "Spoofer, Teleport, Auto-Walk, Joystick, Auto Catch and more!",
@@ -199,7 +199,7 @@ Nitro Perks:
     },
      { 
         slug: "monopoly-go-plus-plus",
-        img: "https://i.imgur.com/ahghT00.webp", 
+        img: "https://i.imgur.com/ahghT00.jpeg", 
         author: "Plugin Installer", 
         title: "Monopoly Go++", 
         description: "Unlimited Dice & Cash ~ Works on LIVE Servers",
