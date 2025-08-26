@@ -4,12 +4,13 @@ interface SeoData {
     canonical: string;
     ogType?: string;
     ogImage?: string;
+    robots?: string; // e.g., "index, follow" or "noindex, follow"
 }
 
 const DEFAULT_OG_IMAGE = 'https://i.imgur.com/rq3p0eE.png'; // Default OG image
 
 export const updateMetaTags = (data: SeoData) => {
-    const { title, description, canonical, ogType = 'website', ogImage = DEFAULT_OG_IMAGE } = data;
+    const { title, description, canonical, ogType = 'website', ogImage = DEFAULT_OG_IMAGE, robots } = data;
 
     // Document Title
     document.title = title;
@@ -21,6 +22,14 @@ export const updateMetaTags = (data: SeoData) => {
     // Canonical Link
     const canonicalLinkTag = document.getElementById('canonical-link') as HTMLLinkElement;
     if (canonicalLinkTag) canonicalLinkTag.href = canonical;
+
+    // Robots meta
+    if (typeof robots === 'string' && robots.trim().length > 0) {
+        const robotsTag = document.querySelector('meta[name="robots"]') as HTMLMetaElement | null;
+        if (robotsTag) {
+            robotsTag.content = robots;
+        }
+    }
     
     // --- Open Graph Tags ---
     const ogTypeTag = document.getElementById('og-type') as HTMLMetaElement;

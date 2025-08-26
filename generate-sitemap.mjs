@@ -1,7 +1,7 @@
 import fs from 'fs';
 import { APPS_DATA } from './constants.ts';
 
-const BASE_URL = 'https://www.appsg.site';
+const BASE_URL = process.env.SITE_URL || 'https://www.appsg.site';
 const currentDate = new Date().toISOString().split('T')[0];
 
 // Generate sitemap XML

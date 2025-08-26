@@ -135,13 +135,21 @@ const App: React.FC = () => {
 
   useEffect(() => {
     if (!categorySlug && !selectedAppSlug) {
+      const baseTitle = 'AppsGU | Third‑Party Tweaks & Mods for iOS & Android';
+      const baseDescription = 'Find third‑party apps, tweaks and emulators for iPhone, iPad and Android. Installation guides, FAQs and safety tips. Updated regularly.';
+      const parts: string[] = [];
+      if (selectedCategory) parts.push(`${selectedCategory} apps`);
+      if (debouncedSearchTerm) parts.push(`search: ${debouncedSearchTerm}`);
+      const suffix = parts.length > 0 ? ` – ${parts.join(' | ')}` : '';
+
       updateMetaTags({
-        title: 'AppsGU | Third‑Party Tweaks & Mods for iOS & Android',
-        description: 'Find third‑party apps, tweaks and emulators for iPhone, iPad and Android. Installation guides, FAQs and safety tips. Updated regularly.',
-        canonical: window.location.origin,
+        title: baseTitle + suffix,
+        description: baseDescription,
+        canonical: window.location.origin + window.location.search,
+        robots: debouncedSearchTerm ? 'noindex, follow' : 'index, follow',
       });
     }
-  }, [categorySlug, selectedAppSlug]);
+  }, [categorySlug, selectedAppSlug, selectedCategory, debouncedSearchTerm]);
 
   const selectedApp = useMemo(() => {
     if (isLoading) return null;
@@ -182,6 +190,15 @@ const App: React.FC = () => {
       <>
         <JsonLdSchema type="website" />
         <JsonLdSchema type="organization" />
+        <JsonLdSchema
+          type="itemList"
+          data={{
+            items: filteredApps.slice(0, 20).map(app => ({
+              name: app.title,
+              url: `${window.location.origin}/app/${app.slug}`
+            }))
+          }}
+        />
       <div className="min-h-screen text-white flex h-screen overflow-hidden animate-fade-in">
         <aside className="w-full max-w-sm flex-shrink-0 flex flex-col border-r border-zinc-800 bg-[#141414]">
           <Header />
@@ -199,10 +216,13 @@ const App: React.FC = () => {
           {selectedApp ? (
             <AppDetailView app={selectedApp} allApps={allApps} isPanel={true} />
           ) : (
-            <div className="flex items-center justify-center h-full">
-              <div className="text-center text-gray-500">
-                <i className={`fas ${isLoading ? 'fa-spinner fa-spin' : 'fa-arrow-left'} fa-2x mb-4`}></i>
-                <p className="text-xl">{isLoading ? 'Loading Apps...' : 'Select an app to view details'}</p>
+            <div className="flex items-start justify-start h-full">
+              <div className="w-full px-6 py-6">
+                <h1 className="text-3xl font-black text-white mb-4">Download Free iOS & Android Modded Apps</h1>
+                <div className="text-center text-gray-500">
+                  <i className={`fas ${isLoading ? 'fa-spinner fa-spin' : 'fa-arrow-left'} fa-2x mb-4`}></i>
+                  <p className="text-xl">{isLoading ? 'Loading Apps...' : 'Select an app to view details'}</p>
+                </div>
               </div>
             </div>
           )}
@@ -221,8 +241,20 @@ const App: React.FC = () => {
     <>
       <JsonLdSchema type="website" />
       <JsonLdSchema type="organization" />
+      <JsonLdSchema
+        type="itemList"
+        data={{
+          items: filteredApps.slice(0, 20).map(app => ({
+            name: app.title,
+            url: `${window.location.origin}/app/${app.slug}`
+          }))
+        }}
+      />
     <div className="min-h-screen text-white animate-fade-in">
       <Header />
+      <div className="container mx-auto px-4">
+        <h1 className="text-3xl font-black text-white mt-2 mb-4">Download Free iOS & Android Modded Apps</h1>
+      </div>
       <main>
         <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
         <CategoryFilter categories={categories} selectedCategory={selectedCategory || 'All'} onSelectCategory={handleSelectCategory} />

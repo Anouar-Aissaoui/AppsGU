@@ -6,6 +6,7 @@ import { updateMetaTags } from '../utils/seo';
 import type { AppInfo } from '../types';
 import AppListSkeleton from './AppListSkeleton';
 import OtherCategories from './OtherCategories';
+import JsonLdSchema from './JsonLdSchema';
 
 interface CategoryPageViewProps {
     categorySlug: string;
@@ -37,7 +38,8 @@ const CategoryPageView: React.FC<CategoryPageViewProps> = ({ categorySlug, allAp
         updateMetaTags({
             title: `${appCount}+ Best ${categoryName} Mods & Apps - Free iOS Android Download (${year})`,
             description: `🔥 Top ${appCount}+ ${categoryName.toLowerCase()} mods & modded apps for iOS/Android! Download ${exampleApps} + more premium features unlocked. Safe installation guides. Updated ${year}.`,
-            canonical: canonicalUrl
+            canonical: canonicalUrl,
+            robots: 'index, follow'
         });
 
     }, [categorySlug, categoryName, filteredApps]);
@@ -50,13 +52,31 @@ const CategoryPageView: React.FC<CategoryPageViewProps> = ({ categorySlug, allAp
                     &larr; Back to all apps
                 </a>
                 <h1 className="text-4xl font-black text-white mb-2">
-                    Browsing Category
+                    Best {categoryName} Mods & Apps
                 </h1>
-                <p className="text-2xl text-[#00ff88] font-bold mb-8">{categoryName}</p>
+                <p className="text-2xl text-[#00ff88] font-bold mb-8">Top downloads in {categoryName}</p>
                 {isLoading ? (
                     <AppListSkeleton isPanel={false} />
                 ) : (
                     <>
+                        <JsonLdSchema
+                            type="breadcrumb"
+                            data={{
+                                items: [
+                                    { name: 'Apps', url: `${window.location.origin}/` },
+                                    { name: categoryName, url: `${window.location.origin}/category/${categorySlug}` }
+                                ]
+                            }}
+                        />
+                        <JsonLdSchema
+                            type="itemList"
+                            data={{
+                                items: filteredApps.slice(0, 20).map(app => ({
+                                    name: app.title,
+                                    url: `${window.location.origin}/app/${app.slug}`
+                                }))
+                            }}
+                        />
                         <AppList apps={filteredApps} activeSlug={null} isPanel={false} />
                         <OtherCategories currentCategorySlug={categorySlug} allApps={allApps} />
                     </>
