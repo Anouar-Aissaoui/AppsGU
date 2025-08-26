@@ -3,12 +3,14 @@ import type { AppInfo } from '../types';
 import { slugify } from '../utils/slugify';
 import { updateMetaTags } from '../utils/seo';
 import ShareButtons from './ShareButtons';
+import RelatedApps from './RelatedApps';
 
 // SEO Component for managing head tags and structured data
 const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
     useEffect(() => {
         const baseUrl = window.location.origin;
         const canonicalUrl = `${baseUrl}/app/${app.slug}`;
+        const year = new Date().getFullYear();
 
         // Helper to generate a more accurate name for SEO, avoiding redundancy
         const getAppSeoName = (title: string): string => {
@@ -22,8 +24,8 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
         const appSeoName = getAppSeoName(app.title);
 
         updateMetaTags({
-            title: `Download ${appSeoName} ${app.version} (${app.category}) for iOS & Android`,
-            description: `Get the latest ${appSeoName} (v${app.version}) for free on iOS & Android. A leading ${app.category} app offering: ${app.description}. Download securely from AppsGU.`,
+            title: `Download ${appSeoName} v${app.version} - Free ${app.category} Mod for iOS & Android (${year})`,
+            description: `Download the latest version (${app.version}) of ${appSeoName}, a popular ${app.category} app. ${app.description}. Get it now for free on AppsGU for both iOS and Android devices.`,
             canonical: canonicalUrl,
             ogType: 'article',
             ogImage: app.img,
@@ -110,10 +112,11 @@ const Breadcrumbs: React.FC<{ app: AppInfo }> = ({ app }) => {
 
 interface AppDetailViewProps {
   app: AppInfo;
+  allApps: AppInfo[];
   isPanel: boolean;
 }
 
-const AppDetailView: React.FC<AppDetailViewProps> = ({ app, isPanel }) => {
+const AppDetailView: React.FC<AppDetailViewProps> = ({ app, allApps, isPanel }) => {
   return (
     <>
       <SeoHead app={app} />
@@ -186,6 +189,7 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, isPanel }) => {
                     </div>
                 </>
              )}
+            <RelatedApps currentAppSlug={app.slug} category={app.category} allApps={allApps} />
           </div>
       </div>
     </>

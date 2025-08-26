@@ -5,6 +5,7 @@ import Header from './Header';
 import { updateMetaTags } from '../utils/seo';
 import type { AppInfo } from '../types';
 import AppListSkeleton from './AppListSkeleton';
+import OtherCategories from './OtherCategories';
 
 interface CategoryPageViewProps {
     categorySlug: string;
@@ -25,19 +26,21 @@ const CategoryPageView: React.FC<CategoryPageViewProps> = ({ categorySlug, allAp
     }, [categorySlug, allApps, isLoading]);
 
     useEffect(() => {
-        if (categoryName === 'Unknown Category' || categoryName === 'Loading...') return;
+        if (categoryName === 'Unknown Category' || categoryName === 'Loading...' || filteredApps.length === 0) return;
 
         const baseUrl = window.location.origin;
         const canonicalUrl = `${baseUrl}/category/${categorySlug}`;
         const year = new Date().getFullYear();
+        const appCount = filteredApps.length;
+        const exampleApps = filteredApps.slice(0, 2).map(a => a.title).join(' and ');
         
         updateMetaTags({
-            title: `Best ${categoryName} Apps & Mods for iOS & Android (${year}) | AppsGU`,
-            description: `Discover and download the top-rated ${categoryName} apps, mods, and tweaks for both iOS & Android. Get the latest free versions, fully updated for ${year}.`,
+            title: `Download ${appCount}+ Best ${categoryName} Mods for iOS & Android (${year})`,
+            description: `Explore our collection of the top ${appCount}+ ${categoryName} apps and mods. Download popular titles like ${exampleApps} for free on AppsGU.`,
             canonical: canonicalUrl
         });
 
-    }, [categorySlug, categoryName]);
+    }, [categorySlug, categoryName, filteredApps]);
 
     return (
         <div className="min-h-screen text-white animate-fade-in">
@@ -53,7 +56,10 @@ const CategoryPageView: React.FC<CategoryPageViewProps> = ({ categorySlug, allAp
                 {isLoading ? (
                     <AppListSkeleton isPanel={false} />
                 ) : (
-                    <AppList apps={filteredApps} activeSlug={null} isPanel={false} />
+                    <>
+                        <AppList apps={filteredApps} activeSlug={null} isPanel={false} />
+                        <OtherCategories currentCategorySlug={categorySlug} allApps={allApps} />
+                    </>
                 )}
             </main>
         </div>

@@ -217,7 +217,7 @@ const App: React.FC = () => {
         </aside>
         <main className="flex-grow h-full overflow-y-auto">
           {selectedApp ? (
-            <AppDetailView app={selectedApp} isPanel={true} />
+            <AppDetailView app={selectedApp} allApps={allApps} isPanel={true} />
           ) : (
             <div className="flex items-center justify-center h-full">
               <div className="text-center text-gray-500">
@@ -233,7 +233,7 @@ const App: React.FC = () => {
 
   // Mobile Layout
   if (selectedApp) {
-    return <AppDetailView app={selectedApp} isPanel={false} />;
+    return <AppDetailView app={selectedApp} allApps={allApps} isPanel={false} />;
   }
 
   return (
