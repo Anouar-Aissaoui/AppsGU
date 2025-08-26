@@ -35,8 +35,8 @@ const CategoryPageView: React.FC<CategoryPageViewProps> = ({ categorySlug, allAp
         const exampleApps = filteredApps.slice(0, 2).map(a => a.title).join(' and ');
         
         updateMetaTags({
-            title: `Download ${appCount}+ Best ${categoryName} Mods for iOS & Android (${year})`,
-            description: `Explore our collection of the top ${appCount}+ ${categoryName} apps and mods. Download popular titles like ${exampleApps} for free on AppsGU.`,
+            title: `${appCount}+ Best ${categoryName} Mods & Apps - Free iOS Android Download (${year})`,
+            description: `🔥 Top ${appCount}+ ${categoryName.toLowerCase()} mods & modded apps for iOS/Android! Download ${exampleApps} + more premium features unlocked. Safe installation guides. Updated ${year}.`,
             canonical: canonicalUrl
         });
 

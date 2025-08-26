@@ -14,10 +14,10 @@ const SearchBar: React.FC<SearchBarProps> = ({ searchTerm, setSearchTerm }) => {
           <input
             type="text"
             className="w-full bg-zinc-900 text-white placeholder-gray-500 border-2 border-zinc-700 rounded-lg py-3 pl-12 pr-4 focus:outline-none focus:border-[#00ff88] focus:ring-4 focus:ring-[#00ff88]/20 transition-all duration-300"
-            placeholder="Search for your favorite mod..."
+            placeholder="Search mods: Instagram++, AltStore, COD Mobile..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            aria-label="Search for apps"
+            aria-label="Search for modded apps and tweaks"
           />
         </div>
       </div>

@@ -15,17 +15,20 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
         // Helper to generate a more accurate name for SEO, avoiding redundancy
         const getAppSeoName = (title: string): string => {
             const lowerTitle = title.toLowerCase();
-            const keywords = ['mod', 'menu', '++', 'spoofer'];
+            const keywords = ['mod', 'menu', '++', 'spoofer', 'hack', 'cheat', 'tweak'];
             if (keywords.some(keyword => lowerTitle.includes(keyword))) {
                 return title; // Already contains a keyword, return as is
             }
-            return `${title} Mod`; // Append "Mod" if no keyword is found
+            // More specific keywords based on category
+            if (app.category === 'Games') return `${title} Mod Menu`;
+            if (app.category === 'Social') return `${title}++`;
+            return `${title} Mod`; // Default fallback
         };
         const appSeoName = getAppSeoName(app.title);
 
         updateMetaTags({
-            title: `Download ${appSeoName} v${app.version} - Free ${app.category} Mod for iOS & Android (${year})`,
-            description: `Download the latest version (${app.version}) of ${appSeoName}, a popular ${app.category} app. ${app.description}. Get it now for free on AppsGU for both iOS and Android devices.`,
+            title: `${appSeoName} v${app.version} Download Free - iOS & Android ${app.category} Mod (${year})`,
+            description: `⭐ Download ${appSeoName} v${app.version} for FREE! Latest ${app.category.toLowerCase()} mod with premium features unlocked. ${app.description}. Safe installation guide for iOS & Android. Updated ${year}.`,
             canonical: canonicalUrl,
             ogType: 'article',
             ogImage: app.img,

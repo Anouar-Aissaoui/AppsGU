@@ -12,6 +12,7 @@ import { APPS_DATA } from './constants';
 import type { AppInfo } from './types';
 import { updateMetaTags } from './utils/seo';
 import { slugify } from './utils/slugify';
+import JsonLdSchema from './components/JsonLdSchema';
 
 const getQueryParam = (param: string) => {
   if (typeof window === 'undefined') return '';
@@ -55,28 +56,14 @@ const App: React.FC = () => {
   }, [allApps]);
 
   useEffect(() => {
-    const scriptId = 'website-schema';
-    const existingScript = document.getElementById(scriptId);
-    if(existingScript) existingScript.remove();
-
-    const script = document.createElement('script');
-    script.id = scriptId;
-    script.type = 'application/ld+json';
-    script.innerHTML = JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "AppsGU",
-      "url": window.location.origin,
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": {
-          "@type": "EntryPoint",
-          "urlTemplate": `${window.location.origin}/?q={search_term_string}`
-        },
-        "query-input": "required name=search_term_string"
-      }
-    });
-    document.head.appendChild(script);
+    // Enhanced meta tags for homepage
+    if (!categorySlug && !selectedAppSlug) {
+      updateMetaTags({
+        title: 'AppsGU - Free iOS & Android Mods | Download Modded Apps 2025',
+        description: '🔥 Download 100+ FREE modded apps for iOS & Android! AltStore, Instagram++, COD Mobile mods, Pokemon Go spoofer & more. Safe installation guides. Updated 2025.',
+        canonical: window.location.origin,
+      });
+    }
   }, []);
 
   useEffect(() => {
@@ -202,6 +189,9 @@ const App: React.FC = () => {
 
   if (isDesktop) {
     return (
+      <>
+        <JsonLdSchema type="website" />
+        <JsonLdSchema type="organization" />
       <div className="min-h-screen text-white flex h-screen overflow-hidden animate-fade-in">
         <aside className="w-full max-w-sm flex-shrink-0 flex flex-col border-r border-zinc-800 bg-[#141414]">
           <Header />
@@ -228,6 +218,7 @@ const App: React.FC = () => {
           )}
         </main>
       </div>
+      </>
     );
   }
 
@@ -237,6 +228,9 @@ const App: React.FC = () => {
   }
 
   return (
+    <>
+      <JsonLdSchema type="website" />
+      <JsonLdSchema type="organization" />
     <div className="min-h-screen text-white animate-fade-in">
       <Header />
       <main>
@@ -249,6 +243,7 @@ const App: React.FC = () => {
         )}
       </main>
     </div>
+    </>
   );
 };
 

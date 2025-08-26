@@ -6,20 +6,38 @@ export const APPS_DATA: AppInfo[] = [
         img: "https://i.imgur.com/rq3p0eE.png", 
         author: "AppsGU", 
         title: "Altstore", 
-        description: "Sideload Any Apps To Your iPhone, iOS Device",
+        description: "Free iOS app installer - Sideload any IPA files to iPhone without jailbreak",
         version: "1.7.1",
         size: "25 MB",
         category: "Utilities",
-        longDescription: `AltStore is an alternative app store for non-jailbroken iOS devices. It allows you to sideload any .ipa file you have on your computer onto your device using your Apple ID.
+        longDescription: `AltStore is the best free alternative app store for non-jailbroken iOS devices in 2025. This powerful iOS app installer allows you to sideload any .ipa file directly to your iPhone or iPad using just your Apple ID - no jailbreak required.
 
-Key Features:
-- No jailbreak required.
-- Sideload apps with just your Apple ID.
-- Apps refresh automatically in the background to prevent them from expiring.
-- Fully open source and community-driven.`,
+## Why Choose AltStore for iOS App Installation?
+
+### Key Features:
+- **No Jailbreak Required**: Install apps safely without compromising iOS security
+- **Apple ID Integration**: Uses your official Apple ID for legitimate app signing
+- **Auto-Refresh Technology**: Apps refresh automatically to prevent expiration
+- **Open Source**: Fully transparent, community-driven development
+- **Wide Compatibility**: Works on iOS 12.2+ including latest iOS versions
+
+### Supported App Types:
+- Emulators (Delta, PPSSPP, RetroArch)
+- Social media mods (Instagram++, Twitter++)  
+- Gaming utilities and cheats
+- Productivity apps not on App Store
+- Beta versions of popular apps
+
+### Installation Requirements:
+- Mac or Windows computer with AltServer
+- Lightning/USB-C cable for initial setup
+- Apple ID (free account works)
+- iOS device running iOS 12.2 or later`,
         faqs: [
-            { question: "Is AltStore safe to use?", answer: "Yes, AltStore is widely considered safe. It uses your official Apple ID to sign apps, which is the standard method for app installation. It does not require a jailbreak, which keeps your device's security intact." },
-            { question: "Do I need a computer to use AltStore?", answer: "Yes, you need a Mac or Windows computer running AltServer. AltServer is the desktop companion app that installs and refreshes apps on your device." }
+            { question: "Is AltStore safe for iOS app installation?", answer: "Yes, AltStore is completely safe and widely trusted by millions of iOS users. It uses Apple's official app signing process with your Apple ID, maintaining full iOS security. Unlike jailbreaking, AltStore doesn't modify your device's system files." },
+            { question: "Can I install AltStore without a computer?", answer: "Initially, you need a Mac or Windows computer with AltServer for the first-time setup. However, once installed, apps refresh automatically over WiFi. Some advanced users use cloud-based solutions, but a computer is recommended for the most reliable experience." },
+            { question: "What apps can I install with AltStore?", answer: "AltStore supports any .ipa file including emulators (Delta, PPSSPP), social media mods (Instagram++), gaming utilities, and apps not available on the App Store. Popular choices include RetroArch, uYou+ (YouTube mod), and various productivity apps." },
+            { question: "Does AltStore work on the latest iOS version?", answer: "Yes, AltStore is regularly updated to support the latest iOS versions. It currently works on iOS 12.2 through iOS 17+ and is continuously maintained by the developer community." }
         ]
     },
     { 

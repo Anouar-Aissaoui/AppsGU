@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AppsGU - Latest Modded Apps</title>
+    <description>Latest iOS and Android modded applications, tweaks, and installation guides</description>
+    <link>https://www.appsg.site</link>
+    <atom:link href="https://www.appsg.site/rss.xml" rel="self" type="application/rss+xml"/>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 27 Jan 2025 00:00:00 GMT</lastBuildDate>
+    <pubDate>Mon, 27 Jan 2025 00:00:00 GMT</pubDate>
+    <ttl>1440</ttl>
+    
+    <item>
+      <title>AltStore v1.7.1 - Free iOS App Installer</title>
+      <description>Download AltStore, the best alternative app store for iOS devices. Install any IPA file without jailbreak using your Apple ID.</description>
+      <link>https://www.appsg.site/app/altstore</link>
+      <guid>https://www.appsg.site/app/altstore</guid>
+      <pubDate>Mon, 27 Jan 2025 00:00:00 GMT</pubDate>
+    </item>
+    
+    <item>
+      <title>COD Mobile MOD Menu v3.5.2 - Aimbot & Wallhack</title>
+      <description>Dominate Call of Duty Mobile with advanced mod menu featuring aimbot, wallhack, and super jump capabilities.</description>
+      <link>https://www.appsg.site/app/cod-mobile-mod-menu</link>
+      <guid>https://www.appsg.site/app/cod-mobile-mod-menu</guid>
+      <pubDate>Sun, 26 Jan 2025 00:00:00 GMT</pubDate>
+    </item>
+    
+    <item>
+      <title>Instagram++ v20.1 - View Private Profiles</title>
+      <description>Enhanced Instagram with ability to view private accounts, download media, and anonymous story viewing.</description>
+      <link>https://www.appsg.site/app/instagram-plus-plus</link>
+      <guid>https://www.appsg.site/app/instagram-plus-plus</guid>
+      <pubDate>Sat, 25 Jan 2025 00:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>
