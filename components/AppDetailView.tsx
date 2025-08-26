@@ -53,7 +53,7 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
             "applicationCategory": app.category + "Application",
             "operatingSystem": "iOS, Android",
             "softwareVersion": app.version,
-            "publisher": { "@type": "Organization", "name": "AppsGU Clone" },
+            "publisher": { "@type": "Organization", "name": "AppsGU" },
             "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
             "downloadUrl": canonicalUrl,
             "screenshot": app.img

@@ -11,7 +11,7 @@ const ShareButtons: React.FC<ShareButtonsProps> = ({ app }) => {
   }
 
   const shareUrl = window.location.href;
-  const shareTitle = encodeURIComponent(`Check out ${app.title} on AppsGU Clone!`);
+  const shareTitle = encodeURIComponent(`Check out ${app.title} on AppsGU!`);
   const redditTitle = encodeURIComponent(app.title);
 
   const socialLinks = [
