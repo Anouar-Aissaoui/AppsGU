@@ -132,7 +132,7 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, isPanel }) => {
               <div className="flex flex-col md:flex-row items-start gap-6 md:gap-8">
                   <img 
                       src={app.img} 
-                      alt={`${app.title} icon`}
+                      alt={`${app.title} app icon`}
                       className="w-32 h-32 md:w-40 md:h-40 object-cover rounded-3xl shadow-lg flex-shrink-0"
                       loading="lazy"
                       decoding="async"

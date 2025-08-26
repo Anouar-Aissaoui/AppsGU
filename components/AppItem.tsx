@@ -22,7 +22,7 @@ const AppItem: React.FC<AppItemProps> = ({ app, isActive }) => {
           <div className="flex-shrink-0">
             <img 
               src={app.img} 
-              alt={app.title} 
+              alt={`${app.title} app icon`} 
               className="w-16 h-16 object-cover rounded-2xl shadow-lg transition-transform duration-300 group-hover:scale-105" 
               loading="lazy"
               decoding="async"
