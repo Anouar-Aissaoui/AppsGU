@@ -1,7 +1,7 @@
 {
   "redirects": [
     { "source": "/:path*", "has": [{ "type": "host", "value": "appsg.site" }], "destination": "https://www.appsg.site/:path*", "permanent": true },
-    { "source": "/:path*/", "destination": "/:path*", "permanent": true }
+    { "source": "/:path+\/", "destination": "/:path*", "permanent": true }
   ],
   "rewrites": [
     { "source": "/app/:slug*", "destination": "/" },
