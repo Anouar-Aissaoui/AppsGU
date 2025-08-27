@@ -130,16 +130,24 @@ Tips: Run the scan soon after deletion and avoid large new recordings to improve
         img: "https://i.imgur.com/jnmtM3E.png", 
         author: "MOD Installer", 
         title: "eFootball 2024", 
-        description: "Unlimited Money, GP VIP Features & Free Shopping",
+        description: "Unlimited Coins & GP, VIP features, free shopping – iOS & Android",
         version: "8.1.0",
         size: "150 MB",
         category: "Games",
-        longDescription: `Build your dream team in eFootball 2024 with unlimited resources. This mod gives you access to endless in-game currency and unlocks all VIP features.
+        longDescription: `Build your dream team in eFootball 2024 with unlimited Coins & GP and VIP features.
 
-- Unlimited Coins and GP.
-- All legendary players unlocked.
-- Free shopping in the game store.
-- VIP features enabled.`,
+### Key Features
+- Unlimited Coins & GP
+- VIP features enabled
+- Free shopping in the in-game store
+- Legendary players unlocked
+
+### Quick Setup
+1. Download and install eFootball 2024 Mod
+2. Open the game; resources sync automatically
+3. Build and manage your squad
+
+Note: Use responsibly in online modes.`,
         faqs: [
             { question: "Will I be able to play online with this mod?", answer: "Yes, this mod is designed to work on the live servers, so you can play against other players online with your enhanced team." },
             { question: "Do the unlimited coins and GP sync with my account?", answer: "Yes, the resources are added directly to your account and will be available across any device you log into." }

@@ -148,6 +148,22 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
             });
         }
 
+        // HowTo Schema (Programmatic SEO) for eFootball 2024
+        if (app.slug === 'efootball-2024-mod') {
+            addJsonLd({
+                "@context": "https://schema.org",
+                "@type": "HowTo",
+                "name": "How to Activate eFootball 2024 Mod (iOS & Android)",
+                "totalTime": "PT2M",
+                "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
+                "step": [
+                    { "@type": "HowToStep", "name": "Install the Mod", "text": "Download eFootball 2024 Mod and install it on your device." },
+                    { "@type": "HowToStep", "name": "Open the Game", "text": "Launch eFootball; resources sync to your account." },
+                    { "@type": "HowToStep", "name": "Build Your Squad", "text": "Use Coins & GP to sign players and unlock VIP features." }
+                ]
+            });
+        }
+
         // HowTo Schema (Programmatic SEO) for iRecovery
         if (app.slug === 'irecovery') {
             addJsonLd({
@@ -237,6 +253,7 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, allApps, isPanel }) 
                         app.slug === 'dreameshort-coins' ? 'DreameShort Coins – Unlimited Coins & Bonuses' :
                         app.slug === 'cod-mobile-mod-menu' ? 'COD Mobile MOD Menu – Aimbot & Wallhack' :
                         app.slug === 'irecovery' ? 'iRecovery – Recover Deleted Photos & Videos' :
+                        app.slug === 'efootball-2024-mod' ? 'eFootball 2024 – Unlimited Coins & GP' :
                         app.title
                       }</h1>
                       <div className="flex items-center gap-x-4 gap-y-1 text-gray-400 text-sm mb-4 flex-wrap">
