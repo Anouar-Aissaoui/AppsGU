@@ -78,6 +78,16 @@ const RelatedApps: React.FC<RelatedAppsProps> = ({ currentAppSlug, category, all
             </ul>
           </div>
         )}
+        {currentAppSlug === 'fc-mobile-24-25-mod' && (
+          <div className="mt-6 text-sm text-gray-400">
+            <p className="mb-2">Helpful links:</p>
+            <ul className="list-disc list-inside space-y-1">
+              <li><a className="text-[#00ff88] hover:underline" href="/category/games">Sports & football mods</a></li>
+              <li><a className="text-[#00ff88] hover:underline" href="/app/efootball-2024-mod">eFootball 2024 – Unlimited Coins & GP</a></li>
+              <li><a className="text-[#00ff88] hover:underline" href="/app/roblox-mod">Roblox – Mod Menu</a></li>
+            </ul>
+          </div>
+        )}
       </div>
     </>
   );

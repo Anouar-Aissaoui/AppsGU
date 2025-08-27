@@ -158,15 +158,23 @@ Note: Use responsibly in online modes.`,
         img: "https://i.imgur.com/FcTO2xT.png", 
         author: "Plugin Installer", 
         title: "FC Mobile 24/25", 
-        description: "Unlimited FC Points & Gems ~ iOS & Android",
+        description: "Unlimited FC Points & Gems – open packs faster (iOS & Android)",
         version: "1.2.5",
         size: "125 MB",
         category: "Games",
-        longDescription: `Get ahead in FC Mobile 24/25 with this plugin that provides unlimited FC Points and Gems. Open packs and acquire the best players for your Ultimate Team without spending real money.
+        longDescription: `Get ahead in FC Mobile 24/25 with unlimited FC Points & Gems to open packs and sign top players.
 
-- 999,999 FC Points.
-- 999,999 Gems.
-- Works for both iOS and Android devices.`,
+### Key Features
+- 999,999 FC Points
+- 999,999 Gems
+- iOS & Android support
+
+### Quick Setup
+1. Download and install FC Mobile 24/25 plugin
+2. Launch the game and sign in
+3. Resources apply to your account
+
+Use with care in competitive modes.`,
         faqs: [
             { question: "Is this safe for my FC Mobile account?", answer: "Yes, the plugin uses a safe injection method that is undetectable by the game servers, ensuring your account's safety." }
         ]

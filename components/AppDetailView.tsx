@@ -164,6 +164,22 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
             });
         }
 
+        // HowTo Schema (Programmatic SEO) for FC Mobile 24/25
+        if (app.slug === 'fc-mobile-24-25-mod') {
+            addJsonLd({
+                "@context": "https://schema.org",
+                "@type": "HowTo",
+                "name": "How to Activate FC Mobile 24/25 Plugin (iOS & Android)",
+                "totalTime": "PT2M",
+                "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
+                "step": [
+                    { "@type": "HowToStep", "name": "Install Plugin", "text": "Download and install the FC Mobile plugin." },
+                    { "@type": "HowToStep", "name": "Sign In", "text": "Open FC Mobile and sign in to your account." },
+                    { "@type": "HowToStep", "name": "Use Resources", "text": "Points & Gems apply automatically for pack openings." }
+                ]
+            });
+        }
+
         // HowTo Schema (Programmatic SEO) for iRecovery
         if (app.slug === 'irecovery') {
             addJsonLd({
@@ -254,6 +270,7 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, allApps, isPanel }) 
                         app.slug === 'cod-mobile-mod-menu' ? 'COD Mobile MOD Menu – Aimbot & Wallhack' :
                         app.slug === 'irecovery' ? 'iRecovery – Recover Deleted Photos & Videos' :
                         app.slug === 'efootball-2024-mod' ? 'eFootball 2024 – Unlimited Coins & GP' :
+                        app.slug === 'fc-mobile-24-25-mod' ? 'FC Mobile 24/25 – Unlimited Points & Gems' :
                         app.title
                       }</h1>
                       <div className="flex items-center gap-x-4 gap-y-1 text-gray-400 text-sm mb-4 flex-wrap">
