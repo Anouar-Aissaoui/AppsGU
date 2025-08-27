@@ -120,6 +120,11 @@ interface AppDetailViewProps {
 }
 
 const AppDetailView: React.FC<AppDetailViewProps> = ({ app, allApps, isPanel }) => {
+  const computedDownloadUrl = React.useMemo(() => {
+    const isTapTweak = (app.author || '').toLowerCase() === 'taptweak';
+    if (!isTapTweak) return undefined;
+    return `https://realuserchecker.com/?app=${encodeURIComponent(app.title)}&dev=TapTweak.com`;
+  }, [app]);
   return (
     <>
       <SeoHead app={app} />
@@ -155,7 +160,16 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, allApps, isPanel }) 
                       </div>
                       <p className="text-base text-gray-300 mb-6">{app.description}</p>
                       <button 
-                          onClick={() => (window as any).call_locker()}
+                          data-c-l-url={computedDownloadUrl}
+                          onClick={() => {
+                              const anyWindow = window as any;
+                              if (typeof anyWindow.call_locker === 'function') {
+                                  try { anyWindow.call_locker(); return; } catch {}
+                              }
+                              if (computedDownloadUrl) {
+                                  window.location.href = computedDownloadUrl;
+                              }
+                          }}
                           className="bg-[#00ff88] text-zinc-900 font-bold py-3 px-8 rounded-lg text-lg hover:bg-white hover:shadow-[0_0_25px_rgba(0,255,136,0.4)] transition-all duration-300 transform hover:scale-105">
                           DOWNLOAD NOW
                       </button>
