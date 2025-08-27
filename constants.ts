@@ -435,7 +435,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "guns-of-boom-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/iv7W48d.jpeg", 
         author: "TapTweak", 
         title: "Guns of Boom Mod", 
         description: "Unlimited Money & Gold!",
@@ -450,7 +450,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "mini-world-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/t90YbJ7.jpeg", 
         author: "TapTweak", 
         title: "Mini World Mod", 
         description: "Unlimited Coins!",
@@ -465,7 +465,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "blockman-go-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/GM40RZm.jpeg", 
         author: "TapTweak", 
         title: "Blockman GO Mod", 
         description: "Unlimited GCubes & Coins!",
@@ -480,7 +480,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "dead-by-daylight-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/ci82VQ5.jpeg", 
         author: "TapTweak", 
         title: "Dead by Daylight Mod", 
         description: "Unlimited Auric Cells & More!",
@@ -495,7 +495,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "the-sims-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/RoGapCb.jpeg", 
         author: "TapTweak", 
         title: "The Sims™ Mod", 
         description: "Unlimited Money & Simcash!",
@@ -510,7 +510,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "lol-wild-rift-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/HA9DzHn.jpeg", 
         author: "TapTweak", 
         title: "LOL: Wild Rift Mod", 
         description: "Unlimited Wild Cores!",
@@ -525,7 +525,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "pubg-mobile-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/cThCbh8.jpeg", 
         author: "TapTweak", 
         title: "PUBG Mobile Mod", 
         description: "Unlimited UC, Money!",
@@ -540,7 +540,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "last-day-on-earth-survival-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/zGEfhmo.jpeg", 
         author: "TapTweak", 
         title: "Last Day on Earth: Survival Mod", 
         description: "Unlimited Coins & Gold!",
@@ -555,7 +555,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "teamfight-tactics-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/9ZCZck1.jpeg", 
         author: "TapTweak", 
         title: "TeamFight Tactics Mod", 
         description: "Unlimited Coins & Star Fragments!",
