@@ -268,17 +268,33 @@ This 2025-ready Match Masters mod helps you progress faster without grinding. Sa
     },
     { 
         slug: "nova-legacy-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/FN5zMDe.png", 
         author: "TapTweak", 
         title: "N.O.V.A. Legacy Mod", 
-        description: "Unlimited Money & Trilithium!",
+        description: "Unlimited Money, Trilithium, VIP Unlocks for iOS & Android",
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Get unlimited money and trilithium in N.O.V.A. Legacy. Upgrade weapons and armor without limits. iOS & Android supported.`,
+        longDescription: `Download N.O.V.A. Legacy Mod for iOS and Android and unlock premium resources instantly.
+
+### Key Mod Features
+- Unlimited Money and Trilithium for upgrades
+- VIP features unlocked (weapons, armor, skins)
+- Works on iPhone/iPad and Android devices
+- Free shopping enabled (no real money)
+
+### Gameplay Benefits
+Level up faster, craft advanced gear, and enjoy the full sci‑fi campaign without grind. Optimized for 2025 builds with stability and performance tweaks.
+
+### Installation Notes
+- No jailbreak or root required
+- Compatible with the latest N.O.V.A. Legacy version
+- For PvP, prefer a secondary account to reduce risk
+`,
         faqs: [
-            { question: "Will my account be safe?", answer: "There is always some risk in online titles; use responsibly." },
-            { question: "Is there iOS & Android support?", answer: "Yes, both platforms are supported." }
+            { question: "Will my account be safe?", answer: "Anti-cheat exists in online modes. Use responsibly and avoid ranked PvP on your main account." },
+            { question: "Is there iOS & Android support?", answer: "Yes. Supports iOS 12+ and most modern Android devices, without jailbreak or root." },
+            { question: "Do I need to uninstall the stock app?", answer: "If you get install/signature errors, uninstall the original app first to avoid conflicts." }
         ]
     },
     { 
