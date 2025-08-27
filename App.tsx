@@ -132,8 +132,8 @@ const App: React.FC = () => {
 
   useEffect(() => {
     if (!categorySlug && !selectedAppSlug) {
-      const baseTitle = 'AppsGU | Third‑Party Tweaks & Mods for iOS & Android';
-      const baseDescription = 'Find third‑party apps, tweaks and emulators for iPhone, iPad and Android. Installation guides, FAQs and safety tips. Updated regularly.';
+      const baseTitle = 'iOS & Android Modded Apps – Free Downloads | AppsGU';
+      const baseDescription = 'Download free modded apps and tweaks for iPhone, iPad and Android. Safe guides, FAQs and regular updates.';
       const parts: string[] = [];
       if (selectedCategory) parts.push(`${selectedCategory} apps`);
       if (debouncedSearchTerm) parts.push(`search: ${debouncedSearchTerm}`);
@@ -149,6 +149,27 @@ const App: React.FC = () => {
         description: baseDescription,
         canonical: canonicalHome,
         robots: debouncedSearchTerm ? 'noindex, follow' : 'index, follow',
+      });
+      // Homepage FAQ JSON-LD (Programmatic)
+      const cleanupHomeJsonLd = () => {
+        document.querySelectorAll('script[data-home-jsonld]').forEach(el => el.remove());
+      };
+      cleanupHomeJsonLd();
+      const addHomeJsonLd = (data: object) => {
+        const script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.setAttribute('data-home-jsonld', 'true');
+        script.innerHTML = JSON.stringify(data);
+        document.head.appendChild(script);
+      };
+      addHomeJsonLd({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {"@type":"Question","name":"Are these iOS/Android mods safe?","acceptedAnswer":{"@type":"Answer","text":"We provide guides and safety tips. Use responsibly, especially in online modes."}},
+          {"@type":"Question","name":"Do I need jailbreak or root?","acceptedAnswer":{"@type":"Answer","text":"No. Most apps work on standard iOS and Android devices without jailbreak or root."}},
+          {"@type":"Question","name":"How do I install?","acceptedAnswer":{"@type":"Answer","text":"Open an app page and tap Download. Follow the quick setup or HowTo steps provided."}}
+        ]
       });
     }
   }, [categorySlug, selectedAppSlug, selectedCategory, debouncedSearchTerm]);
