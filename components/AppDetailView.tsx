@@ -114,6 +114,22 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
             });
         }
 
+        // HowTo Schema (Programmatic SEO) for DreameShort Coins
+        if (app.slug === 'dreameshort-coins') {
+            addJsonLd({
+                "@context": "https://schema.org",
+                "@type": "HowTo",
+                "name": "How to Activate DreameShort Coins (iOS & Android)",
+                "totalTime": "PT3M",
+                "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
+                "step": [
+                    { "@type": "HowToStep", "name": "Download Plugin", "text": "Tap Download and follow the on-screen instructions." },
+                    { "@type": "HowToStep", "name": "Open DreameShort", "text": "Sign in to your account to sync." },
+                    { "@type": "HowToStep", "name": "Enjoy Coins & Bonuses", "text": "Coins and daily bonuses apply automatically after activation." }
+                ]
+            });
+        }
+
         return cleanupJsonLd;
     }, [app]);
 
@@ -182,7 +198,7 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, allApps, isPanel }) 
                   />
                   <div className="flex-grow">
                       <div className="text-sm font-bold text-[#00ff88] uppercase tracking-wider">{app.author}</div>
-                      <h1 className="text-4xl md:text-5xl font-black text-white my-1">{app.slug === 'altstore' ? 'AltStore – iOS App Installer' : app.title}</h1>
+                      <h1 className="text-4xl md:text-5xl font-black text-white my-1">{app.slug === 'altstore' ? 'AltStore – iOS App Installer' : app.slug === 'dreameshort-coins' ? 'DreameShort Coins – Unlimited Coins & Bonuses' : app.title}</h1>
                       <div className="flex items-center gap-x-4 gap-y-1 text-gray-400 text-sm mb-4 flex-wrap">
                           <span>Version: {app.version}</span>
                           <span className="hidden sm:inline">|</span>

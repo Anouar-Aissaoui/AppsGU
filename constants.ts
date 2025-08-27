@@ -45,18 +45,29 @@ export const APPS_DATA: AppInfo[] = [
         img: "https://i.imgur.com/qKcgXd2.png", 
         author: "Plugin Installer", 
         title: "DreameShort Coins", 
-        description: "Unlimited Coins & Bonuses",
+        description: "Unlimited coins & daily bonuses – unlock VIP stories on iOS & Android",
         version: "2.1.0",
         size: "12 MB",
         category: "Entertainment",
-        longDescription: `Get access to unlimited coins and bonuses in the DreameShort app. This plugin allows you to unlock all premium stories and episodes without any cost. Watch your favorite short dramas without interruption.
+        longDescription: `Boost your DreameShort experience with unlimited coins and daily bonuses. This DreameShort Coins plugin unlocks VIP content so you can binge premium short dramas without interruptions.
 
-- Unlock all VIP content.
-- Receive daily coin bonuses.
-- Easy to install and use on both iOS & Android.`,
+### What You Get
+- Unlimited Coins for VIP stories and episodes
+- Daily Bonuses to keep watching
+- No jailbreak/root required – iOS & Android support
+
+### Quick Install (3 Steps)
+1. Tap Download and follow the on-screen guide
+2. Open DreameShort and sign in
+3. Coins and bonuses apply automatically
+
+### Tips
+- Use a stable network during first activation
+- If content doesn’t unlock immediately, relaunch the app`,
         faqs: [
-            { question: "Will this work on the latest version of DreameShort?", answer: "Our plugins are updated regularly to ensure compatibility with the latest app versions. This version is confirmed to work with the current release." },
-            { question: "Is this a one-time unlock?", answer: "Yes, once the plugin is activated, you will have access to unlimited coins and bonuses permanently for your account." }
+            { question: "Will this work on the latest version of DreameShort?", answer: "Yes. We update compatibility regularly and validate against the latest store build." },
+            { question: "Is this a one-time unlock?", answer: "Activation grants ongoing coins/bonuses for your account. Re-run activation only after major app updates if needed." },
+            { question: "Does it require jailbreak/root?", answer: "No. Standard iOS and Android devices are supported." }
         ]
     },
     { 
