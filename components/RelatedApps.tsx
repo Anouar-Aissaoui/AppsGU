@@ -128,6 +128,16 @@ const RelatedApps: React.FC<RelatedAppsProps> = ({ currentAppSlug, category, all
             </ul>
           </div>
         )}
+        {currentAppSlug === 'monopoly-go-plus-plus' && (
+          <div className="mt-6 text-sm text-gray-400">
+            <p className="mb-2">Helpful links:</p>
+            <ul className="list-disc list-inside space-y-1">
+              <li><a className="text-[#00ff88] hover:underline" href="/category/games">More casual & board game mods</a></li>
+              <li><a className="text-[#00ff88] hover:underline" href="/app/match-masters-mod">Match Masters – Unlimited Coins</a></li>
+              <li><a className="text-[#00ff88] hover:underline" href="/app/looney-tunes-world-of-mayhem-mod">Looney Tunes – Unlimited Gems & Gold</a></li>
+            </ul>
+          </div>
+        )}
       </div>
     </>
   );

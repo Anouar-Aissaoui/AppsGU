@@ -247,6 +247,22 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
             });
         }
 
+        // HowTo Schema (Programmatic SEO) for Monopoly Go++
+        if (app.slug === 'monopoly-go-plus-plus') {
+            addJsonLd({
+                "@context": "https://schema.org",
+                "@type": "HowTo",
+                "name": "How to Activate Monopoly Go++ (Unlimited Dice & Cash)",
+                "totalTime": "PT2M",
+                "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
+                "step": [
+                    { "@type": "HowToStep", "name": "Install Monopoly Go++", "text": "Download and install Monopoly Go++ on your device." },
+                    { "@type": "HowToStep", "name": "Launch the Game", "text": "Open Monopoly Go; resources sync automatically." },
+                    { "@type": "HowToStep", "name": "Build Faster", "text": "Use unlimited dice and cash to progress quickly." }
+                ]
+            });
+        }
+
         // HowTo Schema (Programmatic SEO) for iRecovery
         if (app.slug === 'irecovery') {
             addJsonLd({
@@ -342,6 +358,7 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, allApps, isPanel }) 
                         app.slug === 'instagram-plus-plus' ? 'Instagram++ – Download Media & View Stories Anonymously' :
                         app.slug === 'discord-nitro-free' ? 'Discord Nitro – Free Emojis, HD Streaming & Uploads' :
                         app.slug === 'pokemon-go-spoofer' ? 'Pokemon Go Spoofer – Teleport, Joystick & Auto-Catch' :
+                        app.slug === 'monopoly-go-plus-plus' ? 'Monopoly Go++ – Unlimited Dice & Cash' :
                         app.title
                       }</h1>
                       <div className="flex items-center gap-x-4 gap-y-1 text-gray-400 text-sm mb-4 flex-wrap">

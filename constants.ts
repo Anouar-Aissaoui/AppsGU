@@ -282,16 +282,21 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
         img: "https://i.imgur.com/ahghT00.jpeg", 
         author: "Plugin Installer", 
         title: "Monopoly Go++", 
-        description: "Unlimited Dice & Cash ~ Works on LIVE Servers",
+        description: "Unlimited dice & cash – build faster on live servers (iOS/Android)",
         version: "1.13.0",
         size: "75 MB",
         category: "Games",
-        longDescription: `Never run out of dice rolls or cash in Monopoly Go! This mod ensures you have the resources to keep playing and building your empire.
+        longDescription: `Keep rolling in Monopoly Go++ with unlimited dice and in-game cash.
 
-- Unlimited Dice Rolls.
-- Unlimited In-Game Cash.
-- Syncs with live game servers.
-- Anti-ban protection.`,
+### Key Features
+- Unlimited Dice Rolls
+- Unlimited In-Game Cash
+- Works on live servers
+
+### Quick Setup
+1. Install Monopoly Go++
+2. Open the game; resources sync to your account
+3. Build and upgrade without waiting`,
         faqs: [
             { question: "How are the unlimited dice and cash applied?", answer: "After installing the mod, simply open the game. The resources will be automatically added to your account balance." }
         ]
