@@ -1,4 +1,9 @@
 {
+  "redirects": [
+    { "source": "http://appsg.site/:path*", "destination": "https://www.appsg.site/:path*", "permanent": true },
+    { "source": "https://appsg.site/:path*", "destination": "https://www.appsg.site/:path*", "permanent": true },
+    { "source": "https://www.appsg.site/:path*/", "destination": "https://www.appsg.site/:path*", "permanent": true }
+  ],
   "rewrites": [
     { "source": "/app/:slug*", "destination": "/" },
     { "source": "/category/:slug*", "destination": "/" }
