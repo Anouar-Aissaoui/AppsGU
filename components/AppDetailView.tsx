@@ -130,6 +130,22 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
             });
         }
 
+        // HowTo Schema (Programmatic SEO) for COD Mobile MOD Menu
+        if (app.slug === 'cod-mobile-mod-menu') {
+            addJsonLd({
+                "@context": "https://schema.org",
+                "@type": "HowTo",
+                "name": "How to Use COD Mobile MOD Menu (iOS & Android)",
+                "totalTime": "PT2M",
+                "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
+                "step": [
+                    { "@type": "HowToStep", "name": "Install the MOD", "text": "Download and install the COD Mobile MOD Menu." },
+                    { "@type": "HowToStep", "name": "Open COD Mobile", "text": "Launch the game; a floating icon appears." },
+                    { "@type": "HowToStep", "name": "Toggle Features", "text": "Tap the icon to enable Aimbot, Wallhack, No Recoil, and SuperJump." }
+                ]
+            });
+        }
+
         return cleanupJsonLd;
     }, [app]);
 
@@ -198,7 +214,12 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, allApps, isPanel }) 
                   />
                   <div className="flex-grow">
                       <div className="text-sm font-bold text-[#00ff88] uppercase tracking-wider">{app.author}</div>
-                      <h1 className="text-4xl md:text-5xl font-black text-white my-1">{app.slug === 'altstore' ? 'AltStore – iOS App Installer' : app.slug === 'dreameshort-coins' ? 'DreameShort Coins – Unlimited Coins & Bonuses' : app.title}</h1>
+                      <h1 className="text-4xl md:text-5xl font-black text-white my-1">{
+                        app.slug === 'altstore' ? 'AltStore – iOS App Installer' :
+                        app.slug === 'dreameshort-coins' ? 'DreameShort Coins – Unlimited Coins & Bonuses' :
+                        app.slug === 'cod-mobile-mod-menu' ? 'COD Mobile MOD Menu – Aimbot & Wallhack' :
+                        app.title
+                      }</h1>
                       <div className="flex items-center gap-x-4 gap-y-1 text-gray-400 text-sm mb-4 flex-wrap">
                           <span>Version: {app.version}</span>
                           <span className="hidden sm:inline">|</span>

@@ -75,17 +75,24 @@ export const APPS_DATA: AppInfo[] = [
         img: "https://i.imgur.com/HJXUIFC.png", 
         author: "MOD Installer", 
         title: "COD Mobile MOD Menu", 
-        description: "Aimbot, SuperJump, Wallhack & MORE",
+        description: "Aimbot, Wallhack, No Recoil & SuperJump – iOS & Android",
         version: "3.5.2",
         size: "98 MB",
         category: "Games",
-        longDescription: `Dominate the battlefield in Call of Duty: Mobile with this advanced MOD Menu. Gain a competitive edge with features designed to enhance your gameplay.
+        longDescription: `Win more matches in Call of Duty: Mobile with a powerful MOD Menu built for iOS and Android.
 
-Mod Features Include:
-- Aimbot for precise targeting.
-- Wallhack to see enemies through walls.
-- SuperJump to reach tactical positions.
-- No recoil for perfect accuracy.`,
+### Key Features
+- Aimbot for precise targeting
+- Wallhack to see enemies through walls
+- SuperJump to reach tactical positions
+- No Recoil for perfect accuracy
+
+### Quick Setup
+1. Download and install the MOD Menu
+2. Launch COD Mobile
+3. Tap the floating icon to toggle features
+
+Use responsibly, especially in ranked modes.`,
         faqs: [
              { question: "Can my account get banned for using this mod?", answer: "There is always a risk of being banned when using mods in online games. We include anti-ban features, but use it at your own discretion, especially in ranked matches." },
              { question: "How do I activate the features in-game?", answer: "The mod menu appears as a floating icon on your screen during gameplay. You can tap it to open the menu and toggle the features you want to use." }
