@@ -9,6 +9,43 @@ interface SeoData {
 
 const DEFAULT_OG_IMAGE = 'https://i.imgur.com/rq3p0eE.png'; // Default OG image
 
+const CANONICAL_HOSTNAME = 'www.appsg.site';
+
+function normalizeUrl(input: string): string {
+    try {
+        const base = typeof window !== 'undefined' ? window.location.origin : `https://${CANONICAL_HOSTNAME}`;
+        const url = new URL(input, base);
+
+        // Enforce https and canonical host
+        url.protocol = 'https:';
+        url.hostname = CANONICAL_HOSTNAME;
+
+        // Remove tracking and non-canonical params
+        const paramsToRemove = [
+            'utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'utm_id',
+            'gclid', 'fbclid', 'ref', 'source', 'mc_cid', 'mc_eid', 'igsh', 'igshid'
+        ];
+        paramsToRemove.forEach(param => url.searchParams.delete(param));
+
+        // Remove internal/filtering params from canonical
+        url.searchParams.delete('category');
+        url.searchParams.delete('page');
+        url.searchParams.delete('q');
+
+        // Re-serialize search (ensures empty string when no params)
+        url.search = url.searchParams.toString() ? `?${url.searchParams.toString()}` : '';
+
+        // Trailing slash policy: only root has trailing slash
+        if (url.pathname !== '/' && url.pathname.endsWith('/')) {
+            url.pathname = url.pathname.replace(/\/+$/, '');
+        }
+
+        return url.toString();
+    } catch {
+        return input;
+    }
+}
+
 export const updateMetaTags = (data: SeoData) => {
     const { title, description, canonical, ogType = 'website', ogImage = DEFAULT_OG_IMAGE, robots } = data;
 
@@ -20,8 +57,9 @@ export const updateMetaTags = (data: SeoData) => {
     if (metaDescriptionTag) metaDescriptionTag.content = description;
 
     // Canonical Link
+    const normalizedCanonical = normalizeUrl(canonical);
     const canonicalLinkTag = document.getElementById('canonical-link') as HTMLLinkElement;
-    if (canonicalLinkTag) canonicalLinkTag.href = canonical;
+    if (canonicalLinkTag) canonicalLinkTag.href = normalizedCanonical;
 
     // Robots meta
     if (typeof robots === 'string' && robots.trim().length > 0) {
@@ -36,7 +74,7 @@ export const updateMetaTags = (data: SeoData) => {
     if (ogTypeTag) ogTypeTag.content = ogType;
     
     const ogUrlTag = document.getElementById('og-url') as HTMLMetaElement;
-    if (ogUrlTag) ogUrlTag.content = canonical;
+    if (ogUrlTag) ogUrlTag.content = normalizedCanonical;
 
     const ogTitleTag = document.getElementById('og-title') as HTMLMetaElement;
     if (ogTitleTag) ogTitleTag.content = title;

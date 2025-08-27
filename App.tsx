@@ -21,12 +21,8 @@ const getQueryParam = (param: string) => {
 };
 
 const getCategoryFromUrl = () => {
-    if (typeof window === 'undefined') return null;
-    const params = new URLSearchParams(window.location.search);
-    const categorySlug = params.get('category');
-    if (!categorySlug) return null;
-    const foundApp = APPS_DATA.find(app => slugify(app.category) === categorySlug);
-    return foundApp ? foundApp.category : null;
+    // Deprecated: category is now path-based at /category/:slug
+    return null;
 };
 
 
@@ -69,9 +65,6 @@ const App: React.FC = () => {
   useEffect(() => {
     const currentUrl = new URL(window.location.href);
     const currentSearch = currentUrl.searchParams.get('q') || '';
-    const currentCategorySlug = currentUrl.searchParams.get('category') || '';
-    
-    const newCategorySlug = selectedCategory ? slugify(selectedCategory) : '';
     let needsUpdate = false;
 
     if (debouncedSearchTerm !== currentSearch) {
@@ -83,19 +76,23 @@ const App: React.FC = () => {
         needsUpdate = true;
     }
 
-    if (newCategorySlug !== currentCategorySlug) {
-        if (newCategorySlug) {
-             currentUrl.searchParams.set('category', newCategorySlug);
-        } else {
-             currentUrl.searchParams.delete('category');
-        }
-        needsUpdate = true;
-    }
-
     if (needsUpdate) {
       window.history.replaceState({}, '', currentUrl.toString());
     }
-  }, [debouncedSearchTerm, selectedCategory]);
+  }, [debouncedSearchTerm]);
+
+  // Redirect legacy ?category=... URLs to /category/:slug
+  useEffect(() => {
+    const url = new URL(window.location.href);
+    const legacyCategory = url.searchParams.get('category');
+    if (legacyCategory) {
+      url.searchParams.delete('category');
+      const remainingQuery = url.search ? url.search : '';
+      const newPath = `/category/${legacyCategory}${remainingQuery}`;
+      window.history.replaceState({}, '', newPath);
+      setPathname(`/category/${legacyCategory}`);
+    }
+  }, []);
 
   useEffect(() => {
     const onClick = (event: MouseEvent) => {
@@ -142,10 +139,15 @@ const App: React.FC = () => {
       if (debouncedSearchTerm) parts.push(`search: ${debouncedSearchTerm}`);
       const suffix = parts.length > 0 ? ` – ${parts.join(' | ')}` : '';
 
+      const origin = window.location.origin;
+      const canonicalHome = selectedCategory
+        ? `${origin}/category/${slugify(selectedCategory)}`
+        : `${origin}/`;
+
       updateMetaTags({
         title: baseTitle + suffix,
         description: baseDescription,
-        canonical: window.location.origin + window.location.search,
+        canonical: canonicalHome,
         robots: debouncedSearchTerm ? 'noindex, follow' : 'index, follow',
       });
     }
@@ -175,9 +177,20 @@ const App: React.FC = () => {
   }, [searchTerm, selectedCategory, allApps, isLoading]);
 
   const handleSelectCategory = (category: string) => {
-    setSelectedCategory(category === 'All' ? null : category);
-    if (searchTerm) {
-        setSearchTerm('');
+    if (category === 'All') {
+      setSelectedCategory(null);
+      if (searchTerm) setSearchTerm('');
+      if (window.location.pathname !== '/') {
+        window.history.pushState({}, '', '/');
+        setPathname('/');
+      }
+      return;
+    }
+    if (searchTerm) setSearchTerm('');
+    const newPath = `/category/${slugify(category)}`;
+    if (window.location.pathname !== newPath) {
+      window.history.pushState({}, '', newPath);
+      setPathname(newPath);
     }
   };
 
