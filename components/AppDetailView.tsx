@@ -27,8 +27,8 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
         const appSeoName = getAppSeoName(app.title);
 
         updateMetaTags({
-            title: `${appSeoName} v${app.version} Download Free - iOS & Android ${app.category} Mod (${year})`,
-            description: `⭐ Download ${appSeoName} v${app.version} for FREE! Latest ${app.category.toLowerCase()} mod with premium features unlocked. ${app.description}. Safe installation guide for iOS & Android. Updated ${year}.`,
+            title: `${appSeoName} v${app.version} – Free Download | AppsGU`,
+            description: `Download ${appSeoName} v${app.version} for iOS & Android. ${app.description}`,
             canonical: canonicalUrl,
             ogType: 'article',
             ogImage: app.img,

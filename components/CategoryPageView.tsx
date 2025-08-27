@@ -31,13 +31,11 @@ const CategoryPageView: React.FC<CategoryPageViewProps> = ({ categorySlug, allAp
 
         const baseUrl = window.location.origin;
         const canonicalUrl = `${baseUrl}/category/${categorySlug}`;
-        const year = new Date().getFullYear();
         const appCount = filteredApps.length;
-        const exampleApps = filteredApps.slice(0, 2).map(a => a.title).join(' and ');
         
         updateMetaTags({
-            title: `${appCount}+ Best ${categoryName} Mods & Apps - Free iOS Android Download (${year})`,
-            description: `🔥 Top ${appCount}+ ${categoryName.toLowerCase()} mods & modded apps for iOS/Android! Download ${exampleApps} + more premium features unlocked. Safe installation guides. Updated ${year}.`,
+            title: `Best ${categoryName} Mods – Free Download | AppsGU`,
+            description: `Top ${appCount}+ ${categoryName.toLowerCase()} mods for iOS & Android. Safe downloads and guides.`,
             canonical: canonicalUrl,
             robots: 'index, follow'
         });
