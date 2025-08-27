@@ -330,7 +330,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "carx-street-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/ww6283n.jpeg", 
         author: "TapTweak", 
         title: "CarX Street Mod", 
         description: "Unlimited Money!",
@@ -345,7 +345,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "nulls-brawl",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/qvEKuwI.jpeg", 
         author: "TapTweak", 
         title: "Null's Brawl", 
         description: "Easy install for iOS & Android!",
@@ -360,7 +360,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "mortal-kombat-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/GPmMlCV.jpeg", 
         author: "TapTweak", 
         title: "Mortal Kombat Mod", 
         description: "Unlimited Souls & Coins!",
@@ -375,7 +375,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "loot-boy-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/9UeNwnL.jpeg", 
         author: "TapTweak", 
         title: "Loot Boy Mod", 
         description: "Unlimited Diamonds, Tickets & Coins!",
@@ -390,7 +390,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "bus-simulator-ultimate-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/z5SVQvN.jpeg", 
         author: "TapTweak", 
         title: "Bus Simulator: Ultimate Mod", 
         description: "Unlimited Money & Gold!",
@@ -405,7 +405,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "race-master-3d-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/f2b9l1a.jpeg", 
         author: "TapTweak", 
         title: "Race Master 3D Mod", 
         description: "Unlimited Money, Nitro & Shields!",
@@ -420,7 +420,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "ninja-turtles-legends-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/5enzvGz.jpeg", 
         author: "TapTweak", 
         title: "Ninja Turtles: Legends Mod", 
         description: "Unlimited Greenbacks & Everything!",
