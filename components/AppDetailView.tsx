@@ -61,7 +61,8 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
             "publisher": { "@type": "Organization", "name": "AppsGU" },
             "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
             "downloadUrl": canonicalUrl,
-            "screenshot": app.img
+            "screenshot": app.img,
+            "image": [app.img]
         });
 
         // BreadcrumbList Schema
@@ -143,10 +144,15 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, allApps, isPanel }) 
               <div className="flex flex-col md:flex-row items-start gap-6 md:gap-8">
                   <img 
                       src={app.img} 
-                      alt={`${app.title} - ${app.category} mod icon, version ${app.version}`}
+                      alt={`Hero image – ${app.title} ${app.category} Mod v${app.version} for iOS & Android`}
+                      title={`${app.title} Mod v${app.version} – iOS & Android Download`}
+                      width={160}
+                      height={160}
                       className="w-32 h-32 md:w-40 md:h-40 object-cover rounded-3xl shadow-lg flex-shrink-0"
-                      loading="lazy"
+                      loading="eager"
                       decoding="async"
+                      fetchPriority="high"
+                      sizes="(min-width: 768px) 160px, 128px"
                   />
                   <div className="flex-grow">
                       <div className="text-sm font-bold text-[#00ff88] uppercase tracking-wider">{app.author}</div>

@@ -22,10 +22,15 @@ const AppItem: React.FC<AppItemProps> = ({ app, isActive }) => {
           <div className="flex-shrink-0">
                         <img 
               src={app.img} 
-              alt={`${app.title} - ${app.category} mod icon`} 
+              alt={`${app.title} ${app.category} Mod – Download for iOS & Android (Icon)`} 
+              title={`${app.title} Mod Download – iOS & Android`} 
+              width={64}
+              height={64}
               className="w-16 h-16 object-cover rounded-2xl shadow-lg transition-transform duration-300 group-hover:scale-105" 
               loading="lazy"
               decoding="async"
+              fetchPriority="low"
+              sizes="64px"
             />
           </div>
           <div className="flex-grow min-w-0">
