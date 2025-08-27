@@ -570,7 +570,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "jetpack-joyride-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/SHsNAMD.jpeg", 
         author: "TapTweak", 
         title: "Jetpack Joyride Mod", 
         description: "Unlimited Coins!",
@@ -585,7 +585,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "baseball-9-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/PevNHtH.jpeg", 
         author: "TapTweak", 
         title: "Baseball 9 Mod", 
         description: "Unlimited Money & Gems!",
@@ -600,7 +600,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "photos-plus",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/X78CBbO.png", 
         author: "TapTweak", 
         title: "Photos+", 
         description: "Recover deleted Photos/Videos on iOS & Android!",
@@ -615,7 +615,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "harry-potter-puzzles-and-spells-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/1Ae1HUj.jpeg", 
         author: "TapTweak", 
         title: "Harry Potter: Puzzles & Spells Mod", 
         description: "Unlimited Gold!",
@@ -630,7 +630,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "injustice-2-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/ecCKqAb.jpeg", 
         author: "TapTweak", 
         title: "Injustice 2 Mod", 
         description: "Unlimited Gems & Credits!",
@@ -645,7 +645,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "king-of-thieves-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/vCWr1Yd.jpeg", 
         author: "TapTweak", 
         title: "King of Thieves Mod", 
         description: "Unlimited Orbs & Gold!",
