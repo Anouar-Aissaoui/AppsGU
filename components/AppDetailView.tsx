@@ -22,7 +22,9 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
             // More specific keywords based on category
             if (app.category === 'Games') return `${title} Mod Menu`;
             if (app.category === 'Social') return `${title}++`;
-            return `${title} Mod`; // Default fallback
+            if (app.category === 'Utilities') return `${title}`;
+            if (app.category === 'Entertainment') return `${title}`;
+            return `${title}`; // Default fallback
         };
         const appSeoName = getAppSeoName(app.title);
 
@@ -146,6 +148,22 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
             });
         }
 
+        // HowTo Schema (Programmatic SEO) for iRecovery
+        if (app.slug === 'irecovery') {
+            addJsonLd({
+                "@context": "https://schema.org",
+                "@type": "HowTo",
+                "name": "How to Recover Deleted Photos/Videos with iRecovery",
+                "totalTime": "PT5M",
+                "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
+                "step": [
+                    { "@type": "HowToStep", "name": "Install iRecovery", "text": "Download and open iRecovery on your device." },
+                    { "@type": "HowToStep", "name": "Choose Scan Type", "text": "Select quick or deep scan based on how long ago files were deleted." },
+                    { "@type": "HowToStep", "name": "Preview & Restore", "text": "Preview found photos/videos and tap Restore to recover them." }
+                ]
+            });
+        }
+
         return cleanupJsonLd;
     }, [app]);
 
@@ -218,6 +236,7 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, allApps, isPanel }) 
                         app.slug === 'altstore' ? 'AltStore – iOS App Installer' :
                         app.slug === 'dreameshort-coins' ? 'DreameShort Coins – Unlimited Coins & Bonuses' :
                         app.slug === 'cod-mobile-mod-menu' ? 'COD Mobile MOD Menu – Aimbot & Wallhack' :
+                        app.slug === 'irecovery' ? 'iRecovery – Recover Deleted Photos & Videos' :
                         app.title
                       }</h1>
                       <div className="flex items-center gap-x-4 gap-y-1 text-gray-400 text-sm mb-4 flex-wrap">

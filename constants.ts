@@ -107,14 +107,22 @@ Use responsibly, especially in ranked modes.`,
         version: "4.0.1",
         size: "30 MB",
         category: "Utilities",
-        longDescription: `Accidentally deleted important photos or videos? iRecovery is a powerful tool that can help you restore media files you thought were lost forever. It scans your device's storage to find and recover deleted files.
+        longDescription: `Accidentally deleted important photos or videos? iRecovery helps you restore media you thought were gone.
 
-- Supports recovery of various file types (JPG, PNG, MP4, MOV).
-- Deep scan technology for higher success rate.
-- User-friendly interface.`,
+### What iRecovery Recovers
+- Photos: JPG, PNG
+- Videos: MP4, MOV
+
+### How It Works
+1. Install and open iRecovery
+2. Choose Quick or Deep Scan
+3. Preview and restore selected files
+
+Tips: Run the scan soon after deletion and avoid large new recordings to improve success rates.`,
         faqs: [
-            { question: "Can iRecovery recover files after a factory reset?", answer: "Unfortunately, no. A factory reset securely erases all data, making recovery impossible. iRecovery is designed to recover files from regular deletion." },
-            { question: "Does it require my device to be jailbroken or rooted?", answer: "No, iRecovery works on standard, non-jailbroken iOS devices and non-rooted Android devices." }
+            { question: "Can iRecovery recover files after a factory reset?", answer: "No. Factory resets wipe data securely. iRecovery works best for recent, regular deletions." },
+            { question: "Does it require my device to be jailbroken or rooted?", answer: "No. Standard iOS and Android devices are supported." },
+            { question: "Which scan should I use?", answer: "Try Quick Scan first; if you don’t see files, run Deep Scan for a more thorough search." }
         ]
     },
     { 

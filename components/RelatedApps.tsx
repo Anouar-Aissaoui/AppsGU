@@ -58,6 +58,16 @@ const RelatedApps: React.FC<RelatedAppsProps> = ({ currentAppSlug, category, all
             </ul>
           </div>
         )}
+        {currentAppSlug === 'irecovery' && (
+          <div className="mt-6 text-sm text-gray-400">
+            <p className="mb-2">Helpful links:</p>
+            <ul className="list-disc list-inside space-y-1">
+              <li><a className="text-[#00ff88] hover:underline" href="/category/utilities">Utilities tools & installers</a></li>
+              <li><a className="text-[#00ff88] hover:underline" href="/app/altstore">AltStore – iOS App Installer</a></li>
+              <li><a className="text-[#00ff88] hover:underline" href="/app/photos-plus">Photos+ – Media Recovery</a></li>
+            </ul>
+          </div>
+        )}
       </div>
     </>
   );
