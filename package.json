@@ -6,10 +6,11 @@
   "scripts": {
     "dev": "vite",
     "prebuild": "npm run generate-sitemap",
-    "build": "vite build",
+    "build": "vite build && npm run prerender",
     "preview": "vite preview",
     "generate-sitemap": "node --loader ts-node/esm generate-sitemap.ts",
-    "generate-seo-report": "node --loader ts-node/esm scripts/generate-seo-report.ts"
+    "generate-seo-report": "node --loader ts-node/esm scripts/generate-seo-report.ts",
+    "prerender": "node --loader ts-node/esm scripts/prerender.ts"
   },
   "dependencies": {
     "react": "^19.1.1",
