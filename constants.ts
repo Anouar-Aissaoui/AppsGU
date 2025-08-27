@@ -840,7 +840,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "ice-age-adventures-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/Bx69dSO.jpeg", 
         author: "TapTweak", 
         title: "Ice Age Adventures Mod", 
         description: "Unlimited Acorns!",
@@ -855,7 +855,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "score-hero-2022-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/ujRHvBz.jpeg", 
         author: "TapTweak", 
         title: "Score! Hero 2022 Mod", 
         description: "Unlimited Money!",
@@ -870,7 +870,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "gangstar-vegas-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/GtpkLZt.jpeg", 
         author: "TapTweak", 
         title: "Gangstar Vegas Mod", 
         description: "Unlimited Diamonds & Money!",
@@ -885,7 +885,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "dislyte-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/GtpkLZt.jpeg", 
         author: "TapTweak", 
         title: "Dislyte Mod", 
         description: "Unlimited Crystals & Gold!",
@@ -900,7 +900,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "the-wolf-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/KRobVTS.jpeg", 
         author: "TapTweak", 
         title: "The Wolf Mod", 
         description: "Unlimited Gems & Money!",
@@ -915,7 +915,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "traffic-rider-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/h3eF6FU.jpeg", 
         author: "TapTweak", 
         title: "Traffic Rider Mod", 
         description: "Unlimited Money & Cash!",
@@ -930,7 +930,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "skullgirls-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/xvhkfhL.jpeg", 
         author: "TapTweak", 
         title: "Skullgirls Mod", 
         description: "Unlimited Theonite!",
@@ -945,7 +945,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "infinity-kingdom-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/epyQAFG.jpeg", 
         author: "TapTweak", 
         title: "Infinity Kingdom Mod", 
         description: "Unlimited Gems!",
@@ -960,7 +960,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "mighty-party-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/TnqOIo0.jpeg", 
         author: "TapTweak", 
         title: "Mighty Party Mod", 
         description: "Unlimited Gems & Coins!",
@@ -975,7 +975,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "pocket-troops-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/GUU5sXx.jpeg", 
         author: "TapTweak", 
         title: "Pocket Troops Mod", 
         description: "Unlimited Coins & Cash!",
@@ -990,7 +990,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "top-war-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/GTAlQzP.jpeg", 
         author: "TapTweak", 
         title: "Top War Mod", 
         description: "Unlimited Diamonds & Coins!",
@@ -1005,7 +1005,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "war-and-order-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/pvaRLDg.jpeg", 
         author: "TapTweak", 
         title: "War and Order Mod", 
         description: "Unlimited Gems & Coins!",
@@ -1020,7 +1020,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "world-chef-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/lJGGZN4.jpeg", 
         author: "TapTweak", 
         title: "World Chef Mod", 
         description: "Unlimited Gems & Gold!",
@@ -1035,7 +1035,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "angry-birds-evolution-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/BXKcVmy.jpeg", 
         author: "TapTweak", 
         title: "Angry Birds Evolution Mod", 
         description: "Unlimited Gems & Coin!",
@@ -1050,7 +1050,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "project-makeover-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/IO2IdIQ.jpeg", 
         author: "TapTweak", 
         title: "Project Makeover Mod", 
         description: "Unlimited Gems & Coins!",
@@ -1065,7 +1065,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "basketball-stars-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/U0tFpXg.jpeg", 
         author: "TapTweak", 
         title: "Basketball Stars Mod", 
         description: "Unlimited Money & Gold!",
@@ -1080,7 +1080,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "disney-heroes-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/wpvpO0V.jpeg", 
         author: "TapTweak", 
         title: "Disney Heroes Mod", 
         description: "Unlimited Diamonds & Gold!",
@@ -1095,7 +1095,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "lilys-garden-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/dee3c7i.jpeg", 
         author: "TapTweak", 
         title: "Lily's Garden Mod", 
         description: "Unlimited Stars & Coins!",
@@ -1110,7 +1110,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "tennis-clash-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/KuqWj0q.jpeg", 
         author: "TapTweak", 
         title: "Tennis Clash Mod", 
         description: "Unlimited Gems & Coins!",
@@ -1125,7 +1125,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "pvz-heroes-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/t6RvgZr.jpeg", 
         author: "TapTweak", 
         title: "PvZ Heroes Mod", 
         description: "Unlimited Gems & Cards!",
@@ -1140,7 +1140,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "nba-live-mobile-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/7xFvMdi.jpeg", 
         author: "TapTweak", 
         title: "NBA Live Mobile Mod", 
         description: "Unlimited Money!",
@@ -1155,7 +1155,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "dragon-mania-legends-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/xhAYWdn.jpeg", 
         author: "TapTweak", 
         title: "Dragon Mania Legends Mod", 
         description: "Unlimited Gems & Coins!",
