@@ -47,7 +47,12 @@ function normalizeUrl(input: string): string {
 }
 
 export const updateMetaTags = (data: SeoData) => {
-    const { title, description, canonical, ogType = 'website', ogImage = DEFAULT_OG_IMAGE, robots } = data;
+    let { title, description, canonical, ogType = 'website', ogImage = DEFAULT_OG_IMAGE, robots } = data;
+
+    // Enforce best-practice lengths
+    const clamp = (str: string, max: number) => (str.length > max ? str.slice(0, max - 1).trimEnd() + '…' : str);
+    title = clamp(title, 60);
+    description = clamp(description, 160);
 
     // Document Title
     document.title = title;

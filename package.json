@@ -8,7 +8,8 @@
     "prebuild": "npm run generate-sitemap",
     "build": "vite build",
     "preview": "vite preview",
-    "generate-sitemap": "node --loader ts-node/esm generate-sitemap.ts"
+    "generate-sitemap": "node --loader ts-node/esm generate-sitemap.ts",
+    "generate-seo-report": "node --loader ts-node/esm scripts/generate-seo-report.ts"
   },
   "dependencies": {
     "react": "^19.1.1",
