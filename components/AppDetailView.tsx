@@ -231,6 +231,22 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
             });
         }
 
+        // HowTo Schema (Programmatic SEO) for Pokemon Go Spoofer
+        if (app.slug === 'pokemon-go-spoofer') {
+            addJsonLd({
+                "@context": "https://schema.org",
+                "@type": "HowTo",
+                "name": "How to Use Pokemon Go Spoofer Safely (iOS & Android)",
+                "totalTime": "PT3M",
+                "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
+                "step": [
+                    { "@type": "HowToStep", "name": "Install Spoofer", "text": "Download and install the Pokemon Go Spoofer on your device." },
+                    { "@type": "HowToStep", "name": "Teleport & Wait", "text": "Teleport to the target location, then respect cooldown before any action." },
+                    { "@type": "HowToStep", "name": "Use Joystick & Auto-Catch", "text": "Navigate with the joystick and enable auto-catch as needed." }
+                ]
+            });
+        }
+
         // HowTo Schema (Programmatic SEO) for iRecovery
         if (app.slug === 'irecovery') {
             addJsonLd({
@@ -325,6 +341,7 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, allApps, isPanel }) 
                         app.slug === 'roblox-mod' ? 'Roblox Mod Menu – Fly, God Mode & Speed' :
                         app.slug === 'instagram-plus-plus' ? 'Instagram++ – Download Media & View Stories Anonymously' :
                         app.slug === 'discord-nitro-free' ? 'Discord Nitro – Free Emojis, HD Streaming & Uploads' :
+                        app.slug === 'pokemon-go-spoofer' ? 'Pokemon Go Spoofer – Teleport, Joystick & Auto-Catch' :
                         app.title
                       }</h1>
                       <div className="flex items-center gap-x-4 gap-y-1 text-gray-400 text-sm mb-4 flex-wrap">

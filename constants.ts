@@ -258,16 +258,21 @@ Use with care in competitive modes.`,
         img: "https://i.imgur.com/2X6jMHU.png", 
         author: "Plugin Installer", 
         title: "Pokemon Go Spoofer", 
-        description: "Spoofer, Teleport, Auto-Walk, Joystick, Auto Catch and more!",
+        description: "Teleport, joystick, auto-walk, auto-catch & IV checker (iOS/Android)",
         version: "0.275.0",
         size: "115 MB",
         category: "Games",
-        longDescription: `Explore the world of Pokemon Go from the comfort of your home. This spoofer lets you change your location, auto-walk, and use a joystick for movement.
+        longDescription: `Explore Pokemon Go with advanced spoofing tools on iOS & Android.
 
-- Teleport: Instantly travel to any location in the world.
-- Joystick: Control your movement precisely.
-- Auto-Catch: Automatically catch Pokemon around you.
-- IV Checker: See the stats of Pokemon before catching them.`,
+### Key Features
+- Teleport to any location
+- Joystick for precise control
+- Auto-walk for egg hatching
+- Auto-catch nearby Pokémon
+- IV checker before catching
+
+### Cooldown Safety
+Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel time before taking actions.`,
         faqs: [
             { question: "Is it safe to teleport long distances?", answer: "To avoid a soft ban, you must respect cooldown times. Do not teleport to a faraway location and immediately interact with the game. Wait for a reasonable amount of time, similar to actual travel time." }
         ]
