@@ -1,5 +1,9 @@
 User-agent: *
 Allow: /
+Allow: /assets/
+Allow: /favicon.svg
+Allow: /rss.xml
+Allow: /sitemap.xml
 Disallow: /admin/
 Disallow: /private/
 Disallow: /*.json$
