@@ -209,16 +209,21 @@ Use with care in competitive modes.`,
         img: "https://i.imgur.com/M5mKDJ8.png", 
         author: "AppsGU", 
         title: "Instagram++", 
-        description: "View private Instagram accounts without following them, get unlimited followers, and much more",
+        description: "Instagram++ – download media, view stories anonymously, extra tools (iOS/Android)",
         version: "20.1",
         size: "88 MB",
         category: "Social",
-        longDescription: `Instagram++ is a tweaked version of the official app with many additional features.
+        longDescription: `Instagram++ is a tweaked Instagram client with extra features on iOS and Android.
 
-- View Private Profiles: See photos and posts of private accounts.
-- Anonymous Story Viewing: Watch stories without them knowing.
-- Download Media: Save photos, videos, and stories directly to your device.
-- Follower Tools: Tools to manage and grow your follower base.`,
+### Key Features
+- Download photos, videos, and stories
+- Anonymous story viewing
+- Extra tools for followers and profile management
+
+### Quick Setup
+1. Uninstall stock Instagram to avoid conflicts
+2. Install Instagram++
+3. Sign in and enable features in settings`,
         faqs: [
             { question: "Do I need to delete the original Instagram app?", answer: "Yes, it is recommended to uninstall the official Instagram app before installing Instagram++ to avoid conflicts." }
         ]

@@ -196,6 +196,22 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
             });
         }
 
+        // HowTo Schema (Programmatic SEO) for Instagram++
+        if (app.slug === 'instagram-plus-plus') {
+            addJsonLd({
+                "@context": "https://schema.org",
+                "@type": "HowTo",
+                "name": "How to Install and Use Instagram++ (iOS & Android)",
+                "totalTime": "PT3M",
+                "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
+                "step": [
+                    { "@type": "HowToStep", "name": "Uninstall Stock App", "text": "Remove the official Instagram app to avoid conflicts." },
+                    { "@type": "HowToStep", "name": "Install Instagram++", "text": "Download and install Instagram++ on your device." },
+                    { "@type": "HowToStep", "name": "Enable Features", "text": "Open settings in Instagram++ to enable downloads and anonymous viewing." }
+                ]
+            });
+        }
+
         // HowTo Schema (Programmatic SEO) for iRecovery
         if (app.slug === 'irecovery') {
             addJsonLd({
@@ -288,6 +304,7 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, allApps, isPanel }) 
                         app.slug === 'efootball-2024-mod' ? 'eFootball 2024 – Unlimited Coins & GP' :
                         app.slug === 'fc-mobile-24-25-mod' ? 'FC Mobile 24/25 – Unlimited Points & Gems' :
                         app.slug === 'roblox-mod' ? 'Roblox Mod Menu – Fly, God Mode & Speed' :
+                        app.slug === 'instagram-plus-plus' ? 'Instagram++ – Download Media & View Stories Anonymously' :
                         app.title
                       }</h1>
                       <div className="flex items-center gap-x-4 gap-y-1 text-gray-400 text-sm mb-4 flex-wrap">
