@@ -660,7 +660,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "monster-legends-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/YoiDkaH.jpeg", 
         author: "TapTweak", 
         title: "Monster Legends Mod", 
         description: "Unlimited Gems & Gold!",
@@ -675,7 +675,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "scrabble-go-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/7lJAiF0.jpeg", 
         author: "TapTweak", 
         title: "Scrabble GO Mod", 
         description: "Unlimited Gems!",
@@ -690,7 +690,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "state-of-survival-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/qK0wUbz.jpeg", 
         author: "TapTweak", 
         title: "State of Survival Mod", 
         description: "Unlimited Biocaps & Resources!",
@@ -705,7 +705,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "hungry-shark-evolution-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/Dcid1F2.jpeg", 
         author: "TapTweak", 
         title: "Hungry Shark Evolution Mod", 
         description: "Unlimited Gems & Coins!",
@@ -720,7 +720,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "soul-knight-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/MxN7vqH.jpeg", 
         author: "TapTweak", 
         title: "Soul Knight Mod", 
         description: "Unlimited Gems!",
@@ -735,7 +735,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "criminal-case-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/bkhqT3H.jpeg", 
         author: "TapTweak", 
         title: "Criminal Case Mod", 
         description: "Unlimited Money!",
@@ -750,7 +750,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "frag-pro-shooter-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/AGM5hqE.jpeg", 
         author: "TapTweak", 
         title: "FRAG Pro Shooter Mod", 
         description: "Unlimited Diamonds & Coins!",
@@ -765,7 +765,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "dc-legends-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/OBHbEhE.jpeg", 
         author: "TapTweak", 
         title: "DC Legends Mod", 
         description: "Unlimited Gems & Energy!",
@@ -780,7 +780,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "fr-legends-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/ZxpS32A.jpeg", 
         author: "TapTweak", 
         title: "FR Legends Mod", 
         description: "Unlimited Money!",
@@ -795,7 +795,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "dungeon-hunter-5-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/fZaPTZk.jpeg", 
         author: "TapTweak", 
         title: "Dungeon Hunter 5 Mod", 
         description: "Unlimited Gems!",
@@ -810,7 +810,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "looney-tunes-world-of-mayhem-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/ILYs6Lg.jpeg", 
         author: "TapTweak", 
         title: "Looney Tunes™ World of Mayhem Mod", 
         description: "Unlimited Gems & Gold!",
@@ -825,7 +825,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "need-for-speed-no-limits-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/5Yqlgg5.jpeg", 
         author: "TapTweak", 
         title: "Need for Speed™ No Limits Mod", 
         description: "Unlimited Money & Gold!",
