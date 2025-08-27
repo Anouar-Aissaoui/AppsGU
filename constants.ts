@@ -299,17 +299,33 @@ Level up faster, craft advanced gear, and enjoy the full sci‑fi campaign witho
     },
     { 
         slug: "forge-of-empires-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/I1yUA4w.png", 
         author: "TapTweak", 
         title: "Forge of Empires Mod", 
-        description: "Unlimited Diamonds & Resources!",
+        description: "Unlimited Diamonds, Supplies & Free Shopping on iOS & Android",
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Access unlimited diamonds and resources in Forge of Empires. Build faster and dominate events on iOS & Android.`,
+        longDescription: `Download Forge of Empires Mod for iOS and Android and supercharge your city building.
+
+### Key Mod Features
+- Unlimited Diamonds for premium buildings and expansions
+- Unlimited Supplies and resources
+- Free Shopping enabled (no real-money purchases)
+- Works on iPhone/iPad and Android
+
+### Gameplay Benefits
+Accelerate research, expand your city, and dominate events without waiting. This 2025-optimized build focuses on stability and smooth gameplay.
+
+### Installation Notes
+- No jailbreak or root required
+- Compatible with the latest FoE version
+- For competitive guild play, consider a secondary account
+`,
         faqs: [
-            { question: "Can this cause a ban?", answer: "Anti-cheat systems may detect irregular activity; proceed with caution." },
-            { question: "Does it support both platforms?", answer: "Yes, iOS and Android are supported." }
+            { question: "Can this cause a ban?", answer: "Anti-cheat may detect irregularities in competitive modes. Use responsibly and avoid ranked events on main accounts." },
+            { question: "Does it support both platforms?", answer: "Yes. Supports iOS 12+ and modern Android devices without jailbreak or root." },
+            { question: "Do I need to uninstall the original?", answer: "If you see install/signature conflicts, uninstall the stock app first and try again." }
         ]
     },
     { 
