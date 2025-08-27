@@ -28,6 +28,16 @@ const RelatedApps: React.FC<RelatedAppsProps> = ({ currentAppSlug, category, all
             <AppItem key={app.slug} app={app} isActive={false} />
           ))}
         </ul>
+        {currentAppSlug === 'altstore' && (
+          <div className="mt-6 text-sm text-gray-400">
+            <p className="mb-2">Helpful links:</p>
+            <ul className="list-disc list-inside space-y-1">
+              <li><a className="text-[#00ff88] hover:underline" href="/category/utilities">Utilities mods & tools</a></li>
+              <li><a className="text-[#00ff88] hover:underline" href="/app/irecovery">iRecovery – Photo/Video Recovery</a></li>
+              <li><a className="text-[#00ff88] hover:underline" href="/app/instagram-plus-plus">Instagram++ – Social mod</a></li>
+            </ul>
+          </div>
+        )}
       </div>
     </>
   );

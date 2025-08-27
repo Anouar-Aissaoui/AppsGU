@@ -88,6 +88,32 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
             });
         }
 
+        // HowTo Schema (Programmatic SEO) for AltStore
+        if (app.slug === 'altstore') {
+            addJsonLd({
+                "@context": "https://schema.org",
+                "@type": "HowTo",
+                "name": "How to Install AltStore on iPhone/iPad (Windows & macOS)",
+                "totalTime": "PT10M",
+                "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
+                "supply": [
+                    { "@type": "HowToSupply", "name": "iPhone or iPad" },
+                    { "@type": "HowToSupply", "name": "Lightning/USB‑C cable" }
+                ],
+                "tool": [
+                    { "@type": "HowToTool", "name": "AltServer (Windows/macOS)" }
+                ],
+                "step": [
+                    { "@type": "HowToStep", "name": "Install AltServer", "text": "Download and install AltServer on your Windows PC or Mac." },
+                    { "@type": "HowToStep", "name": "Connect your device", "text": "Connect your iPhone/iPad via USB and trust the computer when prompted." },
+                    { "@type": "HowToStep", "name": "Install AltStore", "text": "Open AltServer and choose Install AltStore, then select your device." },
+                    { "@type": "HowToStep", "name": "Sign in with Apple ID", "text": "Enter your Apple ID (free account works) to sign the app." },
+                    { "@type": "HowToStep", "name": "Trust the certificate", "text": "On your device: Settings → General → Device Management → Trust your Apple ID." },
+                    { "@type": "HowToStep", "name": "Launch AltStore", "text": "Open AltStore on your device and start sideloading .ipa files." }
+                ]
+            });
+        }
+
         return cleanupJsonLd;
     }, [app]);
 
@@ -156,7 +182,7 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, allApps, isPanel }) 
                   />
                   <div className="flex-grow">
                       <div className="text-sm font-bold text-[#00ff88] uppercase tracking-wider">{app.author}</div>
-                      <h1 className="text-4xl md:text-5xl font-black text-white my-1">{app.title}</h1>
+                      <h1 className="text-4xl md:text-5xl font-black text-white my-1">{app.slug === 'altstore' ? 'AltStore – iOS App Installer' : app.title}</h1>
                       <div className="flex items-center gap-x-4 gap-y-1 text-gray-400 text-sm mb-4 flex-wrap">
                           <span>Version: {app.version}</span>
                           <span className="hidden sm:inline">|</span>
