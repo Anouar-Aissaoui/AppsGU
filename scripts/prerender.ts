@@ -49,12 +49,16 @@ const template = read(templatePath);
   const description = clamp('Download free modded apps and tweaks for iPhone, iPad and Android. Safe guides, FAQs and regular updates.', 160);
   const canonical = `${SITE_URL}/`;
   let html = replaceMeta(template, { title, description, canonical, ogType: 'website', ogImage: 'https://i.imgur.com/rq3p0eE.png' });
-  // Simple FAQ JSON-LD for home
+  // Simple FAQ + Categories ItemList JSON-LD for home
+  const categoriesHome = Array.from(new Set(APPS_DATA.map(a => a.category)));
+  const categoryItems = categoriesHome.map(c => ({ name: c, url: `${SITE_URL}/category/${slugify(c)}` }));
   html = injectJsonLd(html, [{
     '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: [
       { '@type': 'Question', name: 'Are these iOS/Android mods safe?', acceptedAnswer: { '@type': 'Answer', text: 'We provide guides and safety tips. Use responsibly, especially in online modes.' } },
       { '@type': 'Question', name: 'Do I need jailbreak or root?', acceptedAnswer: { '@type': 'Answer', text: 'No. Most apps work on standard iOS and Android devices without jailbreak or root.' } }
     ]
+  }, {
+    '@context': 'https://schema.org', '@type': 'ItemList', itemListElement: categoryItems.map((it, i) => ({ '@type': 'ListItem', position: i + 1, url: it.url, name: it.name }))
   }]);
   const outPath = path.join(distDir, 'index.html');
   write(outPath, html);
