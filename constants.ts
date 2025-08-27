@@ -237,17 +237,33 @@ Nitro Perks:
     ,
     { 
         slug: "match-masters-mod",
-        img: "https://via.placeholder.com/128?text=App", 
+        img: "https://i.imgur.com/UzciDnD.jpeg", 
         author: "TapTweak", 
         title: "Match Masters Mod", 
-        description: "Unlimited Coins!",
+        description: "Unlimited Coins, Boosters & Free Shopping for iOS & Android",
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Unlock unlimited coins in Match Masters. Enjoy premium features and faster progression. Works on iOS & Android.`,
+        longDescription: `Download Match Masters Mod for iOS and Android and unlock premium features instantly.
+
+### Key Mod Features
+- Unlimited Coins for upgrades and skins
+- Unlimited Boosters and free spins
+- Free Shopping enabled (no real money)
+- Works on both iPhone/iPad and Android
+
+### Why Use This Mod?
+This 2025-ready Match Masters mod helps you progress faster without grinding. Safely enhance your gameplay with resources to focus on strategy and PvP matches.
+
+### Installation Notes
+- No jailbreak or root required
+- Compatible with latest Match Masters version
+- Use secondary accounts for competitive play
+`,
         faqs: [
-            { question: "Is this safe to use?", answer: "Use at your own discretion. We aim for safety, but online games may enforce anti-cheat." },
-            { question: "Does it work on iOS and Android?", answer: "Yes, it supports both platforms." }
+            { question: "Is this safe to use?", answer: "The mod includes anti-detection measures, but online games may enforce anti-cheat. Use responsibly, especially in ranked PvP." },
+            { question: "Does it work on iOS and Android?", answer: "Yes. It supports iOS 12+ and modern Android devices without jailbreak or root." },
+            { question: "Do I need to uninstall the original app?", answer: "On some devices, uninstalling the stock app avoids signature conflicts. If you encounter installation errors, remove the original app first." }
         ]
     },
     { 
