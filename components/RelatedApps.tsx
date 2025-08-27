@@ -108,6 +108,16 @@ const RelatedApps: React.FC<RelatedAppsProps> = ({ currentAppSlug, category, all
             </ul>
           </div>
         )}
+        {currentAppSlug === 'discord-nitro-free' && (
+          <div className="mt-6 text-sm text-gray-400">
+            <p className="mb-2">Helpful links:</p>
+            <ul className="list-disc list-inside space-y-1">
+              <li><a className="text-[#00ff88] hover:underline" href="/category/social">Explore more social tools</a></li>
+              <li><a className="text-[#00ff88] hover:underline" href="/app/instagram-plus-plus">Instagram++ – Tweaked Client</a></li>
+              <li><a className="text-[#00ff88] hover:underline" href="/app/altstore">AltStore – iOS App Installer</a></li>
+            </ul>
+          </div>
+        )}
       </div>
     </>
   );

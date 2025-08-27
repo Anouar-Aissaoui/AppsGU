@@ -21,7 +21,10 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
             }
             // More specific keywords based on category
             if (app.category === 'Games') return `${title} Mod Menu`;
-            if (app.category === 'Social') return `${title}++`;
+            if (app.category === 'Social') {
+                if (app.slug === 'discord-nitro-free') return `${title}`;
+                return `${title}++`;
+            }
             if (app.category === 'Utilities') return `${title}`;
             if (app.category === 'Entertainment') return `${title}`;
             return `${title}`; // Default fallback
@@ -212,6 +215,22 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
             });
         }
 
+        // HowTo Schema (Programmatic SEO) for Discord Nitro
+        if (app.slug === 'discord-nitro-free') {
+            addJsonLd({
+                "@context": "https://schema.org",
+                "@type": "HowTo",
+                "name": "How to Enable Discord Nitro Perks for Free",
+                "totalTime": "PT2M",
+                "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
+                "step": [
+                    { "@type": "HowToStep", "name": "Install Tool", "text": "Download and install the Discord Nitro tool." },
+                    { "@type": "HowToStep", "name": "Sign In", "text": "Open Discord and sign in to your account." },
+                    { "@type": "HowToStep", "name": "Use Perks", "text": "Enjoy Nitro emojis, HD streaming, and higher uploads while the client is active." }
+                ]
+            });
+        }
+
         // HowTo Schema (Programmatic SEO) for iRecovery
         if (app.slug === 'irecovery') {
             addJsonLd({
@@ -305,6 +324,7 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, allApps, isPanel }) 
                         app.slug === 'fc-mobile-24-25-mod' ? 'FC Mobile 24/25 – Unlimited Points & Gems' :
                         app.slug === 'roblox-mod' ? 'Roblox Mod Menu – Fly, God Mode & Speed' :
                         app.slug === 'instagram-plus-plus' ? 'Instagram++ – Download Media & View Stories Anonymously' :
+                        app.slug === 'discord-nitro-free' ? 'Discord Nitro – Free Emojis, HD Streaming & Uploads' :
                         app.title
                       }</h1>
                       <div className="flex items-center gap-x-4 gap-y-1 text-gray-400 text-sm mb-4 flex-wrap">

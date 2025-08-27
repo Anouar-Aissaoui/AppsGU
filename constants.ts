@@ -233,19 +233,24 @@ Use with care in competitive modes.`,
         img: "https://i.imgur.com/tvz8mmU.jpeg", 
         author: "AppsGU", 
         title: "Discord Nitro", 
-        description: "Get Free Discord Nitro",
+        description: "Enable Discord Nitro perks for free – emojis, HD streaming, uploads",
         version: "N/A",
         size: "5 MB",
         category: "Social",
-        longDescription: `This tool enables Discord Nitro features for your account for free. Enjoy all the perks of a premium Discord membership.
+        longDescription: `Unlock Discord Nitro perks for free with this tool.
 
-Nitro Perks:
-- Use custom emojis everywhere.
-- Enhanced streaming quality (1080p 60fps).
-- Larger file upload limits.
-- Animated avatars and custom profiles.`,
+### Nitro Perks
+- Custom emojis everywhere
+- 1080p 60fps streaming
+- Larger upload limits
+- Animated avatars and profiles
+
+### Quick Setup
+1. Install the Discord Nitro tool
+2. Open Discord and sign in
+3. Enjoy Nitro perks while using the patched client`,
         faqs: [
-            { question: "Is this a permanent Nitro subscription?", answer: "This tool patches your client to unlock Nitro features. It remains active as long as you use the patched client." }
+            { question: "Is this a permanent Nitro subscription?", answer: "Perks are active while using the patched client. They do not convert to a paid subscription." }
         ]
     },
     { 
