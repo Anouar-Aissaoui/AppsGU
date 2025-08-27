@@ -184,17 +184,22 @@ Use with care in competitive modes.`,
         img: "https://i.imgur.com/ItBBn9z.png", 
         author: "AppsGU", 
         title: "Roblox Mod", 
-        description: "Super Jump, God Mode, Fly and much more using this Roblox Mod Menu",
+        description: "Roblox Mod Menu – Fly, God Mode, Super Jump & Speed (iOS/Android)",
         version: "2.605.0",
         size: "105 MB",
         category: "Games",
-        longDescription: `Enhance your Roblox experience with a feature-rich mod menu. Explore games like never before with abilities that are not available in the standard game.
+        longDescription: `Enhance Roblox with a powerful MOD Menu on iOS and Android.
 
-Popular Features:
-- Fly: Soar through the game worlds.
-- God Mode: Become invincible.
-- Super Jump: Leap over buildings.
-- Speed Hack: Move faster than anyone else.`,
+### Popular Features
+- Fly to traverse worlds easily
+- God Mode for invincibility
+- Super Jump to leap over buildings
+- Speed Hack to move faster
+
+### Quick Setup
+1. Install the Roblox Mod Menu
+2. Launch Roblox; tap the floating icon
+3. Toggle features you need`,
         faqs: [
             { question: "Does this mod menu work in all Roblox games?", answer: "The mod menu works in the vast majority of Roblox experiences. However, some games may have specific anti-cheat measures that could limit certain features." }
         ]

@@ -88,6 +88,16 @@ const RelatedApps: React.FC<RelatedAppsProps> = ({ currentAppSlug, category, all
             </ul>
           </div>
         )}
+        {currentAppSlug === 'roblox-mod' && (
+          <div className="mt-6 text-sm text-gray-400">
+            <p className="mb-2">Helpful links:</p>
+            <ul className="list-disc list-inside space-y-1">
+              <li><a className="text-[#00ff88] hover:underline" href="/category/games">Explore more game mods</a></li>
+              <li><a className="text-[#00ff88] hover:underline" href="/app/cod-mobile-mod-menu">COD Mobile – MOD Menu</a></li>
+              <li><a className="text-[#00ff88] hover:underline" href="/app/pokemon-go-spoofer">Pokemon Go Spoofer</a></li>
+            </ul>
+          </div>
+        )}
       </div>
     </>
   );
