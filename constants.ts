@@ -318,7 +318,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
     },
     { 
         slug: "bingo-blitz-hack",
-        img: "https://i.imgur.com/rq3p0eE.png", 
+        img: "https://i.imgur.com/Oh29tXi.jpeg",  
         author: "BetterMods", 
         title: "Bingo Blitz Hack", 
         description: "Unlimited Coins & Credits!",
