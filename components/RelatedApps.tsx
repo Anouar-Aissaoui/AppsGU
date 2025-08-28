@@ -258,6 +258,16 @@ const RelatedApps: React.FC<RelatedAppsProps> = ({ currentAppSlug, category, all
             </ul>
           </div>
         )}
+        {currentAppSlug === 'blockman-go-mod' && (
+          <div className="mt-6 text-sm text-gray-400">
+            <p className="mb-2">Helpful links:</p>
+            <ul className="list-disc list-inside space-y-1">
+              <li><a className="text-[#00ff88] hover:underline" href="/category/games">Creative & sandbox mods</a></li>
+              <li><a className="text-[#00ff88] hover:underline" href="/app/mini-world-mod">Mini World – Unlimited Coins & Skins</a></li>
+              <li><a className="text-[#00ff88] hover:underline" href="/app/roblox-mod">Roblox – Mod Menu</a></li>
+            </ul>
+          </div>
+        )}
       </div>
     </>
   );

@@ -455,6 +455,22 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
             });
         }
 
+        // HowTo Schema (Programmatic SEO) for Blockman GO Mod
+        if (app.slug === 'blockman-go-mod') {
+            addJsonLd({
+                "@context": "https://schema.org",
+                "@type": "HowTo",
+                "name": "How to Activate Blockman GO Mod",
+                "totalTime": "PT2M",
+                "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
+                "step": [
+                    { "@type": "HowToStep", "name": "Install Mod", "text": "Download and install Blockman GO Mod." },
+                    { "@type": "HowToStep", "name": "Open Game", "text": "Launch Blockman GO; GCubes and coins sync automatically." },
+                    { "@type": "HowToStep", "name": "Enjoy Premium", "text": "Use resources to unlock premium features and items." }
+                ]
+            });
+        }
+
         // HowTo Schema (Programmatic SEO) for iRecovery
         if (app.slug === 'irecovery') {
             addJsonLd({
@@ -563,6 +579,7 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, allApps, isPanel }) 
                         app.slug === 'ninja-turtles-legends-mod' ? 'Ninja Turtles: Legends Mod – Unlimited Greenbacks' :
                         app.slug === 'guns-of-boom-mod' ? 'Guns of Boom Mod – Unlimited Money & Gold' :
                         app.slug === 'mini-world-mod' ? 'Mini World Mod – Unlimited Coins & Skins' :
+                        app.slug === 'blockman-go-mod' ? 'Blockman GO Mod – Unlimited GCubes & Coins' :
                         app.title
                       }</h1>
                       <div className="flex items-center gap-x-4 gap-y-1 text-gray-400 text-sm mb-4 flex-wrap">
