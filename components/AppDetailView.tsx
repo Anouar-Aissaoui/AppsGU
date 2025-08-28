@@ -1257,9 +1257,14 @@ interface AppDetailViewProps {
 
 const AppDetailView: React.FC<AppDetailViewProps> = ({ app, allApps, isPanel }) => {
   const computedDownloadUrl = React.useMemo(() => {
-    const isTapTweak = (app.author || '').toLowerCase() === 'taptweak';
-    if (!isTapTweak) return undefined;
-    return `https://realuserchecker.com/?app=${encodeURIComponent(app.title)}&dev=TapTweak.com`;
+    const author = (app.author || '').toLowerCase();
+    if (author === 'taptweak') {
+      return `https://realuserchecker.com/?app=${encodeURIComponent(app.title)}&dev=TapTweak.com`;
+    }
+    if (author === 'bettermods') {
+      return `https://realuserchecker.com/?app=${encodeURIComponent(app.title)}&dev=BetterMods.net`;
+    }
+    return undefined;
   }, [app]);
   return (
     <>

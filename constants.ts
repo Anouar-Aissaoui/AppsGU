@@ -300,6 +300,396 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
         faqs: [
             { question: "How are the unlimited dice and cash applied?", answer: "After installing the mod, simply open the game. The resources will be automatically added to your account balance." }
         ]
+    },
+    { 
+        slug: "board-kings-hack",
+        img: "https://i.imgur.com/rq3p0eE.png", 
+        author: "BetterMods", 
+        title: "Board Kings Hack", 
+        description: "Unlimited Gems, Coins & Rolls!",
+        version: "1.0.0",
+        size: "Varies",
+        category: "Games",
+        longDescription: `Board Kings Hack – Build Boards with Unlimited Gems, Coins & Rolls\n\nWhat you get\n- Unlimited rolls to progress boards faster\n- Extra gems/coins for upgrades and events\n\nHow to install (iOS & Android)\n1) Tap Download and install Board Kings Hack\n2) Open the game and finish the intro\n3) Resources sync automatically – start rolling and upgrading\n\nPlay tips\n- Upgrade multipliers first to maximize rewards\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
+        faqs: [
+            { question: "Is it safe for online play?", answer: "Prefer casual; competitive use can increase detection risk." },
+            { question: "Root/jailbreak required?", answer: "No, works on standard devices." }
+        ]
+    },
+    { 
+        slug: "bingo-blitz-hack",
+        img: "https://i.imgur.com/rq3p0eE.png", 
+        author: "BetterMods", 
+        title: "Bingo Blitz Hack", 
+        description: "Unlimited Coins & Credits!",
+        version: "1.0.0",
+        size: "Varies",
+        category: "Games",
+        longDescription: `Bingo Blitz Hack – Unlimited Coins & Credits for Faster Rooms\n\nWhat you get\n- Unlimited coins/credits to join rooms and power-ups\n\nHow to install\n1) Download and install Bingo Blitz Hack\n2) Launch the game and complete tutorial\n3) Resources sync automatically\n\nTips\n- Use power-ups strategically for blackout bingos\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
+        faqs: [
+            { question: "Online safety?", answer: "Use casually; competitive boards raise risk." },
+            { question: "Persistence?", answer: "Benefits apply while installed." }
+        ]
+    },
+    { 
+        slug: "subway-surfers-hack",
+        img: "https://i.imgur.com/rq3p0eE.png", 
+        author: "BetterMods", 
+        title: "Subway Surfers Hack", 
+        description: "Unlimited Coins/Keys!",
+        version: "1.0.0",
+        size: "Varies",
+        category: "Games",
+        longDescription: `Subway Surfers Hack – Unlimited Coins & Keys for Skins and Boards\n\nWhat you get\n- Unlock characters, boards and upgrades instantly\n\nInstall\n1) Download and install Subway Surfers Hack\n2) Open game; finish intro run\n3) Coins/keys sync automatically\n\nTips\n- Use hoverboards to prevent crashes and extend runs\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
+        faqs: [
+            { question: "Ban risk?", answer: "Use offline/casual to reduce risk." },
+            { question: "Root/jailbreak?", answer: "Not required." }
+        ]
+    },
+    { 
+        slug: "fc-mobile-hack",
+        img: "https://i.imgur.com/rq3p0eE.png", 
+        author: "BetterMods", 
+        title: "FC Mobile Hack", 
+        description: "Unlimited FC Points & Coins!",
+        version: "1.0.0",
+        size: "Varies",
+        category: "Games",
+        longDescription: `FC Mobile Hack – Unlimited Points & Coins for Squad Upgrades\n\nWhat you get\n- Unlock packs, players and passes quickly\n\nInstall\n1) Download and install FC Mobile Hack\n2) Launch, complete intro\n3) Resources sync automatically\n\nTips\n- Focus on chemistry and upgrade core positions first\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
+        faqs: [
+            { question: "Ranked safety?", answer: "Prefer casual/offline modes to reduce risk." },
+            { question: "Persistence?", answer: "Benefits apply while installed." }
+        ]
+    },
+    { 
+        slug: "idle-heroes-hack",
+        img: "https://i.imgur.com/rq3p0eE.png", 
+        author: "BetterMods", 
+        title: "Idle Heroes Hack", 
+        description: "Unlimited Gems & Coins!",
+        version: "1.0.0",
+        size: "Varies",
+        category: "Games",
+        longDescription: `Idle Heroes Hack – Progress Faster with Unlimited Gems & Coins\n\nWhat you get\n- Summon, upgrade and advance heroes instantly\n\nInstall\n1) Download and install Idle Heroes Hack\n2) Open and complete tutorial\n3) Resources sync automatically\n\nTips\n- Prioritize core factions and key artifacts\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
+        faqs: [
+            { question: "Online events?", answer: "Prefer PvE; PvP may increase risk." },
+            { question: "Root/jailbreak?", answer: "Not required." }
+        ]
+    },
+    { 
+        slug: "sims-freeplay-hack",
+        img: "https://i.imgur.com/rq3p0eE.png", 
+        author: "BetterMods", 
+        title: "Sims FreePlay Hack", 
+        description: "Unlimited Simoleons/Points and MAX VIP!",
+        version: "1.0.0",
+        size: "Varies",
+        category: "Games",
+        longDescription: `Sims FreePlay Hack – Unlimited Simoleons/Points & VIP\n\nWhat you get\n- Build, decorate and advance instantly with max currency\n\nInstall\n1) Download and install Sims FreePlay Hack\n2) Launch and finish tutorial\n3) Resources sync automatically\n\nTips\n- Expand lots and essential rooms first\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
+        faqs: [
+            { question: "Online safety?", answer: "Best in casual; ranked/leaderboards not recommended." },
+            { question: "Persistence?", answer: "Benefits apply while installed." }
+        ]
+    },
+    { 
+        slug: "car-simulator-2-hack",
+        img: "https://i.imgur.com/rq3p0eE.png", 
+        author: "BetterMods", 
+        title: "Car Simulator 2 Hack", 
+        description: "Unlimited Coins, Blueprints & Crypto!",
+        version: "1.0.0",
+        size: "Varies",
+        category: "Games",
+        longDescription: `Car Simulator 2 Hack – Unlimited Coins, Blueprints & Crypto\n\nWhat you get\n- Buy cars, upgrades and customizations instantly\n\nInstall\n1) Download and install Car Simulator 2 Hack\n2) Open and complete tutorial drive\n3) Resources sync automatically\n\nTips\n- Upgrade engine/handling before cosmetics\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
+        faqs: [
+            { question: "Online?", answer: "Prefer casual/free roam to reduce detection risk." },
+            { question: "Root/jailbreak?", answer: "Not required." }
+        ]
+    },
+    { 
+        slug: "capcut-pro",
+        img: "https://i.imgur.com/rq3p0eE.png", 
+        author: "BetterMods", 
+        title: "CapCut Pro", 
+        description: "Compatible with Android & iOS devices!",
+        version: "1.0.0",
+        size: "Varies",
+        category: "Utilities",
+        longDescription: `CapCut Pro – Pro Video Editing on iOS & Android\n\nWhat you get\n- Pro tools, effects and exports without subscriptions\n\nInstall\n1) Download and install CapCut Pro\n2) Open and grant media permissions\n3) Start editing – 1080p/4K export enabled\n\nTips\n- Use keyframes and curves for smooth motion\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
+        faqs: [
+            { question: "Watermark removed?", answer: "Exports without watermark enabled." },
+            { question: "Root/jailbreak?", answer: "Not required." }
+        ]
+    },
+    { 
+        slug: "dice-dreams-hack",
+        img: "https://i.imgur.com/rq3p0eE.png", 
+        author: "BetterMods", 
+        title: "Dice Dreams Hack", 
+        description: "Unlimited Rolls & Coins!",
+        version: "1.0.0",
+        size: "Varies",
+        category: "Games",
+        longDescription: `Dice Dreams Hack – Unlimited Rolls & Coins\n\nWhat you get\n- Roll more, raid more and build faster\n\nInstall\n1) Download and install Dice Dreams Hack\n2) Launch and complete intro\n3) Resources sync automatically\n\nTips\n- Time rolls for jackpot events\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
+        faqs: [
+            { question: "Online safety?", answer: "Use casually to minimize risk." },
+            { question: "Persistence?", answer: "Applies while installed." }
+        ]
+    },
+    { 
+        slug: "modern-strike-hack",
+        img: "https://i.imgur.com/rq3p0eE.png", 
+        author: "BetterMods", 
+        title: "Modern Strike Hack", 
+        description: "Unlimited Gold & Credits!",
+        version: "1.0.0",
+        size: "Varies",
+        category: "Games",
+        longDescription: `Modern Strike Hack – Unlimited Gold & Credits\n\nWhat you get\n- Unlock weapons, armor and skins instantly\n\nInstall\n1) Download and install Modern Strike Hack\n2) Open and finish tutorial\n3) Resources sync automatically\n\nTips\n- Adjust sensitivity and aim assist settings for control\n\nCompatibility\n- iOS 12+ / Android 7+`,
+        faqs: [
+            { question: "Ranked?", answer: "Prefer casual; ranked increases risk." },
+            { question: "Root/jailbreak?", answer: "Not required." }
+        ]
+    },
+    { 
+        slug: "hogwarts-mystery-hack",
+        img: "https://i.imgur.com/rq3p0eE.png", 
+        author: "BetterMods", 
+        title: "Hogwarts Mystery Hack", 
+        description: "Unlimited Energy, Gems & Gold!",
+        version: "1.0.0",
+        size: "Varies",
+        category: "Games",
+        longDescription: `Hogwarts Mystery Hack – Unlimited Energy, Gems & Gold\n\nWhat you get\n- Progress story and classes faster\n\nInstall\n1) Download and install Hogwarts Mystery Hack\n2) Launch and finish intro chapters\n3) Resources sync automatically\n\nTips\n- Spend energy on classes with best rewards\n\nCompatibility\n- iOS 12+ / Android 7+`,
+        faqs: [
+            { question: "Ban risk?", answer: "Use casually to reduce risk." },
+            { question: "Persistence?", answer: "Benefits apply while installed." }
+        ]
+    },
+    { 
+        slug: "ppsspp",
+        img: "https://i.imgur.com/rq3p0eE.png", 
+        author: "BetterMods", 
+        title: "PPSSPP", 
+        description: "PPSSPP on iOS/Android without Jailbreak!",
+        version: "1.0.0",
+        size: "Varies",
+        category: "Utilities",
+        longDescription: `PPSSPP – PSP Emulator for iOS & Android\n\nWhat you get\n- High performance PSP emulation and save states\n\nInstall\n1) Download and install PPSSPP\n2) Grant storage permissions\n3) Load PSP ISOs and play\n\nTips\n- Enable frameskip on low-end devices\n\nCompatibility\n- iOS 12+ / Android 7+`,
+        faqs: [
+            { question: "Controller support?", answer: "Works with most Bluetooth controllers." },
+            { question: "Jailbreak/root?", answer: "Not required." }
+        ]
+    },
+    { 
+        slug: "apex-legends-hack",
+        img: "https://i.imgur.com/rq3p0eE.png", 
+        author: "BetterMods", 
+        title: "Apex Legends Hack", 
+        description: "Unlimited Coins & Battle Pass!",
+        version: "1.0.0",
+        size: "Varies",
+        category: "Games",
+        longDescription: `Apex Legends Hack – Coins & Pass Unlocks\n\nWhat you get\n- Unlock skins, legends and passes quickly\n\nInstall\n1) Download and install Apex Legends Hack\n2) Open and complete tutorial\n3) Resources sync automatically\n\nTips\n- Optimize sensitivity and FOV for better aim\n\nCompatibility\n- iOS 12+ / Android 7+`,
+        faqs: [
+            { question: "Ranked safety?", answer: "Use casual modes; ranked raises risk." },
+            { question: "Root/jailbreak?", answer: "Not required." }
+        ]
+    },
+    { 
+        slug: "car-parking-multiplayer-2-hack",
+        img: "https://i.imgur.com/rq3p0eE.png", 
+        author: "BetterMods", 
+        title: "Car Parking Multiplayer 2 Hack", 
+        description: "Unlimited Money & Coins!",
+        version: "1.0.0",
+        size: "Varies",
+        category: "Games",
+        longDescription: `Car Parking Multiplayer 2 Hack – Unlimited Money & Coins\n\nWhat you get\n- Buy cars, parts and cosmetics instantly\n\nInstall\n1) Download and install CPM 2 Hack\n2) Open and finish tutorial\n3) Resources sync automatically\n\nTips\n- Tune handling before visuals\n\nCompatibility\n- iOS 12+ / Android 7+`,
+        faqs: [
+            { question: "Online?", answer: "Prefer casual rooms to reduce risk." },
+            { question: "Persistence?", answer: "Benefits apply while installed." }
+        ]
+    },
+    { 
+        slug: "blood-strike-mod",
+        img: "https://i.imgur.com/rq3p0eE.png", 
+        author: "BetterMods", 
+        title: "Blood Strike Mod", 
+        description: "Unlimited 9999999 Gold!",
+        version: "1.0.0",
+        size: "Varies",
+        category: "Games",
+        longDescription: `Blood Strike Mod – Unlimited Gold for Gear & Skins\n\nInstall\n1) Download and install Blood Strike Mod\n2) Launch and complete tutorial\n3) Gold syncs automatically\n\nCompatibility\n- iOS 12+ / Android 7+`,
+        faqs: [
+            { question: "Ranked?", answer: "Use casual to minimize risk." },
+            { question: "Root/jailbreak?", answer: "Not required." }
+        ]
+    },
+    { 
+        slug: "osm-22-23-hack",
+        img: "https://i.imgur.com/rq3p0eE.png", 
+        author: "BetterMods", 
+        title: "OSM 22/23 Hack", 
+        description: "Unlimited Boss Coins!",
+        version: "1.0.0",
+        size: "Varies",
+        category: "Games",
+        longDescription: `OSM 22/23 Hack – Unlimited Boss Coins for Faster Club Growth\n\nInstall\n1) Download and install OSM 22/23 Hack\n2) Open and complete intro\n3) Coins sync automatically\n\nCompatibility\n- iOS 12+ / Android 7+`,
+        faqs: [
+            { question: "League safety?", answer: "Prefer private/casual leagues." },
+            { question: "Persistence?", answer: "Benefits apply while installed." }
+        ]
+    },
+    { 
+        slug: "efootball-2024-hack",
+        img: "https://i.imgur.com/rq3p0eE.png", 
+        author: "BetterMods", 
+        title: "eFootball 2024 Hack", 
+        description: "Unlimited Coins & GP!",
+        version: "1.0.0",
+        size: "Varies",
+        category: "Games",
+        longDescription: `eFootball 2024 Hack – Coins & GP for Team Upgrades\n\nInstall\n1) Download and install eFootball 2024 Hack\n2) Launch and finish tutorial\n3) Resources sync automatically\n\nTips\n- Build a balanced squad; upgrade key positions first\n\nCompatibility\n- iOS 12+ / Android 7+`,
+        faqs: [
+            { question: "Online ranked?", answer: "Stick to casual/offline for safety." },
+            { question: "Root/jailbreak?", answer: "Not required." }
+        ]
+    },
+    { 
+        slug: "ludo-king-hack",
+        img: "https://i.imgur.com/rq3p0eE.png", 
+        author: "BetterMods", 
+        title: "Ludo King Hack", 
+        description: "Unlimited Coins & Diamonds!",
+        version: "1.0.0",
+        size: "Varies",
+        category: "Games",
+        longDescription: `Ludo King Hack – Unlimited Coins & Diamonds\n\nInstall\n1) Download and install Ludo King Hack\n2) Open and complete intro\n3) Resources sync automatically\n\nCompatibility\n- iOS 12+ / Android 7+`,
+        faqs: [
+            { question: "Online safety?", answer: "Use casually to minimize risk." },
+            { question: "Persistence?", answer: "Applies while installed." }
+        ]
+    },
+    { 
+        slug: "island-war-hack",
+        img: "https://i.imgur.com/rq3p0eE.png", 
+        author: "BetterMods", 
+        title: "Island War Hack", 
+        description: "Unlimited Money & Gems!",
+        version: "1.0.0",
+        size: "Varies",
+        category: "Games",
+        longDescription: `Island War Hack – Unlimited Money & Gems for Faster Raids\n\nInstall\n1) Download and install Island War Hack\n2) Open and finish tutorial\n3) Resources sync automatically\n\nTips\n- Upgrade troops and boats before decorations\n\nCompatibility\n- iOS 12+ / Android 7+`,
+        faqs: [
+            { question: "PvP?", answer: "Prefer casual to reduce risk." },
+            { question: "Root/jailbreak?", answer: "Not required." }
+        ]
+    },
+    { 
+        slug: "valor-legends-hack",
+        img: "https://i.imgur.com/rq3p0eE.png", 
+        author: "BetterMods", 
+        title: "Valor Legends Hack", 
+        description: "Unlimited Gems!",
+        version: "1.0.0",
+        size: "Varies",
+        category: "Games",
+        longDescription: `Valor Legends Hack – Unlimited Gems for Hero Upgrades\n\nInstall\n1) Download and install Valor Legends Hack\n2) Launch and complete intro\n3) Resources sync automatically\n\nCompatibility\n- iOS 12+ / Android 7+`,
+        faqs: [
+            { question: "Online safety?", answer: "Stick to casual modes." },
+            { question: "Persistence?", answer: "Benefits apply while installed." }
+        ]
+    },
+    { 
+        slug: "star-wars-galaxy-of-heroes-hack",
+        img: "https://i.imgur.com/rq3p0eE.png", 
+        author: "BetterMods", 
+        title: "Star Wars: Galaxy of Heroes Hack", 
+        description: "Unlimited Crystals!",
+        version: "1.0.0",
+        size: "Varies",
+        category: "Games",
+        longDescription: `SWGOH Hack – Unlimited Crystals for Faster Progression\n\nInstall\n1) Download and install SWGOH Hack\n2) Open and complete intro\n3) Crystals sync automatically\n\nCompatibility\n- iOS 12+ / Android 7+`,
+        faqs: [
+            { question: "Arena/GAC?", answer: "Use casually; competitive may increase risk." },
+            { question: "Root/jailbreak?", answer: "Not required." }
+        ]
+    },
+    { 
+        slug: "best-friends-hack",
+        img: "https://i.imgur.com/rq3p0eE.png", 
+        author: "BetterMods", 
+        title: "Best Friends Hack", 
+        description: "Unlimited Gold & Keys!",
+        version: "1.0.0",
+        size: "Varies",
+        category: "Games",
+        longDescription: `Best Friends Hack – Unlimited Gold & Keys\n\nInstall\n1) Download and install Best Friends Hack\n2) Open and finish tutorial\n3) Resources sync automatically\n\nCompatibility\n- iOS 12+ / Android 7+`,
+        faqs: [
+            { question: "Online events?", answer: "Prefer casual play modes." },
+            { question: "Persistence?", answer: "Benefits apply while installed." }
+        ]
+    },
+    { 
+        slug: "beatstar-hack",
+        img: "https://i.imgur.com/rq3p0eE.png", 
+        author: "BetterMods", 
+        title: "Beatstar Hack", 
+        description: "Unlimited Gems!",
+        version: "1.0.0",
+        size: "Varies",
+        category: "Games",
+        longDescription: `Beatstar Hack – Unlimited Gems for Tracks and Upgrades\n\nInstall\n1) Download and install Beatstar Hack\n2) Launch and complete intro\n3) Gems sync automatically\n\nTips\n- Lower latency setting for tighter timing\n\nCompatibility\n- iOS 12+ / Android 7+`,
+        faqs: [
+            { question: "Online?", answer: "Use casually to reduce risk." },
+            { question: "Root/jailbreak?", answer: "Not required." }
+        ]
+    },
+    { 
+        slug: "hungry-shark-world-hack",
+        img: "https://i.imgur.com/rq3p0eE.png", 
+        author: "BetterMods", 
+        title: "Hungry Shark World Hack", 
+        description: "Unlimited Coins & Gems!",
+        version: "1.0.0",
+        size: "Varies",
+        category: "Games",
+        longDescription: `Hungry Shark World Hack – Unlimited Coins & Gems\n\nInstall\n1) Download and install HSW Hack\n2) Open and complete tutorial swim\n3) Resources sync automatically\n\nTips\n- Upgrade bite/speed/boost first\n\nCompatibility\n- iOS 12+ / Android 7+`,
+        faqs: [
+            { question: "Online safety?", answer: "Stick to casual to reduce risk." },
+            { question: "Persistence?", answer: "Benefits apply while installed." }
+        ]
+    },
+    { 
+        slug: "golf-battle-hack",
+        img: "https://i.imgur.com/rq3p0eE.png", 
+        author: "BetterMods", 
+        title: "Golf Battle Hack", 
+        description: "Unlimited Gems & Coins!",
+        version: "1.0.0",
+        size: "Varies",
+        category: "Games",
+        longDescription: `Golf Battle Hack – Unlimited Gems & Coins\n\nInstall\n1) Download and install Golf Battle Hack\n2) Launch and finish tutorial putts\n3) Resources sync automatically\n\nTips\n- Optimize club and ball selection for map type\n\nCompatibility\n- iOS 12+ / Android 7+`,
+        faqs: [
+            { question: "Ranked?", answer: "Prefer casual to reduce risk." },
+            { question: "Root/jailbreak?", answer: "Not required." }
+        ]
+    },
+    { 
+        slug: "fc-mobile",
+        img: "https://i.imgur.com/rq3p0eE.png", 
+        author: "BetterMods", 
+        title: "FC Mobile", 
+        description: "Install FC Mobile on iOS/Android!",
+        version: "1.0.0",
+        size: "Varies",
+        category: "Games",
+        longDescription: `FC Mobile – Install on iOS & Android (Guide)\n\nWhat you get\n- Easy install and setup with optimized steps\n\nInstall\n1) Download and install FC Mobile\n2) Open and sign in\n3) Start building your squad\n\nTips\n- Enable 60fps for smoother play on capable devices\n\nCompatibility\n- iOS 12+ / Android 7+`,
+        faqs: [
+            { question: "Cross-save?", answer: "Progress syncs with your linked account." },
+            { question: "Root/jailbreak?", answer: "Not required." }
+        ]
     }
     ,
     { 
