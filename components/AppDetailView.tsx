@@ -343,6 +343,22 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
             });
         }
 
+        // HowTo Schema (Programmatic SEO) for Mortal Kombat Mod
+        if (app.slug === 'mortal-kombat-mod') {
+            addJsonLd({
+                "@context": "https://schema.org",
+                "@type": "HowTo",
+                "name": "How to Activate Mortal Kombat Mod (iOS & Android)",
+                "totalTime": "PT2M",
+                "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
+                "step": [
+                    { "@type": "HowToStep", "name": "Install Mod", "text": "Download and install the Mortal Kombat Mod." },
+                    { "@type": "HowToStep", "name": "Open Game", "text": "Launch MK Mobile; souls and coins sync automatically." },
+                    { "@type": "HowToStep", "name": "Upgrade Roster", "text": "Use resources to unlock and upgrade fighters." }
+                ]
+            });
+        }
+
         // HowTo Schema (Programmatic SEO) for iRecovery
         if (app.slug === 'irecovery') {
             addJsonLd({
@@ -444,6 +460,7 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, allApps, isPanel }) 
                         app.slug === 'forge-of-empires-mod' ? 'Forge of Empires Mod – Unlimited Diamonds & Supplies' :
                         app.slug === 'carx-street-mod' ? 'CarX Street Mod – Unlimited Money & Upgrades' :
                         app.slug === 'nulls-brawl' ? "Null's Brawl – Private Server (Easy Install)" :
+                        app.slug === 'mortal-kombat-mod' ? 'Mortal Kombat Mod – Unlimited Souls & Coins' :
                         app.title
                       }</h1>
                       <div className="flex items-center gap-x-4 gap-y-1 text-gray-400 text-sm mb-4 flex-wrap">
