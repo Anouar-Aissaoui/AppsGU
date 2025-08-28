@@ -11,7 +11,7 @@ const write = (p: string, c: string) => fs.writeFileSync(p, c, 'utf8');
 const clamp = (str: string, max: number) => (str.length > max ? str.slice(0, max - 1).trimEnd() + '…' : str);
 const slugify = (text: string): string => text.toString().toLowerCase().trim().replace(/\s+/g, '-').replace(/[^\w\-]+/g, '').replace(/\-\-+/g, '-');
 
-const replaceMeta = (html: string, { title, description, canonical, ogType = 'website', ogImage }: { title: string; description: string; canonical: string; ogType?: string; ogImage?: string; }) => {
+const replaceMeta = (html: string, { title, description, canonical, ogType = 'website', ogImage, ogImageAlt }: { title: string; description: string; canonical: string; ogType?: string; ogImage?: string; ogImageAlt?: string; }) => {
   let out = html;
   const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
   out = out.replace(/<title>[^<]*<\/title>/, `<title>${esc(title)}</title>`);
@@ -24,6 +24,10 @@ const replaceMeta = (html: string, { title, description, canonical, ogType = 'we
   if (ogImage) {
     out = out.replace(/(<meta id="og-image"[^>]*content=")[^"]*("[^>]*>)/, `$1${esc(ogImage)}$2`);
     out = out.replace(/(<meta id="twitter-image"[^>]*content=")[^"]*("[^>]*>)/, `$1${esc(ogImage)}$2`);
+    if (ogImageAlt) {
+      out = out.replace(/(<meta id="og-image-alt"[^>]*content=")[^"]*("[^>]*>)/, `$1${esc(ogImageAlt)}$2`);
+      out = out.replace(/(<meta id="twitter-image-alt"[^>]*content=")[^"]*("[^>]*>)/, `$1${esc(ogImageAlt)}$2`);
+    }
   }
   out = out.replace(/(<meta id="twitter-title"[^>]*content=")[^"]*("[^>]*>)/, `$1${esc(title)}$2`);
   out = out.replace(/(<meta id="twitter-description"[^>]*content=")[^"]*("[^>]*>)/, `$1${esc(description)}$2`);
@@ -48,7 +52,7 @@ const template = read(templatePath);
   const title = clamp('iOS & Android Modded Apps – Free Downloads | AppsGU', 60);
   const description = clamp('Download free modded apps and tweaks for iPhone, iPad and Android. Safe guides, FAQs and regular updates.', 160);
   const canonical = `${SITE_URL}/`;
-  let html = replaceMeta(template, { title, description, canonical, ogType: 'website', ogImage: 'https://i.imgur.com/rq3p0eE.png' });
+  let html = replaceMeta(template, { title, description, canonical, ogType: 'website', ogImage: 'https://i.imgur.com/rq3p0eE.png', ogImageAlt: 'AppsGU – iOS & Android Mods' });
   // Simple FAQ + Categories ItemList JSON-LD for home
   const categoriesHome = Array.from(new Set(APPS_DATA.map(a => a.category)));
   const categoryItems = categoriesHome.map(c => ({ name: c, url: `${SITE_URL}/category/${slugify(c)}` }));
@@ -72,7 +76,7 @@ for (const category of categories) {
   const title = clamp(`Best ${category} Mods – Free Download | AppsGU`, 60);
   const description = clamp(`Top ${items.length}+ ${category.toLowerCase()} mods for iOS & Android. Safe downloads and guides.`, 160);
   const canonical = `${SITE_URL}/category/${slug}`;
-  let html = replaceMeta(template, { title, description, canonical, ogType: 'website' });
+  let html = replaceMeta(template, { title, description, canonical, ogType: 'website', ogImage: 'https://i.imgur.com/rq3p0eE.png', ogImageAlt: `${category} mods – AppsGU` });
   html = injectJsonLd(html, [
     { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Apps', item: SITE_URL },
@@ -102,7 +106,24 @@ for (const app of APPS_DATA) {
   if (app.slug === 'board-kings-hack') {
     console.log(`[prerender] Using image for ${app.slug}: ${app.img}`);
   }
-  let html = replaceMeta(template, { title, description, canonical, ogType: 'article', ogImage: app.img });
+  let html = replaceMeta(template, { title, description, canonical, ogType: 'article', ogImage: app.img, ogImageAlt: `${app.title} – ${app.category} mod preview` });
+  if (app.slug === 'board-kings-hack') {
+    // Programmatic SEO: HowTo JSON-LD specific to Board Kings
+    const howTo = {
+      '@context': 'https://schema.org',
+      '@type': 'HowTo',
+      name: 'How to Activate Board Kings Hack (Unlimited Gems, Coins & Rolls)',
+      totalTime: 'PT2M',
+      estimatedCost: { '@type': 'MonetaryAmount', currency: 'USD', value: '0' },
+      step: [
+        { '@type': 'HowToStep', name: 'Install Board Kings Hack', text: 'Tap Download and install the Board Kings Hack on your device.' },
+        { '@type': 'HowToStep', name: 'Open and Finish Intro', text: 'Launch the game and complete the intro/tutorial sequence.' },
+        { '@type': 'HowToStep', name: 'Resources Sync', text: 'Gems, coins and rolls sync automatically. Start rolling and upgrading.' }
+      ]
+    };
+    const safeHtml = injectJsonLd(html, [howTo]);
+    html = safeHtml;
+  }
   const jsons: object[] = [];
   jsons.push({ '@context': 'https://schema.org', '@type': 'SoftwareApplication', name: app.title, description: app.longDescription, applicationCategory: app.category + 'Application', operatingSystem: 'iOS, Android', softwareVersion: app.version, publisher: { '@type': 'Organization', name: 'AppsGU' }, offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }, downloadUrl: canonical, screenshot: app.img, image: [app.img] });
   jsons.push({ '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [ { '@type': 'ListItem', position: 1, name: 'Apps', item: SITE_URL }, { '@type': 'ListItem', position: 2, name: app.title, item: canonical } ] });

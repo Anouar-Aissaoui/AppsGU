@@ -37,6 +37,7 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
             canonical: canonicalUrl,
             ogType: 'article',
             ogImage: app.img,
+            ogImageAlt: `${app.title} – ${app.category} mod preview`
         });
 
         // JSON-LD Structured Data
@@ -1298,6 +1299,7 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, allApps, isPanel }) 
                       <div className="text-sm font-bold text-[#00ff88] uppercase tracking-wider">{app.author}</div>
                       <h1 className="text-4xl md:text-5xl font-black text-white my-1">{
                         app.slug === 'altstore' ? 'AltStore – iOS App Installer' :
+                        app.slug === 'board-kings-hack' ? 'Board Kings Hack – Unlimited Gems, Coins & Rolls' :
                         app.slug === 'dreameshort-coins' ? 'DreameShort Coins – Unlimited Coins & Bonuses' :
                         app.slug === 'cod-mobile-mod-menu' ? 'COD Mobile MOD Menu – Aimbot & Wallhack' :
                         app.slug === 'irecovery' ? 'iRecovery – Recover Deleted Photos & Videos' :
@@ -1401,6 +1403,21 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, allApps, isPanel }) 
                       {app.longDescription}
                   </div>
               </div>
+
+              {app.slug === 'board-kings-hack' && (
+                <>
+                  <hr className="border-zinc-700 my-8" />
+                  <div>
+                    <h2 className="text-2xl font-bold text-white mb-4">How to Activate Board Kings Hack (iOS & Android)</h2>
+                    <ol className="list-decimal list-inside space-y-2 text-gray-400">
+                      <li>Tap Download and install Board Kings Hack on your device.</li>
+                      <li>Open Board Kings and finish the intro/tutorial sequence.</li>
+                      <li>Gems, Coins and Rolls sync automatically — start rolling and upgrading.</li>
+                    </ol>
+                    <p className="text-gray-400 mt-4">Tip: Upgrade multipliers first to maximize rewards and board progress.</p>
+                  </div>
+                </>
+              )}
 
              {app.faqs && app.faqs.length > 0 && (
                 <>
