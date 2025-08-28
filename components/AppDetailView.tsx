@@ -391,6 +391,22 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
             });
         }
 
+        // HowTo Schema (Programmatic SEO) for Race Master 3D Mod
+        if (app.slug === 'race-master-3d-mod') {
+            addJsonLd({
+                "@context": "https://schema.org",
+                "@type": "HowTo",
+                "name": "How to Activate Race Master 3D Mod",
+                "totalTime": "PT2M",
+                "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
+                "step": [
+                    { "@type": "HowToStep", "name": "Install Mod", "text": "Download and install Race Master 3D Mod." },
+                    { "@type": "HowToStep", "name": "Open Game", "text": "Launch the game; money, nitro and shields sync automatically." },
+                    { "@type": "HowToStep", "name": "Race", "text": "Use unlimited boosts to clear levels quickly." }
+                ]
+            });
+        }
+
         // HowTo Schema (Programmatic SEO) for iRecovery
         if (app.slug === 'irecovery') {
             addJsonLd({
@@ -495,6 +511,7 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, allApps, isPanel }) 
                         app.slug === 'mortal-kombat-mod' ? 'Mortal Kombat Mod – Unlimited Souls & Coins' :
                         app.slug === 'loot-boy-mod' ? 'Loot Boy Mod – Unlimited Diamonds, Tickets & Coins' :
                         app.slug === 'bus-simulator-ultimate-mod' ? 'Bus Simulator: Ultimate Mod – Unlimited Money & Gold' :
+                        app.slug === 'race-master-3d-mod' ? 'Race Master 3D Mod – Unlimited Money, Nitro & Shields' :
                         app.title
                       }</h1>
                       <div className="flex items-center gap-x-4 gap-y-1 text-gray-400 text-sm mb-4 flex-wrap">
