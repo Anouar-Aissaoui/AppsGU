@@ -695,6 +695,22 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
             });
         }
 
+        // HowTo Schema (Programmatic SEO) for State of Survival Mod
+        if (app.slug === 'state-of-survival-mod') {
+            addJsonLd({
+                "@context": "https://schema.org",
+                "@type": "HowTo",
+                "name": "How to Activate State of Survival Mod",
+                "totalTime": "PT2M",
+                "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
+                "step": [
+                    { "@type": "HowToStep", "name": "Install Mod", "text": "Download and install State of Survival Mod." },
+                    { "@type": "HowToStep", "name": "Open Game", "text": "Launch SoS; biocaps and resources sync automatically." },
+                    { "@type": "HowToStep", "name": "Build Faster", "text": "Use resources to build, research, and expand your settlement." }
+                ]
+            });
+        }
+
         // HowTo Schema (Programmatic SEO) for iRecovery
         if (app.slug === 'irecovery') {
             addJsonLd({
@@ -818,6 +834,7 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, allApps, isPanel }) 
                         app.slug === 'king-of-thieves-mod' ? 'King of Thieves Mod – Unlimited Orbs & Gold' :
                         app.slug === 'monster-legends-mod' ? 'Monster Legends Mod – Unlimited Gems & Gold' :
                         app.slug === 'scrabble-go-mod' ? 'Scrabble GO Mod – Unlimited Gems' :
+                        app.slug === 'state-of-survival-mod' ? 'State of Survival Mod – Unlimited Biocaps & Resources' :
                         app.title
                       }</h1>
                       <div className="flex items-center gap-x-4 gap-y-1 text-gray-400 text-sm mb-4 flex-wrap">
