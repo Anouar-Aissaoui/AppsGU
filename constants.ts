@@ -1149,14 +1149,16 @@ Accelerate research, expand your city, and dominate events without waiting. This
         img: "https://i.imgur.com/BXKcVmy.jpeg", 
         author: "TapTweak", 
         title: "Angry Birds Evolution Mod", 
-        description: "Unlimited Gems & Coin!",
+        description: "Unlimited Gems & Coins!",
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Unlock unlimited gems and coins in Angry Birds Evolution. Works on iOS & Android.`,
+        longDescription: `Angry Birds Evolution Mod – Collect & Evolve with Unlimited Gems & Coins\n\nWhat you get\n- Unlimited Gems & Coins to open eggs, evolve birds and speed upgrades\n- Faster progress through campaigns, events and PvE battles\n- Best used in casual/non‑competitive modes\n\nHow to install (iOS & Android)\n1) Tap Download and install Angry Birds Evolution Mod\n2) Open the game and complete the tutorial match\n3) Resources sync automatically – start hatching and evolving\n\nPlay tips\n- Focus on a core team and evolve them before spreading resources\n- Save premium hatches for event rate‑ups\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
         faqs: [
-            { question: "Account safety?", answer: "Use a secondary account to minimize risk." },
-            { question: "Supported devices?", answer: "iOS and Android." }
+            { question: "Is it safe for competitive play?", answer: "Prefer PvE/casual; ranked/competitive use may increase detection risk." },
+            { question: "Do I need root/jailbreak?", answer: "No. Works on standard iOS and Android devices." },
+            { question: "Will progress persist after uninstall?", answer: "Benefits apply while installed; uninstalling may revert some gains." },
+            { question: "Performance tips?", answer: "Lower effects and background animations on older devices for smoother play." }
         ]
     },
     { 

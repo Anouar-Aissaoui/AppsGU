@@ -679,6 +679,22 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
             });
         }
 
+        // HowTo Schema (Programmatic SEO) for Angry Birds Evolution Mod
+        if (app.slug === 'angry-birds-evolution-mod') {
+            addJsonLd({
+                "@context": "https://schema.org",
+                "@type": "HowTo",
+                "name": "How to Activate Angry Birds Evolution Mod (Unlimited Gems & Coins)",
+                "totalTime": "PT2M",
+                "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
+                "step": [
+                    { "@type": "HowToStep", "name": "Install Mod", "text": "Download and install Angry Birds Evolution Mod on your device." },
+                    { "@type": "HowToStep", "name": "Open Game", "text": "Launch ABE; gems and coins sync automatically." },
+                    { "@type": "HowToStep", "name": "Hatch & Evolve", "text": "Open eggs, evolve your team and clear events faster." }
+                ]
+            });
+        }
+
         // HowTo Schema (Programmatic SEO) for Ninja Turtles: Legends Mod
         if (app.slug === 'ninja-turtles-legends-mod') {
             addJsonLd({
@@ -1207,6 +1223,7 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, allApps, isPanel }) 
                         app.slug === 'top-war-mod' ? 'Top War Mod – Unlimited Diamonds & Coins' :
                         app.slug === 'war-and-order-mod' ? 'War and Order Mod – Unlimited Gems & Coins' :
                         app.slug === 'world-chef-mod' ? 'World Chef Mod – Unlimited Gems & Gold' :
+                        app.slug === 'angry-birds-evolution-mod' ? 'Angry Birds Evolution Mod – Unlimited Gems & Coins' :
                         app.slug === 'pocket-troops-mod' ? 'Pocket Troops Mod – Unlimited Coins & Cash' :
                         app.slug === 'the-wolf-mod' ? 'The Wolf Mod – Unlimited Gems & Money' :
                         app.title
