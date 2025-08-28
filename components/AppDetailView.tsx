@@ -263,6 +263,22 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
             });
         }
 
+        // HowTo Schema (Programmatic SEO) for Match Masters Mod
+        if (app.slug === 'match-masters-mod') {
+            addJsonLd({
+                "@context": "https://schema.org",
+                "@type": "HowTo",
+                "name": "How to Activate Match Masters Mod (iOS & Android)",
+                "totalTime": "PT2M",
+                "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
+                "step": [
+                    { "@type": "HowToStep", "name": "Install Mod", "text": "Download and install the Match Masters Mod on your device." },
+                    { "@type": "HowToStep", "name": "Open Game", "text": "Launch Match Masters; resources will sync automatically." },
+                    { "@type": "HowToStep", "name": "Use Boosters", "text": "Enjoy unlimited coins and boosters to progress faster." }
+                ]
+            });
+        }
+
         // HowTo Schema (Programmatic SEO) for iRecovery
         if (app.slug === 'irecovery') {
             addJsonLd({
@@ -359,6 +375,7 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, allApps, isPanel }) 
                         app.slug === 'discord-nitro-free' ? 'Discord Nitro – Free Emojis, HD Streaming & Uploads' :
                         app.slug === 'pokemon-go-spoofer' ? 'Pokemon Go Spoofer – Teleport, Joystick & Auto-Catch' :
                         app.slug === 'monopoly-go-plus-plus' ? 'Monopoly Go++ – Unlimited Dice & Cash' :
+                        app.slug === 'match-masters-mod' ? 'Match Masters Mod – Unlimited Coins & Boosters' :
                         app.title
                       }</h1>
                       <div className="flex items-center gap-x-4 gap-y-1 text-gray-400 text-sm mb-4 flex-wrap">
