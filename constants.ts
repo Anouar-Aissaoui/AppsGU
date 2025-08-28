@@ -915,10 +915,12 @@ Accelerate research, expand your city, and dominate events without waiting. This
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Race with unlimited money and gold in NFS No Limits. Upgrade every ride. iOS & Android supported.`,
+        longDescription: `Need for Speed™ No Limits Mod – Street Racing with Unlimited Money & Gold\n\nWhat you get\n- Unlimited Money & Gold to buy cars, parts and visual upgrades\n- Skip grind and unlock event requirements faster\n- Best used in single‑player events and offline modes\n\nHow to install (iOS & Android)\n1) Tap Download and install NFS No Limits Mod\n2) Open the game and complete the intro race\n3) Resources sync automatically – upgrade your garage\n\nTuning tips\n- Start with ECU and Turbo for best performance per cost\n- Balance Nitro with Tires to keep traction on corners\n\nCompatibility\n- iOS 12+ and Android 7+; phones and tablets supported`,
         faqs: [
-            { question: "Online play safe?", answer: "Use in offline or casual modes to reduce risk." },
-            { question: "OS supported?", answer: "iOS & Android." }
+            { question: "Is it safe for online?", answer: "Avoid competitive modes; use responsibly in offline or casual events." },
+            { question: "Do I need root/jailbreak?", answer: "No. Works on standard iOS and Android devices." },
+            { question: "Will progress persist after uninstall?", answer: "Benefits apply while installed; uninstalling may revert some gains." },
+            { question: "Performance tips?", answer: "Lower effects detail and cap FPS on older devices for smoother races." }
         ]
     },
     { 
