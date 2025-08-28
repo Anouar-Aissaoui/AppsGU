@@ -498,6 +498,16 @@ const RelatedApps: React.FC<RelatedAppsProps> = ({ currentAppSlug, category, all
             </ul>
           </div>
         )}
+        {currentAppSlug === 'nba-live-mobile-mod' && (
+          <div className="mt-6 text-sm text-gray-400">
+            <p className="mb-2">Helpful links:</p>
+            <ul className="list-disc list-inside space-y-1">
+              <li><a className="text-[#00ff88] hover:underline" href="/category/games">Sports & basketball mods</a></li>
+              <li><a className="text-[#00ff88] hover:underline" href="/app/basketball-stars-mod">Basketball Stars – Unlimited Money & Gold</a></li>
+              <li><a className="text-[#00ff88] hover:underline" href="/app/efootball-2024-mod">eFootball 2024 – Unlimited Coins & GP</a></li>
+            </ul>
+          </div>
+        )}
         {currentAppSlug === 'score-hero-2022-mod' && (
           <div className="mt-6 text-sm text-gray-400">
             <p className="mb-2">Helpful links:</p>

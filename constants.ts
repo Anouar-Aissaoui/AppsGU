@@ -815,7 +815,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
         img: "https://i.imgur.com/bkhqT3H.jpeg", 
         author: "TapTweak", 
         title: "Criminal Case Mod", 
-        description: "Unlimited Money!",
+        description: "Unlimited Cash & Coins!",
         version: "1.0.0",
         size: "Varies",
         category: "Games",
@@ -1272,10 +1272,12 @@ Accelerate research, expand your city, and dominate events without waiting. This
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Build your dream NBA roster with unlimited money in NBA Live Mobile. iOS & Android supported.`,
+        longDescription: `NBA Live Mobile Mod – Ultimate Team with Unlimited Cash & Coins\n\nWhat you get\n- Unlimited Cash & Coins to open packs and upgrade players\n- Faster team building, training and lineup boosts\n- Best used in casual modes and offline events\n\nHow to install (iOS & Android)\n1) Tap Download and install NBA Live Mobile Mod\n2) Open the game and complete the intro drills\n3) Resources sync automatically – start upgrading your lineup\n\nPlay tips\n- Focus on a core lineup; upgrade chemistries for bigger boosts\n- Practice release timing to raise field goal percentage\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
         faqs: [
-            { question: "Is this detectable?", answer: "Detection is possible; use at your own discretion." },
-            { question: "OS support?", answer: "iOS and Android supported." }
+            { question: "Is it safe for ranked/online?", answer: "Prefer casual/offline; ranked may increase detection risk." },
+            { question: "Do I need root/jailbreak?", answer: "No. Works on standard iOS and Android devices." },
+            { question: "Will progress persist after uninstall?", answer: "Benefits apply while installed; uninstalling may revert some gains." },
+            { question: "Performance tips?", answer: "Lower effects and cap FPS on older devices for smoother gameplay." }
         ]
     },
     { 
