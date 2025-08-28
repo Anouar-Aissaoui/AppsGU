@@ -423,6 +423,22 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
             });
         }
 
+        // HowTo Schema (Programmatic SEO) for Guns of Boom Mod
+        if (app.slug === 'guns-of-boom-mod') {
+            addJsonLd({
+                "@context": "https://schema.org",
+                "@type": "HowTo",
+                "name": "How to Activate Guns of Boom Mod",
+                "totalTime": "PT2M",
+                "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
+                "step": [
+                    { "@type": "HowToStep", "name": "Install Mod", "text": "Download and install Guns of Boom Mod on your device." },
+                    { "@type": "HowToStep", "name": "Open Game", "text": "Launch GoB; money and gold sync automatically." },
+                    { "@type": "HowToStep", "name": "Upgrade Gear", "text": "Buy weapons and armor instantly with resources." }
+                ]
+            });
+        }
+
         // HowTo Schema (Programmatic SEO) for iRecovery
         if (app.slug === 'irecovery') {
             addJsonLd({
@@ -529,6 +545,7 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, allApps, isPanel }) 
                         app.slug === 'bus-simulator-ultimate-mod' ? 'Bus Simulator: Ultimate Mod – Unlimited Money & Gold' :
                         app.slug === 'race-master-3d-mod' ? 'Race Master 3D Mod – Unlimited Money, Nitro & Shields' :
                         app.slug === 'ninja-turtles-legends-mod' ? 'Ninja Turtles: Legends Mod – Unlimited Greenbacks' :
+                        app.slug === 'guns-of-boom-mod' ? 'Guns of Boom Mod – Unlimited Money & Gold' :
                         app.title
                       }</h1>
                       <div className="flex items-center gap-x-4 gap-y-1 text-gray-400 text-sm mb-4 flex-wrap">
