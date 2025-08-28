@@ -663,6 +663,22 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
             });
         }
 
+        // HowTo Schema (Programmatic SEO) for Monster Legends Mod
+        if (app.slug === 'monster-legends-mod') {
+            addJsonLd({
+                "@context": "https://schema.org",
+                "@type": "HowTo",
+                "name": "How to Activate Monster Legends Mod",
+                "totalTime": "PT2M",
+                "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
+                "step": [
+                    { "@type": "HowToStep", "name": "Install Mod", "text": "Download and install Monster Legends Mod." },
+                    { "@type": "HowToStep", "name": "Open Game", "text": "Launch the game; gems and gold sync automatically." },
+                    { "@type": "HowToStep", "name": "Upgrade Monsters", "text": "Use resources to level up monsters and craft runes." }
+                ]
+            });
+        }
+
         // HowTo Schema (Programmatic SEO) for iRecovery
         if (app.slug === 'irecovery') {
             addJsonLd({
@@ -784,6 +800,7 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, allApps, isPanel }) 
                         app.slug === 'harry-potter-puzzles-and-spells-mod' ? 'Harry Potter: Puzzles & Spells Mod – Unlimited Gold' :
                         app.slug === 'injustice-2-mod' ? 'Injustice 2 Mod – Unlimited Gems & Credits' :
                         app.slug === 'king-of-thieves-mod' ? 'King of Thieves Mod – Unlimited Orbs & Gold' :
+                        app.slug === 'monster-legends-mod' ? 'Monster Legends Mod – Unlimited Gems & Gold' :
                         app.title
                       }</h1>
                       <div className="flex items-center gap-x-4 gap-y-1 text-gray-400 text-sm mb-4 flex-wrap">
