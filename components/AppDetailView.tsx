@@ -407,6 +407,22 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
             });
         }
 
+        // HowTo Schema (Programmatic SEO) for Ninja Turtles: Legends Mod
+        if (app.slug === 'ninja-turtles-legends-mod') {
+            addJsonLd({
+                "@context": "https://schema.org",
+                "@type": "HowTo",
+                "name": "How to Activate Ninja Turtles: Legends Mod",
+                "totalTime": "PT2M",
+                "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
+                "step": [
+                    { "@type": "HowToStep", "name": "Install Mod", "text": "Download and install Ninja Turtles: Legends Mod." },
+                    { "@type": "HowToStep", "name": "Open Game", "text": "Launch the game; greenbacks and resources sync automatically." },
+                    { "@type": "HowToStep", "name": "Upgrade Heroes", "text": "Use resources to upgrade and progress through campaigns." }
+                ]
+            });
+        }
+
         // HowTo Schema (Programmatic SEO) for iRecovery
         if (app.slug === 'irecovery') {
             addJsonLd({
@@ -512,6 +528,7 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, allApps, isPanel }) 
                         app.slug === 'loot-boy-mod' ? 'Loot Boy Mod – Unlimited Diamonds, Tickets & Coins' :
                         app.slug === 'bus-simulator-ultimate-mod' ? 'Bus Simulator: Ultimate Mod – Unlimited Money & Gold' :
                         app.slug === 'race-master-3d-mod' ? 'Race Master 3D Mod – Unlimited Money, Nitro & Shields' :
+                        app.slug === 'ninja-turtles-legends-mod' ? 'Ninja Turtles: Legends Mod – Unlimited Greenbacks' :
                         app.title
                       }</h1>
                       <div className="flex items-center gap-x-4 gap-y-1 text-gray-400 text-sm mb-4 flex-wrap">
