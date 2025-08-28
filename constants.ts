@@ -318,7 +318,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
     },
     { 
         slug: "bingo-blitz-hack",
-        img: "https://i.imgur.com/Oh29tXi.jpeg",  
+        img: "https://i.imgur.com/WrZJqtT.jpeg",  
         author: "BetterMods", 
         title: "Bingo Blitz Hack", 
         description: "Unlimited Coins & Credits!",
@@ -333,7 +333,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
     },
     { 
         slug: "subway-surfers-hack",
-        img: "https://i.imgur.com/rq3p0eE.png", 
+        img: "https://i.imgur.com/jEAi4PW.jpeg", 
         author: "BetterMods", 
         title: "Subway Surfers Hack", 
         description: "Unlimited Coins/Keys!",
@@ -348,7 +348,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
     },
     { 
         slug: "fc-mobile-hack",
-        img: "https://i.imgur.com/rq3p0eE.png", 
+        img: "https://i.imgur.com/bdvQ46z.jpeg", 
         author: "BetterMods", 
         title: "FC Mobile Hack", 
         description: "Unlimited FC Points & Coins!",
@@ -363,7 +363,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
     },
     { 
         slug: "idle-heroes-hack",
-        img: "https://i.imgur.com/rq3p0eE.png", 
+        img: "https://i.imgur.com/t6uwXQY.jpeg", 
         author: "BetterMods", 
         title: "Idle Heroes Hack", 
         description: "Unlimited Gems & Coins!",
@@ -378,7 +378,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
     },
     { 
         slug: "sims-freeplay-hack",
-        img: "https://i.imgur.com/rq3p0eE.png", 
+        img: "https://i.imgur.com/RuyIM2l.jpeg", 
         author: "BetterMods", 
         title: "Sims FreePlay Hack", 
         description: "Unlimited Simoleons/Points and MAX VIP!",
@@ -393,7 +393,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
     },
     { 
         slug: "car-simulator-2-hack",
-        img: "https://i.imgur.com/rq3p0eE.png", 
+        img: "https://i.imgur.com/qOgKqhE.jpeg", 
         author: "BetterMods", 
         title: "Car Simulator 2 Hack", 
         description: "Unlimited Coins, Blueprints & Crypto!",
@@ -408,7 +408,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
     },
     { 
         slug: "capcut-pro",
-        img: "https://i.imgur.com/rq3p0eE.png", 
+        img: "https://i.imgur.com/S2GDQsf.jpeg", 
         author: "BetterMods", 
         title: "CapCut Pro", 
         description: "Compatible with Android & iOS devices!",
@@ -423,7 +423,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
     },
     { 
         slug: "dice-dreams-hack",
-        img: "https://i.imgur.com/rq3p0eE.png", 
+        img: "https://i.imgur.com/uNxEvkd.jpeg", 
         author: "BetterMods", 
         title: "Dice Dreams Hack", 
         description: "Unlimited Rolls & Coins!",
@@ -438,7 +438,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
     },
     { 
         slug: "modern-strike-hack",
-        img: "https://i.imgur.com/rq3p0eE.png", 
+        img: "https://i.imgur.com/9R6aWoD.jpeg", 
         author: "BetterMods", 
         title: "Modern Strike Hack", 
         description: "Unlimited Gold & Credits!",
@@ -453,7 +453,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
     },
     { 
         slug: "hogwarts-mystery-hack",
-        img: "https://i.imgur.com/rq3p0eE.png", 
+        img: "https://i.imgur.com/ImQoAC8.jpeg", 
         author: "BetterMods", 
         title: "Hogwarts Mystery Hack", 
         description: "Unlimited Energy, Gems & Gold!",
@@ -468,7 +468,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
     },
     { 
         slug: "ppsspp",
-        img: "https://i.imgur.com/rq3p0eE.png", 
+        img: "https://i.imgur.com/g1rtn5L.jpeg", 
         author: "BetterMods", 
         title: "PPSSPP", 
         description: "PPSSPP on iOS/Android without Jailbreak!",
@@ -483,7 +483,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
     },
     { 
         slug: "apex-legends-hack",
-        img: "https://i.imgur.com/rq3p0eE.png", 
+        img: "https://i.imgur.com/sgl0k68.jpeg", 
         author: "BetterMods", 
         title: "Apex Legends Hack", 
         description: "Unlimited Coins & Battle Pass!",
@@ -498,7 +498,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
     },
     { 
         slug: "car-parking-multiplayer-2-hack",
-        img: "https://i.imgur.com/rq3p0eE.png", 
+        img: "https://i.imgur.com/ugYpecY.jpeg", 
         author: "BetterMods", 
         title: "Car Parking Multiplayer 2 Hack", 
         description: "Unlimited Money & Coins!",
@@ -513,7 +513,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
     },
     { 
         slug: "blood-strike-mod",
-        img: "https://i.imgur.com/rq3p0eE.png", 
+        img: "https://i.imgur.com/jp8Z9r5.jpeg", 
         author: "BetterMods", 
         title: "Blood Strike Mod", 
         description: "Unlimited 9999999 Gold!",
@@ -528,7 +528,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
     },
     { 
         slug: "osm-22-23-hack",
-        img: "https://i.imgur.com/rq3p0eE.png", 
+        img: "https://i.imgur.com/l5nQWph.jpeg", 
         author: "BetterMods", 
         title: "OSM 22/23 Hack", 
         description: "Unlimited Boss Coins!",
@@ -543,7 +543,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
     },
     { 
         slug: "efootball-2024-hack",
-        img: "https://i.imgur.com/rq3p0eE.png", 
+        img: "https://i.imgur.com/bHoTstK.jpeg", 
         author: "BetterMods", 
         title: "eFootball 2024 Hack", 
         description: "Unlimited Coins & GP!",
@@ -558,7 +558,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
     },
     { 
         slug: "ludo-king-hack",
-        img: "https://i.imgur.com/rq3p0eE.png", 
+        img: "https://i.imgur.com/2NNYwpz.jpeg", 
         author: "BetterMods", 
         title: "Ludo King Hack", 
         description: "Unlimited Coins & Diamonds!",
@@ -573,7 +573,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
     },
     { 
         slug: "island-war-hack",
-        img: "https://i.imgur.com/rq3p0eE.png", 
+        img: "https://i.imgur.com/5yQ3GHO.jpeg", 
         author: "BetterMods", 
         title: "Island War Hack", 
         description: "Unlimited Money & Gems!",
@@ -588,7 +588,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
     },
     { 
         slug: "valor-legends-hack",
-        img: "https://i.imgur.com/rq3p0eE.png", 
+        img: "https://i.imgur.com/cm3ufj9.jpeg", 
         author: "BetterMods", 
         title: "Valor Legends Hack", 
         description: "Unlimited Gems!",
@@ -603,7 +603,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
     },
     { 
         slug: "star-wars-galaxy-of-heroes-hack",
-        img: "https://i.imgur.com/rq3p0eE.png", 
+        img: "https://i.imgur.com/qFY4m4t.jpeg", 
         author: "BetterMods", 
         title: "Star Wars: Galaxy of Heroes Hack", 
         description: "Unlimited Crystals!",
@@ -618,7 +618,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
     },
     { 
         slug: "best-friends-hack",
-        img: "https://i.imgur.com/rq3p0eE.png", 
+        img: "https://i.imgur.com/NYCmoVJ.jpeg", 
         author: "BetterMods", 
         title: "Best Friends Hack", 
         description: "Unlimited Gold & Keys!",
@@ -633,7 +633,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
     },
     { 
         slug: "beatstar-hack",
-        img: "https://i.imgur.com/rq3p0eE.png", 
+        img: "https://i.imgur.com/KYT7Xrn.jpeg", 
         author: "BetterMods", 
         title: "Beatstar Hack", 
         description: "Unlimited Gems!",
@@ -648,7 +648,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
     },
     { 
         slug: "hungry-shark-world-hack",
-        img: "https://i.imgur.com/rq3p0eE.png", 
+        img: "https://i.imgur.com/OkWbNly.jpeg", 
         author: "BetterMods", 
         title: "Hungry Shark World Hack", 
         description: "Unlimited Coins & Gems!",
@@ -663,7 +663,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
     },
     { 
         slug: "golf-battle-hack",
-        img: "https://i.imgur.com/rq3p0eE.png", 
+        img: "https://i.imgur.com/kQNvtV3.jpeg", 
         author: "BetterMods", 
         title: "Golf Battle Hack", 
         description: "Unlimited Gems & Coins!",
@@ -678,7 +678,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
     },
     { 
         slug: "fc-mobile",
-        img: "https://i.imgur.com/rq3p0eE.png", 
+        img: "https://i.imgur.com/nATWBTW.jpeg", 
         author: "BetterMods", 
         title: "FC Mobile", 
         description: "Install FC Mobile on iOS/Android!",
