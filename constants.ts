@@ -1187,10 +1187,12 @@ Accelerate research, expand your city, and dominate events without waiting. This
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Compete with unlimited money and gold in Basketball Stars. iOS & Android supported.`,
+        longDescription: `Basketball Stars Mod – 1v1 Hoops with Unlimited Money & Gold\n\nWhat you get\n- Unlimited Money & Gold to unlock balls, courts and gear\n- Faster upgrades and cosmetics for your player\n- Best used in casual/offline modes\n\nHow to install (iOS & Android)\n1) Tap Download and install Basketball Stars Mod\n2) Open the game and complete the intro match\n3) Resources sync automatically – start upgrading and styling\n\nPlay tips\n- Mix fakes and crossovers; time shots at peak jump\n- Use gear bonuses that boost accuracy and steal resistance\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
         faqs: [
-            { question: "Ban possibility?", answer: "Always possible in online play; use responsibly." },
-            { question: "Platforms supported?", answer: "iOS and Android." }
+            { question: "Is it safe for ranked online?", answer: "Prefer casual play; ranked modes may increase detection risk." },
+            { question: "Do I need root/jailbreak?", answer: "No. Works on standard iOS and Android devices." },
+            { question: "Will progress persist after uninstall?", answer: "Benefits apply while installed; uninstalling may revert some gains." },
+            { question: "Performance tips?", answer: "Lower effects and cap FPS on older devices for smoother gameplay." }
         ]
     },
     { 

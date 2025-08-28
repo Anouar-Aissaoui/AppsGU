@@ -711,6 +711,22 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
             });
         }
 
+        // HowTo Schema (Programmatic SEO) for Basketball Stars Mod
+        if (app.slug === 'basketball-stars-mod') {
+            addJsonLd({
+                "@context": "https://schema.org",
+                "@type": "HowTo",
+                "name": "How to Activate Basketball Stars Mod (Unlimited Money & Gold)",
+                "totalTime": "PT2M",
+                "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
+                "step": [
+                    { "@type": "HowToStep", "name": "Install Mod", "text": "Download and install Basketball Stars Mod on your device." },
+                    { "@type": "HowToStep", "name": "Open Game", "text": "Launch Basketball Stars; resources sync automatically." },
+                    { "@type": "HowToStep", "name": "Upgrade & Style", "text": "Buy gear and courts; practice timing to win matches." }
+                ]
+            });
+        }
+
         // HowTo Schema (Programmatic SEO) for Ninja Turtles: Legends Mod
         if (app.slug === 'ninja-turtles-legends-mod') {
             addJsonLd({
@@ -1241,6 +1257,7 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, allApps, isPanel }) 
                         app.slug === 'world-chef-mod' ? 'World Chef Mod – Unlimited Gems & Gold' :
                         app.slug === 'angry-birds-evolution-mod' ? 'Angry Birds Evolution Mod – Unlimited Gems & Coins' :
                         app.slug === 'project-makeover-mod' ? 'Project Makeover Mod – Unlimited Gems & Coins' :
+                        app.slug === 'basketball-stars-mod' ? 'Basketball Stars Mod – Unlimited Money & Gold' :
                         app.slug === 'pocket-troops-mod' ? 'Pocket Troops Mod – Unlimited Coins & Cash' :
                         app.slug === 'the-wolf-mod' ? 'The Wolf Mod – Unlimited Gems & Money' :
                         app.title
