@@ -1051,10 +1051,12 @@ Accelerate research, expand your city, and dominate events without waiting. This
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Build your kingdom with unlimited gems in Infinity Kingdom. iOS & Android supported.`,
+        longDescription: `Infinity Kingdom Mod – Strategy Builder with Unlimited Gems\n\nWhat you get\n- Unlimited Gems to speed buildings, research and summons\n- Faster progression across PvE and events\n- Best used carefully in alliance contexts\n\nHow to install (iOS & Android)\n1) Tap Download and install Infinity Kingdom Mod\n2) Open the game and finish the tutorial\n3) Gems sync automatically – start upgrading and training\n\nStrategy tips\n- Keep builders active and research queued at all times\n- Focus on a core immortal team and synergy artifacts first\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
         faqs: [
-            { question: "Alliance play?", answer: "Use cautiously to maintain fair play in alliances." },
-            { question: "Platforms supported?", answer: "iOS & Android." }
+            { question: "Is it safe for alliances/competitive?", answer: "Use responsibly; competitive use may increase detection risk." },
+            { question: "Do I need root/jailbreak?", answer: "No. Works on standard iOS and Android devices." },
+            { question: "Will progress persist after uninstall?", answer: "Benefits apply while installed; uninstalling may revert some gains." },
+            { question: "Performance tips?", answer: "Lower effects and background activity on older devices to save battery." }
         ]
     },
     { 

@@ -583,6 +583,22 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
             });
         }
 
+        // HowTo Schema (Programmatic SEO) for Infinity Kingdom Mod
+        if (app.slug === 'infinity-kingdom-mod') {
+            addJsonLd({
+                "@context": "https://schema.org",
+                "@type": "HowTo",
+                "name": "How to Activate Infinity Kingdom Mod (Unlimited Gems)",
+                "totalTime": "PT2M",
+                "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
+                "step": [
+                    { "@type": "HowToStep", "name": "Install Mod", "text": "Download and install Infinity Kingdom Mod on your device." },
+                    { "@type": "HowToStep", "name": "Open Kingdom", "text": "Launch the game; gems will sync automatically." },
+                    { "@type": "HowToStep", "name": "Upgrade & Train", "text": "Use gems to speed buildings, train troops and power up immortals." }
+                ]
+            });
+        }
+
         // HowTo Schema (Programmatic SEO) for Ninja Turtles: Legends Mod
         if (app.slug === 'ninja-turtles-legends-mod') {
             addJsonLd({
@@ -1106,6 +1122,7 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, allApps, isPanel }) 
                         app.slug === 'dislyte-mod' ? 'Dislyte Mod – Unlimited Crystals & Gold' :
                         app.slug === 'traffic-rider-mod' ? 'Traffic Rider Mod – Unlimited Money & Cash' :
                         app.slug === 'skullgirls-mod' ? 'Skullgirls Mod – Unlimited Theonite' :
+                        app.slug === 'infinity-kingdom-mod' ? 'Infinity Kingdom Mod – Unlimited Gems' :
                         app.slug === 'the-wolf-mod' ? 'The Wolf Mod – Unlimited Gems & Money' :
                         app.title
                       }</h1>
