@@ -1255,10 +1255,12 @@ Accelerate research, expand your city, and dominate events without waiting. This
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Grow your deck with unlimited gems and cards in PvZ Heroes. iOS & Android supported.`,
+        longDescription: `PvZ Heroes Mod – Card Battler with Unlimited Gems & Cards\n\nWhat you get\n- Unlimited Gems & Cards to craft decks and upgrade heroes faster\n- Accelerated progress through campaign, challenges and events\n- Best used in casual/non‑competitive modes\n\nHow to install (iOS & Android)\n1) Tap Download and install PvZ Heroes Mod\n2) Open the game and complete the tutorial match\n3) Resources sync automatically – start building your deck\n\nDeck tips\n- Focus on a core hero strategy (tempo, control, combo)\n- Curve your mana costs and include reliable removal\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
         faqs: [
-            { question: "Online use?", answer: "Use in casual modes; ranked may be risky." },
-            { question: "Platform availability?", answer: "iOS & Android supported." }
+            { question: "Is it safe for ranked play?", answer: "Prefer casual modes; ranked/ladder may increase detection risk." },
+            { question: "Do I need root/jailbreak?", answer: "No. Works on standard iOS and Android devices." },
+            { question: "Will progress persist after uninstall?", answer: "Benefits apply while installed; uninstalling may revert some gains." },
+            { question: "Performance tips?", answer: "Lower effects and turn off extra animations on older devices." }
         ]
     },
     { 

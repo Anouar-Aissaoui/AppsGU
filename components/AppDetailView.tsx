@@ -775,6 +775,22 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
             });
         }
 
+        // HowTo Schema (Programmatic SEO) for PvZ Heroes Mod
+        if (app.slug === 'pvz-heroes-mod') {
+            addJsonLd({
+                "@context": "https://schema.org",
+                "@type": "HowTo",
+                "name": "How to Activate PvZ Heroes Mod (Unlimited Gems & Cards)",
+                "totalTime": "PT2M",
+                "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
+                "step": [
+                    { "@type": "HowToStep", "name": "Install Mod", "text": "Download and install PvZ Heroes Mod on your device." },
+                    { "@type": "HowToStep", "name": "Open Game", "text": "Launch PvZ Heroes; resources sync automatically." },
+                    { "@type": "HowToStep", "name": "Build Deck", "text": "Craft a balanced deck and climb casual events." }
+                ]
+            });
+        }
+
         // HowTo Schema (Programmatic SEO) for Ninja Turtles: Legends Mod
         if (app.slug === 'ninja-turtles-legends-mod') {
             addJsonLd({
@@ -1309,6 +1325,7 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, allApps, isPanel }) 
                         app.slug === 'disney-heroes-mod' ? 'Disney Heroes Mod – Unlimited Diamonds & Gold' :
                         app.slug === 'lilys-garden-mod' ? "Lily's Garden Mod – Unlimited Stars & Coins" :
                         app.slug === 'tennis-clash-mod' ? 'Tennis Clash Mod – Unlimited Gems & Coins' :
+                        app.slug === 'pvz-heroes-mod' ? 'PvZ Heroes Mod – Unlimited Gems & Cards' :
                         app.slug === 'pocket-troops-mod' ? 'Pocket Troops Mod – Unlimited Coins & Cash' :
                         app.slug === 'the-wolf-mod' ? 'The Wolf Mod – Unlimited Gems & Money' :
                         app.title
