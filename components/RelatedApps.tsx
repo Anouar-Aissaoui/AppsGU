@@ -278,6 +278,16 @@ const RelatedApps: React.FC<RelatedAppsProps> = ({ currentAppSlug, category, all
             </ul>
           </div>
         )}
+        {currentAppSlug === 'the-sims-mod' && (
+          <div className="mt-6 text-sm text-gray-400">
+            <p className="mb-2">Helpful links:</p>
+            <ul className="list-disc list-inside space-y-1">
+              <li><a className="text-[#00ff88] hover:underline" href="/category/games">Life simulation & builder mods</a></li>
+              <li><a className="text-[#00ff88] hover:underline" href="/app/world-chef-mod">World Chef – Unlimited Gems & Gold</a></li>
+              <li><a className="text-[#00ff88] hover:underline" href="/app/top-war-mod">Top War – Unlimited Diamonds & Coins</a></li>
+            </ul>
+          </div>
+        )}
       </div>
     </>
   );
