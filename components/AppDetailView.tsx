@@ -743,6 +743,22 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
             });
         }
 
+        // HowTo Schema (Programmatic SEO) for Lily's Garden Mod
+        if (app.slug === 'lilys-garden-mod') {
+            addJsonLd({
+                "@context": "https://schema.org",
+                "@type": "HowTo",
+                "name": "How to Activate Lily's Garden Mod (Unlimited Stars & Coins)",
+                "totalTime": "PT2M",
+                "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
+                "step": [
+                    { "@type": "HowToStep", "name": "Install Mod", "text": "Download and install Lily's Garden Mod on your device." },
+                    { "@type": "HowToStep", "name": "Open Game", "text": "Launch the game; stars and coins sync automatically." },
+                    { "@type": "HowToStep", "name": "Solve & Renovate", "text": "Clear puzzles, unlock renovations and progress story quickly." }
+                ]
+            });
+        }
+
         // HowTo Schema (Programmatic SEO) for Ninja Turtles: Legends Mod
         if (app.slug === 'ninja-turtles-legends-mod') {
             addJsonLd({
@@ -1275,6 +1291,7 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, allApps, isPanel }) 
                         app.slug === 'project-makeover-mod' ? 'Project Makeover Mod – Unlimited Gems & Coins' :
                         app.slug === 'basketball-stars-mod' ? 'Basketball Stars Mod – Unlimited Money & Gold' :
                         app.slug === 'disney-heroes-mod' ? 'Disney Heroes Mod – Unlimited Diamonds & Gold' :
+                        app.slug === 'lilys-garden-mod' ? "Lily's Garden Mod – Unlimited Stars & Coins" :
                         app.slug === 'pocket-troops-mod' ? 'Pocket Troops Mod – Unlimited Coins & Cash' :
                         app.slug === 'the-wolf-mod' ? 'The Wolf Mod – Unlimited Gems & Money' :
                         app.title

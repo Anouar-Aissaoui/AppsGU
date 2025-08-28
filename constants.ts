@@ -1221,10 +1221,12 @@ Accelerate research, expand your city, and dominate events without waiting. This
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Renovate with unlimited stars and coins in Lily's Garden. iOS & Android supported.`,
+        longDescription: `Lily's Garden Mod – Match‑3 Renovations with Unlimited Stars & Coins\n\nWhat you get\n- Unlimited Stars & Coins to unlock renovations and story chapters\n- Progress faster through puzzles and events\n- Best used in casual/offline modes\n\nHow to install (iOS & Android)\n1) Tap Download and install Lily's Garden Mod\n2) Open the game and complete the first puzzle\n3) Resources sync automatically – start renovating the garden\n\nPlay tips\n- Save boosters for hard levels with blockers\n- Chain large matches for higher score and extra moves\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
         faqs: [
-            { question: "Progress persistence?", answer: "Local progress persists; online sync may vary." },
-            { question: "Platforms supported?", answer: "iOS and Android." }
+            { question: "Is it safe for leaderboards?", answer: "Prefer casual play; leaderboards may increase detection risk." },
+            { question: "Do I need root/jailbreak?", answer: "No. Works on standard iOS and Android devices." },
+            { question: "Will progress persist after uninstall?", answer: "Benefits apply while installed; uninstalling may revert some gains." },
+            { question: "Performance tips?", answer: "Disable extra animations and lower effects on older devices." }
         ]
     },
     { 
