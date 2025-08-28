@@ -1119,10 +1119,12 @@ Accelerate research, expand your city, and dominate events without waiting. This
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Command armies with unlimited gems and coins in War and Order. iOS & Android supported.`,
+        longDescription: `War and Order Mod – Strategy War with Unlimited Gems & Coins\n\nWhat you get\n- Unlimited Gems & Coins to speed buildings, research and troop training\n- Faster expansion across campaigns, events and alliance tech\n- Best used carefully in alliance/competitive contexts\n\nHow to install (iOS & Android)\n1) Tap Download and install War and Order Mod\n2) Open the game and finish the tutorial\n3) Resources sync automatically – start upgrading and training\n\nStrategy tips\n- Keep builders and research queues active for constant growth\n- Focus on a core march composition and counter enemy matchups\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
         faqs: [
-            { question: "Detection risk?", answer: "Possible in online modes; use responsibly." },
-            { question: "Supported OS?", answer: "iOS and Android." }
+            { question: "Is it safe for alliances/competitive?", answer: "Use responsibly; competitive use may increase detection risk." },
+            { question: "Do I need root/jailbreak?", answer: "No. Works on standard iOS and Android devices." },
+            { question: "Will progress persist after uninstall?", answer: "Benefits apply while installed; uninstalling may revert some gains." },
+            { question: "Performance tips?", answer: "Lower effects and enable battery saver on older devices to reduce heat and drain." }
         ]
     },
     { 
