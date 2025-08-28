@@ -408,7 +408,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
     },
     { 
         slug: "capcut-pro",
-        img: "https://i.imgur.com/rq3p0eE.png", 
+        img: "https://i.imgur.com/S2GDQsf.jpeg", 
         author: "BetterMods", 
         title: "CapCut Pro", 
         description: "Compatible with Android & iOS devices!",
