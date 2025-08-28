@@ -400,11 +400,16 @@ Accelerate research, expand your city, and dominate events without waiting. This
         img: "https://i.imgur.com/ww6283n.jpeg", 
         author: "TapTweak", 
         title: "CarX Street Mod", 
-        description: "Unlimited Money!",
+        description: "Unlimited money – upgrade cars & builds (iOS/Android)",
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Enjoy unlimited money in CarX Street. Upgrade cars and customize builds freely on iOS & Android.`,
+        longDescription: `Enjoy unlimited money in CarX Street to upgrade cars and customize builds on iOS & Android.
+
+### Quick Setup
+1. Install CarX Street Mod
+2. Launch the game
+3. Upgrade and tune without limits`,
         faqs: [
             { question: "Is this detectable?", answer: "We minimize detection risk, but nothing is 100% undetectable in online games." },
             { question: "Works on iOS and Android?", answer: "Yes, both are supported." }
