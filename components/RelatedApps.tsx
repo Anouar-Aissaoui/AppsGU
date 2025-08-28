@@ -358,6 +358,16 @@ const RelatedApps: React.FC<RelatedAppsProps> = ({ currentAppSlug, category, all
             </ul>
           </div>
         )}
+        {currentAppSlug === 'mighty-party-mod' && (
+          <div className="mt-6 text-sm text-gray-400">
+            <p className="mb-2">Helpful links:</p>
+            <ul className="list-disc list-inside space-y-1">
+              <li><a className="text-[#00ff88] hover:underline" href="/category/games">Strategy & hero battler mods</a></li>
+              <li><a className="text-[#00ff88] hover:underline" href="/app/infinity-kingdom-mod">Infinity Kingdom – Unlimited Gems</a></li>
+              <li><a className="text-[#00ff88] hover:underline" href="/app/forge-of-empires-mod">Forge of Empires – Unlimited Diamonds & Supplies</a></li>
+            </ul>
+          </div>
+        )}
         {currentAppSlug === 'last-day-on-earth-survival-mod' && (
           <div className="mt-6 text-sm text-gray-400">
             <p className="mb-2">Helpful links:</p>

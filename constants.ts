@@ -1068,10 +1068,12 @@ Accelerate research, expand your city, and dominate events without waiting. This
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Assemble heroes with unlimited gems and coins in Mighty Party. iOS & Android supported.`,
+        longDescription: `Mighty Party Mod – Hero Battler with Unlimited Gems & Coins\n\nWhat you get\n- Unlimited Gems & Coins to summon heroes and upgrade faster\n- Accelerated progression through story, events and trials\n- Best used in PvE and casual arenas\n\nHow to install (iOS & Android)\n1) Tap Download and install Mighty Party Mod\n2) Open the game and complete the tutorial battles\n3) Resources sync automatically – start summoning and upgrading\n\nTeam tips\n- Build balanced teams (frontline, damage, support) for consistency\n- Focus upgrades on a core carry and synergy passives first\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
         faqs: [
-            { question: "PVP risk?", answer: "Mods in PVP can be risky; avoid on primary accounts." },
-            { question: "Supported devices?", answer: "iOS and Android." }
+            { question: "Is it safe for ranked PVP?", answer: "We recommend PvE/casual only; competitive play may increase detection risk." },
+            { question: "Do I need root/jailbreak?", answer: "No. Works on standard iOS and Android devices." },
+            { question: "Will progress persist after uninstall?", answer: "Benefits apply while installed; uninstalling may revert some gains." },
+            { question: "Performance tips?", answer: "Lower effects and background animations on older devices for smoother play." }
         ]
     },
     { 

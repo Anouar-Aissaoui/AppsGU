@@ -599,6 +599,22 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
             });
         }
 
+        // HowTo Schema (Programmatic SEO) for Mighty Party Mod
+        if (app.slug === 'mighty-party-mod') {
+            addJsonLd({
+                "@context": "https://schema.org",
+                "@type": "HowTo",
+                "name": "How to Activate Mighty Party Mod (Unlimited Gems & Coins)",
+                "totalTime": "PT2M",
+                "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
+                "step": [
+                    { "@type": "HowToStep", "name": "Install Mod", "text": "Download and install Mighty Party Mod on your device." },
+                    { "@type": "HowToStep", "name": "Open Game", "text": "Launch Mighty Party; gems and coins sync automatically." },
+                    { "@type": "HowToStep", "name": "Build Your Team", "text": "Summon heroes, upgrade passives and clear events." }
+                ]
+            });
+        }
+
         // HowTo Schema (Programmatic SEO) for Ninja Turtles: Legends Mod
         if (app.slug === 'ninja-turtles-legends-mod') {
             addJsonLd({
@@ -1123,6 +1139,7 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, allApps, isPanel }) 
                         app.slug === 'traffic-rider-mod' ? 'Traffic Rider Mod – Unlimited Money & Cash' :
                         app.slug === 'skullgirls-mod' ? 'Skullgirls Mod – Unlimited Theonite' :
                         app.slug === 'infinity-kingdom-mod' ? 'Infinity Kingdom Mod – Unlimited Gems' :
+                        app.slug === 'mighty-party-mod' ? 'Mighty Party Mod – Unlimited Gems & Coins' :
                         app.slug === 'the-wolf-mod' ? 'The Wolf Mod – Unlimited Gems & Money' :
                         app.title
                       }</h1>
