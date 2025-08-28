@@ -439,6 +439,22 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
             });
         }
 
+        // HowTo Schema (Programmatic SEO) for Looney Tunes™ World of Mayhem Mod
+        if (app.slug === 'looney-tunes-world-of-mayhem-mod') {
+            addJsonLd({
+                "@context": "https://schema.org",
+                "@type": "HowTo",
+                "name": "How to Activate Looney Tunes World of Mayhem Mod (Unlimited Gems & Gold)",
+                "totalTime": "PT2M",
+                "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
+                "step": [
+                    { "@type": "HowToStep", "name": "Install Mod", "text": "Download and install Looney Tunes World of Mayhem Mod." },
+                    { "@type": "HowToStep", "name": "Open Game", "text": "Launch the game; gems and gold will sync automatically." },
+                    { "@type": "HowToStep", "name": "Build Your Squad", "text": "Use resources to unlock toons, upgrade abilities and battle." }
+                ]
+            });
+        }
+
         // HowTo Schema (Programmatic SEO) for Ninja Turtles: Legends Mod
         if (app.slug === 'ninja-turtles-legends-mod') {
             addJsonLd({
@@ -954,6 +970,7 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, allApps, isPanel }) 
                         app.slug === 'fr-legends-mod' ? 'FR Legends Mod – Unlimited Money & Drift Upgrades' :
                         app.slug === 'dc-legends-mod' ? 'DC Legends Mod – Unlimited Gems & Energy' :
                         app.slug === 'dungeon-hunter-5-mod' ? 'Dungeon Hunter 5 Mod – Unlimited Gems & Gear' :
+                        app.slug === 'looney-tunes-world-of-mayhem-mod' ? 'Looney Tunes™ World of Mayhem Mod – Unlimited Gems & Gold' :
                         app.title
                       }</h1>
                       <div className="flex items-center gap-x-4 gap-y-1 text-gray-400 text-sm mb-4 flex-wrap">

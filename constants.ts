@@ -898,10 +898,12 @@ Accelerate research, expand your city, and dominate events without waiting. This
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Unlock unlimited gems and gold in Looney Tunes World of Mayhem. iOS & Android supported.`,
+        longDescription: `Looney Tunes™ World of Mayhem Mod – Collect Toons with Unlimited Gems & Gold\n\nWhat you get\n- Unlimited Gems & Gold to unlock toons and power up faster\n- Speed through events, campaigns and PvE battles\n- Best used outside competitive PvP modes\n\nHow to install (iOS & Android)\n1) Tap Download and install Looney Tunes World of Mayhem Mod\n2) Open the game and finish the intro\n3) Resources sync automatically – start unlocking and upgrading toons\n\nTeam tips\n- Build synergistic teams (tank, support, damage) for PvE consistency\n- Focus on a core squad and star‑rank them first\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
         faqs: [
-            { question: "Is this detectable?", answer: "We try to minimize detection, but it cannot be guaranteed." },
-            { question: "Supported platforms?", answer: "iOS and Android." }
+            { question: "Is it safe for PvP?", answer: "We recommend sticking to PvE; competitive modes may increase detection risk." },
+            { question: "Do I need root/jailbreak?", answer: "No. Works on standard iOS and Android devices." },
+            { question: "Will progress persist after uninstall?", answer: "Advantages apply while installed; uninstalling may revert some benefits." },
+            { question: "Performance tips?", answer: "Disable high effects on older devices for smoother animations." }
         ]
     },
     { 
