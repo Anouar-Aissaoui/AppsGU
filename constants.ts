@@ -1102,10 +1102,12 @@ Accelerate research, expand your city, and dominate events without waiting. This
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Merge and conquer with unlimited diamonds and coins in Top War. iOS & Android supported.`,
+        longDescription: `Top War Mod – Merge Strategy with Unlimited Diamonds & Coins\n\nWhat you get\n- Unlimited Diamonds & Coins to speed buildings, merges and research\n- Faster progress through campaigns, events and tech trees\n- Best used responsibly in alliance contexts\n\nHow to install (iOS & Android)\n1) Tap Download and install Top War Mod\n2) Open the game and finish the tutorial\n3) Resources sync automatically – start merging and upgrading\n\nStrategy tips\n- Keep merges efficient; avoid fragmenting unit tiers\n- Maintain research queues and expand builders for constant growth\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
         faqs: [
-            { question: "Alliance rules?", answer: "Respect fair play and community guidelines." },
-            { question: "Platforms supported?", answer: "iOS and Android." }
+            { question: "Is it safe for alliances/competitive?", answer: "Use carefully; competitive modes may increase detection risk." },
+            { question: "Do I need root/jailbreak?", answer: "No. Works on standard iOS and Android devices." },
+            { question: "Will progress persist after uninstall?", answer: "Benefits apply while installed; uninstalling may revert some gains." },
+            { question: "Performance tips?", answer: "Lower effects and background tasks to reduce battery drain on older devices." }
         ]
     },
     { 

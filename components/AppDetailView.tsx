@@ -631,6 +631,22 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
             });
         }
 
+        // HowTo Schema (Programmatic SEO) for Top War Mod
+        if (app.slug === 'top-war-mod') {
+            addJsonLd({
+                "@context": "https://schema.org",
+                "@type": "HowTo",
+                "name": "How to Activate Top War Mod (Unlimited Diamonds & Coins)",
+                "totalTime": "PT2M",
+                "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
+                "step": [
+                    { "@type": "HowToStep", "name": "Install Mod", "text": "Download and install Top War Mod on your device." },
+                    { "@type": "HowToStep", "name": "Open Base", "text": "Launch the game; diamonds and coins sync automatically." },
+                    { "@type": "HowToStep", "name": "Merge & Upgrade", "text": "Merge units, speed buildings and research to expand faster." }
+                ]
+            });
+        }
+
         // HowTo Schema (Programmatic SEO) for Ninja Turtles: Legends Mod
         if (app.slug === 'ninja-turtles-legends-mod') {
             addJsonLd({
@@ -1156,6 +1172,7 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, allApps, isPanel }) 
                         app.slug === 'skullgirls-mod' ? 'Skullgirls Mod – Unlimited Theonite' :
                         app.slug === 'infinity-kingdom-mod' ? 'Infinity Kingdom Mod – Unlimited Gems' :
                         app.slug === 'mighty-party-mod' ? 'Mighty Party Mod – Unlimited Gems & Coins' :
+                        app.slug === 'top-war-mod' ? 'Top War Mod – Unlimited Diamonds & Coins' :
                         app.slug === 'pocket-troops-mod' ? 'Pocket Troops Mod – Unlimited Coins & Cash' :
                         app.slug === 'the-wolf-mod' ? 'The Wolf Mod – Unlimited Gems & Money' :
                         app.title
