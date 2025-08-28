@@ -448,6 +448,16 @@ const RelatedApps: React.FC<RelatedAppsProps> = ({ currentAppSlug, category, all
             </ul>
           </div>
         )}
+        {currentAppSlug === 'frag-pro-shooter-mod' && (
+          <div className="mt-6 text-sm text-gray-400">
+            <p className="mb-2">Helpful links:</p>
+            <ul className="list-disc list-inside space-y-1">
+              <li><a className="text-[#00ff88] hover:underline" href="/category/games">Shooter & action mods</a></li>
+              <li><a className="text-[#00ff88] hover:underline" href="/app/cod-mobile-mod-menu">COD Mobile – MOD Menu</a></li>
+              <li><a className="text-[#00ff88] hover:underline" href="/app/guns-of-boom-mod">Guns of Boom – Unlimited Money & Gold</a></li>
+            </ul>
+          </div>
+        )}
       </div>
     </>
   );

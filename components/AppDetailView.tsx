@@ -759,6 +759,22 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
             });
         }
 
+        // HowTo Schema (Programmatic SEO) for FRAG Pro Shooter Mod
+        if (app.slug === 'frag-pro-shooter-mod') {
+            addJsonLd({
+                "@context": "https://schema.org",
+                "@type": "HowTo",
+                "name": "How to Activate FRAG Pro Shooter Mod",
+                "totalTime": "PT2M",
+                "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
+                "step": [
+                    { "@type": "HowToStep", "name": "Install Mod", "text": "Download and install FRAG Pro Shooter Mod." },
+                    { "@type": "HowToStep", "name": "Open Game", "text": "Launch FRAG; diamonds and coins sync automatically." },
+                    { "@type": "HowToStep", "name": "Upgrade Squad", "text": "Use resources to unlock and upgrade characters." }
+                ]
+            });
+        }
+
         // HowTo Schema (Programmatic SEO) for iRecovery
         if (app.slug === 'irecovery') {
             addJsonLd({
@@ -886,6 +902,7 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, allApps, isPanel }) 
                         app.slug === 'hungry-shark-evolution-mod' ? 'Hungry Shark Evolution Mod – Unlimited Gems & Coins' :
                         app.slug === 'soul-knight-mod' ? 'Soul Knight Mod – Unlimited Gems' :
                         app.slug === 'criminal-case-mod' ? 'Criminal Case Mod – Unlimited Money' :
+                        app.slug === 'frag-pro-shooter-mod' ? 'FRAG Pro Shooter Mod – Unlimited Diamonds & Coins' :
                         app.title
                       }</h1>
                       <div className="flex items-center gap-x-4 gap-y-1 text-gray-400 text-sm mb-4 flex-wrap">
