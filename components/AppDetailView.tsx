@@ -471,6 +471,22 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
             });
         }
 
+        // HowTo Schema (Programmatic SEO) for Dead by Daylight Mod
+        if (app.slug === 'dead-by-daylight-mod') {
+            addJsonLd({
+                "@context": "https://schema.org",
+                "@type": "HowTo",
+                "name": "How to Activate Dead by Daylight Mod",
+                "totalTime": "PT2M",
+                "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
+                "step": [
+                    { "@type": "HowToStep", "name": "Install Mod", "text": "Download and install Dead by Daylight Mod." },
+                    { "@type": "HowToStep", "name": "Open Game", "text": "Launch DbD; auric cells and resources sync automatically." },
+                    { "@type": "HowToStep", "name": "Customize", "text": "Unlock cosmetics and upgrades using resources." }
+                ]
+            });
+        }
+
         // HowTo Schema (Programmatic SEO) for iRecovery
         if (app.slug === 'irecovery') {
             addJsonLd({
@@ -580,6 +596,7 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, allApps, isPanel }) 
                         app.slug === 'guns-of-boom-mod' ? 'Guns of Boom Mod – Unlimited Money & Gold' :
                         app.slug === 'mini-world-mod' ? 'Mini World Mod – Unlimited Coins & Skins' :
                         app.slug === 'blockman-go-mod' ? 'Blockman GO Mod – Unlimited GCubes & Coins' :
+                        app.slug === 'dead-by-daylight-mod' ? 'Dead by Daylight Mod – Unlimited Auric Cells' :
                         app.title
                       }</h1>
                       <div className="flex items-center gap-x-4 gap-y-1 text-gray-400 text-sm mb-4 flex-wrap">
