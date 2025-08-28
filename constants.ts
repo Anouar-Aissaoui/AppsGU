@@ -1017,10 +1017,12 @@ Accelerate research, expand your city, and dominate events without waiting. This
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Ride with unlimited money and cash in Traffic Rider for endless upgrades. iOS & Android supported.`,
+        longDescription: `Traffic Rider Mod – First‑Person Motorcycle with Unlimited Money & Cash\n\nWhat you get\n- Unlimited Money & Cash to buy bikes and performance parts\n- Unlock career tiers and challenges faster\n- Best used in offline/casual modes\n\nHow to install (iOS & Android)\n1) Tap Download and install Traffic Rider Mod\n2) Open the game and complete the first ride\n3) Resources sync automatically – start upgrading your bike\n\nRiding tips\n- Maintain 100+ km/h for score multipliers\n- Near‑miss cars and ride opposite lane (with caution) for bonus points\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
         faqs: [
-            { question: "Any detection?", answer: "We aim to reduce detection, but it's never guaranteed." },
-            { question: "Platforms supported?", answer: "iOS & Android." }
+            { question: "Is it safe for online?", answer: "Avoid competitive leaderboards; use responsibly in offline modes." },
+            { question: "Do I need root/jailbreak?", answer: "No. Works on standard iOS and Android devices." },
+            { question: "Will progress remain after uninstall?", answer: "Benefits apply while installed; uninstalling may revert some gains." },
+            { question: "Performance tips?", answer: "Lower traffic density and effects on older devices for smoother play." }
         ]
     },
     { 
