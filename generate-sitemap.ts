@@ -24,13 +24,18 @@ const generateSitemap = () => {
 `    <priority>1.0</priority>\n` +
 `  </url>`;
 
-  // Add app pages
+  // Add app pages with image
   APPS_DATA.forEach(app => {
     sitemap += `\n  <url>\n` +
       `    <loc>${BASE_URL}/app/${xmlEscape(app.slug)}</loc>\n` +
       `    <lastmod>${currentDate}</lastmod>\n` +
       `    <changefreq>weekly</changefreq>\n` +
       `    <priority>0.8</priority>\n` +
+      `    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n` +
+      `      <image:loc>${xmlEscape(app.img)}</image:loc>\n` +
+      `      <image:caption>${xmlEscape(app.title)} – ${xmlEscape(app.category)} mod preview</image:caption>\n` +
+      `      <image:title>${xmlEscape(app.title)}</image:title>\n` +
+      `    </image:image>\n` +
       `  </url>`;
   });
 

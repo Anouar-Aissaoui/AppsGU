@@ -1,37 +1,410 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0">
   <channel>
-    <title>AppsGU - Latest Modded Apps</title>
-    <description>Latest iOS and Android modded applications, tweaks, and installation guides</description>
-    <link>https://www.appsg.site</link>
-    <atom:link href="https://www.appsg.site/rss.xml" rel="self" type="application/rss+xml"/>
+    <title>AppsGU – Latest Mods</title>
+    <link>https://www.appsg.site/</link>
+    <description>Newest iOS & Android modded apps and tools.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 27 Jan 2025 00:00:00 GMT</lastBuildDate>
-    <pubDate>Mon, 27 Jan 2025 00:00:00 GMT</pubDate>
-    <ttl>1440</ttl>
-    
+    <lastBuildDate>Thu, 28 Aug 2025 16:51:44 GMT</lastBuildDate>
     <item>
-      <title>AltStore v1.7.1 - Free iOS App Installer</title>
-      <description>Download AltStore, the best alternative app store for iOS devices. Install any IPA file without jailbreak using your Apple ID.</description>
+      <title>AltStore v1.7.1 – Free Download</title>
       <link>https://www.appsg.site/app/altstore</link>
-      <guid>https://www.appsg.site/app/altstore</guid>
-      <pubDate>Mon, 27 Jan 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://www.appsg.site/app/altstore</guid>
+      <description><![CDATA[<p>Free iOS app installer – sideload any IPA to iPhone/iPad (no jailbreak) — iOS &amp; Android.</p><img src="https://i.imgur.com/rq3p0eE.png" alt="AltStore – Utilities mod preview" width="512" height="512" />]]></description>
+      <category>Utilities</category>
+      <pubDate>Thu, 28 Aug 2025 16:51:44 GMT</pubDate>
     </item>
-    
     <item>
-      <title>COD Mobile MOD Menu v3.5.2 - Aimbot & Wallhack</title>
-      <description>Dominate Call of Duty Mobile with advanced mod menu featuring aimbot, wallhack, and super jump capabilities.</description>
+      <title>DreameShort Coins v2.1.0 – Free Download</title>
+      <link>https://www.appsg.site/app/dreameshort-coins</link>
+      <guid isPermaLink="true">https://www.appsg.site/app/dreameshort-coins</guid>
+      <description><![CDATA[<p>Unlimited coins &amp; daily bonuses – unlock VIP stories on iOS &amp; Android — iOS &amp; Android.</p><img src="https://i.imgur.com/qKcgXd2.png" alt="DreameShort Coins – Entertainment mod preview" width="512" height="512" />]]></description>
+      <category>Entertainment</category>
+      <pubDate>Thu, 28 Aug 2025 16:51:44 GMT</pubDate>
+    </item>
+    <item>
+      <title>COD Mobile MOD Menu v3.5.2 – Free Download</title>
       <link>https://www.appsg.site/app/cod-mobile-mod-menu</link>
-      <guid>https://www.appsg.site/app/cod-mobile-mod-menu</guid>
-      <pubDate>Sun, 26 Jan 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://www.appsg.site/app/cod-mobile-mod-menu</guid>
+      <description><![CDATA[<p>Aimbot, Wallhack, No Recoil &amp; SuperJump – iOS &amp; Android — iOS &amp; Android.</p><img src="https://i.imgur.com/HJXUIFC.png" alt="COD Mobile MOD Menu – Games mod preview" width="512" height="512" />]]></description>
+      <category>Games</category>
+      <pubDate>Thu, 28 Aug 2025 16:51:44 GMT</pubDate>
     </item>
-    
     <item>
-      <title>Instagram++ v20.1 - View Private Profiles</title>
-      <description>Enhanced Instagram with ability to view private accounts, download media, and anonymous story viewing.</description>
+      <title>iRecovery v4.0.1 – Free Download</title>
+      <link>https://www.appsg.site/app/irecovery</link>
+      <guid isPermaLink="true">https://www.appsg.site/app/irecovery</guid>
+      <description><![CDATA[<p>Recover Permanently Deleted Photos &amp; Videos — iOS &amp; Android.</p><img src="https://i.imgur.com/MSsLgHs.png" alt="iRecovery – Utilities mod preview" width="512" height="512" />]]></description>
+      <category>Utilities</category>
+      <pubDate>Thu, 28 Aug 2025 16:51:44 GMT</pubDate>
+    </item>
+    <item>
+      <title>eFootball 2024 v8.1.0 – Free Download</title>
+      <link>https://www.appsg.site/app/efootball-2024-mod</link>
+      <guid isPermaLink="true">https://www.appsg.site/app/efootball-2024-mod</guid>
+      <description><![CDATA[<p>Unlimited Coins &amp; GP, VIP features, free shopping – iOS &amp; Android — iOS &amp; Android.</p><img src="https://i.imgur.com/jnmtM3E.png" alt="eFootball 2024 – Games mod preview" width="512" height="512" />]]></description>
+      <category>Games</category>
+      <pubDate>Thu, 28 Aug 2025 16:51:44 GMT</pubDate>
+    </item>
+    <item>
+      <title>FC Mobile 24/25 v1.2.5 – Free Download</title>
+      <link>https://www.appsg.site/app/fc-mobile-24-25-mod</link>
+      <guid isPermaLink="true">https://www.appsg.site/app/fc-mobile-24-25-mod</guid>
+      <description><![CDATA[<p>Unlimited FC Points &amp; Gems – open packs faster (iOS &amp; Android) — iOS &amp; Android.</p><img src="https://i.imgur.com/FcTO2xT.png" alt="FC Mobile 24/25 – Games mod preview" width="512" height="512" />]]></description>
+      <category>Games</category>
+      <pubDate>Thu, 28 Aug 2025 16:51:44 GMT</pubDate>
+    </item>
+    <item>
+      <title>Roblox Mod v2.605.0 – Free Download</title>
+      <link>https://www.appsg.site/app/roblox-mod</link>
+      <guid isPermaLink="true">https://www.appsg.site/app/roblox-mod</guid>
+      <description><![CDATA[<p>Roblox Mod Menu – Fly, God Mode, Super Jump &amp; Speed (iOS/Android) — iOS &amp; Android.</p><img src="https://i.imgur.com/ItBBn9z.png" alt="Roblox Mod – Games mod preview" width="512" height="512" />]]></description>
+      <category>Games</category>
+      <pubDate>Thu, 28 Aug 2025 16:51:44 GMT</pubDate>
+    </item>
+    <item>
+      <title>Instagram++ v20.1 – Free Download</title>
       <link>https://www.appsg.site/app/instagram-plus-plus</link>
-      <guid>https://www.appsg.site/app/instagram-plus-plus</guid>
-      <pubDate>Sat, 25 Jan 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://www.appsg.site/app/instagram-plus-plus</guid>
+      <description><![CDATA[<p>Instagram++ – download media, view stories anonymously, extra tools (iOS/Android) — iOS &amp; Android.</p><img src="https://i.imgur.com/M5mKDJ8.png" alt="Instagram++ – Social mod preview" width="512" height="512" />]]></description>
+      <category>Social</category>
+      <pubDate>Thu, 28 Aug 2025 16:51:44 GMT</pubDate>
+    </item>
+    <item>
+      <title>Discord Nitro vN/A – Free Download</title>
+      <link>https://www.appsg.site/app/discord-nitro-free</link>
+      <guid isPermaLink="true">https://www.appsg.site/app/discord-nitro-free</guid>
+      <description><![CDATA[<p>Enable Discord Nitro perks for free – emojis, HD streaming, uploads — iOS &amp; Android.</p><img src="https://i.imgur.com/tvz8mmU.jpeg" alt="Discord Nitro – Social mod preview" width="512" height="512" />]]></description>
+      <category>Social</category>
+      <pubDate>Thu, 28 Aug 2025 16:51:44 GMT</pubDate>
+    </item>
+    <item>
+      <title>Pokemon Go Spoofer v0.275.0 – Free Download</title>
+      <link>https://www.appsg.site/app/pokemon-go-spoofer</link>
+      <guid isPermaLink="true">https://www.appsg.site/app/pokemon-go-spoofer</guid>
+      <description><![CDATA[<p>Teleport, joystick, auto-walk, auto-catch &amp; IV checker (iOS/Android) — iOS &amp; Android.</p><img src="https://i.imgur.com/2X6jMHU.png" alt="Pokemon Go Spoofer – Games mod preview" width="512" height="512" />]]></description>
+      <category>Games</category>
+      <pubDate>Thu, 28 Aug 2025 16:51:44 GMT</pubDate>
+    </item>
+    <item>
+      <title>Monopoly Go++ v1.13.0 – Free Download</title>
+      <link>https://www.appsg.site/app/monopoly-go-plus-plus</link>
+      <guid isPermaLink="true">https://www.appsg.site/app/monopoly-go-plus-plus</guid>
+      <description><![CDATA[<p>Unlimited dice &amp; cash – build faster on live servers (iOS/Android) — iOS &amp; Android.</p><img src="https://i.imgur.com/ahghT00.jpeg" alt="Monopoly Go++ – Games mod preview" width="512" height="512" />]]></description>
+      <category>Games</category>
+      <pubDate>Thu, 28 Aug 2025 16:51:44 GMT</pubDate>
+    </item>
+    <item>
+      <title>Board Kings Hack v1.0.0 – Free Download</title>
+      <link>https://www.appsg.site/app/board-kings-hack</link>
+      <guid isPermaLink="true">https://www.appsg.site/app/board-kings-hack</guid>
+      <description><![CDATA[<p>Unlimited Gems, Coins &amp; Rolls! — iOS &amp; Android.</p><img src="https://i.imgur.com/Oh29tXi.jpeg" alt="Board Kings Hack – Games mod preview" width="512" height="512" />]]></description>
+      <category>Games</category>
+      <pubDate>Thu, 28 Aug 2025 16:51:44 GMT</pubDate>
+    </item>
+    <item>
+      <title>Bingo Blitz Hack v1.0.0 – Free Download</title>
+      <link>https://www.appsg.site/app/bingo-blitz-hack</link>
+      <guid isPermaLink="true">https://www.appsg.site/app/bingo-blitz-hack</guid>
+      <description><![CDATA[<p>Unlimited Coins &amp; Credits! — iOS &amp; Android.</p><img src="https://i.imgur.com/WrZJqtT.jpeg" alt="Bingo Blitz Hack – Games mod preview" width="512" height="512" />]]></description>
+      <category>Games</category>
+      <pubDate>Thu, 28 Aug 2025 16:51:44 GMT</pubDate>
+    </item>
+    <item>
+      <title>Subway Surfers Hack v1.0.0 – Free Download</title>
+      <link>https://www.appsg.site/app/subway-surfers-hack</link>
+      <guid isPermaLink="true">https://www.appsg.site/app/subway-surfers-hack</guid>
+      <description><![CDATA[<p>Unlimited Coins/Keys! — iOS &amp; Android.</p><img src="https://i.imgur.com/jEAi4PW.jpeg" alt="Subway Surfers Hack – Games mod preview" width="512" height="512" />]]></description>
+      <category>Games</category>
+      <pubDate>Thu, 28 Aug 2025 16:51:44 GMT</pubDate>
+    </item>
+    <item>
+      <title>FC Mobile Hack v1.0.0 – Free Download</title>
+      <link>https://www.appsg.site/app/fc-mobile-hack</link>
+      <guid isPermaLink="true">https://www.appsg.site/app/fc-mobile-hack</guid>
+      <description><![CDATA[<p>Unlimited FC Points &amp; Coins! — iOS &amp; Android.</p><img src="https://i.imgur.com/bdvQ46z.jpeg" alt="FC Mobile Hack – Games mod preview" width="512" height="512" />]]></description>
+      <category>Games</category>
+      <pubDate>Thu, 28 Aug 2025 16:51:44 GMT</pubDate>
+    </item>
+    <item>
+      <title>Idle Heroes Hack v1.0.0 – Free Download</title>
+      <link>https://www.appsg.site/app/idle-heroes-hack</link>
+      <guid isPermaLink="true">https://www.appsg.site/app/idle-heroes-hack</guid>
+      <description><![CDATA[<p>Unlimited Gems &amp; Coins! — iOS &amp; Android.</p><img src="https://i.imgur.com/t6uwXQY.jpeg" alt="Idle Heroes Hack – Games mod preview" width="512" height="512" />]]></description>
+      <category>Games</category>
+      <pubDate>Thu, 28 Aug 2025 16:51:44 GMT</pubDate>
+    </item>
+    <item>
+      <title>Sims FreePlay Hack v1.0.0 – Free Download</title>
+      <link>https://www.appsg.site/app/sims-freeplay-hack</link>
+      <guid isPermaLink="true">https://www.appsg.site/app/sims-freeplay-hack</guid>
+      <description><![CDATA[<p>Unlimited Simoleons/Points and MAX VIP! — iOS &amp; Android.</p><img src="https://i.imgur.com/RuyIM2l.jpeg" alt="Sims FreePlay Hack – Games mod preview" width="512" height="512" />]]></description>
+      <category>Games</category>
+      <pubDate>Thu, 28 Aug 2025 16:51:44 GMT</pubDate>
+    </item>
+    <item>
+      <title>Car Simulator 2 Hack v1.0.0 – Free Download</title>
+      <link>https://www.appsg.site/app/car-simulator-2-hack</link>
+      <guid isPermaLink="true">https://www.appsg.site/app/car-simulator-2-hack</guid>
+      <description><![CDATA[<p>Unlimited Coins, Blueprints &amp; Crypto! — iOS &amp; Android.</p><img src="https://i.imgur.com/qOgKqhE.jpeg" alt="Car Simulator 2 Hack – Games mod preview" width="512" height="512" />]]></description>
+      <category>Games</category>
+      <pubDate>Thu, 28 Aug 2025 16:51:44 GMT</pubDate>
+    </item>
+    <item>
+      <title>CapCut Pro v1.0.0 – Free Download</title>
+      <link>https://www.appsg.site/app/capcut-pro</link>
+      <guid isPermaLink="true">https://www.appsg.site/app/capcut-pro</guid>
+      <description><![CDATA[<p>Compatible with Android &amp; iOS devices! — iOS &amp; Android.</p><img src="https://i.imgur.com/S2GDQsf.jpeg" alt="CapCut Pro – Utilities mod preview" width="512" height="512" />]]></description>
+      <category>Utilities</category>
+      <pubDate>Thu, 28 Aug 2025 16:51:44 GMT</pubDate>
+    </item>
+    <item>
+      <title>Dice Dreams Hack v1.0.0 – Free Download</title>
+      <link>https://www.appsg.site/app/dice-dreams-hack</link>
+      <guid isPermaLink="true">https://www.appsg.site/app/dice-dreams-hack</guid>
+      <description><![CDATA[<p>Unlimited Rolls &amp; Coins! — iOS &amp; Android.</p><img src="https://i.imgur.com/uNxEvkd.jpeg" alt="Dice Dreams Hack – Games mod preview" width="512" height="512" />]]></description>
+      <category>Games</category>
+      <pubDate>Thu, 28 Aug 2025 16:51:44 GMT</pubDate>
+    </item>
+    <item>
+      <title>Modern Strike Hack v1.0.0 – Free Download</title>
+      <link>https://www.appsg.site/app/modern-strike-hack</link>
+      <guid isPermaLink="true">https://www.appsg.site/app/modern-strike-hack</guid>
+      <description><![CDATA[<p>Unlimited Gold &amp; Credits! — iOS &amp; Android.</p><img src="https://i.imgur.com/9R6aWoD.jpeg" alt="Modern Strike Hack – Games mod preview" width="512" height="512" />]]></description>
+      <category>Games</category>
+      <pubDate>Thu, 28 Aug 2025 16:51:44 GMT</pubDate>
+    </item>
+    <item>
+      <title>Hogwarts Mystery Hack v1.0.0 – Free Download</title>
+      <link>https://www.appsg.site/app/hogwarts-mystery-hack</link>
+      <guid isPermaLink="true">https://www.appsg.site/app/hogwarts-mystery-hack</guid>
+      <description><![CDATA[<p>Unlimited Energy, Gems &amp; Gold! — iOS &amp; Android.</p><img src="https://i.imgur.com/ImQoAC8.jpeg" alt="Hogwarts Mystery Hack – Games mod preview" width="512" height="512" />]]></description>
+      <category>Games</category>
+      <pubDate>Thu, 28 Aug 2025 16:51:44 GMT</pubDate>
+    </item>
+    <item>
+      <title>PPSSPP v1.0.0 – Free Download</title>
+      <link>https://www.appsg.site/app/ppsspp</link>
+      <guid isPermaLink="true">https://www.appsg.site/app/ppsspp</guid>
+      <description><![CDATA[<p>PPSSPP on iOS/Android without Jailbreak! — iOS &amp; Android.</p><img src="https://i.imgur.com/g1rtn5L.jpeg" alt="PPSSPP – Utilities mod preview" width="512" height="512" />]]></description>
+      <category>Utilities</category>
+      <pubDate>Thu, 28 Aug 2025 16:51:44 GMT</pubDate>
+    </item>
+    <item>
+      <title>Apex Legends Hack v1.0.0 – Free Download</title>
+      <link>https://www.appsg.site/app/apex-legends-hack</link>
+      <guid isPermaLink="true">https://www.appsg.site/app/apex-legends-hack</guid>
+      <description><![CDATA[<p>Unlimited Coins &amp; Battle Pass! — iOS &amp; Android.</p><img src="https://i.imgur.com/sgl0k68.jpeg" alt="Apex Legends Hack – Games mod preview" width="512" height="512" />]]></description>
+      <category>Games</category>
+      <pubDate>Thu, 28 Aug 2025 16:51:44 GMT</pubDate>
+    </item>
+    <item>
+      <title>Car Parking Multiplayer 2 Hack v1.0.0 – Free Download</title>
+      <link>https://www.appsg.site/app/car-parking-multiplayer-2-hack</link>
+      <guid isPermaLink="true">https://www.appsg.site/app/car-parking-multiplayer-2-hack</guid>
+      <description><![CDATA[<p>Unlimited Money &amp; Coins! — iOS &amp; Android.</p><img src="https://i.imgur.com/ugYpecY.jpeg" alt="Car Parking Multiplayer 2 Hack – Games mod preview" width="512" height="512" />]]></description>
+      <category>Games</category>
+      <pubDate>Thu, 28 Aug 2025 16:51:44 GMT</pubDate>
+    </item>
+    <item>
+      <title>Blood Strike Mod v1.0.0 – Free Download</title>
+      <link>https://www.appsg.site/app/blood-strike-mod</link>
+      <guid isPermaLink="true">https://www.appsg.site/app/blood-strike-mod</guid>
+      <description><![CDATA[<p>Unlimited 9999999 Gold! — iOS &amp; Android.</p><img src="https://i.imgur.com/jp8Z9r5.jpeg" alt="Blood Strike Mod – Games mod preview" width="512" height="512" />]]></description>
+      <category>Games</category>
+      <pubDate>Thu, 28 Aug 2025 16:51:44 GMT</pubDate>
+    </item>
+    <item>
+      <title>OSM 22/23 Hack v1.0.0 – Free Download</title>
+      <link>https://www.appsg.site/app/osm-22-23-hack</link>
+      <guid isPermaLink="true">https://www.appsg.site/app/osm-22-23-hack</guid>
+      <description><![CDATA[<p>Unlimited Boss Coins! — iOS &amp; Android.</p><img src="https://i.imgur.com/l5nQWph.jpeg" alt="OSM 22/23 Hack – Games mod preview" width="512" height="512" />]]></description>
+      <category>Games</category>
+      <pubDate>Thu, 28 Aug 2025 16:51:44 GMT</pubDate>
+    </item>
+    <item>
+      <title>eFootball 2024 Hack v1.0.0 – Free Download</title>
+      <link>https://www.appsg.site/app/efootball-2024-hack</link>
+      <guid isPermaLink="true">https://www.appsg.site/app/efootball-2024-hack</guid>
+      <description><![CDATA[<p>Unlimited Coins &amp; GP! — iOS &amp; Android.</p><img src="https://i.imgur.com/bHoTstK.jpeg" alt="eFootball 2024 Hack – Games mod preview" width="512" height="512" />]]></description>
+      <category>Games</category>
+      <pubDate>Thu, 28 Aug 2025 16:51:44 GMT</pubDate>
+    </item>
+    <item>
+      <title>Ludo King Hack v1.0.0 – Free Download</title>
+      <link>https://www.appsg.site/app/ludo-king-hack</link>
+      <guid isPermaLink="true">https://www.appsg.site/app/ludo-king-hack</guid>
+      <description><![CDATA[<p>Unlimited Coins &amp; Diamonds! — iOS &amp; Android.</p><img src="https://i.imgur.com/2NNYwpz.jpeg" alt="Ludo King Hack – Games mod preview" width="512" height="512" />]]></description>
+      <category>Games</category>
+      <pubDate>Thu, 28 Aug 2025 16:51:44 GMT</pubDate>
+    </item>
+    <item>
+      <title>Island War Hack v1.0.0 – Free Download</title>
+      <link>https://www.appsg.site/app/island-war-hack</link>
+      <guid isPermaLink="true">https://www.appsg.site/app/island-war-hack</guid>
+      <description><![CDATA[<p>Unlimited Money &amp; Gems! — iOS &amp; Android.</p><img src="https://i.imgur.com/5yQ3GHO.jpeg" alt="Island War Hack – Games mod preview" width="512" height="512" />]]></description>
+      <category>Games</category>
+      <pubDate>Thu, 28 Aug 2025 16:51:44 GMT</pubDate>
+    </item>
+    <item>
+      <title>Valor Legends Hack v1.0.0 – Free Download</title>
+      <link>https://www.appsg.site/app/valor-legends-hack</link>
+      <guid isPermaLink="true">https://www.appsg.site/app/valor-legends-hack</guid>
+      <description><![CDATA[<p>Unlimited Gems! — iOS &amp; Android.</p><img src="https://i.imgur.com/cm3ufj9.jpeg" alt="Valor Legends Hack – Games mod preview" width="512" height="512" />]]></description>
+      <category>Games</category>
+      <pubDate>Thu, 28 Aug 2025 16:51:44 GMT</pubDate>
+    </item>
+    <item>
+      <title>Star Wars: Galaxy of Heroes Hack v1.0.0 – Free Download</title>
+      <link>https://www.appsg.site/app/star-wars-galaxy-of-heroes-hack</link>
+      <guid isPermaLink="true">https://www.appsg.site/app/star-wars-galaxy-of-heroes-hack</guid>
+      <description><![CDATA[<p>Unlimited Crystals! — iOS &amp; Android.</p><img src="https://i.imgur.com/qFY4m4t.jpeg" alt="Star Wars: Galaxy of Heroes Hack – Games mod preview" width="512" height="512" />]]></description>
+      <category>Games</category>
+      <pubDate>Thu, 28 Aug 2025 16:51:44 GMT</pubDate>
+    </item>
+    <item>
+      <title>Best Friends Hack v1.0.0 – Free Download</title>
+      <link>https://www.appsg.site/app/best-friends-hack</link>
+      <guid isPermaLink="true">https://www.appsg.site/app/best-friends-hack</guid>
+      <description><![CDATA[<p>Unlimited Gold &amp; Keys! — iOS &amp; Android.</p><img src="https://i.imgur.com/NYCmoVJ.jpeg" alt="Best Friends Hack – Games mod preview" width="512" height="512" />]]></description>
+      <category>Games</category>
+      <pubDate>Thu, 28 Aug 2025 16:51:44 GMT</pubDate>
+    </item>
+    <item>
+      <title>Beatstar Hack v1.0.0 – Free Download</title>
+      <link>https://www.appsg.site/app/beatstar-hack</link>
+      <guid isPermaLink="true">https://www.appsg.site/app/beatstar-hack</guid>
+      <description><![CDATA[<p>Unlimited Gems! — iOS &amp; Android.</p><img src="https://i.imgur.com/KYT7Xrn.jpeg" alt="Beatstar Hack – Games mod preview" width="512" height="512" />]]></description>
+      <category>Games</category>
+      <pubDate>Thu, 28 Aug 2025 16:51:44 GMT</pubDate>
+    </item>
+    <item>
+      <title>Hungry Shark World Hack v1.0.0 – Free Download</title>
+      <link>https://www.appsg.site/app/hungry-shark-world-hack</link>
+      <guid isPermaLink="true">https://www.appsg.site/app/hungry-shark-world-hack</guid>
+      <description><![CDATA[<p>Unlimited Coins &amp; Gems! — iOS &amp; Android.</p><img src="https://i.imgur.com/OkWbNly.jpeg" alt="Hungry Shark World Hack – Games mod preview" width="512" height="512" />]]></description>
+      <category>Games</category>
+      <pubDate>Thu, 28 Aug 2025 16:51:44 GMT</pubDate>
+    </item>
+    <item>
+      <title>Golf Battle Hack v1.0.0 – Free Download</title>
+      <link>https://www.appsg.site/app/golf-battle-hack</link>
+      <guid isPermaLink="true">https://www.appsg.site/app/golf-battle-hack</guid>
+      <description><![CDATA[<p>Unlimited Gems &amp; Coins! — iOS &amp; Android.</p><img src="https://i.imgur.com/kQNvtV3.jpeg" alt="Golf Battle Hack – Games mod preview" width="512" height="512" />]]></description>
+      <category>Games</category>
+      <pubDate>Thu, 28 Aug 2025 16:51:44 GMT</pubDate>
+    </item>
+    <item>
+      <title>FC Mobile v1.0.0 – Free Download</title>
+      <link>https://www.appsg.site/app/fc-mobile</link>
+      <guid isPermaLink="true">https://www.appsg.site/app/fc-mobile</guid>
+      <description><![CDATA[<p>Install FC Mobile on iOS/Android! — iOS &amp; Android.</p><img src="https://i.imgur.com/nATWBTW.jpeg" alt="FC Mobile – Games mod preview" width="512" height="512" />]]></description>
+      <category>Games</category>
+      <pubDate>Thu, 28 Aug 2025 16:51:44 GMT</pubDate>
+    </item>
+    <item>
+      <title>Match Masters Mod v1.0.0 – Free Download</title>
+      <link>https://www.appsg.site/app/match-masters-mod</link>
+      <guid isPermaLink="true">https://www.appsg.site/app/match-masters-mod</guid>
+      <description><![CDATA[<p>Unlimited Coins, Boosters &amp; Free Shopping for iOS &amp; Android — iOS &amp; Android.</p><img src="https://i.imgur.com/UzciDnD.jpeg" alt="Match Masters Mod – Games mod preview" width="512" height="512" />]]></description>
+      <category>Games</category>
+      <pubDate>Thu, 28 Aug 2025 16:51:44 GMT</pubDate>
+    </item>
+    <item>
+      <title>N.O.V.A. Legacy Mod v1.0.0 – Free Download</title>
+      <link>https://www.appsg.site/app/nova-legacy-mod</link>
+      <guid isPermaLink="true">https://www.appsg.site/app/nova-legacy-mod</guid>
+      <description><![CDATA[<p>Unlimited Money, Trilithium, VIP Unlocks for iOS &amp; Android — iOS &amp; Android.</p><img src="https://i.imgur.com/FN5zMDe.png" alt="N.O.V.A. Legacy Mod – Games mod preview" width="512" height="512" />]]></description>
+      <category>Games</category>
+      <pubDate>Thu, 28 Aug 2025 16:51:44 GMT</pubDate>
+    </item>
+    <item>
+      <title>Forge of Empires Mod v1.0.0 – Free Download</title>
+      <link>https://www.appsg.site/app/forge-of-empires-mod</link>
+      <guid isPermaLink="true">https://www.appsg.site/app/forge-of-empires-mod</guid>
+      <description><![CDATA[<p>Unlimited Diamonds, Supplies &amp; Free Shopping on iOS &amp; Android — iOS &amp; Android.</p><img src="https://i.imgur.com/I1yUA4w.png" alt="Forge of Empires Mod – Games mod preview" width="512" height="512" />]]></description>
+      <category>Games</category>
+      <pubDate>Thu, 28 Aug 2025 16:51:44 GMT</pubDate>
+    </item>
+    <item>
+      <title>CarX Street Mod v1.0.0 – Free Download</title>
+      <link>https://www.appsg.site/app/carx-street-mod</link>
+      <guid isPermaLink="true">https://www.appsg.site/app/carx-street-mod</guid>
+      <description><![CDATA[<p>Unlimited money – upgrade cars &amp; builds (iOS/Android) — iOS &amp; Android.</p><img src="https://i.imgur.com/ww6283n.jpeg" alt="CarX Street Mod – Games mod preview" width="512" height="512" />]]></description>
+      <category>Games</category>
+      <pubDate>Thu, 28 Aug 2025 16:51:44 GMT</pubDate>
+    </item>
+    <item>
+      <title>Null&apos;s Brawl v1.0.0 – Free Download</title>
+      <link>https://www.appsg.site/app/nulls-brawl</link>
+      <guid isPermaLink="true">https://www.appsg.site/app/nulls-brawl</guid>
+      <description><![CDATA[<p>Private Brawl Stars server – easy install for iOS &amp; Android — iOS &amp; Android.</p><img src="https://i.imgur.com/qvEKuwI.jpeg" alt="Null&apos;s Brawl – Games mod preview" width="512" height="512" />]]></description>
+      <category>Games</category>
+      <pubDate>Thu, 28 Aug 2025 16:51:44 GMT</pubDate>
+    </item>
+    <item>
+      <title>Mortal Kombat Mod v1.0.0 – Free Download</title>
+      <link>https://www.appsg.site/app/mortal-kombat-mod</link>
+      <guid isPermaLink="true">https://www.appsg.site/app/mortal-kombat-mod</guid>
+      <description><![CDATA[<p>Unlimited Souls &amp; Coins! — iOS &amp; Android.</p><img src="https://i.imgur.com/GPmMlCV.jpeg" alt="Mortal Kombat Mod – Games mod preview" width="512" height="512" />]]></description>
+      <category>Games</category>
+      <pubDate>Thu, 28 Aug 2025 16:51:44 GMT</pubDate>
+    </item>
+    <item>
+      <title>Loot Boy Mod v1.0.0 – Free Download</title>
+      <link>https://www.appsg.site/app/loot-boy-mod</link>
+      <guid isPermaLink="true">https://www.appsg.site/app/loot-boy-mod</guid>
+      <description><![CDATA[<p>Unlimited Diamonds, Tickets &amp; Coins! — iOS &amp; Android.</p><img src="https://i.imgur.com/9UeNwnL.jpeg" alt="Loot Boy Mod – Games mod preview" width="512" height="512" />]]></description>
+      <category>Games</category>
+      <pubDate>Thu, 28 Aug 2025 16:51:44 GMT</pubDate>
+    </item>
+    <item>
+      <title>Bus Simulator: Ultimate Mod v1.0.0 – Free Download</title>
+      <link>https://www.appsg.site/app/bus-simulator-ultimate-mod</link>
+      <guid isPermaLink="true">https://www.appsg.site/app/bus-simulator-ultimate-mod</guid>
+      <description><![CDATA[<p>Unlimited Money &amp; Gold! — iOS &amp; Android.</p><img src="https://i.imgur.com/z5SVQvN.jpeg" alt="Bus Simulator: Ultimate Mod – Games mod preview" width="512" height="512" />]]></description>
+      <category>Games</category>
+      <pubDate>Thu, 28 Aug 2025 16:51:44 GMT</pubDate>
+    </item>
+    <item>
+      <title>Race Master 3D Mod v1.0.0 – Free Download</title>
+      <link>https://www.appsg.site/app/race-master-3d-mod</link>
+      <guid isPermaLink="true">https://www.appsg.site/app/race-master-3d-mod</guid>
+      <description><![CDATA[<p>Unlimited Money, Nitro &amp; Shields! — iOS &amp; Android.</p><img src="https://i.imgur.com/f2b9l1a.jpeg" alt="Race Master 3D Mod – Games mod preview" width="512" height="512" />]]></description>
+      <category>Games</category>
+      <pubDate>Thu, 28 Aug 2025 16:51:44 GMT</pubDate>
+    </item>
+    <item>
+      <title>Ninja Turtles: Legends Mod v1.0.0 – Free Download</title>
+      <link>https://www.appsg.site/app/ninja-turtles-legends-mod</link>
+      <guid isPermaLink="true">https://www.appsg.site/app/ninja-turtles-legends-mod</guid>
+      <description><![CDATA[<p>Unlimited Greenbacks &amp; Everything! — iOS &amp; Android.</p><img src="https://i.imgur.com/5enzvGz.jpeg" alt="Ninja Turtles: Legends Mod – Games mod preview" width="512" height="512" />]]></description>
+      <category>Games</category>
+      <pubDate>Thu, 28 Aug 2025 16:51:44 GMT</pubDate>
+    </item>
+    <item>
+      <title>Guns of Boom Mod v1.0.0 – Free Download</title>
+      <link>https://www.appsg.site/app/guns-of-boom-mod</link>
+      <guid isPermaLink="true">https://www.appsg.site/app/guns-of-boom-mod</guid>
+      <description><![CDATA[<p>Unlimited Money &amp; Gold! — iOS &amp; Android.</p><img src="https://i.imgur.com/iv7W48d.jpeg" alt="Guns of Boom Mod – Games mod preview" width="512" height="512" />]]></description>
+      <category>Games</category>
+      <pubDate>Thu, 28 Aug 2025 16:51:44 GMT</pubDate>
+    </item>
+    <item>
+      <title>Mini World Mod v1.0.0 – Free Download</title>
+      <link>https://www.appsg.site/app/mini-world-mod</link>
+      <guid isPermaLink="true">https://www.appsg.site/app/mini-world-mod</guid>
+      <description><![CDATA[<p>Unlimited Coins! — iOS &amp; Android.</p><img src="https://i.imgur.com/t90YbJ7.jpeg" alt="Mini World Mod – Games mod preview" width="512" height="512" />]]></description>
+      <category>Games</category>
+      <pubDate>Thu, 28 Aug 2025 16:51:44 GMT</pubDate>
+    </item>
+    <item>
+      <title>Blockman GO Mod v1.0.0 – Free Download</title>
+      <link>https://www.appsg.site/app/blockman-go-mod</link>
+      <guid isPermaLink="true">https://www.appsg.site/app/blockman-go-mod</guid>
+      <description><![CDATA[<p>Unlimited GCubes &amp; Coins! — iOS &amp; Android.</p><img src="https://i.imgur.com/GM40RZm.jpeg" alt="Blockman GO Mod – Games mod preview" width="512" height="512" />]]></description>
+      <category>Games</category>
+      <pubDate>Thu, 28 Aug 2025 16:51:44 GMT</pubDate>
     </item>
   </channel>
 </rss>

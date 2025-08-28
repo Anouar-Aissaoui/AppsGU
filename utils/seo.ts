@@ -4,6 +4,7 @@ interface SeoData {
     canonical: string;
     ogType?: string;
     ogImage?: string;
+    ogImageAlt?: string;
     robots?: string; // e.g., "index, follow" or "noindex, follow"
 }
 
@@ -47,7 +48,7 @@ function normalizeUrl(input: string): string {
 }
 
 export const updateMetaTags = (data: SeoData) => {
-    let { title, description, canonical, ogType = 'website', ogImage = DEFAULT_OG_IMAGE, robots } = data;
+    let { title, description, canonical, ogType = 'website', ogImage = DEFAULT_OG_IMAGE, ogImageAlt, robots } = data;
 
     // Enforce best-practice lengths
     const clamp = (str: string, max: number) => (str.length > max ? str.slice(0, max - 1).trimEnd() + '…' : str);
@@ -89,6 +90,8 @@ export const updateMetaTags = (data: SeoData) => {
     
     const ogImageTag = document.getElementById('og-image') as HTMLMetaElement;
     if (ogImageTag) ogImageTag.content = ogImage;
+    const ogImageAltTag = document.getElementById('og-image-alt') as HTMLMetaElement;
+    if (ogImageAltTag) ogImageAltTag.setAttribute('content', ogImageAlt || 'AppsGU preview image');
 
     // --- Twitter Card Tags ---
     const twitterCardTag = document.getElementById('twitter-card') as HTMLMetaElement;
@@ -102,4 +105,6 @@ export const updateMetaTags = (data: SeoData) => {
 
     const twitterImageTag = document.getElementById('twitter-image') as HTMLMetaElement;
     if (twitterImageTag) twitterImageTag.content = ogImage;
+    const twitterImageAltTag = document.getElementById('twitter-image-alt') as HTMLMetaElement;
+    if (twitterImageAltTag) twitterImageAltTag.setAttribute('content', ogImageAlt || 'AppsGU preview image');
 };
