@@ -711,6 +711,22 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
             });
         }
 
+        // HowTo Schema (Programmatic SEO) for Hungry Shark Evolution Mod
+        if (app.slug === 'hungry-shark-evolution-mod') {
+            addJsonLd({
+                "@context": "https://schema.org",
+                "@type": "HowTo",
+                "name": "How to Activate Hungry Shark Evolution Mod",
+                "totalTime": "PT2M",
+                "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
+                "step": [
+                    { "@type": "HowToStep", "name": "Install Mod", "text": "Download and install Hungry Shark Evolution Mod." },
+                    { "@type": "HowToStep", "name": "Open Game", "text": "Launch the game; gems and coins sync automatically." },
+                    { "@type": "HowToStep", "name": "Upgrade Sharks", "text": "Use resources to upgrade sharks and accessories." }
+                ]
+            });
+        }
+
         // HowTo Schema (Programmatic SEO) for iRecovery
         if (app.slug === 'irecovery') {
             addJsonLd({
@@ -835,6 +851,7 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, allApps, isPanel }) 
                         app.slug === 'monster-legends-mod' ? 'Monster Legends Mod – Unlimited Gems & Gold' :
                         app.slug === 'scrabble-go-mod' ? 'Scrabble GO Mod – Unlimited Gems' :
                         app.slug === 'state-of-survival-mod' ? 'State of Survival Mod – Unlimited Biocaps & Resources' :
+                        app.slug === 'hungry-shark-evolution-mod' ? 'Hungry Shark Evolution Mod – Unlimited Gems & Coins' :
                         app.title
                       }</h1>
                       <div className="flex items-center gap-x-4 gap-y-1 text-gray-400 text-sm mb-4 flex-wrap">
