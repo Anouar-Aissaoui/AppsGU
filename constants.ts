@@ -1085,10 +1085,12 @@ Accelerate research, expand your city, and dominate events without waiting. This
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Train soldiers with unlimited coins and cash in Pocket Troops. iOS & Android supported.`,
+        longDescription: `Pocket Troops Mod – Tactical Squad with Unlimited Coins & Cash\n\nWhat you get\n- Unlimited Coins & Cash to recruit, train and gear up faster\n- Speed up base upgrades and unit progression\n- Best used in PvE, campaigns and casual modes\n\nHow to install (iOS & Android)\n1) Tap Download and install Pocket Troops Mod\n2) Open the game and complete the tutorial mission\n3) Resources sync automatically – start training and upgrading\n\nStrategy tips\n- Build a balanced squad (tank, DPS, support) and upgrade core skills first\n- Prioritize weapon tiers that fit your mission type\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
         faqs: [
-            { question: "Multiplayer safety?", answer: "We recommend offline or casual use to reduce risk." },
-            { question: "OS supported?", answer: "iOS & Android." }
+            { question: "Is it safe for clan wars/competitive?", answer: "Prefer PvE/casual modes; competitive use may increase detection risk." },
+            { question: "Do I need root/jailbreak?", answer: "No. Works on standard iOS and Android devices." },
+            { question: "Will progress persist after uninstall?", answer: "Benefits apply while installed; uninstalling may revert some gains." },
+            { question: "Performance tips?", answer: "Lower effects and background animations on older devices for smoother play." }
         ]
     },
     { 
