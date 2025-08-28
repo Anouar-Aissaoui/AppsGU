@@ -932,10 +932,12 @@ Accelerate research, expand your city, and dominate events without waiting. This
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Collect unlimited acorns in Ice Age Adventures to progress faster. iOS & Android supported.`,
+        longDescription: `Ice Age Adventures Mod – Family Adventure with Unlimited Acorns\n\nWhat you get\n- Unlimited Acorns to rescue friends and build faster\n- Speed through story chapters and time‑limited events\n- Best used in offline and casual modes\n\nHow to install (iOS & Android)\n1) Tap Download and install Ice Age Adventures Mod\n2) Open the game and finish the tutorial\n3) Acorns sync automatically – start rescuing and building\n\nProgress tips\n- Prioritize resource buildings early for steady progression\n- Save boosts for multi‑stage event chains\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
         faqs: [
-            { question: "Permanent unlocks?", answer: "Resources persist locally; server sync may vary." },
-            { question: "Platform availability?", answer: "iOS & Android." }
+            { question: "Is it safe online?", answer: "Use casually and avoid competitive leaderboards to reduce risk." },
+            { question: "Need root/jailbreak?", answer: "No. Works on standard iOS and Android devices." },
+            { question: "Will progress remain after uninstall?", answer: "Benefits apply while installed; uninstalling may revert some progress." },
+            { question: "Performance tips?", answer: "Lower effects and disable extra animations on older devices." }
         ]
     },
     { 

@@ -398,6 +398,16 @@ const RelatedApps: React.FC<RelatedAppsProps> = ({ currentAppSlug, category, all
             </ul>
           </div>
         )}
+        {currentAppSlug === 'ice-age-adventures-mod' && (
+          <div className="mt-6 text-sm text-gray-400">
+            <p className="mb-2">Helpful links:</p>
+            <ul className="list-disc list-inside space-y-1">
+              <li><a className="text-[#00ff88] hover:underline" href="/category/games">Casual & adventure mods</a></li>
+              <li><a className="text-[#00ff88] hover:underline" href="/app/monopoly-go-plus-plus">Monopoly Go++ – Unlimited Dice & Cash</a></li>
+              <li><a className="text-[#00ff88] hover:underline" href="/app/harry-potter-puzzles-and-spells-mod">HP: Puzzles & Spells – Unlimited Gold</a></li>
+            </ul>
+          </div>
+        )}
         {currentAppSlug === 'injustice-2-mod' && (
           <div className="mt-6 text-sm text-gray-400">
             <p className="mb-2">Helpful links:</p>
