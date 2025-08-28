@@ -1,7 +1,7 @@
 import React from 'react';
 
 interface JsonLdSchemaProps {
-  type: 'website' | 'organization' | 'breadcrumb' | 'itemList';
+  type: 'website' | 'organization' | 'breadcrumb' | 'itemList' | 'siteNavigation';
   data?: any;
 }
 
@@ -84,6 +84,16 @@ const JsonLdSchema: React.FC<JsonLdSchemaProps> = ({ type, data }) => {
           url: item.url,
           name: item.name
         }))
+      };
+      break;
+
+    case 'siteNavigation':
+      if (!data || !Array.isArray(data.items)) return null;
+      schema = {
+        "@context": "https://schema.org",
+        "@type": "SiteNavigationElement",
+        "name": data.items.map((it: { name: string }) => it.name),
+        "url": data.items.map((it: { url: string }) => it.url)
       };
       break;
 

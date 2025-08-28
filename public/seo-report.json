@@ -2,12 +2,12 @@
   "sitewide": {
     "targetUrl": "https://www.appsg.site",
     "canonicalHost": "www.appsg.site",
-    "totalApps": 70,
+    "totalApps": 96,
     "categories": [
       {
         "name": "Utilities",
         "slug": "utilities",
-        "count": 3
+        "count": 5
       },
       {
         "name": "Entertainment",
@@ -17,7 +17,7 @@
       {
         "name": "Games",
         "slug": "games",
-        "count": 64
+        "count": 88
       },
       {
         "name": "Social",
@@ -30,7 +30,7 @@
     {
       "url": "https://www.appsg.site/",
       "title": "iOS & Android Modded Apps – Free Downloads | AppsGU",
-      "metaDescription": "Download 70+ free modded apps for iOS & Android. Safe guides, FAQs, and popular mods updated regularly.",
+      "metaDescription": "Download 96+ free modded apps for iOS & Android. Safe guides, FAQs, and popular mods updated regularly.",
       "h1": "Download Free iOS & Android Modded Apps",
       "headers": [
         "Top Downloads",
@@ -73,7 +73,7 @@
     {
       "url": "https://www.appsg.site/category/utilities",
       "title": "Best Utilities Mods & Apps – Free Download | AppsGU",
-      "metaDescription": "Top 3+ utilities mods for iOS & Android. Safe downloads, guides, and FAQs.",
+      "metaDescription": "Top 5+ utilities mods for iOS & Android. Safe downloads, guides, and FAQs.",
       "h1": "Best Utilities Mods & Apps",
       "headers": [
         "Top Downloads",
@@ -90,15 +90,19 @@
       "internalLinks": [
         {
           "url": "https://www.appsg.site/app/altstore",
-          "anchor": "Altstore mod download"
+          "anchor": "AltStore mod download"
         },
         {
           "url": "https://www.appsg.site/app/irecovery",
           "anchor": "iRecovery mod download"
         },
         {
-          "url": "https://www.appsg.site/app/photos-plus",
-          "anchor": "Photos+ mod download"
+          "url": "https://www.appsg.site/app/capcut-pro",
+          "anchor": "CapCut Pro mod download"
+        },
+        {
+          "url": "https://www.appsg.site/app/ppsspp",
+          "anchor": "PPSSPP mod download"
         }
       ],
       "canonical": "https://www.appsg.site/category/utilities",
@@ -143,7 +147,7 @@
     {
       "url": "https://www.appsg.site/category/games",
       "title": "Best Games Mods & Apps – Free Download | AppsGU",
-      "metaDescription": "Top 64+ games mods for iOS & Android. Safe downloads, guides, and FAQs.",
+      "metaDescription": "Top 88+ games mods for iOS & Android. Safe downloads, guides, and FAQs.",
       "h1": "Best Games Mods & Apps",
       "headers": [
         "Top Downloads",
@@ -220,9 +224,9 @@
     },
     {
       "url": "https://www.appsg.site/app/altstore",
-      "title": "Altstore Mod v1.7.1 – Free Download | AppsGU",
-      "metaDescription": "Download Altstore Mod v1.7.1 for iOS & Android. Free iOS app installer - Sideload any IPA files to iPhone without jailbreak",
-      "h1": "Altstore Mod v1.7.1 Download",
+      "title": "AltStore Mod v1.7.1 – Free Download | AppsGU",
+      "metaDescription": "Download AltStore Mod v1.7.1 for iOS & Android. Free iOS app installer – sideload any IPA to iPhone/iPad (no jailbreak)",
+      "h1": "AltStore Mod v1.7.1 Download",
       "headers": [
         "About This Mod",
         "Key Features",
@@ -237,8 +241,8 @@
         "utilities mod"
       ],
       "imageAltSuggestions": [
-        "Altstore Mod mod icon v1.7.1 for iOS & Android",
-        "Download Altstore Mod – Utilities modded app"
+        "AltStore Mod mod icon v1.7.1 for iOS & Android",
+        "Download AltStore Mod – Utilities modded app"
       ],
       "internalLinks": [
         {
@@ -250,15 +254,15 @@
           "anchor": "Download iRecovery Mod"
         },
         {
-          "url": "https://www.appsg.site/app/photos-plus",
-          "anchor": "Download Photos+ Mod"
+          "url": "https://www.appsg.site/app/capcut-pro",
+          "anchor": "Download CapCut Pro Mod"
         }
       ],
       "canonical": "https://www.appsg.site/app/altstore",
       "schemaSuggestion": {
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
-        "name": "Altstore",
+        "name": "AltStore",
         "applicationCategory": "UtilitiesApplication",
         "operatingSystem": "iOS, Android",
         "softwareVersion": "1.7.1"
@@ -267,7 +271,7 @@
     {
       "url": "https://www.appsg.site/app/dreameshort-coins",
       "title": "DreameShort Coins Mod v2.1.0 – Free Download | AppsGU",
-      "metaDescription": "Download DreameShort Coins Mod v2.1.0 for iOS & Android. Unlimited Coins & Bonuses",
+      "metaDescription": "Download DreameShort Coins Mod v2.1.0 for iOS & Android. Unlimited coins & daily bonuses – unlock VIP stories on iOS & Android",
       "h1": "DreameShort Coins Mod v2.1.0 Download",
       "headers": [
         "About This Mod",
@@ -281,7 +285,7 @@
         "Android mod",
         "free download",
         "entertainment mod",
-        "unlimited coins & bonuses"
+        "unlimited coins & daily bonuses"
       ],
       "imageAltSuggestions": [
         "DreameShort Coins Mod mod icon v2.1.0 for iOS & Android",
@@ -306,7 +310,7 @@
     {
       "url": "https://www.appsg.site/app/cod-mobile-mod-menu",
       "title": "COD Mobile MOD Menu v3.5.2 – Free Download | AppsGU",
-      "metaDescription": "Download COD Mobile MOD Menu v3.5.2 for iOS & Android. Aimbot, SuperJump, Wallhack & MORE",
+      "metaDescription": "Download COD Mobile MOD Menu v3.5.2 for iOS & Android. Aimbot, Wallhack, No Recoil & SuperJump – iOS & Android",
       "h1": "COD Mobile MOD Menu v3.5.2 Download",
       "headers": [
         "About This Mod",
@@ -378,11 +382,11 @@
         },
         {
           "url": "https://www.appsg.site/app/altstore",
-          "anchor": "Download Altstore Mod"
+          "anchor": "Download AltStore Mod"
         },
         {
-          "url": "https://www.appsg.site/app/photos-plus",
-          "anchor": "Download Photos+ Mod"
+          "url": "https://www.appsg.site/app/capcut-pro",
+          "anchor": "Download CapCut Pro Mod"
         }
       ],
       "canonical": "https://www.appsg.site/app/irecovery",
@@ -398,7 +402,7 @@
     {
       "url": "https://www.appsg.site/app/efootball-2024-mod",
       "title": "eFootball 2024 Mod v8.1.0 – Free Download | AppsGU",
-      "metaDescription": "Download eFootball 2024 Mod v8.1.0 for iOS & Android. Unlimited Money, GP VIP Features & Free Shopping",
+      "metaDescription": "Download eFootball 2024 Mod v8.1.0 for iOS & Android. Unlimited Coins & GP, VIP features, free shopping – iOS & Android",
       "h1": "eFootball 2024 Mod v8.1.0 Download",
       "headers": [
         "About This Mod",
@@ -412,7 +416,7 @@
         "Android mod",
         "free download",
         "games mod",
-        "unlimited money"
+        "unlimited coins & gp"
       ],
       "imageAltSuggestions": [
         "eFootball 2024 Mod mod icon v8.1.0 for iOS & Android",
@@ -445,7 +449,7 @@
     {
       "url": "https://www.appsg.site/app/fc-mobile-24-25-mod",
       "title": "FC Mobile 24/25 Mod v1.2.5 – Free Download | AppsGU",
-      "metaDescription": "Download FC Mobile 24/25 Mod v1.2.5 for iOS & Android. Unlimited FC Points & Gems ~ iOS & Android",
+      "metaDescription": "Download FC Mobile 24/25 Mod v1.2.5 for iOS & Android. Unlimited FC Points & Gems – open packs faster (iOS & Android)",
       "h1": "FC Mobile 24/25 Mod v1.2.5 Download",
       "headers": [
         "About This Mod",
@@ -492,7 +496,7 @@
     {
       "url": "https://www.appsg.site/app/roblox-mod",
       "title": "Roblox Mod v2.605.0 – Free Download | AppsGU",
-      "metaDescription": "Download Roblox Mod v2.605.0 for iOS & Android. Super Jump, God Mode, Fly and much more using this Roblox Mod Menu",
+      "metaDescription": "Download Roblox Mod v2.605.0 for iOS & Android. Roblox Mod Menu – Fly, God Mode, Super Jump & Speed (iOS/Android)",
       "h1": "Roblox Mod v2.605.0 Download",
       "headers": [
         "About This Mod",
@@ -538,7 +542,7 @@
     {
       "url": "https://www.appsg.site/app/instagram-plus-plus",
       "title": "Instagram++ v20.1 – Free Download | AppsGU",
-      "metaDescription": "Download Instagram++ v20.1 for iOS & Android. View private Instagram accounts without following them, get unlimited followers, and much more",
+      "metaDescription": "Download Instagram++ v20.1 for iOS & Android. Instagram++ – download media, view stories anonymously, extra tools (iOS/Android)",
       "h1": "Instagram++ v20.1 Download",
       "headers": [
         "About This Mod",
@@ -580,7 +584,7 @@
     {
       "url": "https://www.appsg.site/app/discord-nitro-free",
       "title": "Discord Nitro++ vN/A – Free Download | AppsGU",
-      "metaDescription": "Download Discord Nitro++ vN/A for iOS & Android. Get Free Discord Nitro",
+      "metaDescription": "Download Discord Nitro++ vN/A for iOS & Android. Enable Discord Nitro perks for free – emojis, HD streaming, uploads",
       "h1": "Discord Nitro++ vN/A Download",
       "headers": [
         "About This Mod",
@@ -622,7 +626,7 @@
     {
       "url": "https://www.appsg.site/app/pokemon-go-spoofer",
       "title": "Pokemon Go Spoofer v0.275.0 – Free Download | AppsGU",
-      "metaDescription": "Download Pokemon Go Spoofer v0.275.0 for iOS & Android. Spoofer, Teleport, Auto-Walk, Joystick, Auto Catch and more!",
+      "metaDescription": "Download Pokemon Go Spoofer v0.275.0 for iOS & Android. Teleport, joystick, auto-walk, auto-catch & IV checker (iOS/Android)",
       "h1": "Pokemon Go Spoofer v0.275.0 Download",
       "headers": [
         "About This Mod",
@@ -668,7 +672,7 @@
     {
       "url": "https://www.appsg.site/app/monopoly-go-plus-plus",
       "title": "Monopoly Go++ v1.13.0 – Free Download | AppsGU",
-      "metaDescription": "Download Monopoly Go++ v1.13.0 for iOS & Android. Unlimited Dice & Cash ~ Works on LIVE Servers",
+      "metaDescription": "Download Monopoly Go++ v1.13.0 for iOS & Android. Unlimited dice & cash – build faster on live servers (iOS/Android)",
       "h1": "Monopoly Go++ v1.13.0 Download",
       "headers": [
         "About This Mod",
@@ -710,6 +714,1224 @@
         "applicationCategory": "GamesApplication",
         "operatingSystem": "iOS, Android",
         "softwareVersion": "1.13.0"
+      }
+    },
+    {
+      "url": "https://www.appsg.site/app/board-kings-hack",
+      "title": "Board Kings Hack v1.0.0 – Free Download | AppsGU",
+      "metaDescription": "Download Board Kings Hack v1.0.0 for iOS & Android. Unlimited Gems, Coins & Rolls!",
+      "h1": "Board Kings Hack v1.0.0 Download",
+      "headers": [
+        "About This Mod",
+        "Key Features",
+        "Installation",
+        "FAQs"
+      ],
+      "primaryKeyword": "board kings hack",
+      "secondaryKeywords": [
+        "iOS mod",
+        "Android mod",
+        "free download",
+        "games mod",
+        "unlimited gems"
+      ],
+      "imageAltSuggestions": [
+        "Board Kings Hack mod icon v1.0.0 for iOS & Android",
+        "Download Board Kings Hack – Games modded app"
+      ],
+      "internalLinks": [
+        {
+          "url": "https://www.appsg.site/category/games",
+          "anchor": "Games mods"
+        },
+        {
+          "url": "https://www.appsg.site/app/cod-mobile-mod-menu",
+          "anchor": "Download COD Mobile MOD Menu Mod"
+        },
+        {
+          "url": "https://www.appsg.site/app/efootball-2024-mod",
+          "anchor": "Download eFootball 2024 Mod"
+        }
+      ],
+      "canonical": "https://www.appsg.site/app/board-kings-hack",
+      "schemaSuggestion": {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Board Kings Hack",
+        "applicationCategory": "GamesApplication",
+        "operatingSystem": "iOS, Android",
+        "softwareVersion": "1.0.0"
+      }
+    },
+    {
+      "url": "https://www.appsg.site/app/bingo-blitz-hack",
+      "title": "Bingo Blitz Hack v1.0.0 – Free Download | AppsGU",
+      "metaDescription": "Download Bingo Blitz Hack v1.0.0 for iOS & Android. Unlimited Coins & Credits!",
+      "h1": "Bingo Blitz Hack v1.0.0 Download",
+      "headers": [
+        "About This Mod",
+        "Key Features",
+        "Installation",
+        "FAQs"
+      ],
+      "primaryKeyword": "bingo blitz hack",
+      "secondaryKeywords": [
+        "iOS mod",
+        "Android mod",
+        "free download",
+        "games mod",
+        "unlimited coins & credits"
+      ],
+      "imageAltSuggestions": [
+        "Bingo Blitz Hack mod icon v1.0.0 for iOS & Android",
+        "Download Bingo Blitz Hack – Games modded app"
+      ],
+      "internalLinks": [
+        {
+          "url": "https://www.appsg.site/category/games",
+          "anchor": "Games mods"
+        },
+        {
+          "url": "https://www.appsg.site/app/cod-mobile-mod-menu",
+          "anchor": "Download COD Mobile MOD Menu Mod"
+        },
+        {
+          "url": "https://www.appsg.site/app/efootball-2024-mod",
+          "anchor": "Download eFootball 2024 Mod"
+        }
+      ],
+      "canonical": "https://www.appsg.site/app/bingo-blitz-hack",
+      "schemaSuggestion": {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Bingo Blitz Hack",
+        "applicationCategory": "GamesApplication",
+        "operatingSystem": "iOS, Android",
+        "softwareVersion": "1.0.0"
+      }
+    },
+    {
+      "url": "https://www.appsg.site/app/subway-surfers-hack",
+      "title": "Subway Surfers Hack v1.0.0 – Free Download | AppsGU",
+      "metaDescription": "Download Subway Surfers Hack v1.0.0 for iOS & Android. Unlimited Coins/Keys!",
+      "h1": "Subway Surfers Hack v1.0.0 Download",
+      "headers": [
+        "About This Mod",
+        "Key Features",
+        "Installation",
+        "FAQs"
+      ],
+      "primaryKeyword": "subway surfers hack",
+      "secondaryKeywords": [
+        "iOS mod",
+        "Android mod",
+        "free download",
+        "games mod",
+        "unlimited coins"
+      ],
+      "imageAltSuggestions": [
+        "Subway Surfers Hack mod icon v1.0.0 for iOS & Android",
+        "Download Subway Surfers Hack – Games modded app"
+      ],
+      "internalLinks": [
+        {
+          "url": "https://www.appsg.site/category/games",
+          "anchor": "Games mods"
+        },
+        {
+          "url": "https://www.appsg.site/app/cod-mobile-mod-menu",
+          "anchor": "Download COD Mobile MOD Menu Mod"
+        },
+        {
+          "url": "https://www.appsg.site/app/efootball-2024-mod",
+          "anchor": "Download eFootball 2024 Mod"
+        }
+      ],
+      "canonical": "https://www.appsg.site/app/subway-surfers-hack",
+      "schemaSuggestion": {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Subway Surfers Hack",
+        "applicationCategory": "GamesApplication",
+        "operatingSystem": "iOS, Android",
+        "softwareVersion": "1.0.0"
+      }
+    },
+    {
+      "url": "https://www.appsg.site/app/fc-mobile-hack",
+      "title": "FC Mobile Hack v1.0.0 – Free Download | AppsGU",
+      "metaDescription": "Download FC Mobile Hack v1.0.0 for iOS & Android. Unlimited FC Points & Coins!",
+      "h1": "FC Mobile Hack v1.0.0 Download",
+      "headers": [
+        "About This Mod",
+        "Key Features",
+        "Installation",
+        "FAQs"
+      ],
+      "primaryKeyword": "fc mobile hack",
+      "secondaryKeywords": [
+        "iOS mod",
+        "Android mod",
+        "free download",
+        "games mod",
+        "unlimited fc points & coins"
+      ],
+      "imageAltSuggestions": [
+        "FC Mobile Hack mod icon v1.0.0 for iOS & Android",
+        "Download FC Mobile Hack – Games modded app"
+      ],
+      "internalLinks": [
+        {
+          "url": "https://www.appsg.site/category/games",
+          "anchor": "Games mods"
+        },
+        {
+          "url": "https://www.appsg.site/app/cod-mobile-mod-menu",
+          "anchor": "Download COD Mobile MOD Menu Mod"
+        },
+        {
+          "url": "https://www.appsg.site/app/efootball-2024-mod",
+          "anchor": "Download eFootball 2024 Mod"
+        }
+      ],
+      "canonical": "https://www.appsg.site/app/fc-mobile-hack",
+      "schemaSuggestion": {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "FC Mobile Hack",
+        "applicationCategory": "GamesApplication",
+        "operatingSystem": "iOS, Android",
+        "softwareVersion": "1.0.0"
+      }
+    },
+    {
+      "url": "https://www.appsg.site/app/idle-heroes-hack",
+      "title": "Idle Heroes Hack v1.0.0 – Free Download | AppsGU",
+      "metaDescription": "Download Idle Heroes Hack v1.0.0 for iOS & Android. Unlimited Gems & Coins!",
+      "h1": "Idle Heroes Hack v1.0.0 Download",
+      "headers": [
+        "About This Mod",
+        "Key Features",
+        "Installation",
+        "FAQs"
+      ],
+      "primaryKeyword": "idle heroes hack",
+      "secondaryKeywords": [
+        "iOS mod",
+        "Android mod",
+        "free download",
+        "games mod",
+        "unlimited gems & coins"
+      ],
+      "imageAltSuggestions": [
+        "Idle Heroes Hack mod icon v1.0.0 for iOS & Android",
+        "Download Idle Heroes Hack – Games modded app"
+      ],
+      "internalLinks": [
+        {
+          "url": "https://www.appsg.site/category/games",
+          "anchor": "Games mods"
+        },
+        {
+          "url": "https://www.appsg.site/app/cod-mobile-mod-menu",
+          "anchor": "Download COD Mobile MOD Menu Mod"
+        },
+        {
+          "url": "https://www.appsg.site/app/efootball-2024-mod",
+          "anchor": "Download eFootball 2024 Mod"
+        }
+      ],
+      "canonical": "https://www.appsg.site/app/idle-heroes-hack",
+      "schemaSuggestion": {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Idle Heroes Hack",
+        "applicationCategory": "GamesApplication",
+        "operatingSystem": "iOS, Android",
+        "softwareVersion": "1.0.0"
+      }
+    },
+    {
+      "url": "https://www.appsg.site/app/sims-freeplay-hack",
+      "title": "Sims FreePlay Hack v1.0.0 – Free Download | AppsGU",
+      "metaDescription": "Download Sims FreePlay Hack v1.0.0 for iOS & Android. Unlimited Simoleons/Points and MAX VIP!",
+      "h1": "Sims FreePlay Hack v1.0.0 Download",
+      "headers": [
+        "About This Mod",
+        "Key Features",
+        "Installation",
+        "FAQs"
+      ],
+      "primaryKeyword": "sims freeplay hack",
+      "secondaryKeywords": [
+        "iOS mod",
+        "Android mod",
+        "free download",
+        "games mod",
+        "unlimited simoleons"
+      ],
+      "imageAltSuggestions": [
+        "Sims FreePlay Hack mod icon v1.0.0 for iOS & Android",
+        "Download Sims FreePlay Hack – Games modded app"
+      ],
+      "internalLinks": [
+        {
+          "url": "https://www.appsg.site/category/games",
+          "anchor": "Games mods"
+        },
+        {
+          "url": "https://www.appsg.site/app/cod-mobile-mod-menu",
+          "anchor": "Download COD Mobile MOD Menu Mod"
+        },
+        {
+          "url": "https://www.appsg.site/app/efootball-2024-mod",
+          "anchor": "Download eFootball 2024 Mod"
+        }
+      ],
+      "canonical": "https://www.appsg.site/app/sims-freeplay-hack",
+      "schemaSuggestion": {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Sims FreePlay Hack",
+        "applicationCategory": "GamesApplication",
+        "operatingSystem": "iOS, Android",
+        "softwareVersion": "1.0.0"
+      }
+    },
+    {
+      "url": "https://www.appsg.site/app/car-simulator-2-hack",
+      "title": "Car Simulator 2 Hack v1.0.0 – Free Download | AppsGU",
+      "metaDescription": "Download Car Simulator 2 Hack v1.0.0 for iOS & Android. Unlimited Coins, Blueprints & Crypto!",
+      "h1": "Car Simulator 2 Hack v1.0.0 Download",
+      "headers": [
+        "About This Mod",
+        "Key Features",
+        "Installation",
+        "FAQs"
+      ],
+      "primaryKeyword": "car simulator 2 hack",
+      "secondaryKeywords": [
+        "iOS mod",
+        "Android mod",
+        "free download",
+        "games mod",
+        "unlimited coins"
+      ],
+      "imageAltSuggestions": [
+        "Car Simulator 2 Hack mod icon v1.0.0 for iOS & Android",
+        "Download Car Simulator 2 Hack – Games modded app"
+      ],
+      "internalLinks": [
+        {
+          "url": "https://www.appsg.site/category/games",
+          "anchor": "Games mods"
+        },
+        {
+          "url": "https://www.appsg.site/app/cod-mobile-mod-menu",
+          "anchor": "Download COD Mobile MOD Menu Mod"
+        },
+        {
+          "url": "https://www.appsg.site/app/efootball-2024-mod",
+          "anchor": "Download eFootball 2024 Mod"
+        }
+      ],
+      "canonical": "https://www.appsg.site/app/car-simulator-2-hack",
+      "schemaSuggestion": {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Car Simulator 2 Hack",
+        "applicationCategory": "GamesApplication",
+        "operatingSystem": "iOS, Android",
+        "softwareVersion": "1.0.0"
+      }
+    },
+    {
+      "url": "https://www.appsg.site/app/capcut-pro",
+      "title": "CapCut Pro Mod v1.0.0 – Free Download | AppsGU",
+      "metaDescription": "Download CapCut Pro Mod v1.0.0 for iOS & Android. Compatible with Android & iOS devices!",
+      "h1": "CapCut Pro Mod v1.0.0 Download",
+      "headers": [
+        "About This Mod",
+        "Key Features",
+        "Installation",
+        "FAQs"
+      ],
+      "primaryKeyword": "capcut pro mod",
+      "secondaryKeywords": [
+        "iOS mod",
+        "Android mod",
+        "free download",
+        "utilities mod"
+      ],
+      "imageAltSuggestions": [
+        "CapCut Pro Mod mod icon v1.0.0 for iOS & Android",
+        "Download CapCut Pro Mod – Utilities modded app"
+      ],
+      "internalLinks": [
+        {
+          "url": "https://www.appsg.site/category/utilities",
+          "anchor": "Utilities mods"
+        },
+        {
+          "url": "https://www.appsg.site/app/altstore",
+          "anchor": "Download AltStore Mod"
+        },
+        {
+          "url": "https://www.appsg.site/app/irecovery",
+          "anchor": "Download iRecovery Mod"
+        }
+      ],
+      "canonical": "https://www.appsg.site/app/capcut-pro",
+      "schemaSuggestion": {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "CapCut Pro",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "iOS, Android",
+        "softwareVersion": "1.0.0"
+      }
+    },
+    {
+      "url": "https://www.appsg.site/app/dice-dreams-hack",
+      "title": "Dice Dreams Hack v1.0.0 – Free Download | AppsGU",
+      "metaDescription": "Download Dice Dreams Hack v1.0.0 for iOS & Android. Unlimited Rolls & Coins!",
+      "h1": "Dice Dreams Hack v1.0.0 Download",
+      "headers": [
+        "About This Mod",
+        "Key Features",
+        "Installation",
+        "FAQs"
+      ],
+      "primaryKeyword": "dice dreams hack",
+      "secondaryKeywords": [
+        "iOS mod",
+        "Android mod",
+        "free download",
+        "games mod",
+        "unlimited rolls & coins"
+      ],
+      "imageAltSuggestions": [
+        "Dice Dreams Hack mod icon v1.0.0 for iOS & Android",
+        "Download Dice Dreams Hack – Games modded app"
+      ],
+      "internalLinks": [
+        {
+          "url": "https://www.appsg.site/category/games",
+          "anchor": "Games mods"
+        },
+        {
+          "url": "https://www.appsg.site/app/cod-mobile-mod-menu",
+          "anchor": "Download COD Mobile MOD Menu Mod"
+        },
+        {
+          "url": "https://www.appsg.site/app/efootball-2024-mod",
+          "anchor": "Download eFootball 2024 Mod"
+        }
+      ],
+      "canonical": "https://www.appsg.site/app/dice-dreams-hack",
+      "schemaSuggestion": {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Dice Dreams Hack",
+        "applicationCategory": "GamesApplication",
+        "operatingSystem": "iOS, Android",
+        "softwareVersion": "1.0.0"
+      }
+    },
+    {
+      "url": "https://www.appsg.site/app/modern-strike-hack",
+      "title": "Modern Strike Hack v1.0.0 – Free Download | AppsGU",
+      "metaDescription": "Download Modern Strike Hack v1.0.0 for iOS & Android. Unlimited Gold & Credits!",
+      "h1": "Modern Strike Hack v1.0.0 Download",
+      "headers": [
+        "About This Mod",
+        "Key Features",
+        "Installation",
+        "FAQs"
+      ],
+      "primaryKeyword": "modern strike hack",
+      "secondaryKeywords": [
+        "iOS mod",
+        "Android mod",
+        "free download",
+        "games mod",
+        "unlimited gold & credits"
+      ],
+      "imageAltSuggestions": [
+        "Modern Strike Hack mod icon v1.0.0 for iOS & Android",
+        "Download Modern Strike Hack – Games modded app"
+      ],
+      "internalLinks": [
+        {
+          "url": "https://www.appsg.site/category/games",
+          "anchor": "Games mods"
+        },
+        {
+          "url": "https://www.appsg.site/app/cod-mobile-mod-menu",
+          "anchor": "Download COD Mobile MOD Menu Mod"
+        },
+        {
+          "url": "https://www.appsg.site/app/efootball-2024-mod",
+          "anchor": "Download eFootball 2024 Mod"
+        }
+      ],
+      "canonical": "https://www.appsg.site/app/modern-strike-hack",
+      "schemaSuggestion": {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Modern Strike Hack",
+        "applicationCategory": "GamesApplication",
+        "operatingSystem": "iOS, Android",
+        "softwareVersion": "1.0.0"
+      }
+    },
+    {
+      "url": "https://www.appsg.site/app/hogwarts-mystery-hack",
+      "title": "Hogwarts Mystery Hack v1.0.0 – Free Download | AppsGU",
+      "metaDescription": "Download Hogwarts Mystery Hack v1.0.0 for iOS & Android. Unlimited Energy, Gems & Gold!",
+      "h1": "Hogwarts Mystery Hack v1.0.0 Download",
+      "headers": [
+        "About This Mod",
+        "Key Features",
+        "Installation",
+        "FAQs"
+      ],
+      "primaryKeyword": "hogwarts mystery hack",
+      "secondaryKeywords": [
+        "iOS mod",
+        "Android mod",
+        "free download",
+        "games mod",
+        "unlimited energy"
+      ],
+      "imageAltSuggestions": [
+        "Hogwarts Mystery Hack mod icon v1.0.0 for iOS & Android",
+        "Download Hogwarts Mystery Hack – Games modded app"
+      ],
+      "internalLinks": [
+        {
+          "url": "https://www.appsg.site/category/games",
+          "anchor": "Games mods"
+        },
+        {
+          "url": "https://www.appsg.site/app/cod-mobile-mod-menu",
+          "anchor": "Download COD Mobile MOD Menu Mod"
+        },
+        {
+          "url": "https://www.appsg.site/app/efootball-2024-mod",
+          "anchor": "Download eFootball 2024 Mod"
+        }
+      ],
+      "canonical": "https://www.appsg.site/app/hogwarts-mystery-hack",
+      "schemaSuggestion": {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Hogwarts Mystery Hack",
+        "applicationCategory": "GamesApplication",
+        "operatingSystem": "iOS, Android",
+        "softwareVersion": "1.0.0"
+      }
+    },
+    {
+      "url": "https://www.appsg.site/app/ppsspp",
+      "title": "PPSSPP Mod v1.0.0 – Free Download | AppsGU",
+      "metaDescription": "Download PPSSPP Mod v1.0.0 for iOS & Android. PPSSPP on iOS/Android without Jailbreak!",
+      "h1": "PPSSPP Mod v1.0.0 Download",
+      "headers": [
+        "About This Mod",
+        "Key Features",
+        "Installation",
+        "FAQs"
+      ],
+      "primaryKeyword": "ppsspp mod",
+      "secondaryKeywords": [
+        "iOS mod",
+        "Android mod",
+        "free download",
+        "utilities mod"
+      ],
+      "imageAltSuggestions": [
+        "PPSSPP Mod mod icon v1.0.0 for iOS & Android",
+        "Download PPSSPP Mod – Utilities modded app"
+      ],
+      "internalLinks": [
+        {
+          "url": "https://www.appsg.site/category/utilities",
+          "anchor": "Utilities mods"
+        },
+        {
+          "url": "https://www.appsg.site/app/altstore",
+          "anchor": "Download AltStore Mod"
+        },
+        {
+          "url": "https://www.appsg.site/app/irecovery",
+          "anchor": "Download iRecovery Mod"
+        }
+      ],
+      "canonical": "https://www.appsg.site/app/ppsspp",
+      "schemaSuggestion": {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "PPSSPP",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "iOS, Android",
+        "softwareVersion": "1.0.0"
+      }
+    },
+    {
+      "url": "https://www.appsg.site/app/apex-legends-hack",
+      "title": "Apex Legends Hack v1.0.0 – Free Download | AppsGU",
+      "metaDescription": "Download Apex Legends Hack v1.0.0 for iOS & Android. Unlimited Coins & Battle Pass!",
+      "h1": "Apex Legends Hack v1.0.0 Download",
+      "headers": [
+        "About This Mod",
+        "Key Features",
+        "Installation",
+        "FAQs"
+      ],
+      "primaryKeyword": "apex legends hack",
+      "secondaryKeywords": [
+        "iOS mod",
+        "Android mod",
+        "free download",
+        "games mod",
+        "unlimited coins & battle pass"
+      ],
+      "imageAltSuggestions": [
+        "Apex Legends Hack mod icon v1.0.0 for iOS & Android",
+        "Download Apex Legends Hack – Games modded app"
+      ],
+      "internalLinks": [
+        {
+          "url": "https://www.appsg.site/category/games",
+          "anchor": "Games mods"
+        },
+        {
+          "url": "https://www.appsg.site/app/cod-mobile-mod-menu",
+          "anchor": "Download COD Mobile MOD Menu Mod"
+        },
+        {
+          "url": "https://www.appsg.site/app/efootball-2024-mod",
+          "anchor": "Download eFootball 2024 Mod"
+        }
+      ],
+      "canonical": "https://www.appsg.site/app/apex-legends-hack",
+      "schemaSuggestion": {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Apex Legends Hack",
+        "applicationCategory": "GamesApplication",
+        "operatingSystem": "iOS, Android",
+        "softwareVersion": "1.0.0"
+      }
+    },
+    {
+      "url": "https://www.appsg.site/app/car-parking-multiplayer-2-hack",
+      "title": "Car Parking Multiplayer 2 Hack v1.0.0 – Free Download | App…",
+      "metaDescription": "Download Car Parking Multiplayer 2 Hack v1.0.0 for iOS & Android. Unlimited Money & Coins!",
+      "h1": "Car Parking Multiplayer 2 Hack v1.0.0 Download",
+      "headers": [
+        "About This Mod",
+        "Key Features",
+        "Installation",
+        "FAQs"
+      ],
+      "primaryKeyword": "car parking multiplayer 2 hack",
+      "secondaryKeywords": [
+        "iOS mod",
+        "Android mod",
+        "free download",
+        "games mod",
+        "unlimited money & coins"
+      ],
+      "imageAltSuggestions": [
+        "Car Parking Multiplayer 2 Hack mod icon v1.0.0 for iOS & Android",
+        "Download Car Parking Multiplayer 2 Hack – Games modded app"
+      ],
+      "internalLinks": [
+        {
+          "url": "https://www.appsg.site/category/games",
+          "anchor": "Games mods"
+        },
+        {
+          "url": "https://www.appsg.site/app/cod-mobile-mod-menu",
+          "anchor": "Download COD Mobile MOD Menu Mod"
+        },
+        {
+          "url": "https://www.appsg.site/app/efootball-2024-mod",
+          "anchor": "Download eFootball 2024 Mod"
+        }
+      ],
+      "canonical": "https://www.appsg.site/app/car-parking-multiplayer-2-hack",
+      "schemaSuggestion": {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Car Parking Multiplayer 2 Hack",
+        "applicationCategory": "GamesApplication",
+        "operatingSystem": "iOS, Android",
+        "softwareVersion": "1.0.0"
+      }
+    },
+    {
+      "url": "https://www.appsg.site/app/blood-strike-mod",
+      "title": "Blood Strike Mod v1.0.0 – Free Download | AppsGU",
+      "metaDescription": "Download Blood Strike Mod v1.0.0 for iOS & Android. Unlimited 9999999 Gold!",
+      "h1": "Blood Strike Mod v1.0.0 Download",
+      "headers": [
+        "About This Mod",
+        "Key Features",
+        "Installation",
+        "FAQs"
+      ],
+      "primaryKeyword": "blood strike mod",
+      "secondaryKeywords": [
+        "iOS mod",
+        "Android mod",
+        "free download",
+        "games mod"
+      ],
+      "imageAltSuggestions": [
+        "Blood Strike Mod mod icon v1.0.0 for iOS & Android",
+        "Download Blood Strike Mod – Games modded app"
+      ],
+      "internalLinks": [
+        {
+          "url": "https://www.appsg.site/category/games",
+          "anchor": "Games mods"
+        },
+        {
+          "url": "https://www.appsg.site/app/cod-mobile-mod-menu",
+          "anchor": "Download COD Mobile MOD Menu Mod"
+        },
+        {
+          "url": "https://www.appsg.site/app/efootball-2024-mod",
+          "anchor": "Download eFootball 2024 Mod"
+        }
+      ],
+      "canonical": "https://www.appsg.site/app/blood-strike-mod",
+      "schemaSuggestion": {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Blood Strike Mod",
+        "applicationCategory": "GamesApplication",
+        "operatingSystem": "iOS, Android",
+        "softwareVersion": "1.0.0"
+      }
+    },
+    {
+      "url": "https://www.appsg.site/app/osm-22-23-hack",
+      "title": "OSM 22/23 Hack v1.0.0 – Free Download | AppsGU",
+      "metaDescription": "Download OSM 22/23 Hack v1.0.0 for iOS & Android. Unlimited Boss Coins!",
+      "h1": "OSM 22/23 Hack v1.0.0 Download",
+      "headers": [
+        "About This Mod",
+        "Key Features",
+        "Installation",
+        "FAQs"
+      ],
+      "primaryKeyword": "osm 22/23 hack",
+      "secondaryKeywords": [
+        "iOS mod",
+        "Android mod",
+        "free download",
+        "games mod",
+        "unlimited boss coins"
+      ],
+      "imageAltSuggestions": [
+        "OSM 22/23 Hack mod icon v1.0.0 for iOS & Android",
+        "Download OSM 22/23 Hack – Games modded app"
+      ],
+      "internalLinks": [
+        {
+          "url": "https://www.appsg.site/category/games",
+          "anchor": "Games mods"
+        },
+        {
+          "url": "https://www.appsg.site/app/cod-mobile-mod-menu",
+          "anchor": "Download COD Mobile MOD Menu Mod"
+        },
+        {
+          "url": "https://www.appsg.site/app/efootball-2024-mod",
+          "anchor": "Download eFootball 2024 Mod"
+        }
+      ],
+      "canonical": "https://www.appsg.site/app/osm-22-23-hack",
+      "schemaSuggestion": {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "OSM 22/23 Hack",
+        "applicationCategory": "GamesApplication",
+        "operatingSystem": "iOS, Android",
+        "softwareVersion": "1.0.0"
+      }
+    },
+    {
+      "url": "https://www.appsg.site/app/efootball-2024-hack",
+      "title": "eFootball 2024 Hack v1.0.0 – Free Download | AppsGU",
+      "metaDescription": "Download eFootball 2024 Hack v1.0.0 for iOS & Android. Unlimited Coins & GP!",
+      "h1": "eFootball 2024 Hack v1.0.0 Download",
+      "headers": [
+        "About This Mod",
+        "Key Features",
+        "Installation",
+        "FAQs"
+      ],
+      "primaryKeyword": "efootball 2024 hack",
+      "secondaryKeywords": [
+        "iOS mod",
+        "Android mod",
+        "free download",
+        "games mod",
+        "unlimited coins & gp"
+      ],
+      "imageAltSuggestions": [
+        "eFootball 2024 Hack mod icon v1.0.0 for iOS & Android",
+        "Download eFootball 2024 Hack – Games modded app"
+      ],
+      "internalLinks": [
+        {
+          "url": "https://www.appsg.site/category/games",
+          "anchor": "Games mods"
+        },
+        {
+          "url": "https://www.appsg.site/app/cod-mobile-mod-menu",
+          "anchor": "Download COD Mobile MOD Menu Mod"
+        },
+        {
+          "url": "https://www.appsg.site/app/efootball-2024-mod",
+          "anchor": "Download eFootball 2024 Mod"
+        }
+      ],
+      "canonical": "https://www.appsg.site/app/efootball-2024-hack",
+      "schemaSuggestion": {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "eFootball 2024 Hack",
+        "applicationCategory": "GamesApplication",
+        "operatingSystem": "iOS, Android",
+        "softwareVersion": "1.0.0"
+      }
+    },
+    {
+      "url": "https://www.appsg.site/app/ludo-king-hack",
+      "title": "Ludo King Hack v1.0.0 – Free Download | AppsGU",
+      "metaDescription": "Download Ludo King Hack v1.0.0 for iOS & Android. Unlimited Coins & Diamonds!",
+      "h1": "Ludo King Hack v1.0.0 Download",
+      "headers": [
+        "About This Mod",
+        "Key Features",
+        "Installation",
+        "FAQs"
+      ],
+      "primaryKeyword": "ludo king hack",
+      "secondaryKeywords": [
+        "iOS mod",
+        "Android mod",
+        "free download",
+        "games mod",
+        "unlimited coins & diamonds"
+      ],
+      "imageAltSuggestions": [
+        "Ludo King Hack mod icon v1.0.0 for iOS & Android",
+        "Download Ludo King Hack – Games modded app"
+      ],
+      "internalLinks": [
+        {
+          "url": "https://www.appsg.site/category/games",
+          "anchor": "Games mods"
+        },
+        {
+          "url": "https://www.appsg.site/app/cod-mobile-mod-menu",
+          "anchor": "Download COD Mobile MOD Menu Mod"
+        },
+        {
+          "url": "https://www.appsg.site/app/efootball-2024-mod",
+          "anchor": "Download eFootball 2024 Mod"
+        }
+      ],
+      "canonical": "https://www.appsg.site/app/ludo-king-hack",
+      "schemaSuggestion": {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Ludo King Hack",
+        "applicationCategory": "GamesApplication",
+        "operatingSystem": "iOS, Android",
+        "softwareVersion": "1.0.0"
+      }
+    },
+    {
+      "url": "https://www.appsg.site/app/island-war-hack",
+      "title": "Island War Hack v1.0.0 – Free Download | AppsGU",
+      "metaDescription": "Download Island War Hack v1.0.0 for iOS & Android. Unlimited Money & Gems!",
+      "h1": "Island War Hack v1.0.0 Download",
+      "headers": [
+        "About This Mod",
+        "Key Features",
+        "Installation",
+        "FAQs"
+      ],
+      "primaryKeyword": "island war hack",
+      "secondaryKeywords": [
+        "iOS mod",
+        "Android mod",
+        "free download",
+        "games mod",
+        "unlimited money & gems"
+      ],
+      "imageAltSuggestions": [
+        "Island War Hack mod icon v1.0.0 for iOS & Android",
+        "Download Island War Hack – Games modded app"
+      ],
+      "internalLinks": [
+        {
+          "url": "https://www.appsg.site/category/games",
+          "anchor": "Games mods"
+        },
+        {
+          "url": "https://www.appsg.site/app/cod-mobile-mod-menu",
+          "anchor": "Download COD Mobile MOD Menu Mod"
+        },
+        {
+          "url": "https://www.appsg.site/app/efootball-2024-mod",
+          "anchor": "Download eFootball 2024 Mod"
+        }
+      ],
+      "canonical": "https://www.appsg.site/app/island-war-hack",
+      "schemaSuggestion": {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Island War Hack",
+        "applicationCategory": "GamesApplication",
+        "operatingSystem": "iOS, Android",
+        "softwareVersion": "1.0.0"
+      }
+    },
+    {
+      "url": "https://www.appsg.site/app/valor-legends-hack",
+      "title": "Valor Legends Hack v1.0.0 – Free Download | AppsGU",
+      "metaDescription": "Download Valor Legends Hack v1.0.0 for iOS & Android. Unlimited Gems!",
+      "h1": "Valor Legends Hack v1.0.0 Download",
+      "headers": [
+        "About This Mod",
+        "Key Features",
+        "Installation",
+        "FAQs"
+      ],
+      "primaryKeyword": "valor legends hack",
+      "secondaryKeywords": [
+        "iOS mod",
+        "Android mod",
+        "free download",
+        "games mod",
+        "unlimited gems"
+      ],
+      "imageAltSuggestions": [
+        "Valor Legends Hack mod icon v1.0.0 for iOS & Android",
+        "Download Valor Legends Hack – Games modded app"
+      ],
+      "internalLinks": [
+        {
+          "url": "https://www.appsg.site/category/games",
+          "anchor": "Games mods"
+        },
+        {
+          "url": "https://www.appsg.site/app/cod-mobile-mod-menu",
+          "anchor": "Download COD Mobile MOD Menu Mod"
+        },
+        {
+          "url": "https://www.appsg.site/app/efootball-2024-mod",
+          "anchor": "Download eFootball 2024 Mod"
+        }
+      ],
+      "canonical": "https://www.appsg.site/app/valor-legends-hack",
+      "schemaSuggestion": {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Valor Legends Hack",
+        "applicationCategory": "GamesApplication",
+        "operatingSystem": "iOS, Android",
+        "softwareVersion": "1.0.0"
+      }
+    },
+    {
+      "url": "https://www.appsg.site/app/star-wars-galaxy-of-heroes-hack",
+      "title": "Star Wars: Galaxy of Heroes Hack v1.0.0 – Free Download | A…",
+      "metaDescription": "Download Star Wars: Galaxy of Heroes Hack v1.0.0 for iOS & Android. Unlimited Crystals!",
+      "h1": "Star Wars: Galaxy of Heroes Hack v1.0.0 Download",
+      "headers": [
+        "About This Mod",
+        "Key Features",
+        "Installation",
+        "FAQs"
+      ],
+      "primaryKeyword": "star wars: galaxy of heroes hack",
+      "secondaryKeywords": [
+        "iOS mod",
+        "Android mod",
+        "free download",
+        "games mod",
+        "unlimited crystals"
+      ],
+      "imageAltSuggestions": [
+        "Star Wars: Galaxy of Heroes Hack mod icon v1.0.0 for iOS & Android",
+        "Download Star Wars: Galaxy of Heroes Hack – Games modded app"
+      ],
+      "internalLinks": [
+        {
+          "url": "https://www.appsg.site/category/games",
+          "anchor": "Games mods"
+        },
+        {
+          "url": "https://www.appsg.site/app/cod-mobile-mod-menu",
+          "anchor": "Download COD Mobile MOD Menu Mod"
+        },
+        {
+          "url": "https://www.appsg.site/app/efootball-2024-mod",
+          "anchor": "Download eFootball 2024 Mod"
+        }
+      ],
+      "canonical": "https://www.appsg.site/app/star-wars-galaxy-of-heroes-hack",
+      "schemaSuggestion": {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Star Wars: Galaxy of Heroes Hack",
+        "applicationCategory": "GamesApplication",
+        "operatingSystem": "iOS, Android",
+        "softwareVersion": "1.0.0"
+      }
+    },
+    {
+      "url": "https://www.appsg.site/app/best-friends-hack",
+      "title": "Best Friends Hack v1.0.0 – Free Download | AppsGU",
+      "metaDescription": "Download Best Friends Hack v1.0.0 for iOS & Android. Unlimited Gold & Keys!",
+      "h1": "Best Friends Hack v1.0.0 Download",
+      "headers": [
+        "About This Mod",
+        "Key Features",
+        "Installation",
+        "FAQs"
+      ],
+      "primaryKeyword": "best friends hack",
+      "secondaryKeywords": [
+        "iOS mod",
+        "Android mod",
+        "free download",
+        "games mod",
+        "unlimited gold & keys"
+      ],
+      "imageAltSuggestions": [
+        "Best Friends Hack mod icon v1.0.0 for iOS & Android",
+        "Download Best Friends Hack – Games modded app"
+      ],
+      "internalLinks": [
+        {
+          "url": "https://www.appsg.site/category/games",
+          "anchor": "Games mods"
+        },
+        {
+          "url": "https://www.appsg.site/app/cod-mobile-mod-menu",
+          "anchor": "Download COD Mobile MOD Menu Mod"
+        },
+        {
+          "url": "https://www.appsg.site/app/efootball-2024-mod",
+          "anchor": "Download eFootball 2024 Mod"
+        }
+      ],
+      "canonical": "https://www.appsg.site/app/best-friends-hack",
+      "schemaSuggestion": {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Best Friends Hack",
+        "applicationCategory": "GamesApplication",
+        "operatingSystem": "iOS, Android",
+        "softwareVersion": "1.0.0"
+      }
+    },
+    {
+      "url": "https://www.appsg.site/app/beatstar-hack",
+      "title": "Beatstar Hack v1.0.0 – Free Download | AppsGU",
+      "metaDescription": "Download Beatstar Hack v1.0.0 for iOS & Android. Unlimited Gems!",
+      "h1": "Beatstar Hack v1.0.0 Download",
+      "headers": [
+        "About This Mod",
+        "Key Features",
+        "Installation",
+        "FAQs"
+      ],
+      "primaryKeyword": "beatstar hack",
+      "secondaryKeywords": [
+        "iOS mod",
+        "Android mod",
+        "free download",
+        "games mod",
+        "unlimited gems"
+      ],
+      "imageAltSuggestions": [
+        "Beatstar Hack mod icon v1.0.0 for iOS & Android",
+        "Download Beatstar Hack – Games modded app"
+      ],
+      "internalLinks": [
+        {
+          "url": "https://www.appsg.site/category/games",
+          "anchor": "Games mods"
+        },
+        {
+          "url": "https://www.appsg.site/app/cod-mobile-mod-menu",
+          "anchor": "Download COD Mobile MOD Menu Mod"
+        },
+        {
+          "url": "https://www.appsg.site/app/efootball-2024-mod",
+          "anchor": "Download eFootball 2024 Mod"
+        }
+      ],
+      "canonical": "https://www.appsg.site/app/beatstar-hack",
+      "schemaSuggestion": {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Beatstar Hack",
+        "applicationCategory": "GamesApplication",
+        "operatingSystem": "iOS, Android",
+        "softwareVersion": "1.0.0"
+      }
+    },
+    {
+      "url": "https://www.appsg.site/app/hungry-shark-world-hack",
+      "title": "Hungry Shark World Hack v1.0.0 – Free Download | AppsGU",
+      "metaDescription": "Download Hungry Shark World Hack v1.0.0 for iOS & Android. Unlimited Coins & Gems!",
+      "h1": "Hungry Shark World Hack v1.0.0 Download",
+      "headers": [
+        "About This Mod",
+        "Key Features",
+        "Installation",
+        "FAQs"
+      ],
+      "primaryKeyword": "hungry shark world hack",
+      "secondaryKeywords": [
+        "iOS mod",
+        "Android mod",
+        "free download",
+        "games mod",
+        "unlimited coins & gems"
+      ],
+      "imageAltSuggestions": [
+        "Hungry Shark World Hack mod icon v1.0.0 for iOS & Android",
+        "Download Hungry Shark World Hack – Games modded app"
+      ],
+      "internalLinks": [
+        {
+          "url": "https://www.appsg.site/category/games",
+          "anchor": "Games mods"
+        },
+        {
+          "url": "https://www.appsg.site/app/cod-mobile-mod-menu",
+          "anchor": "Download COD Mobile MOD Menu Mod"
+        },
+        {
+          "url": "https://www.appsg.site/app/efootball-2024-mod",
+          "anchor": "Download eFootball 2024 Mod"
+        }
+      ],
+      "canonical": "https://www.appsg.site/app/hungry-shark-world-hack",
+      "schemaSuggestion": {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Hungry Shark World Hack",
+        "applicationCategory": "GamesApplication",
+        "operatingSystem": "iOS, Android",
+        "softwareVersion": "1.0.0"
+      }
+    },
+    {
+      "url": "https://www.appsg.site/app/golf-battle-hack",
+      "title": "Golf Battle Hack v1.0.0 – Free Download | AppsGU",
+      "metaDescription": "Download Golf Battle Hack v1.0.0 for iOS & Android. Unlimited Gems & Coins!",
+      "h1": "Golf Battle Hack v1.0.0 Download",
+      "headers": [
+        "About This Mod",
+        "Key Features",
+        "Installation",
+        "FAQs"
+      ],
+      "primaryKeyword": "golf battle hack",
+      "secondaryKeywords": [
+        "iOS mod",
+        "Android mod",
+        "free download",
+        "games mod",
+        "unlimited gems & coins"
+      ],
+      "imageAltSuggestions": [
+        "Golf Battle Hack mod icon v1.0.0 for iOS & Android",
+        "Download Golf Battle Hack – Games modded app"
+      ],
+      "internalLinks": [
+        {
+          "url": "https://www.appsg.site/category/games",
+          "anchor": "Games mods"
+        },
+        {
+          "url": "https://www.appsg.site/app/cod-mobile-mod-menu",
+          "anchor": "Download COD Mobile MOD Menu Mod"
+        },
+        {
+          "url": "https://www.appsg.site/app/efootball-2024-mod",
+          "anchor": "Download eFootball 2024 Mod"
+        }
+      ],
+      "canonical": "https://www.appsg.site/app/golf-battle-hack",
+      "schemaSuggestion": {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Golf Battle Hack",
+        "applicationCategory": "GamesApplication",
+        "operatingSystem": "iOS, Android",
+        "softwareVersion": "1.0.0"
+      }
+    },
+    {
+      "url": "https://www.appsg.site/app/fc-mobile",
+      "title": "FC Mobile Mod v1.0.0 – Free Download | AppsGU",
+      "metaDescription": "Download FC Mobile Mod v1.0.0 for iOS & Android. Install FC Mobile on iOS/Android!",
+      "h1": "FC Mobile Mod v1.0.0 Download",
+      "headers": [
+        "About This Mod",
+        "Key Features",
+        "Installation",
+        "FAQs"
+      ],
+      "primaryKeyword": "fc mobile mod",
+      "secondaryKeywords": [
+        "iOS mod",
+        "Android mod",
+        "free download",
+        "games mod"
+      ],
+      "imageAltSuggestions": [
+        "FC Mobile Mod mod icon v1.0.0 for iOS & Android",
+        "Download FC Mobile Mod – Games modded app"
+      ],
+      "internalLinks": [
+        {
+          "url": "https://www.appsg.site/category/games",
+          "anchor": "Games mods"
+        },
+        {
+          "url": "https://www.appsg.site/app/cod-mobile-mod-menu",
+          "anchor": "Download COD Mobile MOD Menu Mod"
+        },
+        {
+          "url": "https://www.appsg.site/app/efootball-2024-mod",
+          "anchor": "Download eFootball 2024 Mod"
+        }
+      ],
+      "canonical": "https://www.appsg.site/app/fc-mobile",
+      "schemaSuggestion": {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "FC Mobile",
+        "applicationCategory": "GamesApplication",
+        "operatingSystem": "iOS, Android",
+        "softwareVersion": "1.0.0"
       }
     },
     {
@@ -856,7 +2078,7 @@
     {
       "url": "https://www.appsg.site/app/carx-street-mod",
       "title": "CarX Street Mod v1.0.0 – Free Download | AppsGU",
-      "metaDescription": "Download CarX Street Mod v1.0.0 for iOS & Android. Unlimited Money!",
+      "metaDescription": "Download CarX Street Mod v1.0.0 for iOS & Android. Unlimited money – upgrade cars & builds (iOS/Android)",
       "h1": "CarX Street Mod v1.0.0 Download",
       "headers": [
         "About This Mod",
@@ -903,7 +2125,7 @@
     {
       "url": "https://www.appsg.site/app/nulls-brawl",
       "title": "Null's Brawl Mod v1.0.0 – Free Download | AppsGU",
-      "metaDescription": "Download Null's Brawl Mod v1.0.0 for iOS & Android. Easy install for iOS & Android!",
+      "metaDescription": "Download Null's Brawl Mod v1.0.0 for iOS & Android. Private Brawl Stars server – easy install for iOS & Android",
       "h1": "Null's Brawl Mod v1.0.0 Download",
       "headers": [
         "About This Mod",
@@ -1727,7 +2949,7 @@
         },
         {
           "url": "https://www.appsg.site/app/altstore",
-          "anchor": "Download Altstore Mod"
+          "anchor": "Download AltStore Mod"
         },
         {
           "url": "https://www.appsg.site/app/irecovery",
@@ -2123,7 +3345,7 @@
     {
       "url": "https://www.appsg.site/app/criminal-case-mod",
       "title": "Criminal Case Mod v1.0.0 – Free Download | AppsGU",
-      "metaDescription": "Download Criminal Case Mod v1.0.0 for iOS & Android. Unlimited Money!",
+      "metaDescription": "Download Criminal Case Mod v1.0.0 for iOS & Android. Unlimited Cash & Coins!",
       "h1": "Criminal Case Mod v1.0.0 Download",
       "headers": [
         "About This Mod",
@@ -2137,7 +3359,7 @@
         "Android mod",
         "free download",
         "games mod",
-        "unlimited money"
+        "unlimited cash & coins"
       ],
       "imageAltSuggestions": [
         "Criminal Case Mod mod icon v1.0.0 for iOS & Android",
@@ -3063,7 +4285,7 @@
     {
       "url": "https://www.appsg.site/app/angry-birds-evolution-mod",
       "title": "Angry Birds Evolution Mod v1.0.0 – Free Download | AppsGU",
-      "metaDescription": "Download Angry Birds Evolution Mod v1.0.0 for iOS & Android. Unlimited Gems & Coin!",
+      "metaDescription": "Download Angry Birds Evolution Mod v1.0.0 for iOS & Android. Unlimited Gems & Coins!",
       "h1": "Angry Birds Evolution Mod v1.0.0 Download",
       "headers": [
         "About This Mod",
@@ -3077,7 +4299,7 @@
         "Android mod",
         "free download",
         "games mod",
-        "unlimited gems & coin"
+        "unlimited gems & coins"
       ],
       "imageAltSuggestions": [
         "Angry Birds Evolution Mod mod icon v1.0.0 for iOS & Android",

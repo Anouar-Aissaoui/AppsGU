@@ -11,6 +11,30 @@ const write = (p: string, c: string) => fs.writeFileSync(p, c, 'utf8');
 const clamp = (str: string, max: number) => (str.length > max ? str.slice(0, max - 1).trimEnd() + '…' : str);
 const slugify = (text: string): string => text.toString().toLowerCase().trim().replace(/\s+/g, '-').replace(/[^\w\-]+/g, '').replace(/\-\-+/g, '-');
 
+function extractUnlimitedPhrases(text: string): string[] {
+  if (!text) return [];
+  const matches = text.match(/Unlimited\s+[A-Za-z0-9+&\s]+/g) || [];
+  return matches.map(m => m.replace(/!+$/, '').trim()).map(m => m.replace(/\s{2,}/g, ' '));
+}
+
+type Topic = { slug: string; name: string };
+function collectTopics(): Topic[] {
+  const map = new Map<string, string>();
+  for (const app of APPS_DATA) {
+    const sources = [app.description, app.longDescription];
+    for (const source of sources) {
+      for (const phrase of extractUnlimitedPhrases(source)) {
+        const s = slugify(phrase);
+        if (!map.has(s)) map.set(s, phrase);
+      }
+    }
+    if (/mod\s*menu/i.test(app.title) || /mod\s*menu/i.test(app.description) || /mod\s*menu/i.test(app.longDescription)) {
+      map.set('mod-menu', 'Mod Menu');
+    }
+  }
+  return Array.from(map.entries()).map(([slug, name]) => ({ slug, name })).sort((a, b) => a.name.localeCompare(b.name));
+}
+
 const replaceMeta = (html: string, { title, description, canonical, ogType = 'website', ogImage, ogImageAlt }: { title: string; description: string; canonical: string; ogType?: string; ogImage?: string; ogImageAlt?: string; }) => {
   let out = html;
   const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -134,6 +158,47 @@ for (const app of APPS_DATA) {
   const dir = path.join(distDir, 'app', app.slug);
   ensureDir(dir);
   write(path.join(dir, 'index.html'), html);
+}
+
+// Topics index and topic pages
+{
+  const topics = collectTopics();
+  if (topics.length > 0) {
+    // Topics index
+    const title = clamp('Topics – Popular Mod Features | AppsGU', 60);
+    const description = clamp('Browse topics like Unlimited Coins, Unlimited Gems, and Mod Menu across iOS & Android mods.', 160);
+    const canonical = `${SITE_URL}/topic`;
+    let html = replaceMeta(template, { title, description, canonical, ogType: 'website', ogImage: 'https://i.imgur.com/rq3p0eE.png', ogImageAlt: 'AppsGU Topics' });
+    html = injectJsonLd(html, [
+      { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [ { '@type': 'ListItem', position: 1, name: 'Apps', item: SITE_URL }, { '@type': 'ListItem', position: 2, name: 'Topics', item: canonical } ] },
+      { '@context': 'https://schema.org', '@type': 'ItemList', itemListElement: topics.map((t, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE_URL}/topic/${t.slug}`, name: t.name })) }
+    ]);
+    const dir = path.join(distDir, 'topic');
+    ensureDir(dir);
+    write(path.join(dir, 'index.html'), html);
+
+    // Individual topic pages
+    for (const topic of topics) {
+      const apps = APPS_DATA.filter(a => {
+        if (topic.slug === 'mod-menu') {
+          return /mod\s*menu/i.test(a.title) || /mod\s*menu/i.test(a.description) || /mod\s*menu/i.test(a.longDescription);
+        }
+        const phrases = extractUnlimitedPhrases(a.description + ' ' + a.longDescription).map(p => slugify(p));
+        return phrases.includes(topic.slug);
+      }).slice(0, 20);
+      const titleT = clamp(`${topic.name} – ${apps.length}+ Apps | AppsGU`, 60);
+      const descT = clamp(`Explore ${apps.length}+ apps with ${topic.name.toLowerCase()} for iOS & Android.`, 160);
+      const canonicalT = `${SITE_URL}/topic/${topic.slug}`;
+      let htmlT = replaceMeta(template, { title: titleT, description: descT, canonical: canonicalT, ogType: 'website', ogImage: 'https://i.imgur.com/rq3p0eE.png', ogImageAlt: `${topic.name} – AppsGU` });
+      htmlT = injectJsonLd(htmlT, [
+        { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [ { '@type': 'ListItem', position: 1, name: 'Apps', item: SITE_URL }, { '@type': 'ListItem', position: 2, name: 'Topics', item: `${SITE_URL}/topic` }, { '@type': 'ListItem', position: 3, name: topic.name, item: canonicalT } ] },
+        { '@context': 'https://schema.org', '@type': 'ItemList', itemListElement: apps.map((a, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE_URL}/app/${a.slug}`, name: a.title })) }
+      ]);
+      const tdir = path.join(distDir, 'topic', topic.slug);
+      ensureDir(tdir);
+      write(path.join(tdir, 'index.html'), htmlT);
+    }
+  }
 }
 
 console.log('✅ Prerender complete. Static pages written to dist/.');

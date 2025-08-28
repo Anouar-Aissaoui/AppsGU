@@ -14,6 +14,12 @@ const Header: React.FC = () => {
           </div>
         </div>
       </a>
+      <nav className="mt-4">
+        <ul className="flex items-center justify-center gap-6 text-sm text-gray-300">
+          <li><a href="/" className="hover:text-white">Home</a></li>
+          <li><a href="/topic" className="hover:text-white">Topics</a></li>
+        </ul>
+      </nav>
     </header>
   );
 };

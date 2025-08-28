@@ -5,6 +5,28 @@
   ],
   "rewrites": [
     { "source": "/app/:slug*", "destination": "/" },
-    { "source": "/category/:slug*", "destination": "/" }
+    { "source": "/category/:slug*", "destination": "/" },
+    { "source": "/topic/:slug*", "destination": "/" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Robots-Tag", "value": "all" },
+        { "key": "Cache-Control", "value": "public, max-age=600, s-maxage=600" }
+      ]
+    },
+    {
+      "source": "/sitemap.xml",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=3600, s-maxage=3600" }
+      ]
+    },
+    {
+      "source": "/rss.xml",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=900, s-maxage=900" }
+      ]
+    }
   ]
 }
