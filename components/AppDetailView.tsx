@@ -503,6 +503,22 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
             });
         }
 
+        // HowTo Schema (Programmatic SEO) for LOL: Wild Rift Mod
+        if (app.slug === 'lol-wild-rift-mod') {
+            addJsonLd({
+                "@context": "https://schema.org",
+                "@type": "HowTo",
+                "name": "How to Activate LOL: Wild Rift Mod (Unlimited Wild Cores)",
+                "totalTime": "PT2M",
+                "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
+                "step": [
+                    { "@type": "HowToStep", "name": "Install Mod", "text": "Download and install Wild Rift Mod on your device." },
+                    { "@type": "HowToStep", "name": "Open Wild Rift", "text": "Launch the game; Wild Cores sync automatically." },
+                    { "@type": "HowToStep", "name": "Unlock Skins", "text": "Use cores to unlock skins and passes." }
+                ]
+            });
+        }
+
         // HowTo Schema (Programmatic SEO) for iRecovery
         if (app.slug === 'irecovery') {
             addJsonLd({
@@ -614,6 +630,7 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, allApps, isPanel }) 
                         app.slug === 'blockman-go-mod' ? 'Blockman GO Mod – Unlimited GCubes & Coins' :
                         app.slug === 'dead-by-daylight-mod' ? 'Dead by Daylight Mod – Unlimited Auric Cells' :
                         app.slug === 'the-sims-mod' ? 'The Sims™ Mod – Unlimited Money & SimCash' :
+                        app.slug === 'lol-wild-rift-mod' ? 'LOL: Wild Rift Mod – Unlimited Wild Cores' :
                         app.title
                       }</h1>
                       <div className="flex items-center gap-x-4 gap-y-1 text-gray-400 text-sm mb-4 flex-wrap">
