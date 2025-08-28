@@ -407,6 +407,22 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
             });
         }
 
+        // HowTo Schema (Programmatic SEO) for FR Legends Mod
+        if (app.slug === 'fr-legends-mod') {
+            addJsonLd({
+                "@context": "https://schema.org",
+                "@type": "HowTo",
+                "name": "How to Activate FR Legends Mod (Unlimited Money)",
+                "totalTime": "PT2M",
+                "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
+                "step": [
+                    { "@type": "HowToStep", "name": "Install FR Legends Mod", "text": "Download and install FR Legends Mod on your device." },
+                    { "@type": "HowToStep", "name": "Open the Game", "text": "Launch FR Legends; unlimited money will be available automatically." },
+                    { "@type": "HowToStep", "name": "Upgrade & Tune", "text": "Buy cars, upgrades and tune settings for higher drift scores." }
+                ]
+            });
+        }
+
         // HowTo Schema (Programmatic SEO) for Ninja Turtles: Legends Mod
         if (app.slug === 'ninja-turtles-legends-mod') {
             addJsonLd({
@@ -919,6 +935,7 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, allApps, isPanel }) 
                         app.slug === 'soul-knight-mod' ? 'Soul Knight Mod – Unlimited Gems' :
                         app.slug === 'criminal-case-mod' ? 'Criminal Case Mod – Unlimited Money' :
                         app.slug === 'frag-pro-shooter-mod' ? 'FRAG Pro Shooter Mod – Unlimited Diamonds & Coins' :
+                        app.slug === 'fr-legends-mod' ? 'FR Legends Mod – Unlimited Money & Drift Upgrades' :
                         app.slug === 'dc-legends-mod' ? 'DC Legends Mod – Unlimited Gems & Energy' :
                         app.title
                       }</h1>

@@ -864,10 +864,12 @@ Accelerate research, expand your city, and dominate events without waiting. This
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Drift with unlimited money in FR Legends to build dream cars. iOS & Android supported.`,
+        longDescription: `FR Legends Mod – Drift Racing with Unlimited Money\n\nWhat you get\n- Unlimited Money to buy cars, engines, parts and body kits\n- Unlock tracks, liveries and visual customization\n- Best used in single‑player and offline modes\n\nHow to install (iOS & Android)\n1) Tap Download and install FR Legends Mod\n2) Open the game and accept required permissions\n3) Money syncs automatically – start buying and upgrading freely\n\nTuning tips for higher drift score\n- Begin around 300–350hp on entry cars for balance\n- Slightly increase rear wheel grip for stable exits\n- Lower tire pressure for longer, smoother slides\n\nCompatibility\n- iOS 12+ and Android 7+ supported\n- Works on phones and tablets`,
         faqs: [
-            { question: "Is it multiplayer safe?", answer: "We cannot guarantee safety in online modes." },
-            { question: "Platform support?", answer: "iOS & Android." }
+            { question: "Is it safe for multiplayer?", answer: "Use at your own risk. Prefer offline/single‑player to minimize detection." },
+            { question: "Do I need root or jailbreak?", answer: "No. Works on standard iOS and Android devices." },
+            { question: "Will purchases remain after uninstall?", answer: "Resources are active while the mod is installed; removing it may revert progress." },
+            { question: "Performance tips?", answer: "On older devices, lower graphics or disable 60fps for smoother runs." }
         ]
     },
     { 

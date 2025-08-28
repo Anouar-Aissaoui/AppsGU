@@ -228,6 +228,16 @@ const RelatedApps: React.FC<RelatedAppsProps> = ({ currentAppSlug, category, all
             </ul>
           </div>
         )}
+        {currentAppSlug === 'fr-legends-mod' && (
+          <div className="mt-6 text-sm text-gray-400">
+            <p className="mb-2">Helpful links:</p>
+            <ul className="list-disc list-inside space-y-1">
+              <li><a className="text-[#00ff88] hover:underline" href="/category/games">Racing & drift game mods</a></li>
+              <li><a className="text-[#00ff88] hover:underline" href="/app/carx-street-mod">CarX Street – Unlimited Money</a></li>
+              <li><a className="text-[#00ff88] hover:underline" href="/app/need-for-speed-no-limits-mod">NFS No Limits – Unlimited Money & Gold</a></li>
+            </ul>
+          </div>
+        )}
         {currentAppSlug === 'ninja-turtles-legends-mod' && (
           <div className="mt-6 text-sm text-gray-400">
             <p className="mb-2">Helpful links:</p>
