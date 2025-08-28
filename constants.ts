@@ -1289,10 +1289,12 @@ Accelerate research, expand your city, and dominate events without waiting. This
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Raise dragons with unlimited gems and coins in Dragon Mania Legends. iOS & Android supported.`,
+        longDescription: `Dragon Mania Legends Mod – Breed & Train with Unlimited Gems & Coins\n\nWhat you get\n- Unlimited Gems & Coins to hatch eggs, speed breeding and upgrades\n- Faster habitat expansion and event progression\n- Best used in casual/non‑competitive modes\n\nHow to install (iOS & Android)\n1) Tap Download and install Dragon Mania Legends Mod\n2) Open the game and finish the tutorial\n3) Resources sync automatically – start breeding and upgrading\n\nBreeding tips\n- Use compatible elements for higher‑tier outcomes\n- Prioritize habitat capacity and gold farms early\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
         faqs: [
-            { question: "Account safety?", answer: "We recommend a secondary account for mod usage." },
-            { question: "Supported platforms?", answer: "iOS and Android." }
+            { question: "Is it safe for online events/leagues?", answer: "Prefer PvE/casual; competitive use may increase detection risk." },
+            { question: "Do I need root/jailbreak?", answer: "No. Works on standard iOS and Android devices." },
+            { question: "Will progress persist after uninstall?", answer: "Benefits apply while installed; uninstalling may revert some gains." },
+            { question: "Performance tips?", answer: "Lower effects and background animations on older devices for smoother play." }
         ]
     }
 ];

@@ -935,6 +935,22 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
             });
         }
 
+        // HowTo Schema (Programmatic SEO) for Dragon Mania Legends Mod
+        if (app.slug === 'dragon-mania-legends-mod') {
+            addJsonLd({
+                "@context": "https://schema.org",
+                "@type": "HowTo",
+                "name": "How to Activate Dragon Mania Legends Mod (Unlimited Gems & Coins)",
+                "totalTime": "PT2M",
+                "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
+                "step": [
+                    { "@type": "HowToStep", "name": "Install Mod", "text": "Download and install Dragon Mania Legends Mod on your device." },
+                    { "@type": "HowToStep", "name": "Open Game", "text": "Launch DML; gems and coins sync automatically." },
+                    { "@type": "HowToStep", "name": "Breed & Upgrade", "text": "Hatch eggs, expand habitats and upgrade dragons faster." }
+                ]
+            });
+        }
+
         // HowTo Schema (Programmatic SEO) for Last Day on Earth: Survival Mod
         if (app.slug === 'last-day-on-earth-survival-mod') {
             addJsonLd({
@@ -1343,6 +1359,7 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, allApps, isPanel }) 
                         app.slug === 'tennis-clash-mod' ? 'Tennis Clash Mod – Unlimited Gems & Coins' :
                         app.slug === 'pvz-heroes-mod' ? 'PvZ Heroes Mod – Unlimited Gems & Cards' :
                         app.slug === 'nba-live-mobile-mod' ? 'NBA Live Mobile Mod – Unlimited Cash & Coins' :
+                        app.slug === 'dragon-mania-legends-mod' ? 'Dragon Mania Legends Mod – Unlimited Gems & Coins' :
                         app.slug === 'pocket-troops-mod' ? 'Pocket Troops Mod – Unlimited Coins & Cash' :
                         app.slug === 'the-wolf-mod' ? 'The Wolf Mod – Unlimited Gems & Money' :
                         app.title
