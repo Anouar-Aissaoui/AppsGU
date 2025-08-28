@@ -99,6 +99,9 @@ for (const app of APPS_DATA) {
   const title = clamp(`${appSeo} v${app.version} – Free Download | AppsGU`, 60);
   const description = clamp(`Download ${appSeo} v${app.version} for iOS & Android. ${app.description}`, 160);
   const canonical = `${SITE_URL}/app/${app.slug}`;
+  if (app.slug === 'board-kings-hack') {
+    console.log(`[prerender] Using image for ${app.slug}: ${app.img}`);
+  }
   let html = replaceMeta(template, { title, description, canonical, ogType: 'article', ogImage: app.img });
   const jsons: object[] = [];
   jsons.push({ '@context': 'https://schema.org', '@type': 'SoftwareApplication', name: app.title, description: app.longDescription, applicationCategory: app.category + 'Application', operatingSystem: 'iOS, Android', softwareVersion: app.version, publisher: { '@type': 'Organization', name: 'AppsGU' }, offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }, downloadUrl: canonical, screenshot: app.img, image: [app.img] });

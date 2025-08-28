@@ -3,7 +3,7 @@ import type { AppInfo } from './types';
 export const APPS_DATA: AppInfo[] = [
     { 
         slug: "altstore",
-        img: "https://i.imgur.com/Oh29tXi.jpeg", 
+        img: "https://i.imgur.com/rq3p0eE.png", 
         author: "AppsGU", 
         title: "AltStore", 
         description: "Free iOS app installer – sideload any IPA to iPhone/iPad (no jailbreak)",
@@ -303,7 +303,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
     },
     { 
         slug: "board-kings-hack",
-        img: "https://i.imgur.com/rq3p0eE.png", 
+        img: "https://i.imgur.com/Oh29tXi.jpeg", 
         author: "BetterMods", 
         title: "Board Kings Hack", 
         description: "Unlimited Gems, Coins & Rolls!",
