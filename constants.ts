@@ -1204,10 +1204,12 @@ Accelerate research, expand your city, and dominate events without waiting. This
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Unleash your Disney squad with unlimited diamonds and gold. Works on iOS & Android.`,
+        longDescription: `Disney Heroes Mod – Squad RPG with Unlimited Diamonds & Gold\n\nWhat you get\n- Unlimited Diamonds & Gold to summon, rank up and upgrade disks\n- Faster progress through campaign, trials and events\n- Best used in PvE and casual modes\n\nHow to install (iOS & Android)\n1) Tap Download and install Disney Heroes Mod\n2) Open the game and finish the intro battles\n3) Resources sync automatically – start building your squad\n\nTeam tips\n- Build balanced teams (tank, support, damage, control)\n- Prioritize key disks and rank ups on your main carry first\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
         faqs: [
-            { question: "Competitive impact?", answer: "Use in casual modes to avoid unfair play." },
-            { question: "OS support?", answer: "iOS & Android support." }
+            { question: "Is it safe for PvP/leaderboards?", answer: "Prefer PvE/casual; competitive use may increase detection risk." },
+            { question: "Do I need root/jailbreak?", answer: "No. Works on standard iOS and Android devices." },
+            { question: "Will progress persist after uninstall?", answer: "Benefits apply while installed; uninstalling may revert some gains." },
+            { question: "Performance tips?", answer: "Lower effects and background animations on older devices." }
         ]
     },
     { 
