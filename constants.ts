@@ -881,10 +881,12 @@ Accelerate research, expand your city, and dominate events without waiting. This
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Get unlimited gems to craft and upgrade gear in Dungeon Hunter 5. iOS & Android supported.`,
+        longDescription: `Dungeon Hunter 5 Mod – Action RPG with Unlimited Gems\n\nWhat you get\n- Unlimited Gems to craft gear, enhance skills and speed up progress\n- Faster dungeon clears and boss fights\n- Best used in campaign and offline modes\n\nHow to install (iOS & Android)\n1) Tap Download and install Dungeon Hunter 5 Mod\n2) Open the game and complete the tutorial\n3) Gems sync automatically; start crafting and upgrading\n\nProgress tips\n- Focus on weapon synergy and elemental counters early\n- Upgrade survivability (armor/skills) before pushing higher tiers\n\nCompatibility\n- iOS 12+ and Android 7+; phones and tablets supported`,
         faqs: [
-            { question: "Server-side checks?", answer: "Online checks may exist; use at your discretion." },
-            { question: "OS support?", answer: "iOS & Android." }
+            { question: "Is it safe for multiplayer?", answer: "We do not recommend competitive modes; use responsibly in PvE/campaign." },
+            { question: "Do I need root/jailbreak?", answer: "No. Works on standard devices." },
+            { question: "Will progress remain after uninstall?", answer: "Gem advantages apply while the mod is installed; removing it may revert." },
+            { question: "Performance tips?", answer: "Lower effects quality and cap FPS on older devices for smoother runs." }
         ]
     },
     { 
