@@ -583,6 +583,22 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
             });
         }
 
+        // HowTo Schema (Programmatic SEO) for Baseball 9 Mod
+        if (app.slug === 'baseball-9-mod') {
+            addJsonLd({
+                "@context": "https://schema.org",
+                "@type": "HowTo",
+                "name": "How to Activate Baseball 9 Mod",
+                "totalTime": "PT2M",
+                "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
+                "step": [
+                    { "@type": "HowToStep", "name": "Install Mod", "text": "Download and install Baseball 9 Mod." },
+                    { "@type": "HowToStep", "name": "Open Game", "text": "Launch Baseball 9; money and gems sync automatically." },
+                    { "@type": "HowToStep", "name": "Upgrade Team", "text": "Use resources to sign players and upgrade stats." }
+                ]
+            });
+        }
+
         // HowTo Schema (Programmatic SEO) for iRecovery
         if (app.slug === 'irecovery') {
             addJsonLd({
@@ -699,6 +715,7 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, allApps, isPanel }) 
                         app.slug === 'last-day-on-earth-survival-mod' ? 'Last Day on Earth: Survival Mod – Unlimited Coins & Gold' :
                         app.slug === 'teamfight-tactics-mod' ? 'TeamFight Tactics Mod – Unlimited Coins & Star Fragments' :
                         app.slug === 'jetpack-joyride-mod' ? 'Jetpack Joyride Mod – Unlimited Coins' :
+                        app.slug === 'baseball-9-mod' ? 'Baseball 9 Mod – Unlimited Money & Gems' :
                         app.title
                       }</h1>
                       <div className="flex items-center gap-x-4 gap-y-1 text-gray-400 text-sm mb-4 flex-wrap">
