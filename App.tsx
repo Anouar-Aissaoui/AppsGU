@@ -5,6 +5,8 @@ import CategoryFilter from './components/CategoryFilter';
 import AppList from './components/AppList';
 import AppDetailView from './components/AppDetailView';
 import CategoryPageView from './components/CategoryPageView';
+import TopicsIndexView from './components/TopicsIndexView';
+import TopicPageView from './components/TopicPageView';
 import AppListSkeleton from './components/AppListSkeleton';
 import { useMediaQuery } from './hooks/useMediaQuery';
 import { useDebounce } from './hooks/useDebounce';
@@ -99,6 +101,8 @@ const App: React.FC = () => {
       const target = event.target as HTMLElement;
       const anchor = target.closest('a');
       if (anchor && anchor.origin === window.location.origin && !event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey && anchor.target !== '_blank') {
+        // Allow opting out of SPA navigation with data-no-spa
+        if (anchor.hasAttribute('data-no-spa')) return;
         event.preventDefault();
         const newPath = anchor.pathname + anchor.search + anchor.hash;
         if (newPath !== (window.location.pathname + window.location.search)) {
@@ -114,24 +118,28 @@ const App: React.FC = () => {
     return () => document.removeEventListener('click', onClick);
   }, [isDesktop]);
 
-  const { categorySlug, selectedAppSlug } = useMemo(() => {
+  const { categorySlug, selectedAppSlug, topicSlug, isTopicsIndex } = useMemo(() => {
     const catMatch = pathname.match(/^\/category\/([a-zA-Z0-9-]+)/);
     const appMatch = pathname.match(/^\/app\/([a-zA-Z0-9-]+)/);
+    const topicMatch = pathname.match(/^\/topic\/([a-zA-Z0-9-]+)/);
+    const topicsIndex = pathname === '/topic';
     return {
       categorySlug: catMatch ? catMatch[1] : null,
       selectedAppSlug: appMatch ? appMatch[1] : null,
+      topicSlug: topicMatch ? topicMatch[1] : null,
+      isTopicsIndex: topicsIndex,
     };
   }, [pathname]);
 
   useEffect(() => {
-    if (categorySlug || selectedAppSlug) {
+    if (categorySlug || selectedAppSlug || topicSlug || isTopicsIndex) {
         if(searchTerm) setSearchTerm('');
         if(selectedCategory) setSelectedCategory(null);
     }
-  }, [categorySlug, selectedAppSlug, searchTerm, selectedCategory]);
+  }, [categorySlug, selectedAppSlug, topicSlug, isTopicsIndex, searchTerm, selectedCategory]);
 
   useEffect(() => {
-    if (!categorySlug && !selectedAppSlug) {
+    if (!categorySlug && !selectedAppSlug && !topicSlug && !isTopicsIndex) {
       const baseTitle = 'iOS & Android Modded Apps – Free Downloads | AppsGU';
       const baseDescription = 'Download free modded apps and tweaks for iPhone, iPad and Android. Safe guides, FAQs and regular updates.';
       const parts: string[] = [];
@@ -172,7 +180,7 @@ const App: React.FC = () => {
         ]
       });
     }
-  }, [categorySlug, selectedAppSlug, selectedCategory, debouncedSearchTerm]);
+  }, [categorySlug, selectedAppSlug, topicSlug, isTopicsIndex, selectedCategory, debouncedSearchTerm]);
 
   const selectedApp = useMemo(() => {
     if (isLoading) return null;
@@ -219,11 +227,26 @@ const App: React.FC = () => {
     return <CategoryPageView categorySlug={categorySlug} allApps={allApps} isLoading={isLoading} />;
   }
 
+  if (isTopicsIndex) {
+    return <TopicsIndexView allApps={allApps} />;
+  }
+
+  if (topicSlug) {
+    return <TopicPageView topicSlug={topicSlug} allApps={allApps} isLoading={isLoading} />;
+  }
+
   if (isDesktop) {
     return (
       <>
         <JsonLdSchema type="website" />
         <JsonLdSchema type="organization" />
+        <JsonLdSchema
+          type="siteNavigation"
+          data={{ items: [
+            { name: 'Home', url: `${window.location.origin}/` },
+            { name: 'Topics', url: `${window.location.origin}/topic` }
+          ] }}
+        />
         <JsonLdSchema
           type="itemList"
           data={{
@@ -275,6 +298,13 @@ const App: React.FC = () => {
     <>
       <JsonLdSchema type="website" />
       <JsonLdSchema type="organization" />
+      <JsonLdSchema
+        type="siteNavigation"
+        data={{ items: [
+          { name: 'Home', url: `${window.location.origin}/` },
+          { name: 'Topics', url: `${window.location.origin}/topic` }
+        ] }}
+      />
       <JsonLdSchema
         type="itemList"
         data={{
