@@ -420,11 +420,16 @@ Accelerate research, expand your city, and dominate events without waiting. This
         img: "https://i.imgur.com/qvEKuwI.jpeg", 
         author: "TapTweak", 
         title: "Null's Brawl", 
-        description: "Easy install for iOS & Android!",
+        description: "Private Brawl Stars server – easy install for iOS & Android",
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Custom Brawl Stars experience with streamlined installation and enhanced features. Supports iOS & Android.`,
+        longDescription: `Enjoy a custom Brawl Stars experience on a private server, with streamlined install and enhanced features on iOS & Android.
+
+### Quick Setup
+1. Install Null's Brawl
+2. Open and create your profile
+3. Play on private servers with boosted progression`,
         faqs: [
             { question: "Is this an official server?", answer: "No, it's a modified experience; do not use your main account." },
             { question: "Platforms supported?", answer: "iOS and Android are supported." }

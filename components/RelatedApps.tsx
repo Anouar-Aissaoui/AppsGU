@@ -178,6 +178,16 @@ const RelatedApps: React.FC<RelatedAppsProps> = ({ currentAppSlug, category, all
             </ul>
           </div>
         )}
+        {currentAppSlug === 'nulls-brawl' && (
+          <div className="mt-6 text-sm text-gray-400">
+            <p className="mb-2">Helpful links:</p>
+            <ul className="list-disc list-inside space-y-1">
+              <li><a className="text-[#00ff88] hover:underline" href="/category/games">More multiplayer & action mods</a></li>
+              <li><a className="text-[#00ff88] hover:underline" href="/app/roblox-mod">Roblox – Mod Menu</a></li>
+              <li><a className="text-[#00ff88] hover:underline" href="/app/frag-pro-shooter-mod">FRAG Pro Shooter – Unlimited Diamonds & Coins</a></li>
+            </ul>
+          </div>
+        )}
       </div>
     </>
   );

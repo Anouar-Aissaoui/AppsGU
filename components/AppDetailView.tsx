@@ -327,6 +327,22 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
             });
         }
 
+        // HowTo Schema (Programmatic SEO) for Null's Brawl
+        if (app.slug === 'nulls-brawl') {
+            addJsonLd({
+                "@context": "https://schema.org",
+                "@type": "HowTo",
+                "name": "How to Install Null's Brawl (Private Server)",
+                "totalTime": "PT2M",
+                "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
+                "step": [
+                    { "@type": "HowToStep", "name": "Install App", "text": "Download and install Null's Brawl on your device." },
+                    { "@type": "HowToStep", "name": "Create Profile", "text": "Open the app and set up your profile on the private server." },
+                    { "@type": "HowToStep", "name": "Play", "text": "Enjoy boosted progression and custom features." }
+                ]
+            });
+        }
+
         // HowTo Schema (Programmatic SEO) for iRecovery
         if (app.slug === 'irecovery') {
             addJsonLd({
@@ -427,6 +443,7 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, allApps, isPanel }) 
                         app.slug === 'nova-legacy-mod' ? 'N.O.V.A. Legacy Mod – Unlimited Money & Trilithium' :
                         app.slug === 'forge-of-empires-mod' ? 'Forge of Empires Mod – Unlimited Diamonds & Supplies' :
                         app.slug === 'carx-street-mod' ? 'CarX Street Mod – Unlimited Money & Upgrades' :
+                        app.slug === 'nulls-brawl' ? "Null's Brawl – Private Server (Easy Install)" :
                         app.title
                       }</h1>
                       <div className="flex items-center gap-x-4 gap-y-1 text-gray-400 text-sm mb-4 flex-wrap">
