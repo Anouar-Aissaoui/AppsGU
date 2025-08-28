@@ -198,6 +198,16 @@ const RelatedApps: React.FC<RelatedAppsProps> = ({ currentAppSlug, category, all
             </ul>
           </div>
         )}
+        {currentAppSlug === 'loot-boy-mod' && (
+          <div className="mt-6 text-sm text-gray-400">
+            <p className="mb-2">Helpful links:</p>
+            <ul className="list-disc list-inside space-y-1">
+              <li><a className="text-[#00ff88] hover:underline" href="/category/games">Card & loot apps</a></li>
+              <li><a className="text-[#00ff88] hover:underline" href="/app/monopoly-go-plus-plus">Monopoly Go++ – Unlimited Dice & Cash</a></li>
+              <li><a className="text-[#00ff88] hover:underline" href="/app/scrabble-go-mod">Scrabble GO – Unlimited Gems</a></li>
+            </ul>
+          </div>
+        )}
       </div>
     </>
   );

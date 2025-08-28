@@ -359,6 +359,22 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
             });
         }
 
+        // HowTo Schema (Programmatic SEO) for Loot Boy Mod
+        if (app.slug === 'loot-boy-mod') {
+            addJsonLd({
+                "@context": "https://schema.org",
+                "@type": "HowTo",
+                "name": "How to Activate Loot Boy Mod (Unlimited Diamonds, Tickets & Coins)",
+                "totalTime": "PT2M",
+                "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
+                "step": [
+                    { "@type": "HowToStep", "name": "Install Mod", "text": "Download and install Loot Boy Mod on your device." },
+                    { "@type": "HowToStep", "name": "Open Loot Boy", "text": "Launch the app; resources sync automatically." },
+                    { "@type": "HowToStep", "name": "Open Packs", "text": "Use diamonds and tickets to unlock premium packs." }
+                ]
+            });
+        }
+
         // HowTo Schema (Programmatic SEO) for iRecovery
         if (app.slug === 'irecovery') {
             addJsonLd({
@@ -461,6 +477,7 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, allApps, isPanel }) 
                         app.slug === 'carx-street-mod' ? 'CarX Street Mod – Unlimited Money & Upgrades' :
                         app.slug === 'nulls-brawl' ? "Null's Brawl – Private Server (Easy Install)" :
                         app.slug === 'mortal-kombat-mod' ? 'Mortal Kombat Mod – Unlimited Souls & Coins' :
+                        app.slug === 'loot-boy-mod' ? 'Loot Boy Mod – Unlimited Diamonds, Tickets & Coins' :
                         app.title
                       }</h1>
                       <div className="flex items-center gap-x-4 gap-y-1 text-gray-400 text-sm mb-4 flex-wrap">
