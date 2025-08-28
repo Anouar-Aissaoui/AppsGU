@@ -3,7 +3,7 @@ import type { AppInfo } from './types';
 export const APPS_DATA: AppInfo[] = [
     { 
         slug: "altstore",
-        img: "https://i.imgur.com/rq3p0eE.png", 
+        img: "https://i.imgur.com/S2GDQsf.jpeg", 
         author: "AppsGU", 
         title: "AltStore", 
         description: "Free iOS app installer – sideload any IPA to iPhone/iPad (no jailbreak)",
@@ -63,7 +63,7 @@ export const APPS_DATA: AppInfo[] = [
 
 ### Tips
 - Use a stable network during first activation
-- If content doesn’t unlock immediately, relaunch the app`,
+- If content doesn't unlock immediately, relaunch the app`,
         faqs: [
             { question: "Will this work on the latest version of DreameShort?", answer: "Yes. We update compatibility regularly and validate against the latest store build." },
             { question: "Is this a one-time unlock?", answer: "Activation grants ongoing coins/bonuses for your account. Re-run activation only after major app updates if needed." },
@@ -122,7 +122,7 @@ Tips: Run the scan soon after deletion and avoid large new recordings to improve
         faqs: [
             { question: "Can iRecovery recover files after a factory reset?", answer: "No. Factory resets wipe data securely. iRecovery works best for recent, regular deletions." },
             { question: "Does it require my device to be jailbroken or rooted?", answer: "No. Standard iOS and Android devices are supported." },
-            { question: "Which scan should I use?", answer: "Try Quick Scan first; if you don’t see files, run Deep Scan for a more thorough search." }
+            { question: "Which scan should I use?", answer: "Try Quick Scan first; if you don't see files, run Deep Scan for a more thorough search." }
         ]
     },
     { 
@@ -318,7 +318,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
     },
     { 
         slug: "bingo-blitz-hack",
-        img: "https://i.imgur.com/rq3p0eE.png", 
+        img: "https://i.imgur.com/S2GDQsf.jpeg", 
         author: "BetterMods", 
         title: "Bingo Blitz Hack", 
         description: "Unlimited Coins & Credits!",
@@ -408,7 +408,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
     },
     { 
         slug: "capcut-pro",
-        img: "https://i.imgur.com/rq3p0eE.png", 
+        img: "https://i.imgur.com/S2GDQsf.jpeg", 
         author: "BetterMods", 
         title: "CapCut Pro", 
         description: "Compatible with Android & iOS devices!",

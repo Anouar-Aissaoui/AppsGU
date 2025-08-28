@@ -99,7 +99,7 @@ for (const app of APPS_DATA) {
   const title = clamp(`${appSeo} v${app.version} – Free Download | AppsGU`, 60);
   const description = clamp(`Download ${appSeo} v${app.version} for iOS & Android. ${app.description}`, 160);
   const canonical = `${SITE_URL}/app/${app.slug}`;
-  if (app.slug === 'board-kings-hack') {
+  if (app.slug === 'board-kings-hack' || app.slug === 'capcut-pro') {
     console.log(`[prerender] Using image for ${app.slug}: ${app.img}`);
   }
   let html = replaceMeta(template, { title, description, canonical, ogType: 'article', ogImage: app.img });
