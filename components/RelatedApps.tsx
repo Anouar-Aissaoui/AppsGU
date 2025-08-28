@@ -398,6 +398,16 @@ const RelatedApps: React.FC<RelatedAppsProps> = ({ currentAppSlug, category, all
             </ul>
           </div>
         )}
+        {currentAppSlug === 'scrabble-go-mod' && (
+          <div className="mt-6 text-sm text-gray-400">
+            <p className="mb-2">Helpful links:</p>
+            <ul className="list-disc list-inside space-y-1">
+              <li><a className="text-[#00ff88] hover:underline" href="/category/games">Word & puzzle mods</a></li>
+              <li><a className="text-[#00ff88] hover:underline" href="/app/harry-potter-puzzles-and-spells-mod">HP: Puzzles & Spells – Unlimited Gold</a></li>
+              <li><a className="text-[#00ff88] hover:underline" href="/app/match-masters-mod">Match Masters – Unlimited Coins</a></li>
+            </ul>
+          </div>
+        )}
       </div>
     </>
   );

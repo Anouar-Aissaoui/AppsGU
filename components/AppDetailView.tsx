@@ -679,6 +679,22 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
             });
         }
 
+        // HowTo Schema (Programmatic SEO) for Scrabble GO Mod
+        if (app.slug === 'scrabble-go-mod') {
+            addJsonLd({
+                "@context": "https://schema.org",
+                "@type": "HowTo",
+                "name": "How to Activate Scrabble GO Mod",
+                "totalTime": "PT2M",
+                "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
+                "step": [
+                    { "@type": "HowToStep", "name": "Install Mod", "text": "Download and install Scrabble GO Mod." },
+                    { "@type": "HowToStep", "name": "Open Game", "text": "Launch Scrabble GO; gems sync automatically." },
+                    { "@type": "HowToStep", "name": "Unlock Themes", "text": "Use gems to unlock themes and bonuses." }
+                ]
+            });
+        }
+
         // HowTo Schema (Programmatic SEO) for iRecovery
         if (app.slug === 'irecovery') {
             addJsonLd({
@@ -801,6 +817,7 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, allApps, isPanel }) 
                         app.slug === 'injustice-2-mod' ? 'Injustice 2 Mod – Unlimited Gems & Credits' :
                         app.slug === 'king-of-thieves-mod' ? 'King of Thieves Mod – Unlimited Orbs & Gold' :
                         app.slug === 'monster-legends-mod' ? 'Monster Legends Mod – Unlimited Gems & Gold' :
+                        app.slug === 'scrabble-go-mod' ? 'Scrabble GO Mod – Unlimited Gems' :
                         app.title
                       }</h1>
                       <div className="flex items-center gap-x-4 gap-y-1 text-gray-400 text-sm mb-4 flex-wrap">
