@@ -631,6 +631,22 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
             });
         }
 
+        // HowTo Schema (Programmatic SEO) for Injustice 2 Mod
+        if (app.slug === 'injustice-2-mod') {
+            addJsonLd({
+                "@context": "https://schema.org",
+                "@type": "HowTo",
+                "name": "How to Activate Injustice 2 Mod",
+                "totalTime": "PT2M",
+                "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
+                "step": [
+                    { "@type": "HowToStep", "name": "Install Mod", "text": "Download and install Injustice 2 Mod." },
+                    { "@type": "HowToStep", "name": "Open Game", "text": "Launch Injustice 2; gems and credits sync automatically." },
+                    { "@type": "HowToStep", "name": "Upgrade Heroes", "text": "Use resources to unlock and upgrade characters." }
+                ]
+            });
+        }
+
         // HowTo Schema (Programmatic SEO) for iRecovery
         if (app.slug === 'irecovery') {
             addJsonLd({
@@ -750,6 +766,7 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, allApps, isPanel }) 
                         app.slug === 'baseball-9-mod' ? 'Baseball 9 Mod – Unlimited Money & Gems' :
                         app.slug === 'photos-plus' ? 'Photos+ – Recover Deleted Photos & Videos' :
                         app.slug === 'harry-potter-puzzles-and-spells-mod' ? 'Harry Potter: Puzzles & Spells Mod – Unlimited Gold' :
+                        app.slug === 'injustice-2-mod' ? 'Injustice 2 Mod – Unlimited Gems & Credits' :
                         app.title
                       }</h1>
                       <div className="flex items-center gap-x-4 gap-y-1 text-gray-400 text-sm mb-4 flex-wrap">

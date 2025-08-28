@@ -368,6 +368,16 @@ const RelatedApps: React.FC<RelatedAppsProps> = ({ currentAppSlug, category, all
             </ul>
           </div>
         )}
+        {currentAppSlug === 'injustice-2-mod' && (
+          <div className="mt-6 text-sm text-gray-400">
+            <p className="mb-2">Helpful links:</p>
+            <ul className="list-disc list-inside space-y-1">
+              <li><a className="text-[#00ff88] hover:underline" href="/category/games">Fighting & action mods</a></li>
+              <li><a className="text-[#00ff88] hover:underline" href="/app/mortal-kombat-mod">Mortal Kombat – Unlimited Souls & Coins</a></li>
+              <li><a className="text-[#00ff88] hover:underline" href="/app/dc-legends-mod">DC Legends – Unlimited Gems & Energy</a></li>
+            </ul>
+          </div>
+        )}
       </div>
     </>
   );
