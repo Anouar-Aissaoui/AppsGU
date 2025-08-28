@@ -966,10 +966,12 @@ Accelerate research, expand your city, and dominate events without waiting. This
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Rule Vegas with unlimited diamonds and money. Unlock vehicles and weapons easily. iOS & Android supported.`,
+        longDescription: `Gangstar Vegas Mod – Open-World Action with Unlimited Diamonds & Money\n\nWhat you get\n- Unlimited Diamonds & Money for vehicles, weapons and upgrades\n- Faster story progress and city takeovers\n- Best used in offline/free‑roam and non‑competitive modes\n\nHow to install (iOS & Android)\n1) Tap Download and install Gangstar Vegas Mod\n2) Open the game and complete the intro mission\n3) Resources sync automatically – start upgrading and exploring\n\nPlay tips\n- Prioritize armor and mobility early for survivability\n- Save premium vehicles for missions with strict timers\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
         faqs: [
-            { question: "Ban concerns?", answer: "Use in offline or non-competitive scenarios to reduce risk." },
-            { question: "Platforms supported?", answer: "iOS & Android." }
+            { question: "Is it safe online?", answer: "Avoid competitive/online events to minimize detection risk." },
+            { question: "Need root/jailbreak?", answer: "No. Works on standard iOS and Android devices." },
+            { question: "Will progress persist after uninstall?", answer: "Benefits apply while installed; uninstalling may revert some gains." },
+            { question: "Performance tips?", answer: "Lower shadows/effects on older devices to reduce frame drops." }
         ]
     },
     { 

@@ -503,6 +503,22 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
             });
         }
 
+        // HowTo Schema (Programmatic SEO) for Gangstar Vegas Mod
+        if (app.slug === 'gangstar-vegas-mod') {
+            addJsonLd({
+                "@context": "https://schema.org",
+                "@type": "HowTo",
+                "name": "How to Activate Gangstar Vegas Mod (Unlimited Diamonds & Money)",
+                "totalTime": "PT2M",
+                "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
+                "step": [
+                    { "@type": "HowToStep", "name": "Install Mod", "text": "Download and install Gangstar Vegas Mod on your device." },
+                    { "@type": "HowToStep", "name": "Open Game", "text": "Launch Gangstar Vegas; resources sync automatically." },
+                    { "@type": "HowToStep", "name": "Upgrade & Explore", "text": "Buy vehicles, weapons and upgrades to rule Vegas." }
+                ]
+            });
+        }
+
         // HowTo Schema (Programmatic SEO) for Ninja Turtles: Legends Mod
         if (app.slug === 'ninja-turtles-legends-mod') {
             addJsonLd({
@@ -1022,6 +1038,7 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, allApps, isPanel }) 
                         app.slug === 'need-for-speed-no-limits-mod' ? 'NFS No Limits Mod – Unlimited Money & Gold' :
                         app.slug === 'ice-age-adventures-mod' ? 'Ice Age Adventures Mod – Unlimited Acorns' :
                         app.slug === 'score-hero-2022-mod' ? 'Score! Hero 2022 Mod – Unlimited Money' :
+                        app.slug === 'gangstar-vegas-mod' ? 'Gangstar Vegas Mod – Unlimited Diamonds & Money' :
                         app.title
                       }</h1>
                       <div className="flex items-center gap-x-4 gap-y-1 text-gray-400 text-sm mb-4 flex-wrap">

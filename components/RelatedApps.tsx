@@ -288,6 +288,16 @@ const RelatedApps: React.FC<RelatedAppsProps> = ({ currentAppSlug, category, all
             </ul>
           </div>
         )}
+        {currentAppSlug === 'gangstar-vegas-mod' && (
+          <div className="mt-6 text-sm text-gray-400">
+            <p className="mb-2">Helpful links:</p>
+            <ul className="list-disc list-inside space-y-1">
+              <li><a className="text-[#00ff88] hover:underline" href="/category/games">Open‑world & action mods</a></li>
+              <li><a className="text-[#00ff88] hover:underline" href="/app/traffic-rider-mod">Traffic Rider – Unlimited Money & Cash</a></li>
+              <li><a className="text-[#00ff88] hover:underline" href="/app/need-for-speed-no-limits-mod">NFS No Limits – Unlimited Money & Gold</a></li>
+            </ul>
+          </div>
+        )}
         {currentAppSlug === 'dead-by-daylight-mod' && (
           <div className="mt-6 text-sm text-gray-400">
             <p className="mb-2">Helpful links:</p>
