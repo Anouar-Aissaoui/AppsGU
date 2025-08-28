@@ -1366,7 +1366,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
     },
     { 
         slug: "dislyte-mod",
-        img: "https://i.imgur.com/GtpkLZt.jpeg", 
+        img: "https://i.imgur.com/O1IAYpK.jpeg", 
         author: "TapTweak", 
         title: "Dislyte Mod", 
         description: "Unlimited Crystals & Gold!",
