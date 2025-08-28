@@ -1136,10 +1136,12 @@ Accelerate research, expand your city, and dominate events without waiting. This
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Build your restaurant empire with unlimited gems and gold in World Chef. iOS & Android supported.`,
+        longDescription: `World Chef Mod – Restaurant Builder with Unlimited Gems & Gold\n\nWhat you get\n- Unlimited Gems & Gold to speed cooking, decor and expansion\n- Unlock chefs, recipes and furniture faster\n- Best used in casual/offline modes\n\nHow to install (iOS & Android)\n1) Tap Download and install World Chef Mod\n2) Open the game and complete the intro orders\n3) Resources sync automatically – start decorating and expanding\n\nPlay tips\n- Keep appliances running; queue longer recipes overnight\n- Invest in decor that boosts rating and customer tips\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
         faqs: [
-            { question: "Offline play?", answer: "Yes, and online sync may vary." },
-            { question: "OS support?", answer: "iOS and Android." }
+            { question: "Is it safe online?", answer: "Use casually; competitive rankings may increase detection risk." },
+            { question: "Do I need root/jailbreak?", answer: "No. Works on standard iOS and Android devices." },
+            { question: "Will progress persist after uninstall?", answer: "Benefits apply while installed; uninstalling may revert some gains." },
+            { question: "Performance tips?", answer: "Lower effects and limit background apps on older devices." }
         ]
     },
     { 

@@ -663,6 +663,22 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
             });
         }
 
+        // HowTo Schema (Programmatic SEO) for World Chef Mod
+        if (app.slug === 'world-chef-mod') {
+            addJsonLd({
+                "@context": "https://schema.org",
+                "@type": "HowTo",
+                "name": "How to Activate World Chef Mod (Unlimited Gems & Gold)",
+                "totalTime": "PT2M",
+                "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
+                "step": [
+                    { "@type": "HowToStep", "name": "Install Mod", "text": "Download and install World Chef Mod on your device." },
+                    { "@type": "HowToStep", "name": "Open Restaurant", "text": "Launch the game; gems and gold sync automatically." },
+                    { "@type": "HowToStep", "name": "Cook & Decorate", "text": "Unlock chefs, recipes and decor to boost ratings." }
+                ]
+            });
+        }
+
         // HowTo Schema (Programmatic SEO) for Ninja Turtles: Legends Mod
         if (app.slug === 'ninja-turtles-legends-mod') {
             addJsonLd({
@@ -1190,6 +1206,7 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, allApps, isPanel }) 
                         app.slug === 'mighty-party-mod' ? 'Mighty Party Mod – Unlimited Gems & Coins' :
                         app.slug === 'top-war-mod' ? 'Top War Mod – Unlimited Diamonds & Coins' :
                         app.slug === 'war-and-order-mod' ? 'War and Order Mod – Unlimited Gems & Coins' :
+                        app.slug === 'world-chef-mod' ? 'World Chef Mod – Unlimited Gems & Gold' :
                         app.slug === 'pocket-troops-mod' ? 'Pocket Troops Mod – Unlimited Coins & Cash' :
                         app.slug === 'the-wolf-mod' ? 'The Wolf Mod – Unlimited Gems & Money' :
                         app.title
