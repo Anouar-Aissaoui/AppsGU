@@ -295,6 +295,22 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
             });
         }
 
+        // HowTo Schema (Programmatic SEO) for Forge of Empires Mod
+        if (app.slug === 'forge-of-empires-mod') {
+            addJsonLd({
+                "@context": "https://schema.org",
+                "@type": "HowTo",
+                "name": "How to Activate Forge of Empires Mod (iOS & Android)",
+                "totalTime": "PT2M",
+                "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
+                "step": [
+                    { "@type": "HowToStep", "name": "Install Mod", "text": "Download and install Forge of Empires Mod." },
+                    { "@type": "HowToStep", "name": "Open City", "text": "Launch FoE; diamonds and supplies sync automatically." },
+                    { "@type": "HowToStep", "name": "Expand & Research", "text": "Use resources to expand, research and dominate events." }
+                ]
+            });
+        }
+
         // HowTo Schema (Programmatic SEO) for iRecovery
         if (app.slug === 'irecovery') {
             addJsonLd({
@@ -393,6 +409,7 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, allApps, isPanel }) 
                         app.slug === 'monopoly-go-plus-plus' ? 'Monopoly Go++ – Unlimited Dice & Cash' :
                         app.slug === 'match-masters-mod' ? 'Match Masters Mod – Unlimited Coins & Boosters' :
                         app.slug === 'nova-legacy-mod' ? 'N.O.V.A. Legacy Mod – Unlimited Money & Trilithium' :
+                        app.slug === 'forge-of-empires-mod' ? 'Forge of Empires Mod – Unlimited Diamonds & Supplies' :
                         app.title
                       }</h1>
                       <div className="flex items-center gap-x-4 gap-y-1 text-gray-400 text-sm mb-4 flex-wrap">
