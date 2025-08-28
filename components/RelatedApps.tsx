@@ -378,6 +378,16 @@ const RelatedApps: React.FC<RelatedAppsProps> = ({ currentAppSlug, category, all
             </ul>
           </div>
         )}
+        {currentAppSlug === 'king-of-thieves-mod' && (
+          <div className="mt-6 text-sm text-gray-400">
+            <p className="mb-2">Helpful links:</p>
+            <ul className="list-disc list-inside space-y-1">
+              <li><a className="text-[#00ff88] hover:underline" href="/category/games">Strategy & dungeon mods</a></li>
+              <li><a className="text-[#00ff88] hover:underline" href="/app/monster-legends-mod">Monster Legends – Unlimited Gems & Gold</a></li>
+              <li><a className="text-[#00ff88] hover:underline" href="/app/top-war-mod">Top War – Unlimited Diamonds & Coins</a></li>
+            </ul>
+          </div>
+        )}
       </div>
     </>
   );
