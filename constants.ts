@@ -1238,10 +1238,12 @@ Accelerate research, expand your city, and dominate events without waiting. This
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Dominate the court with unlimited gems and coins in Tennis Clash. iOS & Android supported.`,
+        longDescription: `Tennis Clash Mod – Online Tennis with Unlimited Gems & Coins\n\nWhat you get\n- Unlimited Gems & Coins to unlock rackets, strings and outfits\n- Faster upgrades for power, accuracy and agility\n- Best used in casual/offline modes\n\nHow to install (iOS & Android)\n1) Tap Download and install Tennis Clash Mod\n2) Open the game and complete the tutorial rally\n3) Resources sync automatically – start upgrading your gear\n\nPlay tips\n- Time swipes at ball peak for higher accuracy and speed\n- Equip strings that complement your build (power vs. control)\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
         faqs: [
-            { question: "Ranked safety?", answer: "Avoid ranked play with mods to reduce risk." },
-            { question: "Supported OS?", answer: "iOS and Android." }
+            { question: "Is it safe for ranked matches?", answer: "Prefer casual play; ranked modes may increase detection risk." },
+            { question: "Do I need root/jailbreak?", answer: "No. Works on standard iOS and Android devices." },
+            { question: "Will progress persist after uninstall?", answer: "Benefits apply while installed; uninstalling may revert some gains." },
+            { question: "Performance tips?", answer: "Lower effects and cap FPS on older devices for smoother rallies." }
         ]
     },
     { 

@@ -759,6 +759,22 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
             });
         }
 
+        // HowTo Schema (Programmatic SEO) for Tennis Clash Mod
+        if (app.slug === 'tennis-clash-mod') {
+            addJsonLd({
+                "@context": "https://schema.org",
+                "@type": "HowTo",
+                "name": "How to Activate Tennis Clash Mod (Unlimited Gems & Coins)",
+                "totalTime": "PT2M",
+                "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
+                "step": [
+                    { "@type": "HowToStep", "name": "Install Mod", "text": "Download and install Tennis Clash Mod on your device." },
+                    { "@type": "HowToStep", "name": "Open Game", "text": "Launch Tennis Clash; resources sync automatically." },
+                    { "@type": "HowToStep", "name": "Upgrade Gear", "text": "Buy rackets/strings and practice timing for better rallies." }
+                ]
+            });
+        }
+
         // HowTo Schema (Programmatic SEO) for Ninja Turtles: Legends Mod
         if (app.slug === 'ninja-turtles-legends-mod') {
             addJsonLd({
@@ -1292,6 +1308,7 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, allApps, isPanel }) 
                         app.slug === 'basketball-stars-mod' ? 'Basketball Stars Mod – Unlimited Money & Gold' :
                         app.slug === 'disney-heroes-mod' ? 'Disney Heroes Mod – Unlimited Diamonds & Gold' :
                         app.slug === 'lilys-garden-mod' ? "Lily's Garden Mod – Unlimited Stars & Coins" :
+                        app.slug === 'tennis-clash-mod' ? 'Tennis Clash Mod – Unlimited Gems & Coins' :
                         app.slug === 'pocket-troops-mod' ? 'Pocket Troops Mod – Unlimited Coins & Cash' :
                         app.slug === 'the-wolf-mod' ? 'The Wolf Mod – Unlimited Gems & Money' :
                         app.title
