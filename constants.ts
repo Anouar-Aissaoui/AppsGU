@@ -1000,10 +1000,12 @@ Accelerate research, expand your city, and dominate events without waiting. This
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Roam the wild with unlimited gems and money in The Wolf. iOS & Android supported.`,
+        longDescription: `The Wolf Mod – Online RPG Simulator with Unlimited Gems & Money\n\nWhat you get\n- Unlimited Gems & Money to unlock wolves, skills and skins\n- Faster progression in PvE hunts and exploration\n- Best used in casual/non‑competitive rooms\n\nHow to install (iOS & Android)\n1) Tap Download and install The Wolf Mod\n2) Open the game and complete the short tutorial\n3) Resources sync automatically – upgrade your wolf and explore\n\nPlay tips\n- Prioritize damage and stamina early for efficient hunts\n- Team up in co‑op hunts for faster XP and loot\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
         faqs: [
-            { question: "Multiplayer safe?", answer: "Caution advised; use in casual settings." },
-            { question: "OS supported?", answer: "iOS & Android." }
+            { question: "Is it safe for multiplayer?", answer: "Avoid competitive lobbies; use responsibly in casual PvE hunts." },
+            { question: "Need root/jailbreak?", answer: "No. Works on standard iOS and Android devices." },
+            { question: "Will progress remain after uninstall?", answer: "Benefits apply while installed; uninstalling may revert some gains." },
+            { question: "Performance tips?", answer: "Lower vegetation and shadows on older devices for smoother play." }
         ]
     },
     { 

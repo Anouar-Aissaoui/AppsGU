@@ -408,6 +408,16 @@ const RelatedApps: React.FC<RelatedAppsProps> = ({ currentAppSlug, category, all
             </ul>
           </div>
         )}
+        {currentAppSlug === 'the-wolf-mod' && (
+          <div className="mt-6 text-sm text-gray-400">
+            <p className="mb-2">Helpful links:</p>
+            <ul className="list-disc list-inside space-y-1">
+              <li><a className="text-[#00ff88] hover:underline" href="/category/games">Online RPG & survival mods</a></li>
+              <li><a className="text-[#00ff88] hover:underline" href="/app/state-of-survival-mod">State of Survival – Unlimited Biocaps & Resources</a></li>
+              <li><a className="text-[#00ff88] hover:underline" href="/app/hungry-shark-evolution-mod">Hungry Shark Evolution – Unlimited Gems & Coins</a></li>
+            </ul>
+          </div>
+        )}
         {currentAppSlug === 'harry-potter-puzzles-and-spells-mod' && (
           <div className="mt-6 text-sm text-gray-400">
             <p className="mb-2">Helpful links:</p>
