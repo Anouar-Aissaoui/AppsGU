@@ -949,10 +949,12 @@ Accelerate research, expand your city, and dominate events without waiting. This
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Climb to stardom with unlimited money in Score! Hero 2022. iOS & Android supported.`,
+        longDescription: `Score! Hero 2022 Mod – Football Career with Unlimited Money\n\nWhat you get\n- Unlimited Money to unlock levels, retries and training faster\n- Progress through career chapters without grind\n- Best used in offline/casual modes\n\nHow to install (iOS & Android)\n1) Tap Download and install Score! Hero 2022 Mod\n2) Open the game and complete the first tutorial level\n3) Resources sync automatically – continue your career\n\nPlay tips\n- Use curved swipes for top‑corner shots\n- Spend retries wisely on multi‑pass objectives\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
         faqs: [
-            { question: "Online ranking?", answer: "Mod usage in ranked modes is discouraged due to risk." },
-            { question: "Supported OS?", answer: "iOS and Android." }
+            { question: "Is it safe for ranked leaderboards?", answer: "Avoid competitive leaderboards to reduce detection risk." },
+            { question: "Need root/jailbreak?", answer: "No. Works on standard iOS and Android devices." },
+            { question: "Will progress persist after uninstall?", answer: "Benefits apply while installed; uninstalling may revert some gains." },
+            { question: "Performance tips?", answer: "Lower crowd/effects on older devices for smoother play." }
         ]
     },
     { 

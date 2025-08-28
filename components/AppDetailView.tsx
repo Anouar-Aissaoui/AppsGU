@@ -487,6 +487,22 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
             });
         }
 
+        // HowTo Schema (Programmatic SEO) for Score! Hero 2022 Mod
+        if (app.slug === 'score-hero-2022-mod') {
+            addJsonLd({
+                "@context": "https://schema.org",
+                "@type": "HowTo",
+                "name": "How to Activate Score! Hero 2022 Mod (Unlimited Money)",
+                "totalTime": "PT2M",
+                "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
+                "step": [
+                    { "@type": "HowToStep", "name": "Install Mod", "text": "Download and install Score! Hero 2022 Mod on your device." },
+                    { "@type": "HowToStep", "name": "Open Game", "text": "Launch Score! Hero; money will be available automatically." },
+                    { "@type": "HowToStep", "name": "Train & Progress", "text": "Use resources to train, unlock levels and progress your career." }
+                ]
+            });
+        }
+
         // HowTo Schema (Programmatic SEO) for Ninja Turtles: Legends Mod
         if (app.slug === 'ninja-turtles-legends-mod') {
             addJsonLd({
@@ -1005,6 +1021,7 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, allApps, isPanel }) 
                         app.slug === 'looney-tunes-world-of-mayhem-mod' ? 'Looney Tunes™ World of Mayhem Mod – Unlimited Gems & Gold' :
                         app.slug === 'need-for-speed-no-limits-mod' ? 'NFS No Limits Mod – Unlimited Money & Gold' :
                         app.slug === 'ice-age-adventures-mod' ? 'Ice Age Adventures Mod – Unlimited Acorns' :
+                        app.slug === 'score-hero-2022-mod' ? 'Score! Hero 2022 Mod – Unlimited Money' :
                         app.title
                       }</h1>
                       <div className="flex items-center gap-x-4 gap-y-1 text-gray-400 text-sm mb-4 flex-wrap">
