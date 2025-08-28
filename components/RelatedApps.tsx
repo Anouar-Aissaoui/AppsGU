@@ -328,6 +328,16 @@ const RelatedApps: React.FC<RelatedAppsProps> = ({ currentAppSlug, category, all
             </ul>
           </div>
         )}
+        {currentAppSlug === 'jetpack-joyride-mod' && (
+          <div className="mt-6 text-sm text-gray-400">
+            <p className="mb-2">Helpful links:</p>
+            <ul className="list-disc list-inside space-y-1">
+              <li><a className="text-[#00ff88] hover:underline" href="/category/games">Arcade & casual mods</a></li>
+              <li><a className="text-[#00ff88] hover:underline" href="/app/angry-birds-evolution-mod">Angry Birds Evolution – Unlimited Gems</a></li>
+              <li><a className="text-[#00ff88] hover:underline" href="/app/harry-potter-puzzles-and-spells-mod">HP: Puzzles & Spells – Unlimited Gold</a></li>
+            </ul>
+          </div>
+        )}
       </div>
     </>
   );

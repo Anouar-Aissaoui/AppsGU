@@ -567,6 +567,22 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
             });
         }
 
+        // HowTo Schema (Programmatic SEO) for Jetpack Joyride Mod
+        if (app.slug === 'jetpack-joyride-mod') {
+            addJsonLd({
+                "@context": "https://schema.org",
+                "@type": "HowTo",
+                "name": "How to Activate Jetpack Joyride Mod",
+                "totalTime": "PT2M",
+                "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
+                "step": [
+                    { "@type": "HowToStep", "name": "Install Mod", "text": "Download and install Jetpack Joyride Mod." },
+                    { "@type": "HowToStep", "name": "Open Game", "text": "Launch the game; coins sync automatically." },
+                    { "@type": "HowToStep", "name": "Upgrade Gear", "text": "Use coins to upgrade jetpacks, gadgets, and vehicles." }
+                ]
+            });
+        }
+
         // HowTo Schema (Programmatic SEO) for iRecovery
         if (app.slug === 'irecovery') {
             addJsonLd({
@@ -682,6 +698,7 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, allApps, isPanel }) 
                         app.slug === 'pubg-mobile-mod' ? 'PUBG Mobile Mod – Unlimited UC & Money' :
                         app.slug === 'last-day-on-earth-survival-mod' ? 'Last Day on Earth: Survival Mod – Unlimited Coins & Gold' :
                         app.slug === 'teamfight-tactics-mod' ? 'TeamFight Tactics Mod – Unlimited Coins & Star Fragments' :
+                        app.slug === 'jetpack-joyride-mod' ? 'Jetpack Joyride Mod – Unlimited Coins' :
                         app.title
                       }</h1>
                       <div className="flex items-center gap-x-4 gap-y-1 text-gray-400 text-sm mb-4 flex-wrap">
