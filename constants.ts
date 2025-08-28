@@ -1034,10 +1034,12 @@ Accelerate research, expand your city, and dominate events without waiting. This
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Unlock theonite and grow your Skullgirls roster quickly. Works on iOS & Android.`,
+        longDescription: `Skullgirls Mod – 2D Fighting RPG with Unlimited Theonite\n\nWhat you get\n- Unlimited Theonite to summon fighters and expand your roster\n- Faster progression in story, events and prize fights\n- Best used in PvE/practice to reduce detection risk\n\nHow to install (iOS & Android)\n1) Tap Download and install Skullgirls Mod\n2) Open the game and complete the tutorial fight\n3) Theonite syncs automatically – start summoning and upgrading\n\nPlay tips\n- Focus on synergy teams and meter management\n- Upgrade core moves on your main carry first\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
         faqs: [
-            { question: "Is this fair play?", answer: "Use responsibly and avoid competitive misuse." },
-            { question: "OS support?", answer: "iOS and Android." }
+            { question: "Is it safe for ranked/prize fights?", answer: "We recommend PvE & training; competitive modes may increase detection risk." },
+            { question: "Do I need root/jailbreak?", answer: "No. Works on standard iOS and Android devices." },
+            { question: "Will progress persist after uninstall?", answer: "Benefits apply while installed; uninstalling may revert some gains." },
+            { question: "Performance tips?", answer: "Lower effects and background layers on older devices for smoother battles." }
         ]
     },
     { 

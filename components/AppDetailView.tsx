@@ -567,6 +567,22 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
             });
         }
 
+        // HowTo Schema (Programmatic SEO) for Skullgirls Mod
+        if (app.slug === 'skullgirls-mod') {
+            addJsonLd({
+                "@context": "https://schema.org",
+                "@type": "HowTo",
+                "name": "How to Activate Skullgirls Mod (Unlimited Theonite)",
+                "totalTime": "PT2M",
+                "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
+                "step": [
+                    { "@type": "HowToStep", "name": "Install Mod", "text": "Download and install Skullgirls Mod on your device." },
+                    { "@type": "HowToStep", "name": "Open Game", "text": "Launch Skullgirls; theonite syncs automatically." },
+                    { "@type": "HowToStep", "name": "Upgrade Fighters", "text": "Summon fighters, upgrade moves and progress story/events." }
+                ]
+            });
+        }
+
         // HowTo Schema (Programmatic SEO) for Ninja Turtles: Legends Mod
         if (app.slug === 'ninja-turtles-legends-mod') {
             addJsonLd({
@@ -1089,6 +1105,7 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, allApps, isPanel }) 
                         app.slug === 'gangstar-vegas-mod' ? 'Gangstar Vegas Mod – Unlimited Diamonds & Money' :
                         app.slug === 'dislyte-mod' ? 'Dislyte Mod – Unlimited Crystals & Gold' :
                         app.slug === 'traffic-rider-mod' ? 'Traffic Rider Mod – Unlimited Money & Cash' :
+                        app.slug === 'skullgirls-mod' ? 'Skullgirls Mod – Unlimited Theonite' :
                         app.slug === 'the-wolf-mod' ? 'The Wolf Mod – Unlimited Gems & Money' :
                         app.title
                       }</h1>
