@@ -1170,10 +1170,12 @@ Accelerate research, expand your city, and dominate events without waiting. This
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Style with unlimited gems and coins in Project Makeover. iOS & Android supported.`,
+        longDescription: `Project Makeover Mod – Match‑3 Makeovers with Unlimited Gems & Coins\n\nWhat you get\n- Unlimited Gems & Coins to unlock outfits, decor and power‑ups\n- Progress faster through makeover stories and events\n- Best used in casual/offline modes\n\nHow to install (iOS & Android)\n1) Tap Download and install Project Makeover Mod\n2) Open the game and complete the intro puzzle\n3) Resources sync automatically – start styling and renovating\n\nPlay tips\n- Save boosters for levels with blockers and tight move counts\n- Focus on high‑impact decor for better client ratings\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
         faqs: [
-            { question: "Online fairness?", answer: "Avoid unfair use in competitive play." },
-            { question: "OS support?", answer: "iOS & Android." }
+            { question: "Is it safe for leaderboards?", answer: "Prefer casual play; ranked boards may increase detection risk." },
+            { question: "Do I need root/jailbreak?", answer: "No. Works on standard iOS and Android devices." },
+            { question: "Will progress persist after uninstall?", answer: "Benefits apply while installed; uninstalling may revert some gains." },
+            { question: "Performance tips?", answer: "Disable extra animations and lower effects on older devices." }
         ]
     },
     { 
