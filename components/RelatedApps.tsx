@@ -208,6 +208,16 @@ const RelatedApps: React.FC<RelatedAppsProps> = ({ currentAppSlug, category, all
             </ul>
           </div>
         )}
+        {currentAppSlug === 'bus-simulator-ultimate-mod' && (
+          <div className="mt-6 text-sm text-gray-400">
+            <p className="mb-2">Helpful links:</p>
+            <ul className="list-disc list-inside space-y-1">
+              <li><a className="text-[#00ff88] hover:underline" href="/category/games">Simulation & driving mods</a></li>
+              <li><a className="text-[#00ff88] hover:underline" href="/app/traffic-rider-mod">Traffic Rider – Unlimited Money & Cash</a></li>
+              <li><a className="text-[#00ff88] hover:underline" href="/app/carx-street-mod">CarX Street – Unlimited Money</a></li>
+            </ul>
+          </div>
+        )}
       </div>
     </>
   );
