@@ -983,10 +983,12 @@ Accelerate research, expand your city, and dominate events without waiting. This
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Empower your espers with unlimited crystals and gold in Dislyte. iOS & Android supported.`,
+        longDescription: `Dislyte Mod – Mythic RPG Squad with Unlimited Crystals & Gold\n\nWhat you get\n- Unlimited Crystals & Gold to summon espers and upgrade relics\n- Faster progression through story, events and trials\n- Best used in PvE modes to reduce detection risk\n\nHow to install (iOS & Android)\n1) Tap Download and install Dislyte Mod\n2) Open the game and finish the tutorial fights\n3) Resources sync automatically – start summoning and upgrading\n\nTeam tips\n- Build balanced teams (damage, support, control) for consistent clears\n- Prioritize core relic upgrades on carries first\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
         faqs: [
-            { question: "PVP impact?", answer: "Avoid competitive PVP to prevent unfair advantages." },
-            { question: "Supported OS?", answer: "iOS and Android." }
+            { question: "Is it safe for PvP?", answer: "We recommend PvE only; ranked PvP may increase detection risk." },
+            { question: "Do I need root/jailbreak?", answer: "No. Works on standard iOS and Android devices." },
+            { question: "Will progress persist after uninstall?", answer: "Benefits apply while installed; uninstalling may revert gains." },
+            { question: "Performance tips?", answer: "Lower effects and background animations on older devices." }
         ]
     },
     { 

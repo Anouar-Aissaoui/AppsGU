@@ -519,6 +519,22 @@ const SeoHead: React.FC<{ app: AppInfo }> = ({ app }) => {
             });
         }
 
+        // HowTo Schema (Programmatic SEO) for Dislyte Mod
+        if (app.slug === 'dislyte-mod') {
+            addJsonLd({
+                "@context": "https://schema.org",
+                "@type": "HowTo",
+                "name": "How to Activate Dislyte Mod (Unlimited Crystals & Gold)",
+                "totalTime": "PT2M",
+                "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
+                "step": [
+                    { "@type": "HowToStep", "name": "Install Mod", "text": "Download and install Dislyte Mod on your device." },
+                    { "@type": "HowToStep", "name": "Open Game", "text": "Launch Dislyte; crystals and gold sync automatically." },
+                    { "@type": "HowToStep", "name": "Build Your Squad", "text": "Summon espers, upgrade relics and clear story/events." }
+                ]
+            });
+        }
+
         // HowTo Schema (Programmatic SEO) for Ninja Turtles: Legends Mod
         if (app.slug === 'ninja-turtles-legends-mod') {
             addJsonLd({
@@ -1039,6 +1055,7 @@ const AppDetailView: React.FC<AppDetailViewProps> = ({ app, allApps, isPanel }) 
                         app.slug === 'ice-age-adventures-mod' ? 'Ice Age Adventures Mod – Unlimited Acorns' :
                         app.slug === 'score-hero-2022-mod' ? 'Score! Hero 2022 Mod – Unlimited Money' :
                         app.slug === 'gangstar-vegas-mod' ? 'Gangstar Vegas Mod – Unlimited Diamonds & Money' :
+                        app.slug === 'dislyte-mod' ? 'Dislyte Mod – Unlimited Crystals & Gold' :
                         app.title
                       }</h1>
                       <div className="flex items-center gap-x-4 gap-y-1 text-gray-400 text-sm mb-4 flex-wrap">

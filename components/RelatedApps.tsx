@@ -358,6 +358,16 @@ const RelatedApps: React.FC<RelatedAppsProps> = ({ currentAppSlug, category, all
             </ul>
           </div>
         )}
+        {currentAppSlug === 'dislyte-mod' && (
+          <div className="mt-6 text-sm text-gray-400">
+            <p className="mb-2">Helpful links:</p>
+            <ul className="list-disc list-inside space-y-1">
+              <li><a className="text-[#00ff88] hover:underline" href="/category/games">RPG & team battler mods</a></li>
+              <li><a className="text-[#00ff88] hover:underline" href="/app/lol-wild-rift-mod">LOL: Wild Rift – Unlimited Wild Cores</a></li>
+              <li><a className="text-[#00ff88] hover:underline" href="/app/teamfight-tactics-mod">TeamFight Tactics – Unlimited Coins</a></li>
+            </ul>
+          </div>
+        )}
         {currentAppSlug === 'jetpack-joyride-mod' && (
           <div className="mt-6 text-sm text-gray-400">
             <p className="mb-2">Helpful links:</p>
